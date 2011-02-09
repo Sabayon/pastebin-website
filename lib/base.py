@@ -7,7 +7,7 @@ import os
 import sys
 from pylons import tmpl_context as c
 from pylons import app_globals as g
-from pylons import cache, config, request, response, session, url
+from pylons import cache, request, response, session, url
 from pylons.controllers import WSGIController
 from pylons.controllers.util import abort, etag_cache, redirect
 from pylons.decorators import jsonify, validate

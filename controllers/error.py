@@ -5,9 +5,9 @@ from paste.urlparser import StaticURLParser
 from pylons.middleware import error_document_template, media_path
 from webhelpers.html.builder import literal
 
-import www.model.config as config
-
 from www.lib.base import *
+
+import www.model.config as config
 
 class ErrorController(BaseController):
     """Generates error documents as and when they are required.
