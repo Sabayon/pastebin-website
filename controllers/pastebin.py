@@ -2,6 +2,8 @@
 import logging, os, sys
 from www.lib.base import *
 from www.lib.website import *
+import www.model.config as config
+
 from pylons.i18n import _
 
 class PastebinController(BaseController,WebsiteController):
@@ -64,7 +66,7 @@ class PastebinController(BaseController,WebsiteController):
         c.pastebin_doctypes = portal.PASTEBIN_DOCTYPES
 
     def index(self):
-        model.config.setup_internal(model, c, session, request)
+        config.setup_internal(model, c, session, request)
         # create recaptcha html
         user_id = self._get_logged_user_id()
         if user_id == None:
@@ -75,7 +77,7 @@ class PastebinController(BaseController,WebsiteController):
         return render_mako('/pastebin/index.html')
 
     def fuck_the_bastard(self):
-        model.config.setup_internal(model, c, session, request)
+        config.setup_internal(model, c, session, request)
         portal = self.Portal()
         portal.execute_query('DELETE FROM pastebin WHERE user_id = 0 and content LIKE %s', ("%<a%href%a>%",))
         data = portal.fetchall()
@@ -90,7 +92,7 @@ class PastebinController(BaseController,WebsiteController):
         txt_log = '[%s] %s' % (
             pastebin_id, _("Removed from db"),)
         if pastebin_doctypes_id != portal.PASTEBIN_DOCTYPES['text']:
-            filepath = os.path.join(model.config.PASTEBIN_DIR,unicode(pastebin_id),
+            filepath = os.path.join(config.PASTEBIN_DIR,unicode(pastebin_id),
                 os.path.basename(item['content']))
             if os.path.isfile(filepath):
                 os.remove(filepath)
@@ -199,7 +201,7 @@ class PastebinController(BaseController,WebsiteController):
             if (pastebin_doctypes_id == portal.PASTEBIN_DOCTYPES['text']) and (not content):
                 c.error_message = _('Empty buffer/content')
                 valid = False
-            elif (pastebin_doctypes_id == portal.PASTEBIN_DOCTYPES['text']) and (len(content) > model.config.PASTEBIN_TEXT_LENGTH):
+            elif (pastebin_doctypes_id == portal.PASTEBIN_DOCTYPES['text']) and (len(content) > config.PASTEBIN_TEXT_LENGTH):
                 c.error_message = _('Too much text dude, are you crazy?')
                 valid = False
             elif (pastebin_doctypes_id in [portal.PASTEBIN_DOCTYPES['image'], portal.PASTEBIN_DOCTYPES['file']]):
@@ -227,9 +229,9 @@ class PastebinController(BaseController,WebsiteController):
         temp_filepath = None
         if docfile_avail and valid:
             # tira su file e scan antivirus
-            temp_filepath = os.path.join(model.config.WEBSITE_TMP_DIR,self._get_random_md5())
+            temp_filepath = os.path.join(config.WEBSITE_TMP_DIR,self._get_random_md5())
             while os.path.lexists(temp_filepath):
-                temp_filepath = os.path.join(model.config.WEBSITE_TMP_DIR,self._get_random_md5())
+                temp_filepath = os.path.join(config.WEBSITE_TMP_DIR,self._get_random_md5())
             f = open(temp_filepath,"wb")
             if text_as_file:
                 f.write(content.encode('utf-8'))
@@ -248,7 +250,7 @@ class PastebinController(BaseController,WebsiteController):
                     pass
                 c.error_message = _('You tried to upload a virus, error will be reported, you are fucked')
                 valid = False
-            elif fsize > model.config.PASTEBIN_MAX_UPLOAD_FILE_SIZE:
+            elif fsize > config.PASTEBIN_MAX_UPLOAD_FILE_SIZE:
                 try:
                     os.remove(temp_filepath)
                 except OSError:
@@ -283,7 +285,7 @@ class PastebinController(BaseController,WebsiteController):
                 c.error_message = '%s' % (pastebin_id,)
             elif (pastebin_doctypes_id != portal.PASTEBIN_DOCTYPES['text']) and temp_filepath:
                 # if image or file, move the path
-                final_filepath = os.path.join(model.config.PASTEBIN_DIR,unicode(pastebin_id),content)
+                final_filepath = os.path.join(config.PASTEBIN_DIR,unicode(pastebin_id),content)
                 os.makedirs(os.path.dirname(final_filepath))
                 try:
                     os.rename(temp_filepath, final_filepath) # atomicity ftw
@@ -297,7 +299,7 @@ class PastebinController(BaseController,WebsiteController):
         if my_redirect:
             c.redirect = my_redirect
 
-        model.config.setup_internal(model, c, session, request)
+        config.setup_internal(model, c, session, request)
 
         # from shell
         if just_url:
@@ -351,7 +353,7 @@ class PastebinController(BaseController,WebsiteController):
         c.valid = True
         c.pastebin_id = pastebin_id
 
-        model.config.setup_internal(model, c, session, request)
+        config.setup_internal(model, c, session, request)
         # create captcha html
         if user_id == None:
             self._new_captcha()

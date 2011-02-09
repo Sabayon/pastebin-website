@@ -14,7 +14,7 @@ import os
 import time
 import urllib2
 import www.lib.helpers as h
-import www.model as model
+import www.model.config as config
 from htmlentitydefs import name2codepoint
 
 class WebsiteController:
@@ -30,8 +30,8 @@ class WebsiteController:
         if user_agent in WebsiteController.USER_AGENT_BLACKLIST:
             abort(503)
 
-        self.VIRUS_CHECK_EXEC = model.config.VIRUS_CHECK_EXEC
-        self.VIRUS_CHECK_ARGS = model.config.VIRUS_CHECK_ARGS
+        self.VIRUS_CHECK_EXEC = config.VIRUS_CHECK_EXEC
+        self.VIRUS_CHECK_ARGS = config.VIRUS_CHECK_ARGS
         import www.model.Portal
         self.Portal = www.model.Portal.Portal
 
@@ -82,20 +82,20 @@ class WebsiteController:
         for currentdir,subdirs,files in os.walk(mydir):
             try:
                 cur_gid = os.stat(currentdir)[stat.ST_GID]
-                if cur_gid != model.config.DEFAULT_WEB_GID:
-                    os.chown(currentdir, model.config.DEFAULT_WEB_UID,
-                        model.config.DEFAULT_WEB_GID)
+                if cur_gid != config.DEFAULT_WEB_GID:
+                    os.chown(currentdir, config.DEFAULT_WEB_UID,
+                        config.DEFAULT_WEB_GID)
                 cur_mod = self._get_chmod(currentdir)
-                if cur_mod != oct(model.config.DEFAULT_CHMOD_DIR):
-                    os.chmod(currentdir,model.config.DEFAULT_CHMOD_DIR)
+                if cur_mod != oct(config.DEFAULT_CHMOD_DIR):
+                    os.chmod(currentdir,config.DEFAULT_CHMOD_DIR)
             except OSError:
                 pass
             for item in files:
                 item = os.path.join(currentdir,item)
                 try:
                     self._setup_file_permissions(
-                        item, model.config.DEFAULT_WEB_UID,
-                        model.config.DEFAULT_WEB_GID, model.config.DEFAULT_CHMOD_FILE
+                        item, config.DEFAULT_WEB_UID,
+                        config.DEFAULT_WEB_GID, config.DEFAULT_CHMOD_FILE
                     )
                 except OSError:
                     pass
@@ -144,7 +144,7 @@ class WebsiteController:
         return charrefpat.sub(entitydecode, text)
 
     def _htmlencode(self, text):
-        return model.config.htmlencode(text)
+        return config.htmlencode(text)
 
     def _get_random_md5(self):
         myrnd = os.urandom(2)
@@ -176,7 +176,7 @@ class WebsiteController:
     def _new_captcha(self):
         captcha = self._get_recaptcha()
         if captcha == None: return
-        myhtml = captcha.displayhtml(model.config.recaptcha_public_key)
+        myhtml = captcha.displayhtml(config.recaptcha_public_key)
         c.recaptcha_html = myhtml
         return myhtml
 
@@ -192,7 +192,7 @@ class WebsiteController:
             tries -= 1
             try:
                 captcha_response = captcha.submit(challenge, response,
-                    model.config.recaptcha_private_key, remoteip)
+                    config.recaptcha_private_key, remoteip)
             except urllib2.URLError:
                 time.sleep(2)
                 continue

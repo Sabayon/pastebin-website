@@ -46,7 +46,6 @@ def setup_internal(model, c, session, request):
     session.save()
 
 def setup_session(session):
-    session.setdefault('site_messages', {}):
     session.cookie_expires = False
     session.cookie_domain = '.sabayon.org'
 

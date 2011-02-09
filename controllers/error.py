@@ -5,6 +5,8 @@ from paste.urlparser import StaticURLParser
 from pylons.middleware import error_document_template, media_path
 from webhelpers.html.builder import literal
 
+import www.model.config as config
+
 from www.lib.base import *
 
 class ErrorController(BaseController):
@@ -23,8 +25,8 @@ class ErrorController(BaseController):
 
     def document(self):
         """Render the error document"""
-        model.config.setup_internal(model, c, session, request)
-	resp = request.environ.get('pylons.original_response')
+        config.setup_internal(model, c, session, request)
+        resp = request.environ.get('pylons.original_response')
         if resp is not None:
             c.code = cgi.escape(request.GET.get('code', str(resp.status_int)))
             c.message = literal(resp.body) or cgi.escape(request.GET.get('message', ''))
