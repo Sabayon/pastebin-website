@@ -51,7 +51,7 @@ class PastebinController(BaseController,WebsiteController):
         else:
             c.default_pastebin_doctypes_id = ''
 
-        c.latest_pasties = portal.get_latest_pastebins(count = 8, user_id = user_id)
+        c.latest_pasties = portal.get_latest_pastebins(count = 8)
         if delete:
             portal.disconnect(); del portal
 
@@ -65,22 +65,11 @@ class PastebinController(BaseController,WebsiteController):
     def index(self):
         config.setup_internal(model, c, session, request)
         # create recaptcha html
-        user_id = self._get_logged_user_id()
-        if user_id == None:
-            self._new_captcha()
+        self._new_captcha()
         self._load_metadata()
         c.page_title = _('Sabayon Linux Pastebin')
         c.html_title = c.page_title
         return render_mako('/pastebin/index.html')
-
-    def fuck_the_bastard(self):
-        config.setup_internal(model, c, session, request)
-        portal = self.Portal()
-        portal.execute_query('DELETE FROM pastebin WHERE user_id = 0 and content LIKE %s', ("%<a%href%a>%",))
-        data = portal.fetchall()
-        portal.disconnect(); del portal
-        return '%s: %s' % (
-            _("Bastard info"), data,)
 
     def _delete_pastebin(self, item, portal):
         pastebin_id = int(item['pastebin_id'])
@@ -117,7 +106,6 @@ class PastebinController(BaseController,WebsiteController):
             return "%s: %s" % (_("Error"), _("invalid method"),)
 
         portal = self.Portal()
-        user_id = self._get_logged_user_id()
         user_ip = self._get_remote_ip()
         if not user_ip:
             portal.disconnect(); del portal
@@ -178,7 +166,7 @@ class PastebinController(BaseController,WebsiteController):
                 valid = False
 
         # captcha check and redirect
-        if valid and (not user_id) and (not just_url):
+        if valid and (not just_url):
             valid = self._validate_captcha_submit()
             if not valid:
                 # invalid captcha answer
@@ -187,11 +175,6 @@ class PastebinController(BaseController,WebsiteController):
                 c.pastebin_wrong_captcha = True
                 portal.disconnect(); del portal
                 return self.index()
-
-        # anonymous user cannot paste != text
-        if valid and (not user_id) and (pastebin_doctypes_id != portal.PASTEBIN_DOCTYPES['text']):
-            c.error_message = _('Permission denied, you need to be logged in to paste this')
-            valid = False
 
         docfile_avail = False
         if valid:
@@ -272,7 +255,7 @@ class PastebinController(BaseController,WebsiteController):
         if valid:
             # insert
             status, pastebin_id = portal.insert_pastebin(
-                user_id, user_ip, pastebin_permissions_id, expiration_days,
+                user_ip, pastebin_permissions_id, expiration_days,
                 pastebin_syntax_id, pastebin_doctypes_id,
                 content)
             if status:
@@ -327,11 +310,9 @@ class PastebinController(BaseController,WebsiteController):
         except (ValueError,TypeError,):
             return redirect(url("/pastebin"))
 
-        user_id = self._get_logged_user_id()
-
         portal = self.Portal()
         self._load_metadata(portal)
-        err_code, pastie = portal.get_pastebin(pastebin_id, user_id)
+        err_code, pastie = portal.get_pastebin(pastebin_id)
         if not pastie:
             return redirect(url("/pastebin"))
 
@@ -352,8 +333,7 @@ class PastebinController(BaseController,WebsiteController):
 
         config.setup_internal(model, c, session, request)
         # create captcha html
-        if user_id == None:
-            self._new_captcha()
+        self._new_captcha()
         portal.disconnect(); del portal
         c.page_title = _('Sabayon Linux PixPastebin')
         c.html_title = c.page_title

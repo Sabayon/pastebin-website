@@ -262,16 +262,6 @@ class Portal(RemoteDbSkelInterface):
         2: _('Image'),
         3: _('File'),
     }
-    PASTEBIN_PERMISSIONS = {
-        'public': 0,
-        'user_priv': 1,
-        'registered_users': 2,
-    }
-    PASTEBIN_PERMISSIONS_DESC = {
-        0: _('Public'),
-        1: _('User private'),
-        2: _('Registered users'),
-    }
 
     PASTEBIN_LAG_SECONDS = 20
 
@@ -331,7 +321,6 @@ class Portal(RemoteDbSkelInterface):
             self.initialize_tables()
             self.initialize_pastebin_syntaxes()
             self.initialize_pastebin_doctypes()
-            self.initialize_pastebin_permissions()
         self.dbconn.set_character_set('utf8')
 
     def __del__(self):
@@ -354,23 +343,6 @@ class Portal(RemoteDbSkelInterface):
         if notable:
             self.commit()
 
-    def initialize_pastebin_permissions(self):
-        for perm in self.PASTEBIN_PERMISSIONS:
-            if self.is_pastebin_permissions_id_available(self.PASTEBIN_PERMISSIONS[perm]):
-                continue
-            self.insert_pastebin_permissions_id(self.PASTEBIN_PERMISSIONS[perm],perm)
-
-    def is_pastebin_permissions_id_available(self, pastebin_permissions_id):
-
-        rows = self.execute_query('SELECT pastebin_permissions_id FROM pastebin_permissions WHERE pastebin_permissions_id = %s', (pastebin_permissions_id,))
-        if rows: return True
-        return False
-
-    def insert_pastebin_permissions_id(self, pastebin_permissions_id, permission_name, do_commit = False):
-
-        self.execute_query('INSERT INTO pastebin_permissions VALUES (%s,%s)', (pastebin_permissions_id,permission_name,))
-        if do_commit: self.commit()
-
     def initialize_pastebin_doctypes(self):
         for doctype in self.PASTEBIN_DOCTYPES:
             if self.is_pastebin_doctypes_id_available(self.PASTEBIN_DOCTYPES[doctype]):
@@ -378,24 +350,20 @@ class Portal(RemoteDbSkelInterface):
             self.insert_pastebin_doctypes_id(self.PASTEBIN_DOCTYPES[doctype],doctype)
 
     def is_pastebin_doctypes_id_available(self, pastebin_doctypes_id):
-
         rows = self.execute_query('SELECT `pastebin_doctypes_id` FROM pastebin_doctypes WHERE `pastebin_doctypes_id` = %s', (pastebin_doctypes_id,))
         if rows: return True
         return False
 
     def insert_pastebin_doctypes_id(self, pastebin_doctypes_id, doctype_name, do_commit = False):
-
         self.execute_query('INSERT INTO pastebin_doctypes VALUES (%s,%s)', (pastebin_doctypes_id,doctype_name,))
         if do_commit: self.commit()
 
     def is_pastebin_syntax_available(self, syntax):
-
         rows = self.execute_query('SELECT pastebin_syntax_id FROM pastebin_syntax WHERE syntax_name = %s', (syntax,))
         if rows: return True
         return False
 
     def insert_pastebin_syntax(self, syntax_name, do_commit = False):
-
         self.execute_query('INSERT INTO pastebin_syntax VALUES (%s,%s)', (None,syntax_name,))
         if do_commit: self.commit()
         return self.lastrowid()
@@ -431,7 +399,6 @@ class Portal(RemoteDbSkelInterface):
         return datetime.fromtimestamp(time.time())
 
     def validate_pastebin_user_ip(self, user_ip):
-
         self.execute_query('SELECT user_ip, ts FROM pastebin_recent WHERE user_ip = %s ORDER BY ts DESC LIMIT 1', (user_ip,))
         data = self.fetchone()
         if not data: return True
@@ -445,7 +412,6 @@ class Portal(RemoteDbSkelInterface):
         return False
 
     def insert_pastebin_recent_user_ip(self, user_ip, do_commit = False):
-
         self.execute_query('INSERT INTO pastebin_recent VALUES (%s,%s,%s)', (
                 None,
                 user_ip,
@@ -454,15 +420,14 @@ class Portal(RemoteDbSkelInterface):
         )
         if do_commit: self.commit()
 
-    def insert_pastebin(self, user_id, user_ip, pastebin_permissions_id, expiration_days, pastebin_syntax_id, pastebin_doctypes_id, content, do_commit = False):
+    def insert_pastebin(self, user_ip, pastebin_permissions_id, expiration_days, pastebin_syntax_id, pastebin_doctypes_id, content, do_commit = False):
 
         valid = self.validate_pastebin_user_ip(user_ip)
         if not valid:
             return False,_('You are too fast, try again later')
-        if not user_id: user_id = 0
         self.execute_query('INSERT INTO pastebin VALUES (%s,%s,%s,%s,%s,%s,%s,%s)', (
                 None,
-                user_id,
+                0, # user_id
                 pastebin_permissions_id,
                 None, # current ts
                 expiration_days,
@@ -480,81 +445,46 @@ class Portal(RemoteDbSkelInterface):
         if item.has_key('content'):
             item['content_clean'] = config.htmlencode(item['content'])
 
-    def _check_pastebin_permissions(self, permissions, pastie_user_id, user_id):
-        if user_id:
-            if self.check_admin(user_id):
-                return True
-        if permissions == self.PASTEBIN_PERMISSIONS['public']:
-            return True
-        elif permissions == self.PASTEBIN_PERMISSIONS['registered_users']:
-            if user_id: return True
-            else: return False
-        elif permissions == self.PASTEBIN_PERMISSIONS['user_priv']:
-            if pastie_user_id == user_id: return True
-            else: return False
-        return False
-
     def _is_pastebin_id_available(self, pastebin_id):
-
         rows = self.execute_query('SELECT pastebin_id FROM pastebin WHERE pastebin_id = %s', (pastebin_id,))
         if rows: return True
         return False
 
-    def get_pastebin(self, pastebin_id, user_id, check_permissions = True):
-
-        self.execute_query('SELECT SQL_CACHE '+config.PHPBB_DBNAME+'.phpbb_users.username as username, '+config.PORTAL_DBNAME+'.pastebin.* FROM '+config.PORTAL_DBNAME+'.pastebin LEFT JOIN '+config.PHPBB_DBNAME+'.phpbb_users ON '+config.PORTAL_DBNAME+'.pastebin.user_id = '+config.PHPBB_DBNAME+'.phpbb_users.user_id WHERE ('+config.PORTAL_DBNAME+'.pastebin.user_id = '+config.PHPBB_DBNAME+'.phpbb_users.user_id OR '+config.PORTAL_DBNAME+'.pastebin.user_id = 0) AND '+config.PORTAL_DBNAME+'.pastebin.pastebin_id = %s', (pastebin_id,))
+    def get_pastebin(self, pastebin_id):
+        self.execute_query('SELECT SQL_CACHE `Anonymous` as username, '+config.PORTAL_DBNAME+'.pastebin.* FROM '+config.PORTAL_DBNAME+'.pastebin WHERE '+config.PORTAL_DBNAME+'.pastebin.user_id = 0 AND '+config.PORTAL_DBNAME+'.pastebin.pastebin_id = %s', (pastebin_id,))
         data = self.fetchone()
         if not isinstance(data,dict):
-            return 1,{}
-        elif check_permissions:
-            if not self._check_pastebin_permissions(data.get('permissions'), data.get('user_id'), user_id):
-                return 2,{}
+            return 1, {}
         self._expand_pastebin(data)
-        return 0,data
+        return 0, data
 
-    def get_user_id_pastebins(self, user_id, offset = 0, count = 15):
-
-        self.execute_query('SELECT SQL_CACHE '+config.PHPBB_DBNAME+'.phpbb_users.username as username, '+config.PORTAL_DBNAME+'.pastebin.pastebin_id, '+config.PORTAL_DBNAME+'.pastebin.pastebin_doctypes_id FROM '+config.PORTAL_DBNAME+'.pastebin LEFT JOIN '+config.PHPBB_DBNAME+'.phpbb_users ON '+config.PORTAL_DBNAME+'.pastebin.user_id = '+config.PHPBB_DBNAME+'.phpbb_users.user_id WHERE '+config.PORTAL_DBNAME+'.pastebin.user_id = %s AND '+config.PORTAL_DBNAME+'.pastebin.user_id = '+config.PHPBB_DBNAME+'.phpbb_users.user_id ORDER BY '+config.PORTAL_DBNAME+'.pastebin.orig_ts DESC LIMIT %s,%s', (user_id,offset,count,))
-        data = self.fetchall()
-        mydata = []
-        for item in data:
-            self._expand_pastebin(item)
-            mydata.append(item)
-        return mydata
-
-    def get_latest_pastebins(self, count = 10, user_id = None):
-
-        if not isinstance(count,int):
+    def get_latest_pastebins(self, count = 10):
+        if not isinstance(count, int):
             count = 10 # take this l000sers
-        self.execute_query('SELECT SQL_CACHE '+config.PHPBB_DBNAME+'.phpbb_users.username as username, '+config.PORTAL_DBNAME+'.pastebin.pastebin_id, '+config.PORTAL_DBNAME+'.pastebin.pastebin_doctypes_id, '+config.PORTAL_DBNAME+'.pastebin.user_id, '+config.PORTAL_DBNAME+'.pastebin.permissions FROM '+config.PORTAL_DBNAME+'.pastebin LEFT JOIN '+config.PHPBB_DBNAME+'.phpbb_users ON '+config.PORTAL_DBNAME+'.pastebin.user_id = '+config.PHPBB_DBNAME+'.phpbb_users.user_id WHERE (portal.pastebin.user_id = '+config.PHPBB_DBNAME+'.phpbb_users.user_id OR '+config.PORTAL_DBNAME+'.pastebin.user_id = 0) ORDER BY '+config.PORTAL_DBNAME+'.pastebin.orig_ts DESC LIMIT 0,%s',(count,))
+        self.execute_query('SELECT SQL_CACHE `Anonymous` as username, '+config.PORTAL_DBNAME+'.pastebin.pastebin_id, '+config.PORTAL_DBNAME+'.pastebin.pastebin_doctypes_id FROM '+config.PORTAL_DBNAME+'.pastebin WHERE '+config.PORTAL_DBNAME+'.pastebin.user_id = 0 AND '+config.PORTAL_DBNAME+'.pastebin.pastebin_id = %s ORDER BY '+config.PORTAL_DBNAME+'.pastebin.orig_ts DESC LIMIT 0,%s',(count,))
         data = self.fetchall()
         mydata = []
         for item in data:
             self._expand_pastebin(item)
-            if not self._check_pastebin_permissions(item.get('permissions'), item.get('user_id'), user_id):
-                continue
             mydata.append(item)
         return mydata
 
     def get_expired_pastebins(self):
-
         self.execute_query('SELECT * FROM pastebin WHERE (DATE_ADD(orig_ts,INTERVAL `expiration_days` DAY) < CURDATE())')
         data = self.fetchall()
         return data
 
     def delete_pastebin_recent(self):
-
         self.execute_query('DELETE FROM pastebin_recent')
         self.commit()
 
     def delete_pastebin(self, pastebin_id, do_commit = False):
-
         self.execute_query('DELETE FROM pastebin WHERE pastebin_id = %s', (pastebin_id,))
-        if do_commit: self.commit()
+        if do_commit:
+            self.commit()
         return True
 
     def get_pastebin_syntaxes(self):
-
         self.execute_query('SELECT * FROM pastebin_syntax')
         data = self.fetchall()
         mydata = {}
@@ -562,17 +492,7 @@ class Portal(RemoteDbSkelInterface):
             mydata[item['pastebin_syntax_id']] = item['syntax_name']
         return mydata
 
-    def get_pastebin_permissions(self):
-
-        self.execute_query('SELECT * FROM pastebin_permissions')
-        data = self.fetchall()
-        mydata = {}
-        for item in data:
-            mydata[item['pastebin_permissions_id']] = item['permission_name']
-        return mydata
-
     def get_pastebin_doctypes(self):
-
         self.execute_query('SELECT * FROM pastebin_doctypes')
         data = self.fetchall()
         mydata = {}
