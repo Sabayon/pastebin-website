@@ -2,6 +2,8 @@
 import os
 import config
 
+from pylons.i18n import _
+
 from www.lib.base import convert_to_unicode
 
 import MySQLdb, _mysql_exceptions
