@@ -57,8 +57,6 @@ class PastebinController(BaseController,WebsiteController):
 
     def _load_strict_metadata(self, portal):
         c.pastebin_syntaxes = portal.get_pastebin_syntaxes()
-        c.pastebin_permissions_desc = portal.PASTEBIN_PERMISSIONS_DESC
-        c.pastebin_permissions = portal.PASTEBIN_PERMISSIONS
         c.pastebin_doctypes_desc = portal.PASTEBIN_DOCTYPES_DESC
         c.pastebin_doctypes = portal.PASTEBIN_DOCTYPES
 
@@ -156,14 +154,7 @@ class PastebinController(BaseController,WebsiteController):
                 c.error_message = _('Invalid expiration_days')
                 valid = False
 
-        if valid:
-            try:
-                pastebin_permissions_id = int(pastebin_permissions_id)
-                if pastebin_permissions_id not in portal.PASTEBIN_PERMISSIONS_DESC:
-                    pastebin_permissions_id = portal.PASTEBIN_PERMISSIONS['public']
-            except (ValueError,TypeError,):
-                c.error_message = _('Invalid expiration_days')
-                valid = False
+        pastebin_permissions_id = portal.PASTEBIN_PERMISSIONS['public']
 
         # captcha check and redirect
         if valid and (not just_url):
