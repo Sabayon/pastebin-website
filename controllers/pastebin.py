@@ -51,10 +51,7 @@ class PastebinController(BaseController,WebsiteController):
         else:
             c.default_pastebin_doctypes_id = ''
 
-        user_id = self._get_logged_user_id()
-        if user_id: self._set_user_perms(user_id, portal)
         c.latest_pasties = portal.get_latest_pastebins(count = 8, user_id = user_id)
-        if user_id: c.my_latest_pasties = portal.get_user_id_pastebins(user_id, count = 8)
         if delete:
             portal.disconnect(); del portal
 
