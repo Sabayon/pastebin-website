@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-import logging, os
+import logging, os, sys
 from www.lib.base import *
 from www.lib.website import *
 from pylons.i18n import _
-log = logging.getLogger(__name__)
 
 class PastebinController(BaseController,WebsiteController):
 
@@ -112,44 +111,6 @@ class PastebinController(BaseController,WebsiteController):
         if data_removed:
             return '%s' % ('<br/>'.join(data_removed))
         return _('Nothing removed')
-
-    def delete(self):
-
-        user_id = self._get_logged_user_id()
-        portal = self.Portal()
-
-        valid = True
-        pastebin_id = request.params.get('pastebin_id')
-        try:
-            pastebin_id = int(pastebin_id)
-            if not portal._is_pastebin_id_available(pastebin_id):
-                raise ValueError
-        except (ValueError,TypeError,):
-            c.error_message = _('Invalid pastebin_id')
-            valid = False
-
-        if valid:
-            status, pastie = portal.get_pastebin(pastebin_id, user_id)
-            if status != 0:
-                c.error_message = '%s %s' % (
-                    _("Db returned status"), status,)
-                valid = False
-            elif (user_id != pastie['user_id']) and not portal.check_admin(user_id):
-                c.error_message = _('Permission denied')
-                valid = False
-
-        if valid:
-            txt_log = self._delete_pastebin(pastie, portal)
-            c.txt_log = txt_log
-        c.valid = valid
-        c.redirect = '/pastebin'
-        self._load_strict_metadata(portal)
-
-        portal.disconnect(); del portal
-        model.config.setup_internal(model, c, session, request)
-        c.page_title = _('Sabayon Linux PixPastebin')
-        c.html_title = c.page_title
-        return render_mako('/pastebin/remove_pastie.html')
 
     def send(self):
 
@@ -263,7 +224,6 @@ class PastebinController(BaseController,WebsiteController):
             pastebin_doctypes_id = portal.PASTEBIN_DOCTYPES['file']
 
         import shutil
-        import entropy.tools as entropyTools
         temp_filepath = None
         if docfile_avail and valid:
             # tira su file e scan antivirus
@@ -297,7 +257,7 @@ class PastebinController(BaseController,WebsiteController):
                 valid = False
             elif pastebin_doctypes_id == portal.PASTEBIN_DOCTYPES['image']:
                 # controlla immagine o file, se validi
-                supported = entropyTools.is_supported_image_file(temp_filepath)
+                supported = is_supported_image_file(temp_filepath)
                 if not supported:
                     c.error_message = _('Not supported image type')
                     valid = False

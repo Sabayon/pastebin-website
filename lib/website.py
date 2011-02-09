@@ -15,11 +15,7 @@ import time
 import urllib2
 import www.lib.helpers as h
 import www.model as model
-import entropy.exceptions as etp_exceptions
 from htmlentitydefs import name2codepoint
-from entropy.const import *
-etpConst['entropygid'] = model.config.DEFAULT_WEB_GID
-import entropy.tools as entropy_tools
 
 class WebsiteController:
 
@@ -45,27 +41,6 @@ class WebsiteController:
 
     def _get_remote_ip(self):
         return request.environ.get('REMOTE_ADDR')
-
-    def _get_logged_user_id(self):
-        if session.get('logged_in') and session.get('entropy'):
-            try:
-                return int(session['entropy'].get('entropy_user_id'))
-            except (ValueError,TypeError,):
-                pass
-
-    def _get_logged_username(self):
-        if session.get('logged_in') and session.get('entropy'):
-            try:
-                return session['entropy'].get('entropy_user')
-            except (TypeError,ValueError,):
-                pass
-
-    def _get_user_id_from_request(self):
-        try:
-            user_id = int(request.params.get('user_id'))
-        except (KeyError, ValueError, TypeError,):
-            user_id = 0
-        return user_id
 
     def _get_random(self):
         return abs(hash(os.urandom(2)))

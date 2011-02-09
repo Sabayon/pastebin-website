@@ -1,21 +1,196 @@
 # -*- coding: utf-8 -*-
 import os
 import config
-from entropy.const import *
-etpConst['entropygid'] = config.DEFAULT_WEB_GID
-from entropy.services.skel import Authenticator as DistributionAuthInterface
-from entropy.services.skel import RemoteDatabase as RemoteDbSkelInterface
-from entropy.misc import RSS
-from Authenticator import Authenticator
-from Forum import Forum
-import entropy.exceptions as etp_exceptions
-try:
-    from entropy.services.exceptions import ServiceConnectionError
-except ImportError:
-    ServiceConnectionError = Exception
-import entropy.tools as entropy_tools
 
-class Portal(DistributionAuthInterface,RemoteDbSkelInterface):
+from www.lib.base import convert_to_unicode
+from Forum import Forum
+
+import MySQLdb, _mysql_exceptions
+from MySQLdb.constants import FIELD_TYPE
+from MySQLdb.converters import conversions
+
+class ServiceConnectionError(Exception):
+    """Cannot connect to service"""
+
+class RemoteDbSkelInterface:
+
+    def escape_fake(self, mystr):
+        return mystr
+
+    def __init__(self):
+        self.dbconn = None
+        self.cursor = None
+        self.plain_cursor = None
+        self.escape_string = self.escape_fake
+        self.connection_data = {}
+        self.mysql = MySQLdb
+        self.mysql_exceptions = _mysql_exceptions
+        self.FIELD_TYPE = FIELD_TYPE
+        self.conversion_dict = conversions.copy()
+        self.conversion_dict[self.FIELD_TYPE.DECIMAL] = int
+        self.conversion_dict[self.FIELD_TYPE.LONG] = int
+        self.conversion_dict[self.FIELD_TYPE.FLOAT] = float
+        self.conversion_dict[self.FIELD_TYPE.NEWDECIMAL] = float
+
+    def check_connection(self):
+        if self.dbconn is None:
+            raise ServiceConnectionError("not connected to service")
+        self._check_needed_reconnect()
+
+    def _check_needed_reconnect(self):
+        if self.dbconn is None:
+            return
+        try:
+            self.dbconn.ping()
+        except self.mysql_exceptions.OperationalError as e:
+            if e[0] != 2006:
+                raise
+            else:
+                self.connect()
+                return True
+        return False
+
+    def _raise_not_implemented_error(self):
+        raise NotImplementedError('NotImplementedError: %s' % (
+            _('method not implemented'),))
+
+    def set_connection_data(self, data):
+        self.connection_data = data.copy()
+        if 'converters' not in self.connection_data and self.conversion_dict:
+            self.connection_data['converters'] = self.conversion_dict.copy()
+
+    def connect(self):
+        kwargs = {}
+        keys = [
+            ('host', "hostname"),
+            ('user', "username"),
+            ('passwd', "password"),
+            ('db', "dbname"),
+            ('port', "port"),
+            ('conv', "converters"), # mysql type converter dict
+        ]
+        for ckey, dkey in keys:
+            if dkey not in self.connection_data:
+                continue
+            kwargs[ckey] = self.connection_data.get(dkey)
+
+        try:
+            self.dbconn = self.mysql.connect(**kwargs)
+        except self.mysql_exceptions.OperationalError as e:
+            raise ServiceConnectionError(repr(e))
+        self.plain_cursor = self.dbconn.cursor()
+        self.cursor = self.mysql.cursors.DictCursor(self.dbconn)
+        self.escape_string = self.dbconn.escape_string
+        return True
+
+    def disconnect(self):
+        self.check_connection()
+        self.escape_string = self.escape_fake
+        if hasattr(self.cursor, 'close'):
+            self.cursor.close()
+        if hasattr(self.dbconn, 'close'):
+            self.dbconn.close()
+        self.dbconn = None
+        self.cursor = None
+        self.plain_cursor = None
+        self.connection_data.clear()
+        return True
+
+    def commit(self):
+        self.check_connection()
+        return self.dbconn.commit()
+
+    def execute_script(self, myscript):
+        pty = None
+        for line in myscript.split(";"):
+            line = line.strip()
+            if not line:
+                continue
+            pty = self.cursor.execute(line)
+        return pty
+
+    def execute_query(self, *args):
+        return self.cursor.execute(*args)
+
+    def execute_many(self, query, myiter):
+        return self.cursor.executemany(query, myiter)
+
+    def fetchone(self):
+        return self.cursor.fetchone()
+
+    def fetchall(self):
+        return self.cursor.fetchall()
+
+    def fetchmany(self, *args, **kwargs):
+        return self.cursor.fetchmany(*args, **kwargs)
+
+    def lastrowid(self):
+        return self.cursor.lastrowid
+
+    def table_exists(self, table):
+        self.check_connection()
+        self.cursor.execute("show tables like %s", (table,))
+        rslt = self.cursor.fetchone()
+        if rslt:
+            return True
+        return False
+
+    def column_in_table_exists(self, table, column):
+        t_ex = self.table_exists(table)
+        if not t_ex:
+            return False
+        self.cursor.execute("show columns from "+table)
+        data = self.cursor.fetchall()
+        for row in data:
+            if row['Field'] == column:
+                return True
+        return False
+
+    def fetchall2set(self, item):
+        mycontent = set()
+        for x in item:
+            mycontent |= set(x)
+        return mycontent
+
+    def fetchall2list(self, item):
+        content = []
+        for x in item:
+            content += list(x)
+        return content
+
+    def fetchone2list(self, item):
+        return list(item)
+
+    def fetchone2set(self, item):
+        return set(item)
+
+    def _generate_sql(self, action, table, data, where = ''):
+        sql = ''
+        keys = sorted(data.keys())
+        if action == "update":
+            sql += 'UPDATE %s SET ' % (self.escape_string(table),)
+            keys_data = []
+            for key in keys:
+                keys_data.append("%s = '%s'" % (
+                        self.escape_string(key),
+                        self.escape_string(
+                            convert_to_unicode(data[key], 'utf-8').encode('utf-8')).decode('utf-8')
+                    )
+                )
+            sql += ', '.join(keys_data)
+            sql += ' WHERE %s' % (where,)
+        elif action == "insert":
+            sql = 'INSERT INTO %s (%s) VALUES (%s)' % (
+                self.escape_string(table),
+                ', '.join([self.escape_string(x) for x in keys]),
+                ', '.join(["'" + \
+                    self.escape_string(
+                    convert_to_unicode(data[x], 'utf-8').encode('utf-8')).decode('utf-8') + \
+                    "'" for x in keys])
+            )
+        return sql
+
+class Portal(RemoteDbSkelInterface):
 
     PASTEBIN_SYNTAXES = ['ASM (NASM based)', 'ASP', 'ActionScript', 'ActionScript 3', 'Ada', 'Apache Log File', 'Apache Configuration File', 'AppleScript', 'Bash', 'C', 'C for Macs', 'C#', 'C++', 'CAD DCL', 'CAD Lisp', 'CSS', 'ColdFusion', 'D', 'DOS', 'Delphi', 'Diff', 'Eiffel', 'Fortran', 'FreeBasic', 'Game Maker', 'HTML', 'INI file', 'Java', 'Javascript', 'Lisp', 'Lua', 'MPASM', 'MatLab', 'MySQL', 'NullSoft Installer', 'OCaml', 'Objective C', 'Openoffice.org BASIC', 'Oracle 8', 'PHP', 'Pascal', 'Perl', 'Plain text', 'Python', 'Python 3', 'QBasic/QuickBASIC', 'Robots', 'Ruby', 'SQL', 'Scheme', 'Smarty', 'TCL', 'VB.NET', 'VisualBasic', 'VisualFoxPro', 'XML']
     PASTEBIN_SYNTAXES_MAP = {
@@ -148,9 +323,6 @@ class Portal(DistributionAuthInterface,RemoteDbSkelInterface):
     }
 
     def __init__(self, do_init = False):
-        import entropy.tools as entropyTools
-        self.authenticator = Authenticator
-        DistributionAuthInterface.__init__(self)
         RemoteDbSkelInterface.__init__(self)
         self.set_connection_data(config.portal_connection_data)
         self.connect()
@@ -246,100 +418,6 @@ class Portal(DistributionAuthInterface,RemoteDbSkelInterface):
         x = m.hexdigest() + m2.hexdigest()
         del m, m2
         return x
-
-    def get_user_birthday(self, user_id):
-        auth = self.authenticator()
-        self.do_fake_authenticator_login(auth, user_id)
-        user_birthday = auth.get_user_birthday()
-        auth.disconnect()
-        del auth
-        return user_birthday
-
-    def get_user_email(self, user_id):
-        auth = self.authenticator()
-        self.do_fake_authenticator_login(auth, user_id)
-        email = auth.get_email()
-        auth.disconnect()
-        del auth
-        return email
-
-    def update_user_password_hash(self, user_id, password_hash):
-        auth = self.authenticator()
-        self.do_fake_authenticator_login(auth, user_id)
-        valid = auth.update_password_hash(password_hash)
-        auth.disconnect()
-        del auth
-        return valid
-
-    def do_fake_authenticator_login(self, authenticator, user_id):
-        data = {
-            'user_id': user_id,
-            'username': '###fake###',
-            'password': '###fake###'
-        }
-        authenticator.set_login_data(data)
-        authenticator.logged_in = True
-
-    def check_admin(self, user_id):
-        auth = self.authenticator()
-        self.do_fake_authenticator_login(auth, user_id)
-        valid = auth.is_administrator()
-        auth.disconnect()
-        del auth
-        return valid
-
-    def check_moderator(self, user_id):
-        auth = self.authenticator()
-        self.do_fake_authenticator_login(auth, user_id)
-        valid = auth.is_moderator()
-        auth.disconnect()
-        del auth
-        return valid
-
-    def check_user(self, user_id):
-        auth = self.authenticator()
-        self.do_fake_authenticator_login(auth, user_id)
-        valid = auth.is_user()
-        auth.disconnect()
-        del auth
-        return valid
-
-    def check_user_credentials(self, username, password):
-
-        login_data = {
-            'username': username,
-            'password': password.encode('utf-8')
-        }
-
-        myauth = self.authenticator()
-        myauth.set_login_data(login_data)
-        try:
-            logged = myauth.login()
-        except etp_exceptions.PermissionDenied, e:
-            logged = False
-        myauth.disconnect()
-        del myauth
-        return logged
-
-    def get_username(self, user_id):
-
-        self.execute_query('SELECT '+config.PHPBB_DBNAME+'.phpbb_users.username as username FROM '+config.PHPBB_DBNAME+'.phpbb_users WHERE '+config.PHPBB_DBNAME+'.phpbb_users.user_id = %s', (user_id,))
-        username = 'Anonymous'
-        data = self.fetchone()
-        if isinstance(data,dict):
-            if data.has_key('username'):
-                username = data.get('username')
-        return username
-
-    def get_user_id(self, username):
-
-        self.execute_query('SELECT '+config.PHPBB_DBNAME+'.phpbb_users.user_id as user_id FROM '+config.PHPBB_DBNAME+'.phpbb_users WHERE '+config.PHPBB_DBNAME+'.phpbb_users.username = %s', (username,))
-        data = self.fetchone()
-        user_id = 0
-        if isinstance(data,dict):
-            if data.has_key('user_id'):
-                user_id = data.get('user_id')
-        return user_id
 
     def _remove_html_tags(self, data):
         import re
