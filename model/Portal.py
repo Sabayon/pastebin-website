@@ -3,7 +3,6 @@ import os
 import config
 
 from www.lib.base import convert_to_unicode
-from Forum import Forum
 
 import MySQLdb, _mysql_exceptions
 from MySQLdb.constants import FIELD_TYPE
