@@ -1,0 +1,54 @@
+<div style="float: left; width: 35%; clear: left" id="pastebin-browse" class="konafilter">
+    <script type="text/javascript">
+        var PastiesMenu = new UvumiDropdown("dropdown-pasties");
+    </script>
+    <ul class="dropdown" id="dropdown-pasties">
+        <li>
+            <span>${_("Latest Pasties")}</span>
+            <ul>
+                <li class="item">
+                    <a href="/pastebin">${_("PixPastebin Home")}</a>
+                </li>
+                % for item in c.latest_pasties:
+                    <li class="item">
+                        <a href="/pastie/${item['pastebin_id']}">
+                            <%
+                                my_by = item.get('username')
+                                if not my_by: my_by = 'Anonymous'
+                            %>
+                            <span><b>${my_by}</b> <i>${c.pastebin_doctypes_desc.get(item['pastebin_doctypes_id'])}</i></span>
+                        </a>
+                    </li>
+                % endfor
+                % if not c.latest_pasties:
+                    <li class="item">
+                        ${_("No Pasties")}
+                    </li>
+                % endif
+            </ul>
+        </li>
+        % if session.get('logged_in'):
+            <li>
+                <span>${_("My Latest")}</span>
+                <ul>
+                    % for item in c.my_latest_pasties:
+                        <li class="item">
+                            <a href="/pastie/${item['pastebin_id']}">
+                                <%
+                                    my_by = item.get('username')
+                                    if not my_by: my_by = 'Anonymous'
+                                %>
+                                <span><b>${item['pastebin_id']}</b> <i>${c.pastebin_doctypes_desc.get(item['pastebin_doctypes_id'])}</i></span>
+                            </a>
+                        </li>
+                    % endfor
+                    % if not c.my_latest_pasties:
+                        <li class="item">
+                            ${_("No Pasties")}
+                        </li>
+                    % endif
+                </ul>
+            </li>
+        % endif
+    </ul>
+</div>

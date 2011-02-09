@@ -1,0 +1,2367 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Roger Calvó <rcalvoi@yahoo.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-09 11:50+0100\n"
+"PO-Revision-Date: 2009-12-07 09:01+0100\n"
+"Last-Translator: Roger Calvó <rcalvoi@yahoo.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../controllers/login.py:26
+msgid "Hello mate, what about logging in? Have a look below"
+msgstr "Ei, què us sembla si us registreu? Feu una ullada a baix"
+
+#: ../controllers/login.py:50
+msgid "Sabayon Linux Community activation"
+msgstr "Activació de la comunitat de Sabayon Linux"
+
+#: ../controllers/login.py:68
+msgid "Sabayon Linux Community registration"
+msgstr "Registre a la Comunitat Sabayon Linux"
+
+#: ../controllers/login.py:97
+msgid "Invalid Username"
+msgstr "Nom d'usuari no valid"
+
+#: ../controllers/login.py:102
+msgid "Invalid Email, empty fields or mismatch"
+msgstr "Correu no vàlid o camp buit"
+
+#: ../controllers/login.py:107
+msgid "Invalid Password, empty fields or mismatch or wrong length"
+msgstr "Contrasenya no vàlida, camp buit o longitud incorrecta"
+
+#: ../controllers/login.py:114
+msgid "Invalid Captcha Answer"
+msgstr "Resposta Captcha incorrecta"
+
+#: ../controllers/login.py:123
+msgid "Invalid"
+msgstr "No vàlid"
+
+#: ../controllers/login.py:207 ../controllers/login.py:210
+#: ../controllers/login.py:215 ../controllers/login.py:219
+#: ../controllers/login.py:224 ../controllers/login.py:227
+#: ../controllers/login.py:229 ../controllers/login.py:231
+#: ../controllers/login.py:235 ../controllers/login.py:238
+#: ../controllers/login.py:283 ../controllers/login.py:287
+#: ../controllers/login.py:289 ../controllers/login.py:294
+#: ../controllers/login.py:299 ../controllers/login.py:301
+#: ../controllers/login.py:303 ../controllers/login.py:305
+#: ../controllers/login.py:308 ../controllers/login.py:310
+#: ../controllers/login.py:318 ../controllers/login.py:324
+#: ../controllers/pastebin.py:157 ../controllers/pastebin.py:164
+#: ../controllers/pastebin.py:349
+msgid "Error"
+msgstr "Error"
+
+#: ../controllers/login.py:207 ../controllers/login.py:283
+msgid "invalid HTTP method"
+msgstr "el mètode HTTP no és vàlid"
+
+#: ../controllers/login.py:210 ../controllers/login.py:287
+msgid "not logged in"
+msgstr "no heu entrat"
+
+#: ../controllers/login.py:215
+msgid "wrong POST"
+msgstr "POST incorrecte"
+
+#: ../controllers/login.py:219
+msgid "invalid old e-mail"
+msgstr "correu antic no vàlid"
+
+#: ../controllers/login.py:224
+msgid "you changed nothing"
+msgstr "no heu canviat res"
+
+#: ../controllers/login.py:227
+msgid "empty fields"
+msgstr "camps buits"
+
+#: ../controllers/login.py:229
+msgid "e-mails do not match"
+msgstr "els correus no coincideixen"
+
+#: ../controllers/login.py:231
+msgid "invalid parameters"
+msgstr "paràmetres no vàlids"
+
+#: ../controllers/login.py:235
+msgid "invalid e-mail (1)"
+msgstr "correu no vàlid (1)"
+
+#: ../controllers/login.py:238
+msgid "invalid e-mail (2)"
+msgstr "correu no vàlid (2)"
+
+#: ../controllers/login.py:255 ../controllers/login.py:341
+msgid "Success"
+msgstr "Amb èxit"
+
+#: ../controllers/login.py:255 ../controllers/login.py:341
+msgid "you must activate your change. You have mail"
+msgstr "heu d'activar els canvis. Teniu un correu"
+
+#: ../controllers/login.py:277
+msgid "Sabayon Linux Community E-mail Update Activation"
+msgstr "Activació de l'actualització del correu de la comunitat Sabayon Linux"
+
+#: ../controllers/login.py:289
+msgid "not logged in (username)"
+msgstr "No heu accedit al compte (nom d'usuari)"
+
+#: ../controllers/login.py:294
+msgid "where is the current password?"
+msgstr "on és la contrasenya actual?"
+
+#: ../controllers/login.py:299
+msgid "missing fields"
+msgstr "falten camps"
+
+#: ../controllers/login.py:301
+msgid "new password fields do not match"
+msgstr "les noves contrasenyes no coincideixen"
+
+#: ../controllers/login.py:303
+msgid "wtf are you trying to do?"
+msgstr "què punyetes esteu intentant fer?"
+
+#: ../controllers/login.py:305
+msgid "old and new password match"
+msgstr "les contrasenyes antiga i nova coincideixen"
+
+#: ../controllers/login.py:308
+msgid "password too short"
+msgstr "la contrasenya és massa curta"
+
+#: ../controllers/login.py:310
+msgid "password too long"
+msgstr "la contrasenya és massa llarga"
+
+#: ../controllers/login.py:318
+msgid "invalid current password"
+msgstr "contrasenya actual no vàlida"
+
+#: ../controllers/login.py:324
+msgid "you do not have a valid e-mail"
+msgstr "no teniu un correu vàlid"
+
+#: ../controllers/login.py:363
+msgid "Sabayon Linux Community Password Update Activation"
+msgstr ""
+"Activació de l'actualització de contrasenya de la comunitat Sabayon Linux"
+
+#: ../controllers/pastebin.py:74
+#, fuzzy
+msgid "Sabayon Linux Pastebin"
+msgstr "PixPastebin de Sabayon Linux"
+
+#: ../controllers/pastebin.py:85
+msgid "Bastard info"
+msgstr "Informació bastarda"
+
+#: ../controllers/pastebin.py:92
+msgid "Removed from db"
+msgstr "Eliminat de la base de dades"
+
+#: ../controllers/pastebin.py:99
+#, fuzzy
+msgid "remove file"
+msgstr "elimina el camí"
+
+#: ../controllers/pastebin.py:114
+msgid "Nothing removed"
+msgstr "No s'ha eliminat res"
+
+#: ../controllers/pastebin.py:128
+msgid "Invalid pastebin_id"
+msgstr "Pastebin_id no vàlid"
+
+#: ../controllers/pastebin.py:135
+msgid "Db returned status"
+msgstr "Estat retornat de la base de dades"
+
+#: ../controllers/pastebin.py:138
+msgid "Permission denied"
+msgstr "Permís denegat"
+
+#: ../controllers/pastebin.py:150 ../controllers/pastebin.py:357
+#: ../controllers/pastebin.py:399
+msgid "Sabayon Linux PixPastebin"
+msgstr "PixPastebin de Sabayon Linux"
+
+#: ../controllers/pastebin.py:157
+msgid "invalid method"
+msgstr "mètode no vàlid"
+
+#: ../controllers/pastebin.py:164
+msgid "cannot get IP"
+msgstr "no es pot obtenir la IP"
+
+#: ../controllers/pastebin.py:186
+msgid "Invalid pastebin_doctypes_id"
+msgstr "Pastebin_doctypes_id no vàlid"
+
+#: ../controllers/pastebin.py:197
+msgid "Invalid pastebin_syntax_id"
+msgstr "Pastebin_syntax_id no vàlid"
+
+#: ../controllers/pastebin.py:208 ../controllers/pastebin.py:217
+msgid "Invalid expiration_days"
+msgstr "Expiration_days no vàlid"
+
+#: ../controllers/pastebin.py:233
+msgid "Permission denied, you need to be logged in to paste this"
+msgstr "Permís denegat. Heu d'acreditar-vos per enganxar-ho"
+
+#: ../controllers/pastebin.py:239
+msgid "Empty buffer/content"
+msgstr "Buida la memòria intermèdia/contingut"
+
+#: ../controllers/pastebin.py:242
+msgid "Too much text dude, are you crazy?"
+msgstr "Això és massa text, sou boig?"
+
+#: ../controllers/pastebin.py:249
+msgid "No stream detected"
+msgstr "No s'ha detectat cap corrent de dades"
+
+#: ../controllers/pastebin.py:257
+msgid "Filename cannot contain non-ASCII characters"
+msgstr "El nom del fitxer no pot contenir caràcters no-ASCII"
+
+#: ../controllers/pastebin.py:289
+msgid "You tried to upload a virus, error will be reported, you are fucked"
+msgstr "Heu intentat pujar un virus. S'informarà de l'error. Esteu ben fotuts"
+
+#: ../controllers/pastebin.py:296
+msgid "File size too big."
+msgstr "La mida del fitxer és massa gran."
+
+#: ../controllers/pastebin.py:302
+msgid "Not supported image type"
+msgstr "no s'accepta el tipus d'imatge"
+
+#: ../templates/activation_successful.html:18
+#: ../templates/email_activation_successful.html:18
+#: ../templates/password_activation_successful.html:18
+msgid "Activation successful"
+msgstr "Activació correcta"
+
+#: ../templates/activation_successful.html:18
+msgid "Wow, thanks a lot! Now you can really start enjoying our Community"
+msgstr "Uau, gràcies! Ara podeu començar a gaudir de la Comunitat"
+
+#: ../templates/activation_successful.html:20
+#: ../templates/email_activation_successful.html:20
+#: ../templates/password_activation_successful.html:20
+msgid "Sorry"
+msgstr "Ho sento"
+
+#: ../templates/activation_successful.html:20
+#: ../templates/email_activation_successful.html:20
+#: ../templates/password_activation_successful.html:20
+msgid "There is no activation information available"
+msgstr "No hi ha informació d'activació disponible"
+
+#: ../templates/body_left.html:11
+msgid "Distribution news"
+msgstr "Notícies de la distribució"
+
+#: ../templates/body_left.html:42
+msgid "Forum activity"
+msgstr "Activitat del fòrum"
+
+#: ../templates/body_left.html:81
+msgid "Planet activity"
+msgstr "Activitat del planeta"
+
+#: ../templates/body_left.html:116
+msgid "Code activity"
+msgstr "Activitat del codi"
+
+#: ../templates/body_left.html:135
+msgid "Overlay activity"
+msgstr "Activitat de l'Overlay"
+
+#: ../templates/body_right.html:8
+msgid "Sponsors"
+msgstr "Patrocinadors"
+
+#: ../templates/body_right.html:11
+msgid ""
+"Officially Sponsored by the <b>NLnet Foundation</b>, that financially "
+"supported the Entropy Project"
+msgstr ""
+"Patrocinat oficialment per la <b>NLnet Foundation</b>, que patrocina "
+"econòmicament el projecte Entropy."
+
+#: ../templates/body_right.html:11
+msgid "See NLnet development plan status"
+msgstr "Veieu els plans de desenvolupament de NLnet"
+
+#: ../templates/body_right.html:15 ../templates/body_right.html:19
+#: ../templates/body_right.html:23
+msgid "Officially Sponsored by"
+msgstr "Patrocinat oficialment per la "
+
+#: ../templates/body_right.html:15
+msgid "University of Brescia"
+msgstr "Universitat de Brescia"
+
+#: ../templates/body_right.html:15
+msgid ""
+"Housing our Entropy build server inside the Faculty Network Center at the "
+"Department of Electronics"
+msgstr ""
+"que hostatja el nostre servidor Entropy al Centre de Xarxes del Departament "
+"d'Electrònica"
+
+#: ../templates/body_right.html:19
+msgid "University of Milano-Bicocca"
+msgstr "Universitat de Milano-Bicocca"
+
+#: ../templates/body_right.html:19
+msgid "Housing our Entropy build servers and WWW inside DISCo"
+msgstr "Hostatjant els servidors Entropy i la web a DISCo"
+
+#: ../templates/body_right.html:23
+msgid "Proving the software technology we daily need"
+msgstr "Proporcionant la tecnologia de programari que necessitem dia a dia"
+
+#: ../templates/body_right.html:28
+msgid "Survey"
+msgstr "Enquesta"
+
+#: ../templates/body_right.html:40
+msgid "Cross Linux From Scratch"
+msgstr "Cross Linux From Scratch"
+
+#: ../templates/body_right.html:41
+msgid "Ibiblio.org Hosting"
+msgstr "Ibiblio.org Hosting"
+
+#: ../templates/email_activation_successful.html:18
+msgid "Your E-mail is now active"
+msgstr "La vostra adreça de correu està activada"
+
+#: ../templates/footer.html:7
+msgid "Trademarks are property of their respective owners."
+msgstr "Les marques comercials són dels seus respectius propietaris."
+
+#: ../templates/head.html:7
+msgid "Sabayon Linux Five Oh!"
+msgstr "Sabayon Linux Five Oh!"
+
+#: ../templates/loginbox_inner.html:4
+msgid "Entropy Web Dashboard Login"
+msgstr "Accés al tauler web d'Entropy"
+
+#: ../templates/loginbox_inner.html:11 ../templates/login.html:18
+msgid "New user?"
+msgstr "Sou nou?"
+
+#: ../templates/loginbox_inner.html:11
+msgid "What is all this ?"
+msgstr "Què és tot això?"
+
+#: ../templates/loginbox_inner.html:24 ../templates/login.html:23
+msgid "Login error"
+msgstr "Error d'accés"
+
+#: ../templates/loginbox_inner.html:27 ../templates/loginbox_inner.html:89
+msgid "Comments"
+msgstr "Comentaris"
+
+#: ../templates/loginbox_inner.html:27 ../templates/loginbox_inner.html:89
+msgid "Docs"
+msgstr "Documents"
+
+#: ../templates/loginbox_inner.html:29 ../templates/loginbox_inner.html:91
+msgid "Votes"
+msgstr "Vots"
+
+#: ../templates/loginbox_inner.html:29 ../templates/loginbox_inner.html:91
+msgid "Downloads"
+msgstr "Baixades"
+
+#: ../templates/loginbox_inner.html:43
+#, c-format
+msgid "Hello <b>%s</b>, %s"
+msgstr "Hola <b>%s</b>, %s"
+
+#: ../templates/loginbox_inner.html:43
+msgid "Logout ?"
+msgstr "Desconnecta'm"
+
+#: ../templates/loginbox_inner.html:49
+msgid "My Entropy"
+msgstr "El meu Entropy"
+
+#: ../templates/loginbox_inner.html:52
+msgid "My User Generated Content"
+msgstr "El meu Contingut Generat d'Usuari"
+
+#: ../templates/loginbox_inner.html:55
+msgid "My Statistics"
+msgstr "Les meves estadístiques"
+
+#: ../templates/loginbox_inner.html:60
+msgid "My Sabayon"
+msgstr "El meu Sabayon"
+
+#: ../templates/loginbox_inner.html:63
+msgid "My Dashboard"
+msgstr "El meu tauler"
+
+#: ../templates/loginbox_inner.html:66
+msgid "My Pastebin"
+msgstr "El meu pastebin"
+
+#: ../templates/loginbox_inner.html:79
+msgid "points"
+msgstr "punts"
+
+#: ../templates/loginbox_inner.html:83
+msgid "My Comments"
+msgstr "Els meus comentaris"
+
+#: ../templates/loginbox_inner.html:83
+msgid "My Docs"
+msgstr "Els meus documents"
+
+#: ../templates/loginbox_inner.html:84
+msgid "My Votes"
+msgstr "Els meus vots"
+
+#: ../templates/loginbox_inner.html:84
+msgid "My Avg"
+msgstr "Les meves mitjanes"
+
+#: ../templates/page_error.html:29
+msgid "Houston, we've got a problem!"
+msgstr "Houston, tenim problemes!"
+
+#: ../templates/page_error.html:32
+#, c-format
+msgid ""
+"Probably the page you are looking for <b>does not exist</b> anymore. You can "
+"blame <u>aliens</u>. Well, we are really sorry. Why don't you get to our <a "
+"href=\"%s\">home page</a>?"
+msgstr ""
+"La pàgina que esteu buscant probablement ja <b>no existeix</b>. Podeu culpar "
+"els <u>aliens</u>. Ho sentim. Perquè no torneu a la <a href=\"%s\">pàgina "
+"d'inici</a>?"
+
+#: ../templates/password_activation_successful.html:18
+msgid "Your Password is now updated"
+msgstr "La vostra contrasenya s'ha actualitzat"
+
+#: ../templates/password_activation_successful.html:22
+msgid "confirmation code"
+msgstr "codi de confirmació"
+
+#: ../templates/password_activation_successful.html:23
+msgid "validation id"
+msgstr "id de validació"
+
+#: ../templates/password_activation_successful.html:24
+msgid "user id"
+msgstr "id d'usuari"
+
+#: ../templates/register.html:22
+msgid "(Sabayon leader)"
+msgstr "(Cap de Sabayon)"
+
+#: ../templates/register.html:27
+msgid ""
+"<b>You may ask</b>. What do we offer in change? <b>We answer</b>, your own "
+"<b>Blog</b> on this Portal, your personal <b>\"Pastebin\"</b> and file "
+"upload service called <b>\"Pixdiff\"</b>, a <b>warm Community</b> that will "
+"always help you out, the ability to <b>vote</b> and <b>interact</b> with "
+"what we offer and with other people inside this space. We are just used to "
+"call all this with one name: <b>Sabayon</b>, <i>the \"2.0\" (two-point-oh) "
+"distribution</i>"
+msgstr ""
+"<b>Potser us pregunteu</b>. Què us oferim a canvi? <b>Us contestem</b>, el "
+"vostre <b>Bloc</b> en aquest portal, el vostre <b>\"Pastebin\"</b> personal "
+"i un servei de pujada de fitxers anomenat <b>\"Pixdiff\"</b>, una "
+"<b>Comunitat amable</b> que sempre us ajudarà, la possibilitat de <b>votar</"
+"b> i < b>interactuar</b> amb el que oferim i amb altres persones en aquest "
+"espai. Anomenem això: <b>Sabayon</b>, <i>la distribució \"2.0\" (dos-punt-oh)"
+"</i>"
+
+#: ../templates/register.html:30
+msgid ""
+"Please note that you will need to enter a valid e-mail address before your "
+"account is activated. You will receive an e-mail at the address you provide "
+"that contains an account activation link"
+msgstr ""
+"Haureu d'escriure una adreça de correu electrònic vàlida abans d'activar el "
+"compte. Rebreu un correu a l'adreça que proporcioneu que conté un enllaç "
+"d'activació."
+
+#: ../templates/registration_form.html:7
+msgid "Username"
+msgstr "Nom d'usuari"
+
+#: ../templates/registration_form.html:9
+msgid "Length must be between 3 and 20 characters"
+msgstr "La longitud ha de ser entre 3 i 20 caràcters"
+
+#: ../templates/registration_form.html:17
+msgid "E-mail address"
+msgstr "Adreça de correu"
+
+#: ../templates/registration_form.html:25
+msgid "Confirm e-mail address"
+msgstr "Confirmeu l'adreça de correu"
+
+#: ../templates/registration_form.html:33
+msgid "Password"
+msgstr "Contrasenya"
+
+#: ../templates/registration_form.html:34
+msgid "Must be between 6 and 30 characters"
+msgstr "Ha de tenir entre 6 i 30 caràcters"
+
+#: ../templates/registration_form.html:42
+msgid "Confirm password"
+msgstr "Confirmeu la contrasenya"
+
+#: ../templates/registration_form.html:68
+msgid "Registration Agreement"
+msgstr "Acord de registre"
+
+#: ../templates/registration_form.html:73
+msgid "I agree with the terms above"
+msgstr "Estic d'acord amb els termes anteriors"
+
+#: ../templates/registration_successful.html:2
+msgid "Registration successful"
+msgstr "El registre ha tingut èxit"
+
+#: ../templates/registration_successful.html:2
+msgid "Wow, thanks a lot!"
+msgstr "Uau, moltes gràcies!"
+
+#: ../templates/registration_successful.html:4
+msgid ""
+"You should have waited the activation e-mail but the one you provided has "
+"not been accepted for delivery"
+msgstr ""
+"Hauríeu d'esperar el correu d'activació, però l'adreça de correu que heu "
+"proporcionat no s'ha acceptat per la tramesa."
+
+#: ../templates/registration_successful.html:5
+#, fuzzy
+msgid ""
+"Please contact <a href=\"mailto:mail.issues@sabayon.org\">our service</a> "
+"and ask for help"
+msgstr ""
+"Si us plau contacteu amb <a href=\"mailto:mail.issues@sabayonlinux.org\">el "
+"nostre servei</a> i demaneu ajuda"
+
+#: ../templates/registration_successful.html:7
+msgid ""
+"Now you need to wait and read the activation e-mail before being able to "
+"login"
+msgstr ""
+"Ara heu d'esperar i llegir el correu d'activació abans de poder-vos acreditar"
+
+#: ../templates/registration_successful.html:10
+#, c-format
+msgid "<a href='%s'>Click here</a> to come back to the source page"
+msgstr "<a href='%s'>Feu clic aquí</a> per tornar a la pàgina de codi font"
+
+#: ../templates/pastebin/pastebin_disclaimer.html:2
+msgid "Read carefully"
+msgstr "Llegiu-ho atentament"
+
+#: ../templates/pastebin/pastebin_disclaimer.html:2
+msgid ""
+"do not paste sensitive data, it is not protected, this means that other "
+"people can read it. Use this tool only for exchanging stuff in public "
+"virtual places such as IRC, Forums and so forth. Your data will be removed "
+"once expired, we cannot guarantee the storage of the content here. Your IP "
+"is logged and you are invited to respect any existing law. No spamming, No "
+"porn, nothing! Allright?"
+msgstr ""
+"no envieu dades sensibles, no està protegit de cap manera i això significa "
+"que tothom podrà llegir-ho. Useu aquesta eina només per intercanviar "
+"material en llocs virtuals com IRC o fòrums.Les vostres dades s'eliminaran "
+"quan hagin expirat, no us podem garantir l'emmagatzemament del contingut. es "
+"registra la vostra IP i us convidem a respectar totes les lleis. No feu "
+"spam, No envieu porno, res! D'acord?"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:7
+msgid "Latest Pasties"
+msgstr "Últims pasties"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:10
+#: ../templates/pastebin/remove_pastie.html:28
+msgid "PixPastebin Home"
+msgstr "Inici de PixPastebin"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:25
+#: ../templates/pastebin/pastebin_latest_pasties.html:47
+msgid "No Pasties"
+msgstr "No hi ha pasties"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:32
+msgid "My Latest"
+msgstr "Els meus últims"
+
+#: ../templates/pastebin/pastebin_submit_body.html:19
+msgid ""
+"Choose <span id=\"pastebin-submit-type-name\">a file</span> and get ready to "
+"paste!"
+msgstr ""
+"Escolliu <span id=\"pastebin-submit-type-name\">un fitxer</span> i prepareu-"
+"vos per enganxar-lo!"
+
+#: ../templates/pastebin/pastebin_submit_body.html:20
+msgid "Important"
+msgstr "Important"
+
+#: ../templates/pastebin/pastebin_submit_body.html:20
+msgid "you cannot send viruses, they are destroyed automatically"
+msgstr "no podeu enviar virus, es destrueixen automàticament"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:3
+msgid "Expiration"
+msgstr "Expiració"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:4
+msgid "One day"
+msgstr "Un dia"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:5
+msgid "One month"
+msgstr "Un mes"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:6
+msgid "One year"
+msgstr "Un any"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:9
+#, c-format
+msgid "as <b>%s</b> and permissions:"
+msgstr "com <b>%s</b> i permisos:"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:42
+msgid "Wrong CAPTCHA !!! Take this, stupid spammer!"
+msgstr "CAPTCHA erroni!!! Entoma aquesta, spammer estúpid!"
+
+#: ../templates/pastebin/pastebin_submit_header.html:4
+msgid "Document type"
+msgstr "Tipus de document"
+
+#: ../templates/pastebin/remove_pastie.html:21
+msgid "Ok fine, pastie removed"
+msgstr "D'acord, el pastie s'ha eliminat"
+
+#: ../templates/pastebin/remove_pastie.html:23
+msgid "Message"
+msgstr "Missatge"
+
+#: ../templates/pastebin/show_pastie_file.html:5
+#, c-format
+msgid "All the uploaded files are checked by %s"
+msgstr "Tots els missatges enviats es comproven amb %s"
+
+#: ../templates/pastebin/show_pastie_header.html:6
+msgid "expires in"
+msgstr "expira en "
+
+#: ../templates/pastebin/show_pastie_header.html:6
+msgid "days"
+msgstr "dies"
+
+#: ../templates/pastebin/show_pastie_header.html:6
+msgid "by"
+msgstr "per"
+
+#: ../templates/pastebin/show_pastie_image.html:16
+msgid "An image should pop up above this text"
+msgstr "Una imatge hauria d'aparèixer sobre aquest text"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:2
+msgid "Not found"
+msgstr "No s'ha trobat"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:4
+msgid "The pastie you are looking for is not available"
+msgstr "El pastie que esteu buscant no està disponible"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:4
+msgid "Paste something?"
+msgstr "Enganxa alguna cosa?"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:6
+#: ../templates/pastebin/show_pastie_submit_error.html:6
+msgid "Error message"
+msgstr "Missatge d'error"
+
+#: ../templates/pastebin/show_pastie_submit_error.html:2
+msgid "Oops, Error"
+msgstr "Up, Error"
+
+#: ../templates/pastebin/show_pastie_submit_error.html:4
+msgid "An error occured while pasting your data"
+msgstr "S'ha produït un error mentre s'enganxaven les dades"
+
+#: ../templates/pastebin/show_pastie_submit_error.html:4
+msgid "Get back?"
+msgstr "Endarrera?"
+
+#: ../templates/pastebin/show_pastie_tools.html:2
+msgid "Make a fresh post"
+msgstr "Fer un post nou"
+
+#: ../templates/pastebin/show_pastie_tools.html:4
+msgid "edit this"
+msgstr "edita aquest"
+
+#: ../templates/pastebin/show_pastie_tools.html:8
+msgid "delete this"
+msgstr "esborra aquest"
+
+#~ msgid "Official Sabayon Linux Web Chat"
+#~ msgstr "Web xat oficial de Sabayon Linux"
+
+#~ msgid ""
+#~ "Invalid parameters... or perhaps you are cheating? Well, we are not so "
+#~ "stupid."
+#~ msgstr ""
+#~ "Els paràmetres no són vàlids... o potser esteu fent trampa? No som tant "
+#~ "rucs."
+
+#~ msgid "no user_id"
+#~ msgstr "no user_id"
+
+#~ msgid "do not cheat please"
+#~ msgstr "no feu trampa, si us plau"
+
+#~ msgid "ICQ UIN"
+#~ msgstr "ICQ UIN"
+
+#~ msgid "Very much '96..."
+#~ msgstr "Molt '96..."
+
+#~ msgid "Yahoo IM"
+#~ msgstr "Yahoo IM"
+
+#~ msgid "Yaho0o0o0o0 !"
+#~ msgstr "Yaho0o0o0o0 !"
+
+#~ msgid "MSN Messenger"
+#~ msgstr "MSN Messenger"
+
+#~ msgid "Microsoft see, we're friend"
+#~ msgstr "Mira Microsoft, som amics"
+
+#~ msgid "Jabber ID"
+#~ msgstr "ID de Jabber"
+
+#~ msgid "The Jabber.org Open Source Protocol"
+#~ msgstr "El protocol de codi obert Jabber.org"
+
+#~ msgid "Website"
+#~ msgstr "Pagina web"
+
+#~ msgid "Do you have a website?"
+#~ msgstr "Teniu una pàgina web?"
+
+#~ msgid "Location"
+#~ msgstr "Situació"
+
+#~ msgid "Where do you live?"
+#~ msgstr "On viviu?"
+
+#~ msgid "Interests"
+#~ msgstr "Interessos"
+
+#~ msgid "What do you like most?"
+#~ msgstr "Què us agrada més?"
+
+#~ msgid "Occupation"
+#~ msgstr "Ocupació"
+
+#~ msgid "What's your job?"
+#~ msgstr "De què treballeu?"
+
+#~ msgid "Signature"
+#~ msgstr "Signatura"
+
+#~ msgid "Your Community signature"
+#~ msgstr "La signatura de la comunitat"
+
+#~ msgid "E-mail"
+#~ msgstr "Correu electrònic"
+
+#~ msgid "Your current e-mail"
+#~ msgstr "Adreça de correu electrònic"
+
+#~ msgid "Birthday"
+#~ msgstr "Naixement"
+
+#~ msgid "When is your birthday? Hey, wanna get tha present?! DD-MM-YYYY"
+#~ msgstr "Quan és el vostre aniversari? Ei, voleu un regal?! DD-MM-YYYY"
+
+#~ msgid "Master User Group"
+#~ msgstr "Grup d'usuaris principal"
+
+#~ msgid "Your default User Group"
+#~ msgstr "Grup d'usuaris predefinit"
+
+#~ msgid "User Groups"
+#~ msgstr "Grups d'usuaris"
+
+#~ msgid "You are also in these User Groups"
+#~ msgstr "També esteu en aquests grups d'usuaris"
+
+#~ msgid "Sabayon Linux Community Area"
+#~ msgstr "Àrea de la comunitat de Sabayon Linux"
+
+#~ msgid "the fabulous"
+#~ msgstr "el fabulós"
+
+#~ msgid "Maximus V"
+#~ msgstr "Maximus V"
+
+#~ msgid "King Sun XIV"
+#~ msgstr "Rei sol XIV"
+
+#~ msgid "the one"
+#~ msgstr "l'únic"
+
+#~ msgid "you name it"
+#~ msgstr "anomeneu-lo"
+
+#~ msgid "My Sabayon Dashboard"
+#~ msgstr "El tauler"
+
+#~ msgid "invalid pages_id"
+#~ msgstr "invalid pages_id"
+
+#~ msgid "permission denied"
+#~ msgstr "s'ha denegat el permís"
+
+#~ msgid "profile updated successfully !"
+#~ msgstr "el perfil s'ha desat correctament!"
+
+#~ msgid "wrong search request"
+#~ msgstr "sol·licitud de cerca incorrecta"
+
+#~ msgid "Donate to Sabayon Linux"
+#~ msgstr "Doneu a Sabayon Linux"
+
+#~ msgid "Thank you for your donation"
+#~ msgstr "Gràcies pel donatiu"
+
+#~ msgid "Sabayon Linux donation success!"
+#~ msgstr "El donatiu s'ha completat!"
+
+#~ msgid "Search results - Powered by Google"
+#~ msgstr "Resultats de cerca - Funciona amb Google"
+
+#~ msgid "Sabayon Linux Download Mirrors"
+#~ msgstr "Rèpliques de baixada de Sabayon Linux"
+
+#~ msgid "invalid mirror identifier"
+#~ msgstr "l'identificador de la rèplica no és vàlid"
+
+#~ msgid "mirror removed"
+#~ msgstr "s'ha eliminat la rèplica"
+
+#~ msgid "invalid mirror link"
+#~ msgstr "l'enllaç amb la rèplica no és vàlid"
+
+#~ msgid "mirror name too short"
+#~ msgstr "el nom de la rèplica és massa curt"
+
+#~ msgid "invalid mirror speed"
+#~ msgstr "la velocitat de la rèplica no és vàlida"
+
+#~ msgid "invalid mirror country"
+#~ msgstr "el país de la rèplica no és vàlid"
+
+#~ msgid "added"
+#~ msgstr "s'ha afegit"
+
+#~ msgid "updated"
+#~ msgstr "s'ha actualitzat"
+
+#~ msgid "insert at least one link"
+#~ msgstr "Inseriu almenys un enllaç"
+
+#~ msgid "insert at least one valid link"
+#~ msgstr "Inseriu almenys un enllaç vàlid"
+
+#~ msgid "Packages"
+#~ msgstr "Paquets"
+
+#~ msgid "Packages match"
+#~ msgstr "Paquets coincidents"
+
+#~ msgid "Package descriptions"
+#~ msgstr "Descripció de paquets"
+
+#~ msgid "Files"
+#~ msgstr "Fitxers"
+
+#~ msgid "Libraries"
+#~ msgstr "Llibreries"
+
+#~ msgid "Alphabet"
+#~ msgstr "Alfabet"
+
+#~ msgid "Vote"
+#~ msgstr "Vot"
+
+#~ msgid "vote"
+#~ msgstr "vot"
+
+#~ msgid "downloads"
+#~ msgstr "baixades"
+
+#~ msgid "Package name"
+#~ msgstr "Nom del paquet"
+
+#~ msgid "Content (text)"
+#~ msgstr "Contingut (text)"
+
+#~ msgid "Keyword (tag)"
+#~ msgstr "Paraula clau (etiqueta)"
+
+#~ msgid "Document id."
+#~ msgstr "Id. del document"
+
+#~ msgid "No restrictions"
+#~ msgstr "Sense restriccions"
+
+#~ msgid "Number of downloads"
+#~ msgstr "Nombre de baixades"
+
+#~ msgid "key"
+#~ msgstr "clau"
+
+#~ msgid "username"
+#~ msgstr "nom d'usuari"
+
+#~ msgid "Sabayon Linux Packages Repository"
+#~ msgstr "Repositori de Paquets Sabayon Linux"
+
+#~ msgid "invalid search string"
+#~ msgstr "cadena de cerca no vàlida"
+
+#~ msgid "invalid search type"
+#~ msgstr "tipus de cerca no vàlid"
+
+#~ msgid "invalid search restriction type"
+#~ msgstr "restricció de tipus de cerca no vàlida"
+
+#~ msgid "invalid 'order by'"
+#~ msgstr "'ordena per' no és vàlid"
+
+#~ msgid "invalid document"
+#~ msgstr "document no vàlid"
+
+#~ msgid "invalid document specified"
+#~ msgstr "document especificat no vàlid"
+
+#~ msgid "permission denied, you suck!"
+#~ msgstr "s'ha denegat el permís, l'heu cagat!"
+
+#~ msgid "WTF? invalid document type!"
+#~ msgstr "Què feu? tipus de document no vàlid!"
+
+#~ msgid "you know what? I cannot handle this document"
+#~ msgstr "Sabeu què? No puc gestionar aquest document"
+
+#~ msgid "Document removed successfully, sigh :'-("
+#~ msgstr "El document s'ha eliminat amb èxit, uf :'-("
+
+#~ msgid "wrong username"
+#~ msgstr "nom d'usuari incorrecte"
+
+#~ msgid "no document specified"
+#~ msgstr "no s'ha especificat el document"
+
+#~ msgid "invalid document type"
+#~ msgstr "el tipus de document no és vàlid"
+
+#~ msgid "invalid package key"
+#~ msgstr "la clau del paquet no és vàlida"
+
+#~ msgid "invalid package string"
+#~ msgstr "la cadena del paquet no és vàlida"
+
+#~ msgid "title too short"
+#~ msgstr "el títol és massa curt"
+
+#~ msgid "description too short"
+#~ msgstr "la descripció és massa curta"
+
+#~ msgid "comment text too short"
+#~ msgstr "el text de comentari és massa curt"
+
+#~ msgid "no file? no party!"
+#~ msgstr "no hi ha fitxer? cagada!"
+
+#~ msgid "file too big"
+#~ msgstr "el fitxer és massa gran"
+
+#~ msgid "document added but couldn't determine 'iddoc' correctly"
+#~ msgstr ""
+#~ "el document s'ha afegit, però no s'ha pogut determinar 'iddoc' "
+#~ "correctament"
+
+#~ msgid "user not authenticated"
+#~ msgstr "usuari no autenticat"
+
+#~ msgid "invalid vote"
+#~ msgstr "vot no vàlid"
+
+#~ msgid "invalid package"
+#~ msgstr "paquet no vàlid"
+
+#~ msgid "vote not in range"
+#~ msgstr "vot fora de rang"
+
+#~ msgid "you already voted this"
+#~ msgstr "ja heu votat això"
+
+#~ msgid "wrong page type"
+#~ msgstr "tipus de pàgina erroni"
+
+#~ msgid "wrong page state"
+#~ msgstr "estat de pàgina erroni"
+
+#~ msgid "wrong page number"
+#~ msgstr "número de pàgina erroni"
+
+#~ msgid "missing introduction"
+#~ msgstr "falta la introducció"
+
+#~ msgid "missing page body"
+#~ msgstr "falta el cos de la pàgina"
+
+#~ msgid "missing title"
+#~ msgstr "falta el títol"
+
+#~ msgid "invalid page type"
+#~ msgstr "tipus de pàgina no vàlid"
+
+#~ msgid "invalid page state"
+#~ msgstr "estat de pàgina no vàlid"
+
+#~ msgid "invalid 'pages_id' or 'page_num'"
+#~ msgstr "'pages_id' o 'page_num' no vàlids"
+
+#~ msgid "Success:"
+#~ msgstr "Èxit:"
+
+#~ msgid "page updated"
+#~ msgstr "pàgina actualitzada"
+
+#~ msgid "invalid 'pages_id'"
+#~ msgstr "'pages_id' no vàlid"
+
+#~ msgid "invalid 'page_num'"
+#~ msgstr "'page_num' no vàlid"
+
+#~ msgid "'pages_id' and previous 'page_num' not available"
+#~ msgstr "'pages_id' i l'anterior 'page_num' no disponibles"
+
+#~ msgid "invalid page"
+#~ msgstr "pàgina no vàlida"
+
+#~ msgid "wrong data"
+#~ msgstr "dades incorrectes"
+
+#~ msgid "invalid option name"
+#~ msgstr "nom de l'opció no vàlid"
+
+#~ msgid "page not available"
+#~ msgstr "pàgina no disponible"
+
+#~ msgid "empty option name"
+#~ msgstr "nom de l'opció buit"
+
+#~ msgid "invalid option identifier"
+#~ msgstr "identificador de l'opció no vàlid"
+
+#~ msgid "invalid option name, not allowed"
+#~ msgstr "nom de l'opció no vàlid, no permès"
+
+#~ msgid "unknown error"
+#~ msgstr "error desconegut"
+
+#~ msgid "invalid pinboard identifier"
+#~ msgstr "l'identificador del tauler de notícies"
+
+#~ msgid "missing description"
+#~ msgstr "falta la descripció"
+
+#~ msgid "invalid element"
+#~ msgstr "l'element no és valid"
+
+#~ msgid "empty note"
+#~ msgstr "l'anotació és buida"
+
+#~ msgid "invalid pinboard data identifier"
+#~ msgstr "l'identificador de dades del tauler de notícies no és vàlid"
+
+#~ msgid "invalid status"
+#~ msgstr "l'estat no és vàlid"
+
+#~ msgid "invalid element data"
+#~ msgstr "la dada d'element no és vàlida"
+
+#~ msgid "This was the last one, w00t!"
+#~ msgstr "Aquest és l'últim, Bé!"
+
+#~ msgid "you are not allowed to delete this"
+#~ msgstr "no teniu permís per esborrar-lo"
+
+#~ msgid "invalid share status"
+#~ msgstr "estat compartit no vàlid"
+
+#~ msgid "no users selected, WTF?"
+#~ msgstr "no heu seleccionat usuaris, eh?"
+
+#~ msgid ""
+#~ "your friends have been mailed but won't be listed until they accept your "
+#~ "offer"
+#~ msgstr ""
+#~ "s'ha enviat el correu als vostres amics, però no es llistaran fins que no "
+#~ "acceptin la vostra oferta"
+
+#~ msgid "invalid user id"
+#~ msgstr "id d'usuari no vàlida"
+
+#~ msgid "invalid share id"
+#~ msgstr "id compartida no vàlida"
+
+#~ msgid "confirmation not found"
+#~ msgstr "no s'ha trobat la confirmació"
+
+#~ msgid "pinboard removed or already shared with you"
+#~ msgstr "el tauler de notícies s'ha eliminat i ja l'heu compartit"
+
+#~ msgid "Sabayon Linux Community - Pinboard Share Activation"
+#~ msgstr "Comunitat Sabayon Linux - Activació de compartició del tauler"
+
+#~ msgid "Sabayon Linux Screenshots"
+#~ msgstr "Captures de pantalla Sabayon Linux"
+
+#~ msgid "unable to access the screenshots directory"
+#~ msgstr "no es pot accedir al directori de captures de pantalla"
+
+#~ msgid "screenshots name set found"
+#~ msgstr "s'ha trobat el nom del paquet de captures de pantalla"
+
+#~ msgid "invalid new name"
+#~ msgstr "el nom nou no és vàlid"
+
+#~ msgid "name already taken"
+#~ msgstr "el nom ja existeix"
+
+#~ msgid "title already taken"
+#~ msgstr "el títol ja existeix"
+
+#~ msgid "invalid file extension"
+#~ msgstr "l'extensió de fitxer no és vàlida"
+
+#~ msgid "invalid file, too short"
+#~ msgstr "fitxer no vàlid, és massa curt"
+
+#~ msgid "general unpack error"
+#~ msgstr "error general en desempaquetar"
+
+#~ msgid "convert failed on"
+#~ msgstr "la conversió ha fallat a"
+
+#~ msgid "data uploaded and unpacked correctly"
+#~ msgstr "les dades s'han pujat i desempaquetat correctament"
+
+#~ msgid "Yes"
+#~ msgstr "Sí"
+
+#~ msgid "N/A"
+#~ msgstr "N/D"
+
+#~ msgid "Public Profile"
+#~ msgstr "Perfil públic"
+
+#~ msgid "the cutest, free Operating System"
+#~ msgstr "el millor Sistema Operatiu lliure"
+
+#~ msgid "as easy as an abacus, as fast as a segway"
+#~ msgstr "fàcil com un àbac, ràpid com un Segway"
+
+#~ msgid "Be active"
+#~ msgstr "Estigues actiu"
+
+#~ msgid "Join us"
+#~ msgstr "Uniu-vos"
+
+#~ msgid "Download"
+#~ msgstr "Baixada"
+
+#~ msgid "Administrative messages"
+#~ msgstr "Missatges administratius"
+
+#~ msgid "We are looking for funds, give us 2 minutes"
+#~ msgstr "Estem cercant fons, dóna'ns 2 minuts"
+
+#~ msgid ""
+#~ "The Sabayon Linux Project is looking for funds to <b>buy two new servers</"
+#~ "b>. Economic crisis ran over Free Software too and we are aware of how "
+#~ "much every single penny counts. But, as you might have seen, we decided "
+#~ "to take an <b>opposite route</b> and reduce the amount of advertisments "
+#~ "around the website. Still, we're close to place <b>new servers</b> inside "
+#~ "other Universities and <b>we need your help</b> to achieve this result. "
+#~ "See <a href=\"/donate\">our donation page</a> or read below"
+#~ msgstr ""
+#~ "El projecte Sabayon Linux està cercant fons per <b>comprar dos servidors "
+#~ "nous</b>. La crisi econòmica també afecta al programari lliure i som molt "
+#~ "conscients del que val cada cèntim. Però, com deveu haver vist, hem "
+#~ "decidit prendre una <b>direcció oposada</b> i reduir els anuncis de "
+#~ "laweb. Estem a prop de poder posar <b>servidors nous</b> en altres "
+#~ "universitats i <b>necessitem la vostra ajuda</b> per aconseguir-ho. "
+#~ "Accediu a <a href=\"/donate\">la pàgina de donacions</a> o llegiu a "
+#~ "continuació"
+
+#~ msgid ""
+#~ "This is what we need (sponsors are welcome too -- 3000&euro; in terms of "
+#~ "money"
+#~ msgstr ""
+#~ "Això és el que necessitem (els patrocinadors també són benvinguts) -- "
+#~ "3000&euro; en termes econòmics"
+
+#~ msgid "recorded weekly"
+#~ msgstr "registrats setmanalment"
+
+#~ msgid "Make a donation"
+#~ msgstr "Feu una donació"
+
+#~ msgid ""
+#~ "By donating, you empower us with the time and resources we need to bring "
+#~ "you the <i>best Linux experience ever</i>. Click on the link above and "
+#~ "give us the chance to continue to serve you <b>for free</b>"
+#~ msgstr ""
+#~ "En donar, ens doneu els recursos de temps i diners que necessitem per "
+#~ "portar-vos la <i>millor experiència Linux</i>. Feu clic en el link "
+#~ "anterior i doneu-nos l'oportunitat de continuar-vos servint <b>de franc</"
+#~ "b>"
+
+#~ msgid "Join Sabayon Linux on Facebook"
+#~ msgstr "Uniu-vos a Sabayon Linux en el Facebook"
+
+#~ msgid ""
+#~ "There is no way in the entire World we wouldn't had our Facebook Group! "
+#~ "Like it or not, we are there. So, what are you waiting for?"
+#~ msgstr ""
+#~ "Com no podia ser d'una altra manera, tenim el nostre grup al Facebook! Us "
+#~ "agradi o no, som a tot arreu. Doncs, què espereu?"
+
+#, fuzzy
+#~ msgid "Sabayon 5.1 GNOME and KDE are HERE</a>"
+#~ msgstr "Sabayon 5.o GNOME i KDE ja són AQUÍ</a>"
+
+#~ msgid ""
+#~ "On the behalf of the Sabayon Linux team, we are pleased to announce that "
+#~ "<i>the next big thing</i> is <b>here</b>"
+#~ msgstr ""
+#~ "En representació de l'equip de Sabayon Linux, ens plau anunciar que <i>el "
+#~ "proper èxit</i> ha <b>arribat</b>"
+
+#~ msgid "Go get it"
+#~ msgstr "Aconseguiu-lo"
+
+#~ msgid "ItsNew Hosting"
+#~ msgstr "ItsNew Hosting"
+
+#~ msgid "Edit your comment"
+#~ msgstr "Editeu el comentari"
+
+#~ msgid "You need to be logged in to edit a comment"
+#~ msgstr "Heu d'acreditar-vos per poder editar un comentari"
+
+#~ msgid "Login?"
+#~ msgstr "Accés?"
+
+#~ msgid "Register?"
+#~ msgstr "Registra?"
+
+#~ msgid "written by <b>%s</b>, around %s"
+#~ msgstr "escrit per <b>%s</b>, pels vols de %s"
+
+#~ msgid "Score"
+#~ msgstr "Puntuació"
+
+#~ msgid "Delete"
+#~ msgstr "Esborra"
+
+#~ msgid "Edit"
+#~ msgstr "Edita"
+
+#~ msgid "Comment error"
+#~ msgstr "Comentari d'error"
+
+#~ msgid "comments"
+#~ msgstr "comentaris"
+
+#~ msgid "Write your new comment below"
+#~ msgstr "Escriviu els vostres comentaris a baix"
+
+#~ msgid "You need to be logged in to post a comment"
+#~ msgstr "Us heu d'acreditar per poder enviar un comentari"
+
+#~ msgid "Your IP address has been banned for-EVA! Poor you... POOR you!"
+#~ msgstr ""
+#~ "La vostra adreça IP d'ha bandejat per sempre! Pobre de tu... POBRE de tu!"
+
+#~ msgid "Communicate"
+#~ msgstr "Comunicació"
+
+#~ msgid "Organisation"
+#~ msgstr "Organització"
+
+#~ msgid "Planet"
+#~ msgstr "Planeta"
+
+#~ msgid "Forum"
+#~ msgstr "Fòrum"
+
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
+
+#~ msgid "Web Chat"
+#~ msgstr "Xat web"
+
+#~ msgid "Press Documentation"
+#~ msgstr "Documentació de premsa"
+
+#~ msgid "Sabayon Roadmap"
+#~ msgstr "Full de ruta"
+
+#~ msgid "Get involved"
+#~ msgstr "Involucreu-vos"
+
+#~ msgid "PixPastebin"
+#~ msgstr "PixPastebin"
+
+#~ msgid "Community"
+#~ msgstr "Comunitat"
+
+#~ msgid "Packages and UGC"
+#~ msgstr "Paquets i CGU"
+
+#~ msgid "Report a bug"
+#~ msgstr "Informeu d'errors"
+
+#~ msgid "Browse Git"
+#~ msgstr "Navegació Git"
+
+#~ msgid "Mailing Lists"
+#~ msgstr "Llistes de correu"
+
+#~ msgid "Funding"
+#~ msgstr "Fons"
+
+#~ msgid "Enjoy Sabayon"
+#~ msgstr "Divertiu-vos"
+
+#~ msgid "Screenshots"
+#~ msgstr "Captures de pantalla"
+
+#~ msgid "CD/DVD Distributors"
+#~ msgstr "Distribuïdors de CD/DVDs"
+
+#~ msgid "successfully"
+#~ msgstr "correctament"
+
+#~ msgid "Preview"
+#~ msgstr "Vista prèvia"
+
+#~ msgid "here"
+#~ msgstr "aquí"
+
+#~ msgid "Reload this page"
+#~ msgstr "Torna a carregar la pàgina"
+
+#~ msgid "text goes here"
+#~ msgstr "el text va aquí"
+
+#~ msgid "Publisher: <b>%s</b>, around <i>%s</i>"
+#~ msgstr "Publicat per: <b>%s</b>, pels vols de <i>%s</i>"
+
+#~ msgid "Introduction"
+#~ msgstr "Introducció"
+
+#~ msgid "Thank you for voting !"
+#~ msgstr "Gràcies per votar !"
+
+#~ msgid "Sorreey, it seems you already voted"
+#~ msgstr "Ho sento, sembla que ja heu votat"
+
+#~ msgid "Try again tomorrow, or the day after"
+#~ msgstr "Torneu-ho a intentar demà"
+
+#~ msgid "Pages navigation"
+#~ msgstr "Navegació per pàgines"
+
+#~ msgid ""
+#~ "Sabayon Linux is a <a href=\"http://www.gentoo.org\" target=\"_blank"
+#~ "\">Gentoo Linux</a> based distribution which relies its packages "
+#~ "versioning and patches from the Gentoo Portage tree and our add-on "
+#~ "repository called \"overlay\". Thus, Gentoo Linux Security Advisories "
+#~ "(GLSA) can be applied to the packages listed in our tree. Here below, you "
+#~ "can see a list of the latest GLSAs published by the Gentoo Project"
+#~ msgstr ""
+#~ "Sabayon Linux és una distribució basada en <a href=\"http://www.gentoo.org"
+#~ "\" target=\"_blank\">Gentoo Linux</a> i les versions i els pedaços dels "
+#~ "paquets depenen de l'arbre de Gentoo Portage i del nostre repositori "
+#~ "afegit, anomenat \"overlay\". Així mateix, els Avisos de Seguretat de "
+#~ "Gentoo Linux (GLSA) es poden aplicar als paquets llistats en el nostre "
+#~ "arbre. A baix veureu una llista dels últims GLSAs publicats pel Projecte "
+#~ "Gentoo"
+
+#~ msgid "full feed here"
+#~ msgstr "Registre complet aquí"
+
+#~ msgid "Security Advisories"
+#~ msgstr "Avisos de Seguretat"
+
+#~ msgid "You can get the complete list on the"
+#~ msgstr "Podeu obtenir la llista sencera de"
+
+#~ msgid "Gentoo Linux Security Advisories feed"
+#~ msgstr "l'alimentador de Avisos de Seguretat de Gentoo Linux"
+
+#~ msgid "Categories"
+#~ msgstr "Categories"
+
+#~ msgid "Release"
+#~ msgstr "Revisió"
+
+#~ msgid "No packages in this category"
+#~ msgstr "No hi ha paquets en aquesta categoria"
+
+#~ msgid "Destroy"
+#~ msgstr "Destrueix"
+
+#~ msgid "Add documents <b>gain scores</b> !"
+#~ msgstr "afegiu documents <b>guanyeu punts</b>!"
+
+#~ msgid "Title"
+#~ msgstr "Títol"
+
+#~ msgid "Length must be between 10 and 160"
+#~ msgstr "La longitud ha de ser entre 10 i 160"
+
+#~ msgid "Description"
+#~ msgstr "descripció"
+
+#~ msgid "Being descriptive, what a pain in the *ss"
+#~ msgstr "Essent descriptiu, quina tocada de c*llons"
+
+#~ msgid "Keywords"
+#~ msgstr "Paraules clau"
+
+#~ msgid "Space separated, minimum length: 4 chars each"
+#~ msgstr "Separades per espais, longitud mínima: 4 caracters cadascuna"
+
+#~ msgid "Choose what kind of document you want to add"
+#~ msgstr "Escolliu el tipus de document que voleu afegir"
+
+#~ msgid "Comment text"
+#~ msgstr "text de comentari"
+
+#~ msgid "Insert your comment on this field"
+#~ msgstr "Inseriu el vostre comentari en aquest camp"
+
+#~ msgid "File chooser"
+#~ msgstr "Escolliu un fitxer"
+
+#~ msgid "Select the file you want to upload"
+#~ msgstr "Seleccioneu el fitxer que voleu pujar"
+
+#~ msgid "You need to be logged in to add documents"
+#~ msgstr "Heu d'estar acreditats per pujar documents"
+
+#, fuzzy
+#~ msgid "Repository"
+#~ msgstr "Repositori d'Entropy"
+
+#~ msgid "Category"
+#~ msgstr "Categoria"
+
+#~ msgid "Name"
+#~ msgstr "Nom"
+
+#~ msgid "Version"
+#~ msgstr "Versió"
+
+#~ msgid "Entropy revision"
+#~ msgstr "Revisió d'Entropy"
+
+#~ msgid "Package tag"
+#~ msgstr "Etiqueta del paquet"
+
+#~ msgid "Slot"
+#~ msgstr "Slot"
+
+#~ msgid "Dependencies"
+#~ msgstr "Dependències"
+
+#~ msgid "Conflicts"
+#~ msgstr "Conflictes"
+
+#~ msgid "Required by"
+#~ msgstr "Requerit per"
+
+#~ msgid "view packages list"
+#~ msgstr "veure la llista de paquets"
+
+#~ msgid "homepage"
+#~ msgstr "pàgina principal"
+
+#~ msgid "License"
+#~ msgstr "Llicència"
+
+#~ msgid "CHOST"
+#~ msgstr "CHOST"
+
+#~ msgid "CFLAGS"
+#~ msgstr "CFLAGS"
+
+#~ msgid "USE flags"
+#~ msgstr "marcadors USE"
+
+#~ msgid "Content"
+#~ msgstr "Contingut"
+
+#~ msgid "View content"
+#~ msgstr "Mostra el contingut"
+
+#~ msgid "Space required"
+#~ msgstr "Espai necessari"
+
+#~ msgid "Checksum"
+#~ msgstr "Suma de verificació"
+
+#~ msgid "Creation date"
+#~ msgstr "Data de creació"
+
+#~ msgid "Security"
+#~ msgstr "Seguretat"
+
+#~ msgid "show security advisories"
+#~ msgstr "mostra els avisos de seguretat"
+
+#~ msgid "No entries exist"
+#~ msgstr "No hi ha entrades"
+
+#~ msgid "Packages Search"
+#~ msgstr "Cerca de paquets"
+
+#~ msgid "User Generated Content Search"
+#~ msgstr "Contingut Generat per l'Usuari"
+
+#~ msgid "Statistics"
+#~ msgstr "Estadístiques"
+
+#~ msgid "Releases"
+#~ msgstr "Revisions"
+
+#~ msgid "Quick navigation"
+#~ msgstr "Navegació ràpida"
+
+#~ msgid "Entropy Repository"
+#~ msgstr "Repositori d'Entropy"
+
+#~ msgid "Search type"
+#~ msgstr "Tipus de cerca"
+
+#~ msgid "Order by"
+#~ msgstr "Ordena per"
+
+#~ msgid "Elements found: %s"
+#~ msgstr "Elements trobats: %s"
+
+#~ msgid "Nothing found"
+#~ msgstr "No s'ha trobat res"
+
+#~ msgid "Perhaps, you meant?"
+#~ msgstr "Potser voleu dir?"
+
+#~ msgid "Cannot find the software you are looking for?"
+#~ msgstr "No heu trobat el programari que buscàveu?"
+
+#~ msgid "Submit a package request"
+#~ msgstr "Envieu una sol·licitud de paquet"
+
+#~ msgid "Back to Search"
+#~ msgstr "Torna a la cerca"
+
+#~ msgid "Revision"
+#~ msgstr "Revisió"
+
+#~ msgid "Package Categories Navigation"
+#~ msgstr "Navegació per categories de paquets"
+
+#~ msgid "You are watching"
+#~ msgstr "Esteu veient"
+
+#~ msgid "User Generated Content"
+#~ msgstr "Contingut Generat per Usuaris"
+
+#~ msgid "Current status"
+#~ msgstr "Estat actual"
+
+#~ msgid "Architecture"
+#~ msgstr "Arquitectura"
+
+#~ msgid "Branches"
+#~ msgstr "Branques"
+
+#~ msgid "Number of packages"
+#~ msgstr "Nombre de paquets"
+
+#~ msgid "Number of categories"
+#~ msgstr "Nombre de categories"
+
+#~ msgid "Number of files"
+#~ msgstr "Nombre de fitxers"
+
+#~ msgid "Overall size"
+#~ msgstr "Mida total"
+
+#~ msgid "no keywords"
+#~ msgstr "no paraules clau"
+
+#~ msgid "written by %s, around %s"
+#~ msgstr "escrit per %s, pel vols de %s"
+
+#~ msgid "User score"
+#~ msgstr "Puntuació de l'usuari"
+
+#~ msgid "Size"
+#~ msgstr "Mida"
+
+#~ msgid "on"
+#~ msgstr "el"
+
+#~ msgid "score"
+#~ msgstr "puntuació"
+
+#~ msgid "Restrict on"
+#~ msgstr "Restringeix a"
+
+#~ msgid "Seeking %s of %s"
+#~ msgstr "S'estan cercant %s de %s"
+
+#~ msgid "Documents"
+#~ msgstr "Documents"
+
+#~ msgid "Vote error"
+#~ msgstr "Error de vot"
+
+#~ msgid ""
+#~ "We know, everybody has to pay their bills, especially in this though "
+#~ "period. Our Project has been kept alive thanks to people like you, who "
+#~ "even donated just 1$ (or 1&euro;). If you want to support us, then go "
+#~ "ahead reading, otherwise we'll love you anyway"
+#~ msgstr ""
+#~ "Sabem que tothom ha de pagar les factures, especialment en aquest moment "
+#~ "complicat. El nostre projecte s'ha mantingut en marxa gràcies a gent com "
+#~ "vos, que potser només donareu 1$ (o 1&euro;). Si voleu ajudar-nos, "
+#~ "continueu llegint, si no us estimarem igualment"
+
+#~ msgid "PayPal"
+#~ msgstr "Paypal"
+
+#~ msgid "Probably the fastest way to make it happen"
+#~ msgstr "Probablement la manera més ràpida de fer-ho"
+
+#~ msgid "USD donation"
+#~ msgstr "donació en USD"
+
+#~ msgid "Euro donation"
+#~ msgstr "donació en Euros"
+
+#~ msgid "Easy, cheap and powerful. Now with an easy form, see below"
+#~ msgstr ""
+#~ "Fàcil, econòmic i potent. Ara amb un formulari senzill, mireu a baix"
+
+#~ msgid "Donate with Moneybookers"
+#~ msgstr "Doneu amb Moneybookers"
+
+#~ msgid "Please enter the amount you would like to give"
+#~ msgstr "Introduïu la quantitat que voleu donar"
+
+#~ msgid "Select a currency"
+#~ msgstr "Seleccioneu una moneda"
+
+#~ msgid "US dollar"
+#~ msgstr "Dòlar US"
+
+#~ msgid "GB pound"
+#~ msgstr "lliura GB"
+
+#~ msgid "Euro"
+#~ msgstr "Euro"
+
+#~ msgid "Yen"
+#~ msgstr "Ien"
+
+#~ msgid "Canadian $"
+#~ msgstr "Dòlar canadenc $"
+
+#~ msgid "Australian $"
+#~ msgstr "Dòlar australià $"
+
+#~ msgid "amount"
+#~ msgstr "quantitat"
+
+#~ msgid "**Hugs** **Hugs** **Hugs**"
+#~ msgstr "**ei** **ei** **ei**"
+
+#~ msgid ""
+#~ "Thanks a lot, we appreciate your effort. Your donation will help us "
+#~ "keeping up the good work. We are sure you want to get back to the <a href="
+#~ "\"/\">Front Page</a> now"
+#~ msgstr ""
+#~ "Gràcies, apreciem el vostre esforç. La vostra donació ens ajudarà a "
+#~ "continuar la feina. Estem segurs que ara voleu tornar a la <a href=\"/"
+#~ "\">Pàgina d'inici</a>"
+
+#~ msgid ":-* kisses kisses kisses"
+#~ msgstr ":-* petons petons petons"
+
+#~ msgid "Total votes"
+#~ msgstr "Vots totals"
+
+#~ msgid "not voted yet?"
+#~ msgstr "no heu votat encara?"
+
+#~ msgid "You, liar!"
+#~ msgstr "Mentider!"
+
+#~ msgid "See results"
+#~ msgstr "Veure els resultats"
+
+#~ msgid ""
+#~ "Being part of <b>our Community</b> is what make us proud of ourselves"
+#~ msgstr ""
+#~ "Ser part de la <b>nostra Comunitat</b> és el que ens fa estar orgullosos "
+#~ "de nosaltres mateixos"
+
+#~ msgid ""
+#~ "This is the place where you can get in touch with people in our "
+#~ "Community, see how good they are and get helped"
+#~ msgstr ""
+#~ "En aquest espai podeu entrar en contacte amb gent de la Comunitat, podreu "
+#~ "rebre ajuda  i veureu que bons que són"
+
+#~ msgid ""
+#~ "If you want to join our Community or just need help and make questions, "
+#~ "here are some useful links you might need to look at"
+#~ msgstr ""
+#~ "Si voleu unir-vos a la Comunitat o simplement necessiteu ajuda i fer "
+#~ "preguntes, aquí hi ha alguns enllaços que us poden ser útils"
+
+#~ msgid "Sabayon Linux Support Chat"
+#~ msgstr "Xat d'ajuda de sabayon Linux"
+
+#~ msgid "Wolfden, Sabayon Linux Chief Community Officer"
+#~ msgstr "Wolfden, cap oficial de la comunitat Sabayon Linux"
+
+#~ msgid "Lxnay, Sabayon Linux Chief Architect"
+#~ msgstr "Lxnay, arquitecte en cap de Sabayon Linux"
+
+#~ msgid "Sabayon Linux Forum"
+#~ msgstr "Fòrum de Sabayon Linux"
+
+#~ msgid "Community Home"
+#~ msgstr "Inici de la comunitat"
+
+#~ msgid "Users"
+#~ msgstr "Usuaris"
+
+#~ msgid "Hall of fame"
+#~ msgstr "Saló de la fama"
+
+#~ msgid "Blogs"
+#~ msgstr "Blocs"
+
+#~ msgid "Useful links"
+#~ msgstr "Enllaços útils"
+
+#~ msgid "also known as"
+#~ msgstr "també coneguts com a"
+
+#~ msgid "Points"
+#~ msgstr "Punts"
+
+#~ msgid "Currently counting"
+#~ msgstr "hi ha"
+
+#~ msgid "users... and <b>growing</b>"
+#~ msgstr "usuaris... i <b>creixent</b>"
+
+#~ msgid "Profile"
+#~ msgstr "Perfil"
+
+#~ msgid "Pinboard"
+#~ msgstr "Tauler de notícies"
+
+#~ msgid "Messages"
+#~ msgstr "Missatges"
+
+#~ msgid "News / Pages"
+#~ msgstr "Notícies / Pàgines"
+
+#~ msgid "Mirrors"
+#~ msgstr "Rèpliques"
+
+#~ msgid "Polls"
+#~ msgstr "Enquestes"
+
+#~ msgid "Not implemented yet. Sorrey!"
+#~ msgstr "Encara no està implementat!"
+
+#~ msgid "Mirror name"
+#~ msgstr "Nom de la rèplica"
+
+#~ msgid "Do I have to explain the concept?"
+#~ msgstr "Hem d'explicar el concepte?"
+
+#~ msgid "Mirror speed"
+#~ msgstr "Velocitat de la rèplica"
+
+#~ msgid "Again, don't be dumb, why are you reading here?"
+#~ msgstr "No sigueu rucs, què voleu llegir aquí?"
+
+#~ msgid "Mirror country"
+#~ msgstr "País de la rèplica"
+
+#~ msgid "Where is it located?"
+#~ msgstr "On està ubicat?"
+
+#~ msgid "Notes"
+#~ msgstr "Notes"
+
+#~ msgid "Important (internal) notes"
+#~ msgstr "Notes importants (internes)"
+
+#~ msgid "Mirror Link #1"
+#~ msgstr "Enllaç #1 de la rèplica"
+
+#~ msgid "Give me an URL"
+#~ msgstr "Escriviu una URL"
+
+#~ msgid "Mirror Link #2"
+#~ msgstr "Enllaç #2 de la rèplica"
+
+#~ msgid "Mirror Link #3"
+#~ msgstr "Enllaç #3 de la rèplica"
+
+#~ msgid "Add link"
+#~ msgstr "Afegiu un enllaç"
+
+#~ msgid "Delete link"
+#~ msgstr "Esborreu un enllaç"
+
+#~ msgid ""
+#~ "Ok, once again, you are an admin. This is the Download Mirrors manager"
+#~ msgstr ""
+#~ "D'acord, de nou, sou un administrador. Això és el gestor de Rèpliques de "
+#~ "Baixades"
+
+#~ msgid "New Mirror"
+#~ msgstr "Nova rèplica"
+
+#~ msgid "One more page"
+#~ msgstr "Una altra pàgina"
+
+#~ msgid "Body"
+#~ msgstr "Cos"
+
+#~ msgid "Tags"
+#~ msgstr "Etiquetes"
+
+#~ msgid "Type"
+#~ msgstr "Tipus"
+
+#~ msgid "Published on"
+#~ msgstr "Publicat el"
+
+#~ msgid "Actions"
+#~ msgstr "Accions"
+
+#~ msgid "Page state"
+#~ msgstr "Estat de la pàgina"
+
+#~ msgid "Reload pages navigation"
+#~ msgstr "Carrega de nou la navegació de la pàgina"
+
+#~ msgid "Rename"
+#~ msgstr "Anomena de nou"
+
+#~ msgid "Remove"
+#~ msgstr "Elimina"
+
+#~ msgid ""
+#~ "Ok, you are an admin. So, you know what to do here. All the bells and "
+#~ "whistles, like someone said"
+#~ msgstr ""
+#~ "D'acord, són un administrador. sabeu què heu de fer aquí. Tota la "
+#~ "parafernàlia, com algú va dir"
+
+#~ msgid "New Document"
+#~ msgstr "Nou document"
+
+#~ msgid "This is the Pin title"
+#~ msgstr "Això és el títol del Pin"
+
+#~ msgid "Write a brief description"
+#~ msgstr "Escriviu una minsa descripció"
+
+#~ msgid "Note"
+#~ msgstr "Nota"
+
+#~ msgid "Write your note here"
+#~ msgstr "Escriviu l'anotació aquí"
+
+#~ msgid "Status"
+#~ msgstr "Estat"
+
+#~ msgid "Come on, you are lazy"
+#~ msgstr "Vinga, sou un manta"
+
+#~ msgid "Show"
+#~ msgstr "Mostra"
+
+#~ msgid "Share this Pin"
+#~ msgstr "Comparteix aquest Pin"
+
+#~ msgid "Active shares"
+#~ msgstr "Compartits actius"
+
+#~ msgid ""
+#~ "Welcome to your personal Pinboard. Write your thoughts here. Organize "
+#~ "your tasks. Share with friends."
+#~ msgstr ""
+#~ "Benvingut al vostre tauler de notícies personal. escriviu els vostres "
+#~ "pensaments aquí. Organitzeu-vos les tasques. Compartiu amb amics."
+
+#~ msgid "My Pins"
+#~ msgstr "Els meus Pins"
+
+#~ msgid "New Pin"
+#~ msgstr "Nou Pin"
+
+#~ msgid ""
+#~ "No elements here. You can't blame <u>aliens</u>. You might want to add "
+#~ "something someday, huh?"
+#~ msgstr ""
+#~ "No hi ha elements. No podeu culpar els <u>aliens</u>. Potser voleu afegir-"
+#~ "hi alguna cosa, algun dia?"
+
+#~ msgid "Connected Pins"
+#~ msgstr "Pins connectats"
+
+#~ msgid ""
+#~ "No elements here. Nobody loves you. Errr.. I am joking! We love you! No, "
+#~ "you can't blame <u>aliens</u>, again"
+#~ msgstr ""
+#~ "No hi ha elements aquí. Ningú us estima. Errr... Estem fent broma! Us "
+#~ "estimem! No, no podeu culpar els <u>aliens</u> altra vegada"
+
+#~ msgid "Polls management, you can enable how many you want. Do et"
+#~ msgstr "Gestió d'enquestes, en podeu activar tantes com vulgueu. Feu-ho"
+
+#~ msgid "New Poll"
+#~ msgstr "Nova enquesta"
+
+#~ msgid ""
+#~ "the poll will start with no options and disabled. You must create it first"
+#~ msgstr ""
+#~ "l'enquesta començarà sense opcions i desactivada. L'heu de crear primer"
+
+#~ msgid ""
+#~ "Of course, this is your profile and the place you can change how you are "
+#~ "shown to the World. Style matters, remember this"
+#~ msgstr ""
+#~ "Efectivament, aquest és el vostre perfil i l'espai que podeu canviar per "
+#~ "mostrar-vos al món. L'estil compta, recordeu-ho"
+
+#~ msgid "E-mail configuration"
+#~ msgstr "Configuració del correu"
+
+#~ msgid "Your e-mail"
+#~ msgstr "La vostra adreça de correu electrònic"
+
+#~ msgid "E-mail confirm"
+#~ msgstr "Confirmació de l'adreça"
+
+#~ msgid "Confirm your e-mail"
+#~ msgstr "Confirmeu la vostra adreça de correu electrònic"
+
+#~ msgid "Password configuration"
+#~ msgstr "Configuració de la contrasenya"
+
+#~ msgid "Current Password"
+#~ msgstr "Contrasenya actual"
+
+#~ msgid "Your current password"
+#~ msgstr "La vostra contrasenya actual"
+
+#~ msgid "New password"
+#~ msgstr "Nova contrasenya"
+
+#~ msgid "Type your new password"
+#~ msgstr "Escriviu la vostra contrasenya nova"
+
+#~ msgid "Repeat new password"
+#~ msgstr "Repetiu la nova contrasenya"
+
+#~ msgid "Type again your new password"
+#~ msgstr "escriviu la vostra contrasenya de nou"
+
+#~ msgid "Will be used as directory name"
+#~ msgstr "S'usarà com a nom del directori"
+
+#~ msgid "Compressed archive"
+#~ msgstr "Fitxer comprimit"
+
+#~ msgid "Valid are .zip, .tar.bz2, .tar.gz. Inside: root dir and just files"
+#~ msgstr ""
+#~ "Són vàlids .zip, .tar.bz2, .tar.gz. dins del directori root i només "
+#~ "fitxers"
+
+#~ msgid "Ok, good you are an admin. This is the Screenshots manager"
+#~ msgstr ""
+#~ "D'acord, sou un administrador. Això és el gestor de captures de pantalla"
+
+#~ msgid "New Screenshots"
+#~ msgstr "Noves captures de pantalla"
+
+#~ msgid "Ok <b>ladies</b> and <b>gentlemen</b>. We have a <u>winner</u> here!"
+#~ msgstr ""
+#~ "D'acord, <b>senyors</b> i <b>senyores</b>. Tenim un <u>guanyador</u> aquí!"
+
+#~ msgid "You are now connected with %s's Pinboard titled \"<i>%s</i>\"."
+#~ msgstr ""
+#~ "Esteu connectat en el tauler de notícies de %s anomenat \"<i>%s</i>\"."
+
+#~ msgid ""
+#~ "Click %shere%s to get to your personal Dashboard and <b>have fun</b>."
+#~ msgstr ""
+#~ "Feu clic %saquí%s per accedir al vostre tauler de notícies personal i "
+#~ "<b>passeu-ho bé</b>."
+
+#~ msgid "We are <b>sorry</b>, the System encountered an error"
+#~ msgstr "Ho <b>sentim</b>, el sistema ha trobat un error"
+
+#~ msgid ""
+#~ "Thus, <b>we cannot satisfy</b> your request. You can get to our <b><a "
+#~ "href='/'>front page</a></b> and be happy anyway."
+#~ msgstr ""
+#~ "Tot i que <b>no podem satisfer</b> la vostra sol·licitud, podeu tornar a "
+#~ "la <b><a href='/'>pàgina d'inici</a></b> i estar contents igualment."
+
+#~ msgid "...Beeee happy! Don't worry, beeeee happy!"
+#~ msgstr "...Beeee happy! Don't worry, beeeee happy!"
+
+#~ msgid ""
+#~ "In this page you will find all your statistics regarding your Entropy/Web "
+#~ "account"
+#~ msgstr ""
+#~ "Aquí trobareu les vostres estadístiques quant al vostre compte Entropy/Web"
+
+#~ msgid "this is the name other people will reference you"
+#~ msgstr "aquest és el nom amb el que us coneixerà l'altra gent"
+
+#~ msgid "User id"
+#~ msgstr "User id"
+
+#~ msgid "this is your user account number"
+#~ msgstr "aquest és el vostre número de compte"
+
+#~ msgid "Entropy role"
+#~ msgstr "rol d'Entropy"
+
+#~ msgid "your role inside the Community"
+#~ msgstr "el vostre rol dins de la Comunitat"
+
+#~ msgid "number of times you voted"
+#~ msgstr "número de vegades que heu votat"
+
+#~ msgid "weight: %s points each"
+#~ msgstr "pes: %s punts cadascun"
+
+#~ msgid "Vote average"
+#~ msgstr "Mitjana de vot"
+
+#~ msgid "this is kinda self explanatory"
+#~ msgstr "això s'explica tot sol"
+
+#~ msgid "how many documents you uploaded (comments,images,etc)"
+#~ msgstr "quants documents heu pujat (comentaris,imatges,etc.)"
+
+#~ msgid "how many comments you wrote"
+#~ msgstr "quants comentaris heu escrit"
+
+#~ msgid "Images"
+#~ msgstr "Imatges"
+
+#~ msgid "how many images you uploaded"
+#~ msgstr "quantes imatges heu pujat"
+
+#~ msgid "how many files you uploaded"
+#~ msgstr "quants fitxers heu pujat"
+
+#~ msgid "YouTube(tm) Videos"
+#~ msgstr "Videos del YouTube(tm)"
+
+#~ msgid "how many videos you uploaded"
+#~ msgstr "quants videos heu pujat"
+
+#~ msgid "Ranking"
+#~ msgstr "Rànquing"
+
+#~ msgid "how good you are in our Community"
+#~ msgstr "Com sou de bons dins la Comunitat"
+
+#~ msgid "position"
+#~ msgstr "posició"
+
+#~ msgid "your resulting Entropy score"
+#~ msgstr "la vostra puntuació Entropy"
+
+#~ msgid "Not logged in"
+#~ msgstr "No us heu acreditat"
+
+#~ msgid ""
+#~ "In this page you will be able to browse through your submitted documents "
+#~ "on all the repositories we host"
+#~ msgstr ""
+#~ "Aquí podreu navegar per tots els documents enviats als repositoris que "
+#~ "hostatgem"
+
+#~ msgid "View"
+#~ msgstr "Vista"
+
+#~ msgid "This is just"
+#~ msgstr "Aquest és en"
+
+#~ msgid "hello !"
+#~ msgstr "hola !"
+
+#~ msgid "Just a nickname, what did you expect?"
+#~ msgstr "Només un sobrenom, què esperàveu?"
+
+#~ msgid "User identifier"
+#~ msgstr "Identificador d'usuari"
+
+#~ msgid "This is the account number"
+#~ msgstr "això és el número de compte"
+
+#~ msgid "Website role"
+#~ msgstr "Rol a la web"
+
+#~ msgid "User's role inside our Website"
+#~ msgstr "Rol de l'usuari en la vostra web"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "User's virtual Alter-Ego"
+#~ msgstr "Alter-Ego virtual de l'usuari"
+
+#~ msgid "User comes from..."
+#~ msgstr "L'usuari ve de..."
+
+#~ msgid "Age"
+#~ msgstr "Edat"
+
+#~ msgid "How many years are past, huh!"
+#~ msgstr "Quants anys han passat, uf!"
+
+#~ msgid "User's current job"
+#~ msgstr "Feina actual de l'usuari"
+
+#~ msgid "User's interests, kinda self explanatory"
+#~ msgstr "Interessos de l'usuari, és autoexplicatiu"
+
+#~ msgid "Contacts"
+#~ msgstr "Contactes"
+
+#~ msgid "User's E-mail and IM"
+#~ msgstr "Correu electrònic i IM de l'usuari"
+
+#~ msgid "User's Website"
+#~ msgstr "Web de l'usuari"
+
+#~ msgid "Click here to get there"
+#~ msgstr "Feu clic aquí per accedir-hi"
+
+#~ msgid "Groups"
+#~ msgstr "Grups"
+
+#~ msgid "Website groups user is in"
+#~ msgstr "Grups en els que es troba l'usuari"
+
+#~ msgid "User's role inside Entropy"
+#~ msgstr "Rol de l'usuari dins de Entropy"
+
+#~ msgid "Number of times the User voted"
+#~ msgstr "Número de vegades que l'usuari ha votat"
+
+#~ msgid "Total number of documents"
+#~ msgstr "Número total de documents"
+
+#~ msgid "Number of comments"
+#~ msgstr "Número de comentaris"
+
+#~ msgid "Number of images"
+#~ msgstr "Número d'imatges"
+
+#~ msgid "Number of videos belonging"
+#~ msgstr "Número de videos"
+
+#~ msgid "User rank inside our Community"
+#~ msgstr "Rànquing d'usuari dins de la Comunitat"
+
+#~ msgid "User's Community Score"
+#~ msgstr "Puntuació d'usuari de la Comunitat"
+
+#~ msgid "User search"
+#~ msgstr "Cerca d'usuaris"
+
+#~ msgid ""
+#~ "Write a search term on the right. E-mail, username, name, surname, you "
+#~ "name it"
+#~ msgstr ""
+#~ "Escriviu un terme de cerca a la dreta. Adreça de correu, nom d'usuari, "
+#~ "nom, cognom, com l'anomeneu"
+
+#~ msgid "Search results"
+#~ msgstr "Resultats de cerca"
+
+#~ msgid "featuring"
+#~ msgstr "amb"
+
+#~ msgid "Points and Ranking"
+#~ msgstr "Punts i rànquing"
+
+#~ msgid "No users found. Go out and blame cows"
+#~ msgstr "No s'han trobat usuaris. Aneu i culpeu les vaques"
+
+#~ msgid "Mirror"
+#~ msgstr "Rèplica"
+
+#~ msgid ""
+#~ "Sabayon, free of charge, batteries included and on your own Computer. "
+#~ "What are you waiting for? <b>Select the location closer to you</b> and "
+#~ "start downloading a new experience"
+#~ msgstr ""
+#~ "Sabayon, gratuït, amb bateries incloses i en el vostre ordinador. Ja "
+#~ "tardeu... <b> Seleccioneu la ubicació més pròxima</b> i comenceu a gaudir "
+#~ "d'una nova experiència"
+
+#~ msgid "No Internet? Slow Internet?"
+#~ msgstr "No teniu internet? Connexió lenta?"
+
+#~ msgid "Have a look at our <a href='#'>official online vendors list</a>"
+#~ msgstr "Mireu la <a href='#'>llista en línia de venedors oficials</a>"
+
+#~ msgid "Metalinks"
+#~ msgstr "Metalink"
+
+#~ msgid ""
+#~ "For people with faster Internet connections (DSL, Cable, Fiber), Metalink "
+#~ "makes downloading easier, faster, and more reliable. If you're on an "
+#~ "error prone connection, Metalinks with repair information can fix any "
+#~ "errors you get in transfer. Most downloads probably don't max out your "
+#~ "downstream bandwidth. Metalink will help"
+#~ msgstr ""
+#~ "Per gent amb connexions d'Internet ràpides (DSL, Cable, Fiber), Metalink "
+#~ "us fa la baixada més senzilla, més ràpida i més fiable. Si teniu una "
+#~ "connexió propensa a errors, Metalink amb informació de reparació pot "
+#~ "solucionar problemes que tingueu en la transferència. La majoria de "
+#~ "baixades probablement no ocupen tota la banda d'ampla de baixada. "
+#~ "Metalink us ajudarà"
+
+#~ msgid "source"
+#~ msgstr "origen"
+
+#~ msgid "Visit the official"
+#~ msgstr "Visiteu la oficial"
+
+#~ msgid "Sabayon Linux Metalinker Page"
+#~ msgstr "Pàgina Metalinker Sabayon Linux"
+
+#~ msgid "Bittorrent"
+#~ msgstr "Bittorrent"
+
+#~ msgid ""
+#~ "Most people love it just because it makes your download fly. Now we have "
+#~ "our Sabayon Linux Tracker"
+#~ msgstr ""
+#~ "A la majoria de gent li agrada perquè fa volar la vostra baixada. Ara "
+#~ "tenim un seguidor Sabayon Linux"
+
+#~ msgid "Visit the"
+#~ msgstr "Visiteu la"
+
+#~ msgid "Sabayon Linux Tracker Page"
+#~ msgstr "Pàgina del seguidor Sabayon Linux"
+
+#~ msgid "HTTP, FTP, RSYNC mirrors"
+#~ msgstr "Rèpliques HTTP, FTP, RSYNC"
+
+#~ msgid ""
+#~ "If you belong to the old generation or just want to use `wget` because "
+#~ "it's the only download manager you trust. Here it is a list of official "
+#~ "mirrors, alphabetically divided by countries"
+#~ msgstr ""
+#~ "Si sou de la vella escola o simplement voleu usar `wget` perquè és l'únic "
+#~ "gestor de baixades en el que confieu, aquí teniu una llista de rèpliques "
+#~ "oficials, dividides alfabèticament per països"
+
+#~ msgid "Subscribe your Mirror today"
+#~ msgstr "Subscriviu la vostra rèplica avui"
+
+#~ msgid "Do you have spare bandwidth? Are you a mirror maintainer?"
+#~ msgstr "Teniu ample de banda sobrant? Sou el mantenidor d'una rèplica?"
+
+#~ msgid "Submit your request here"
+#~ msgstr "Envieu la vostra sol·licitud aquí"
+
+#~ msgid "Online Stores"
+#~ msgstr "Botigues en línia"
+
+#~ msgid "Product"
+#~ msgstr "Producte"
+
+#~ msgid "Branch"
+#~ msgstr "Branca"

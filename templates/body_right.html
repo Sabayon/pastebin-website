@@ -1,0 +1,44 @@
+## -*- coding: utf-8 -*-
+<div class="col-right">
+
+    <div class="col-right-item">
+        <%include file="/adsense/200x200.html"/>
+    </div>
+
+    <h3>${_("Sponsors")}</h3>
+    <div class="col-right-item">
+        <h3><a href="http://www.nlnet.nl/" target="_blank"><img src="/images/sponsors/nlnet.png" alt="NLnet Foundation"/></a></h3>
+        ${_("Officially Sponsored by the <b>NLnet Foundation</b>, that financially supported the Entropy Project")}. <a href="/pages/show/id/63">${_("See NLnet development plan status")}</a>
+    </div>
+    <div class="col-right-item">
+        <h3><a href="http://www.unibs.it/" target="_blank"><img src="/images/sponsors/unibs.png" alt="${_("University of Brescia")}"/></a></h3>
+        ${_("Officially Sponsored by")} <b><a href="http://www.unibs.it/" target="_blank">${_("University of Brescia")}</a></b>. ${_("Housing our Entropy build server inside the Faculty Network Center at the Department of Electronics")}.
+    </div>
+    <div class="col-right-item">
+        <h3><a href="http://www.unimib.it/" target="_blank"><img src="/images/sponsors/unimib.png" alt="${_("University of Milano-Bicocca")}"/></a></h3>
+        ${_("Officially Sponsored by")} <b><a href="http://www.unimib.it/" target="_blank">${_("University of Milano-Bicocca")}</a></b>. ${_("Housing our Entropy build servers and WWW inside DISCo")}.
+    </div>
+    <!-- <div class="col-right-item">
+        <h3><a href="http://www.silkbit.com/" target="_blank"><img src="/images/sponsors/silkbit.png" alt="SilkBIT"/></a></h3>
+        ${_("Officially Sponsored by")} <b><a href="http://www.silkbit.com/" target="_blank">SilkBIT</a></b>. ${_("Proving the software technology we daily need")}.
+    </div> -->
+
+    % if c.site_polls:
+        <div class="col-right-item">
+            <h3>${_("Survey")}</h3>
+            <div style="padding-top: 10px">
+            % for poll in c.site_polls:
+                <% c.poll = poll %>
+                <%include file="/polls/poll_voting_form_small.html"/>
+            % endfor
+            </div>
+        </div>
+    % endif
+
+    <h3>Featured Links</h3>
+    <div class="col-right-item">
+            <a href="http://trac.cross-lfs.org/">${_("Cross Linux From Scratch")}</a><br/>
+            <a href="http://www.ibiblio.org/hosted/">${_("Ibiblio.org Hosting")}</a>
+    </div>
+
+</div>

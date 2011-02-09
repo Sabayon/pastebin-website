@@ -1,0 +1,16 @@
+/* Site rules 
+body {
+   background: #000 url('somebg.gif');
+}
+
+*/
+
+/* TinyMCE specific rules 
+body.mceContentBody {
+   background: #FFF;
+}
+*/
+
+.mceContentBody a {
+   color: #4A7F99 !important; /* FF requires a important here */
+}

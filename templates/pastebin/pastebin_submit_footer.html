@@ -1,0 +1,52 @@
+<div style="padding-top: 10px">
+    <div style="text-align: right; margin-bottom: 10px">
+        ${_("Expiration")}: <select name="expiration_days">
+            <option value="1">${_("One day")}</option>
+            <option value="30" selected>${_("One month")}</option>
+            <option value="365">${_("One year")}</option>
+        </select>
+        % if session.get('logged_in'):
+            ${_("as <b>%s</b> and permissions:") % (session['entropy'].get('entropy_user'),)}
+            <select name="pastebin_permissions_id">
+                <% first = True %>
+                % for permission_id in sorted(c.pastebin_permissions_desc.keys()):
+                    <option value="${permission_id}"
+                    % if first:
+                        selected
+                    % endif
+                    >${c.pastebin_permissions_desc[permission_id]}</option>
+                    <% first = False %>
+                % endfor
+            </select>
+        % else:
+            <input type="hidden" value="${c.pastebin_permissions['public']}" name="pastebin_permissions_id"/>
+        % endif
+    </div>
+    <div>
+        <style type="text/css">
+            #recaptcha_widget_div {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 320px;
+                position: relative;
+                left: 250px;
+            }
+        </style>
+        ${c.recaptcha_html | n}
+    </div>
+    <div style="text-align:right;">
+        % if c.pastebin_wrong_captcha:
+        <span style="border: 4px dotted red; margin-right: 10px; padding: 5px;">
+            ${_("Wrong CAPTCHA !!! Take this, stupid spammer!")}
+        </span>
+        % endif
+        <input id="pastie-submit-button" type="submit" value="${_("Send pastie")}" style="font-weight: bold; font-size: 1.2em;" onclick="javascript:send_pastie('pastebin-submit-form','pastebin-submit-docarea','pastebin-text-content','pastebin-working-area','pastie-submit-button')"/>
+    </div>
+</div>
+% if c.pastebin_wrong_captcha:
+    <script type="text/javascript">
+        show_error("${_("Wrong Captcha !")}","${_("Are you a spammer? If so, please go to hell. Otherwise, sorry, just answer the red-marked question correctly.")}");
+    </script>
+% endif

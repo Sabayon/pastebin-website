@@ -1,0 +1,7 @@
+<%
+    my_by = c.pastebin.get('username')
+    if not my_by: my_by = 'Anonymous'
+%>
+<div style="width: 99%; text-align: right">
+    <span style="font-style: italic;">${c.pastebin['orig_ts']}</span> [${_("expires in")}: <b>${c.pastebin['expiration_days']}</b> ${_("days")}] ${_("by")} <span style="font-weight: bold">${my_by}</span>
+</div>

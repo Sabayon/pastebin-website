@@ -1,0 +1,2410 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-09 11:50+0100\n"
+"PO-Revision-Date: 2009-08-05 12:09+0100\n"
+"Last-Translator: Rémy Epke <testflacon@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../controllers/login.py:26
+msgid "Hello mate, what about logging in? Have a look below"
+msgstr ""
+
+#: ../controllers/login.py:50
+#, fuzzy
+msgid "Sabayon Linux Community activation"
+msgstr "Sabayon Linux Support Chat"
+
+#: ../controllers/login.py:68
+#, fuzzy
+msgid "Sabayon Linux Community registration"
+msgstr "Wolfden, Sabayon Linux Chief Community Officer"
+
+#: ../controllers/login.py:97
+msgid "Invalid Username"
+msgstr "Ongeldige gebruikersnaam"
+
+#: ../controllers/login.py:102
+msgid "Invalid Email, empty fields or mismatch"
+msgstr "Ongeldig emailadres, lege velden of geen overeenkomst"
+
+#: ../controllers/login.py:107
+msgid "Invalid Password, empty fields or mismatch or wrong length"
+msgstr "Ongeldig emailadres, lege velden, geen overeenkomst of onjuiste lengte"
+
+#: ../controllers/login.py:114
+msgid "Invalid Captcha Answer"
+msgstr "Ongeldig Captcha-antwoord"
+
+#: ../controllers/login.py:123
+msgid "Invalid"
+msgstr "Ongeldig"
+
+#: ../controllers/login.py:207 ../controllers/login.py:210
+#: ../controllers/login.py:215 ../controllers/login.py:219
+#: ../controllers/login.py:224 ../controllers/login.py:227
+#: ../controllers/login.py:229 ../controllers/login.py:231
+#: ../controllers/login.py:235 ../controllers/login.py:238
+#: ../controllers/login.py:283 ../controllers/login.py:287
+#: ../controllers/login.py:289 ../controllers/login.py:294
+#: ../controllers/login.py:299 ../controllers/login.py:301
+#: ../controllers/login.py:303 ../controllers/login.py:305
+#: ../controllers/login.py:308 ../controllers/login.py:310
+#: ../controllers/login.py:318 ../controllers/login.py:324
+#: ../controllers/pastebin.py:157 ../controllers/pastebin.py:164
+#: ../controllers/pastebin.py:349
+msgid "Error"
+msgstr "Fout"
+
+#: ../controllers/login.py:207 ../controllers/login.py:283
+msgid "invalid HTTP method"
+msgstr "Ongeldige HTTP-methode"
+
+#: ../controllers/login.py:210 ../controllers/login.py:287
+msgid "not logged in"
+msgstr "Niet ingelogd"
+
+#: ../controllers/login.py:215
+#, fuzzy
+msgid "wrong POST"
+msgstr "Fout: foutieve POST"
+
+#: ../controllers/login.py:219
+#, fuzzy
+msgid "invalid old e-mail"
+msgstr "Fout: ongeldig (oud) emailadres"
+
+#: ../controllers/login.py:224
+#, fuzzy
+msgid "you changed nothing"
+msgstr "Fout: u heeft niets gewijzigd"
+
+#: ../controllers/login.py:227
+#, fuzzy
+msgid "empty fields"
+msgstr "Fout: lege velden"
+
+#: ../controllers/login.py:229
+#, fuzzy
+msgid "e-mails do not match"
+msgstr "Fout: emailadressen komen niet overeen"
+
+#: ../controllers/login.py:231
+#, fuzzy
+msgid "invalid parameters"
+msgstr "Fout: ongeldige parameters"
+
+#: ../controllers/login.py:235
+#, fuzzy
+msgid "invalid e-mail (1)"
+msgstr "Fout: ongeldig emailadres (1)"
+
+#: ../controllers/login.py:238
+#, fuzzy
+msgid "invalid e-mail (2)"
+msgstr "Fout: ongeldig emailadres (2)"
+
+#: ../controllers/login.py:255 ../controllers/login.py:341
+msgid "Success"
+msgstr "Succes"
+
+#: ../controllers/login.py:255 ../controllers/login.py:341
+#, fuzzy
+msgid "you must activate your change. You have mail"
+msgstr "U dient uw wijziging te activeren"
+
+#: ../controllers/login.py:277
+msgid "Sabayon Linux Community E-mail Update Activation"
+msgstr ""
+
+#: ../controllers/login.py:289
+#, fuzzy
+msgid "not logged in (username)"
+msgstr "Fout: niet ingelogd (gebruikersnaam)"
+
+#: ../controllers/login.py:294
+#, fuzzy
+msgid "where is the current password?"
+msgstr "Fout: waar is het huidige wachtwoord?"
+
+#: ../controllers/login.py:299
+#, fuzzy
+msgid "missing fields"
+msgstr "Fout: ontbrekende velden"
+
+#: ../controllers/login.py:301
+#, fuzzy
+msgid "new password fields do not match"
+msgstr "Fout: nieuwe wachtwoordvelden komen niet overeen"
+
+#: ../controllers/login.py:303
+#, fuzzy
+msgid "wtf are you trying to do?"
+msgstr "Fout: wat probeer jij in vredesnaam te doen?"
+
+#: ../controllers/login.py:305
+#, fuzzy
+msgid "old and new password match"
+msgstr "Fout: oud en nieuw wachtwoord zijn hetzelfde"
+
+#: ../controllers/login.py:308
+#, fuzzy
+msgid "password too short"
+msgstr ""
+"Fout: wachtwoord te kort. Wrijf enkele malen over wachtwoord en probeer "
+"opnieuw :p"
+
+#: ../controllers/login.py:310
+#, fuzzy
+msgid "password too long"
+msgstr "Fout: wachtwoord te lang"
+
+#: ../controllers/login.py:318
+#, fuzzy
+msgid "invalid current password"
+msgstr "Fout: ongeldig huidig wachtwoord"
+
+#: ../controllers/login.py:324
+#, fuzzy
+msgid "you do not have a valid e-mail"
+msgstr "Fout: u heeft geen geldig emailadres"
+
+#: ../controllers/login.py:363
+msgid "Sabayon Linux Community Password Update Activation"
+msgstr ""
+
+#: ../controllers/pastebin.py:74
+#, fuzzy
+msgid "Sabayon Linux Pastebin"
+msgstr "Sabayon Linux Four Oh!"
+
+#: ../controllers/pastebin.py:85
+msgid "Bastard info"
+msgstr "Klootzakinformatie >:)"
+
+#: ../controllers/pastebin.py:92
+msgid "Removed from db"
+msgstr "Verwijderd uit database"
+
+#: ../controllers/pastebin.py:99
+#, fuzzy
+msgid "remove file"
+msgstr "Bestandspad verwijderd"
+
+#: ../controllers/pastebin.py:114
+msgid "Nothing removed"
+msgstr "Niets verwijderd (ja, schrok je van hè!)"
+
+#: ../controllers/pastebin.py:128
+msgid "Invalid pastebin_id"
+msgstr "Ongeldige pastebin_id"
+
+# Context? [ReemZ]
+#: ../controllers/pastebin.py:135
+msgid "Db returned status"
+msgstr ""
+
+#: ../controllers/pastebin.py:138
+msgid "Permission denied"
+msgstr "Toegang geweigerd"
+
+#: ../controllers/pastebin.py:150 ../controllers/pastebin.py:357
+#: ../controllers/pastebin.py:399
+#, fuzzy
+msgid "Sabayon Linux PixPastebin"
+msgstr "Sabayon Linux Four Oh!"
+
+#: ../controllers/pastebin.py:157
+msgid "invalid method"
+msgstr "Ongeldige methode"
+
+#: ../controllers/pastebin.py:164
+#, fuzzy
+msgid "cannot get IP"
+msgstr "Fout: kan geen IP verkrijgen"
+
+#: ../controllers/pastebin.py:186
+msgid "Invalid pastebin_doctypes_id"
+msgstr "Ongeldige pastebin_doctypes_id"
+
+#: ../controllers/pastebin.py:197
+msgid "Invalid pastebin_syntax_id"
+msgstr "Ongeldige pastebin_syntax_id"
+
+#: ../controllers/pastebin.py:208 ../controllers/pastebin.py:217
+msgid "Invalid expiration_days"
+msgstr "Ongeldige expiration_days"
+
+#: ../controllers/pastebin.py:233
+msgid "Permission denied, you need to be logged in to paste this"
+msgstr ""
+"Toegang geweigerd, u moet ingelogd zijn om gebruik te maken van de paste-"
+"functie"
+
+#: ../controllers/pastebin.py:239
+msgid "Empty buffer/content"
+msgstr "Lege buffer/inhoud"
+
+#: ../controllers/pastebin.py:242
+msgid "Too much text dude, are you crazy?"
+msgstr "Veel te veel tekst man, spoor jij wel?"
+
+#: ../controllers/pastebin.py:249
+msgid "No stream detected"
+msgstr "Geen stream gedetecteerd"
+
+#: ../controllers/pastebin.py:257
+msgid "Filename cannot contain non-ASCII characters"
+msgstr "Bestandsnaam mag geen non-ASCII karakters bevatten"
+
+#: ../controllers/pastebin.py:289
+msgid "You tried to upload a virus, error will be reported, you are fucked"
+msgstr ""
+"Je hebt geprobeerd een virus te uploaden, dit is al gemeld, je bent zwaar de "
+"lul."
+
+#: ../controllers/pastebin.py:296
+msgid "File size too big."
+msgstr "Bestand te groot"
+
+#: ../controllers/pastebin.py:302
+msgid "Not supported image type"
+msgstr "Niet-ondersteund beeldtype"
+
+#: ../templates/activation_successful.html:18
+#: ../templates/email_activation_successful.html:18
+#: ../templates/password_activation_successful.html:18
+msgid "Activation successful"
+msgstr "Activatie succesvol"
+
+#: ../templates/activation_successful.html:18
+msgid "Wow, thanks a lot! Now you can really start enjoying our Community"
+msgstr "OK dan, bedankt! Nu kun je volop gebruik maken van onze Community"
+
+#: ../templates/activation_successful.html:20
+#: ../templates/email_activation_successful.html:20
+#: ../templates/password_activation_successful.html:20
+msgid "Sorry"
+msgstr "Sorry"
+
+#: ../templates/activation_successful.html:20
+#: ../templates/email_activation_successful.html:20
+#: ../templates/password_activation_successful.html:20
+msgid "There is no activation information available"
+msgstr "Geen activatie-informatie beschikbaar"
+
+#: ../templates/body_left.html:11
+msgid "Distribution news"
+msgstr "Distributienieuws"
+
+#: ../templates/body_left.html:42
+msgid "Forum activity"
+msgstr "Forumactiviteit"
+
+#: ../templates/body_left.html:81
+msgid "Planet activity"
+msgstr "Planetactiviteit"
+
+#: ../templates/body_left.html:116
+#, fuzzy
+msgid "Code activity"
+msgstr "Programmeeractiviteit"
+
+#: ../templates/body_left.html:135
+msgid "Overlay activity"
+msgstr "Overlay-activiteit"
+
+#: ../templates/body_right.html:8
+msgid "Sponsors"
+msgstr "Sponsors"
+
+#: ../templates/body_right.html:11
+#, fuzzy
+msgid ""
+"Officially Sponsored by the <b>NLnet Foundation</b>, that financially "
+"supported the Entropy Project"
+msgstr ""
+"Officieel gesponsord door de <b>NLnet Foundation</b>, financieel supporter "
+"van ons Entropy Project"
+
+#: ../templates/body_right.html:11
+#, fuzzy
+msgid "See NLnet development plan status"
+msgstr "Zie NLnet ontwikkelplan-status"
+
+#: ../templates/body_right.html:15 ../templates/body_right.html:19
+#: ../templates/body_right.html:23
+msgid "Officially Sponsored by"
+msgstr "Officieel gesponsord door"
+
+#: ../templates/body_right.html:15
+msgid "University of Brescia"
+msgstr "de Universiteit van Brescia"
+
+#: ../templates/body_right.html:15
+msgid ""
+"Housing our Entropy build server inside the Faculty Network Center at the "
+"Department of Electronics"
+msgstr ""
+"Huisvesting van onze Entropy build server, binnen het "
+"faculteitsnetwerkcentrum van de Afdeling Electronica"
+
+#: ../templates/body_right.html:19
+#, fuzzy
+msgid "University of Milano-Bicocca"
+msgstr "de Universiteit van Brescia"
+
+#: ../templates/body_right.html:19
+msgid "Housing our Entropy build servers and WWW inside DISCo"
+msgstr ""
+
+# 'Proving' should be 'Providing', I think?
+# Translation based on above assumption.
+#  [ReemZ]
+#: ../templates/body_right.html:23
+#, fuzzy
+msgid "Proving the software technology we daily need"
+msgstr ""
+"Voor het beschikbaar stellen van de softwaretechnologie die wij dagelijks "
+"nodig hebben"
+
+#: ../templates/body_right.html:28
+msgid "Survey"
+msgstr "Onderzoek"
+
+#: ../templates/body_right.html:40
+msgid "Cross Linux From Scratch"
+msgstr ""
+
+#: ../templates/body_right.html:41
+msgid "Ibiblio.org Hosting"
+msgstr ""
+
+#: ../templates/email_activation_successful.html:18
+msgid "Your E-mail is now active"
+msgstr "Uw emailadres is nu actief"
+
+#: ../templates/footer.html:7
+msgid "Trademarks are property of their respective owners."
+msgstr "Handelsmerken zijn eigendom van hun respectievelijke eigenaars"
+
+#: ../templates/head.html:7
+#, fuzzy
+msgid "Sabayon Linux Five Oh!"
+msgstr "Sabayon Linux Four Oh!"
+
+#: ../templates/loginbox_inner.html:4
+msgid "Entropy Web Dashboard Login"
+msgstr "Entropy Web Dashboard Login"
+
+#: ../templates/loginbox_inner.html:11 ../templates/login.html:18
+msgid "New user?"
+msgstr "Nieuwe gebruiker?"
+
+#: ../templates/loginbox_inner.html:11
+msgid "What is all this ?"
+msgstr "Wat is dit allemaal?"
+
+#: ../templates/loginbox_inner.html:24 ../templates/login.html:23
+msgid "Login error"
+msgstr "Loginfout"
+
+#: ../templates/loginbox_inner.html:27 ../templates/loginbox_inner.html:89
+msgid "Comments"
+msgstr "Commentaar"
+
+#: ../templates/loginbox_inner.html:27 ../templates/loginbox_inner.html:89
+msgid "Docs"
+msgstr "Docs"
+
+#: ../templates/loginbox_inner.html:29 ../templates/loginbox_inner.html:91
+msgid "Votes"
+msgstr "Stemmen"
+
+#: ../templates/loginbox_inner.html:29 ../templates/loginbox_inner.html:91
+msgid "Downloads"
+msgstr "Downloads"
+
+#: ../templates/loginbox_inner.html:43
+#, c-format
+msgid "Hello <b>%s</b>, %s"
+msgstr ""
+
+#: ../templates/loginbox_inner.html:43
+msgid "Logout ?"
+msgstr "Uitloggen?"
+
+#: ../templates/loginbox_inner.html:49
+msgid "My Entropy"
+msgstr "Mijn Entropy"
+
+#: ../templates/loginbox_inner.html:52
+msgid "My User Generated Content"
+msgstr "Mijn User Generated Content"
+
+#: ../templates/loginbox_inner.html:55
+msgid "My Statistics"
+msgstr "Mijn Statistieken"
+
+#: ../templates/loginbox_inner.html:60
+msgid "My Sabayon"
+msgstr "Mijn Sabayon"
+
+#: ../templates/loginbox_inner.html:63
+msgid "My Dashboard"
+msgstr "Mijn Dashboard"
+
+#: ../templates/loginbox_inner.html:66
+msgid "My Pastebin"
+msgstr "Mijn Pastebin"
+
+#: ../templates/loginbox_inner.html:79
+msgid "points"
+msgstr "punten"
+
+#: ../templates/loginbox_inner.html:83
+msgid "My Comments"
+msgstr "Mijn commentaar"
+
+#: ../templates/loginbox_inner.html:83
+msgid "My Docs"
+msgstr "Mijn documenten"
+
+#: ../templates/loginbox_inner.html:84
+msgid "My Votes"
+msgstr "Mijn stemmen"
+
+# Not sure...Avg == average ??
+# Translation based on this assumption
+# [ReemZ]
+#: ../templates/loginbox_inner.html:84
+#, fuzzy
+msgid "My Avg"
+msgstr "Mijn Gem."
+
+#: ../templates/page_error.html:29
+msgid "Houston, we've got a problem!"
+msgstr "Schiphol? Hallo Schiphol? We hebben 'n probleempje..."
+
+#: ../templates/page_error.html:32
+#, c-format
+msgid ""
+"Probably the page you are looking for <b>does not exist</b> anymore. You can "
+"blame <u>aliens</u>. Well, we are really sorry. Why don't you get to our <a "
+"href=\"%s\">home page</a>?"
+msgstr ""
+
+#: ../templates/password_activation_successful.html:18
+msgid "Your Password is now updated"
+msgstr "Uw wachtwoord is ge-update"
+
+#: ../templates/password_activation_successful.html:22
+msgid "confirmation code"
+msgstr "Bevestigingscode"
+
+#: ../templates/password_activation_successful.html:23
+msgid "validation id"
+msgstr "Validatie-id"
+
+#: ../templates/password_activation_successful.html:24
+msgid "user id"
+msgstr "gebruikers-id"
+
+# ?? [ReemZ]
+#: ../templates/register.html:22
+msgid "(Sabayon leader)"
+msgstr ""
+
+#: ../templates/register.html:27
+msgid ""
+"<b>You may ask</b>. What do we offer in change? <b>We answer</b>, your own "
+"<b>Blog</b> on this Portal, your personal <b>\"Pastebin\"</b> and file "
+"upload service called <b>\"Pixdiff\"</b>, a <b>warm Community</b> that will "
+"always help you out, the ability to <b>vote</b> and <b>interact</b> with "
+"what we offer and with other people inside this space. We are just used to "
+"call all this with one name: <b>Sabayon</b>, <i>the \"2.0\" (two-point-oh) "
+"distribution</i>"
+msgstr ""
+"<b>U vraagt zich wellicht af:</b> wat bieden wij in ruil? <b>Wij antwoorden:"
+"</b> uw eigen <b>Blog</b> op dit Portal, uw persoonlijke <b>\"Pastebin\"</b> "
+"and File Upload Service <b>\"Pixdiff\"</b>, een <b>warmhartige Community</b> "
+"die u altijd zal helpen, <b>stemrecht</b> en <b>interactie</b> met wat wij "
+"bieden en met andere mensen in de community. We zijn gewoon dit alles onder "
+"één naam te vatten: <b>Sabayon</b>, <i>de \"2.0\" (two-point-oh) "
+"distributie</i>"
+
+#: ../templates/register.html:30
+msgid ""
+"Please note that you will need to enter a valid e-mail address before your "
+"account is activated. You will receive an e-mail at the address you provide "
+"that contains an account activation link"
+msgstr ""
+"Denk eraan een geldig emailadres in te voeren alvorens uw account "
+"geactiveerd wordt. U zult op dit adres een email ontvangen met daarin een "
+"activatielink"
+
+#: ../templates/registration_form.html:7
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: ../templates/registration_form.html:9
+msgid "Length must be between 3 and 20 characters"
+msgstr "Lengte moet 3 tot 20 karakters zijn"
+
+#: ../templates/registration_form.html:17
+msgid "E-mail address"
+msgstr "Emailadres"
+
+#: ../templates/registration_form.html:25
+msgid "Confirm e-mail address"
+msgstr "Bevestig emailadres"
+
+#: ../templates/registration_form.html:33
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: ../templates/registration_form.html:34
+msgid "Must be between 6 and 30 characters"
+msgstr "Moet 6 tot 30 karakters zijn"
+
+#: ../templates/registration_form.html:42
+msgid "Confirm password"
+msgstr "Bevestig wachtwoord"
+
+#: ../templates/registration_form.html:68
+msgid "Registration Agreement"
+msgstr "Overeenkomst van Registratie"
+
+#: ../templates/registration_form.html:73
+msgid "I agree with the terms above"
+msgstr "I ga AKKOORD met hierbovengenoemde voorwaarden"
+
+#: ../templates/registration_successful.html:2
+msgid "Registration successful"
+msgstr "Registratie succesvol"
+
+#: ../templates/registration_successful.html:2
+msgid "Wow, thanks a lot!"
+msgstr "OK dan, bedankt!"
+
+# I'm not sure what you're trying to say here, so I'm not sure how to actually translate this =) [ReemZ]
+#: ../templates/registration_successful.html:4
+msgid ""
+"You should have waited the activation e-mail but the one you provided has "
+"not been accepted for delivery"
+msgstr ""
+
+#: ../templates/registration_successful.html:5
+#, fuzzy
+msgid ""
+"Please contact <a href=\"mailto:mail.issues@sabayon.org\">our service</a> "
+"and ask for help"
+msgstr ""
+"Neemt u contact op met <a href=\"mailto:mail.issues@sabayonlinux.org\">onze "
+"storingsdienst</a> en vraag om hulp"
+
+#: ../templates/registration_successful.html:7
+msgid ""
+"Now you need to wait and read the activation e-mail before being able to "
+"login"
+msgstr ""
+"Nu dient u te wachten en de activatie-email te lezen, voor u kunt inloggen"
+
+#: ../templates/registration_successful.html:10
+#, fuzzy, c-format
+msgid "<a href='%s'>Click here</a> to come back to the source page"
+msgstr "Klik hier</a> om terug te gaan naar de bronpagina"
+
+#: ../templates/pastebin/pastebin_disclaimer.html:2
+msgid "Read carefully"
+msgstr "Lees dit goed"
+
+#: ../templates/pastebin/pastebin_disclaimer.html:2
+msgid ""
+"do not paste sensitive data, it is not protected, this means that other "
+"people can read it. Use this tool only for exchanging stuff in public "
+"virtual places such as IRC, Forums and so forth. Your data will be removed "
+"once expired, we cannot guarantee the storage of the content here. Your IP "
+"is logged and you are invited to respect any existing law. No spamming, No "
+"porn, nothing! Allright?"
+msgstr ""
+"geef géén gevoelige gegevens in! Het is niet beveiligd, ofwel: anderen "
+"kunnen meelezen. Gebruik deze tool alleen om publiekelijk toegankelijk "
+"materiaal te plaatsen, zoals IRC-quotes, forumposts en dergelijke. Eenmaal "
+"verlopen worden uw gegevens verwijderd, wij kunnen de opslag niet "
+"garanderen. Uw IP-adres is gelogd en u wordt vriendelijk verzocht enige "
+"bestaande wet te respecteren. Geen gespam, geen porno, geen flauwekul. "
+"Gesnopen?"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:7
+msgid "Latest Pasties"
+msgstr "Meest recente pasties"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:10
+#: ../templates/pastebin/remove_pastie.html:28
+msgid "PixPastebin Home"
+msgstr "PixPastebin Home"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:25
+#: ../templates/pastebin/pastebin_latest_pasties.html:47
+msgid "No Pasties"
+msgstr "Geen pasties"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:32
+msgid "My Latest"
+msgstr "Mijn meest recente"
+
+#: ../templates/pastebin/pastebin_submit_body.html:19
+msgid ""
+"Choose <span id=\"pastebin-submit-type-name\">a file</span> and get ready to "
+"paste!"
+msgstr ""
+"Kies <span id=\"pastebin-submit-type-name\">een bestand</span> en paste!"
+
+#: ../templates/pastebin/pastebin_submit_body.html:20
+msgid "Important"
+msgstr "Belangrijk!"
+
+#: ../templates/pastebin/pastebin_submit_body.html:20
+msgid "you cannot send viruses, they are destroyed automatically"
+msgstr "u kunt geen virussen versturen, deze worden automatisch vernietigd"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:3
+msgid "Expiration"
+msgstr "Verloopt na"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:4
+msgid "One day"
+msgstr "een dag"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:5
+msgid "One month"
+msgstr "een maand"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:6
+msgid "One year"
+msgstr "een jaar"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:9
+#, fuzzy, c-format
+msgid "as <b>%s</b> and permissions:"
+msgstr "en is toegankelijk voor"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:42
+msgid "Wrong CAPTCHA !!! Take this, stupid spammer!"
+msgstr "Foutieve CAPTCHA!!! In je smoel, spammer!!"
+
+#: ../templates/pastebin/pastebin_submit_header.html:4
+msgid "Document type"
+msgstr "Documenttype"
+
+#: ../templates/pastebin/remove_pastie.html:21
+msgid "Ok fine, pastie removed"
+msgstr "OK, pastie verwijderd"
+
+#: ../templates/pastebin/remove_pastie.html:23
+msgid "Message"
+msgstr "Bericht"
+
+#: ../templates/pastebin/show_pastie_file.html:5
+#, fuzzy, c-format
+msgid "All the uploaded files are checked by %s"
+msgstr "Alle ge-uploade bestanden worden gecontroleerd door"
+
+#: ../templates/pastebin/show_pastie_header.html:6
+#, fuzzy
+msgid "expires in"
+msgstr "Verloopt na"
+
+#: ../templates/pastebin/show_pastie_header.html:6
+msgid "days"
+msgstr ""
+
+# Context? [ReemZ]
+#: ../templates/pastebin/show_pastie_header.html:6
+msgid "by"
+msgstr ""
+
+#: ../templates/pastebin/show_pastie_image.html:16
+msgid "An image should pop up above this text"
+msgstr "Een beeldbestand zou boven deze tekst moeten verschijnen"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:2
+msgid "Not found"
+msgstr "Niet gevonden"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:4
+msgid "The pastie you are looking for is not available"
+msgstr "De pastie die u zoekt is niet beschikbaar"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:4
+msgid "Paste something?"
+msgstr "Iets te plakken?"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:6
+#: ../templates/pastebin/show_pastie_submit_error.html:6
+msgid "Error message"
+msgstr "Foutmelding"
+
+#: ../templates/pastebin/show_pastie_submit_error.html:2
+msgid "Oops, Error"
+msgstr "Foutje, bedáánkt!"
+
+#: ../templates/pastebin/show_pastie_submit_error.html:4
+msgid "An error occured while pasting your data"
+msgstr "Tijdens het pasten van uw gegevens is een fout opgetreden"
+
+#: ../templates/pastebin/show_pastie_submit_error.html:4
+msgid "Get back?"
+msgstr "Terug?"
+
+#: ../templates/pastebin/show_pastie_tools.html:2
+msgid "Make a fresh post"
+msgstr "Maak een nieuwe pastie aan"
+
+#: ../templates/pastebin/show_pastie_tools.html:4
+msgid "edit this"
+msgstr "pas deze aan"
+
+#: ../templates/pastebin/show_pastie_tools.html:8
+msgid "delete this"
+msgstr "verwijder deze"
+
+#~ msgid "Official Sabayon Linux Web Chat"
+#~ msgstr "Officiële Sabayon Linux Web Chat"
+
+#~ msgid ""
+#~ "Invalid parameters... or perhaps you are cheating? Well, we are not so "
+#~ "stupid."
+#~ msgstr ""
+#~ "Ongeldige parameters...of ben je aan het cheaten? Hoe dom denk je dat we "
+#~ "zijn?"
+
+#~ msgid "no user_id"
+#~ msgstr "Geen user_id"
+
+#~ msgid "do not cheat please"
+#~ msgstr "Niet cheaten."
+
+#, fuzzy
+#~ msgid "MSN Messenger"
+#~ msgstr "Bericht"
+
+#~ msgid "Website"
+#~ msgstr "Website"
+
+#~ msgid "Location"
+#~ msgstr "Locatie"
+
+#~ msgid "Interests"
+#~ msgstr "Interesses"
+
+#~ msgid "Occupation"
+#~ msgstr "Beroep"
+
+#, fuzzy
+#~ msgid "Your Community signature"
+#~ msgstr "Community Score van deze gebruiker"
+
+#~ msgid "E-mail"
+#~ msgstr "Email"
+
+#, fuzzy
+#~ msgid "Your current e-mail"
+#~ msgstr "Uw emailadres"
+
+#, fuzzy
+#~ msgid "User Groups"
+#~ msgstr "Groepen"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Community Area"
+#~ msgstr "Sabayon Linux Forum"
+
+#, fuzzy
+#~ msgid "you name it"
+#~ msgstr "Pak 'm dan!"
+
+#, fuzzy
+#~ msgid "My Sabayon Dashboard"
+#~ msgstr "Mijn Dashboard"
+
+#~ msgid "invalid pages_id"
+#~ msgstr "Ongeldige pages_id"
+
+#~ msgid "permission denied"
+#~ msgstr "Toegang geweigerd"
+
+#~ msgid "profile updated successfully !"
+#~ msgstr "Profielupdate met succes voltooid!"
+
+#~ msgid "wrong search request"
+#~ msgstr "Foutieve zoekopdracht"
+
+#, fuzzy
+#~ msgid "Donate to Sabayon Linux"
+#~ msgstr "Sabayon Linux Forum"
+
+#, fuzzy
+#~ msgid "Thank you for your donation"
+#~ msgstr "Bedankt voor uw stem!"
+
+#, fuzzy
+#~ msgid "Sabayon Linux donation success!"
+#~ msgstr "Sabayon Linux Four Oh!"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Download Mirrors"
+#~ msgstr "Sabayon Linux Forum"
+
+#~ msgid "invalid mirror identifier"
+#~ msgstr "Ongeldige mirror identifier"
+
+#, fuzzy
+#~ msgid "mirror removed"
+#~ msgstr "Mirror succesvol verwijderd"
+
+#~ msgid "invalid mirror link"
+#~ msgstr "Ongeldige mirror-link"
+
+#~ msgid "mirror name too short"
+#~ msgstr "Naam van mirror te kort"
+
+#~ msgid "invalid mirror speed"
+#~ msgstr "Ongeldige mirror-snelheid"
+
+#~ msgid "invalid mirror country"
+#~ msgstr "Ongeldig mirror-land"
+
+#, fuzzy
+#~ msgid "updated"
+#~ msgstr "Pagina-update met succes voltooid"
+
+#~ msgid "insert at least one link"
+#~ msgstr "Voer tenminste 1 link in"
+
+#~ msgid "insert at least one valid link"
+#~ msgstr "Voer tenminste 1 geldige link in"
+
+#~ msgid "Packages"
+#~ msgstr "Packages"
+
+#~ msgid "Packages match"
+#~ msgstr "Packages komen overeen"
+
+#~ msgid "Package descriptions"
+#~ msgstr "Packagebeschrijvingen"
+
+#~ msgid "Files"
+#~ msgstr "Bestanden"
+
+#~ msgid "Libraries"
+#~ msgstr "Libraries"
+
+#~ msgid "Alphabet"
+#~ msgstr "Alfabet"
+
+#~ msgid "Vote"
+#~ msgstr "Stem"
+
+#~ msgid "vote"
+#~ msgstr "stem"
+
+#~ msgid "downloads"
+#~ msgstr "downloads"
+
+#~ msgid "Package name"
+#~ msgstr "Naam van package"
+
+#~ msgid "Content (text)"
+#~ msgstr "Inhoud (tekst)"
+
+#~ msgid "Keyword (tag)"
+#~ msgstr "Keyword (tag)"
+
+#~ msgid "Document id."
+#~ msgstr "Document id."
+
+#~ msgid "No restrictions"
+#~ msgstr "Geen beperkingen"
+
+#~ msgid "Number of downloads"
+#~ msgstr "Aantal downloads"
+
+#~ msgid "key"
+#~ msgstr "key"
+
+#~ msgid "username"
+#~ msgstr "gebruikersnaam"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Packages Repository"
+#~ msgstr "Sabayon Linux Forum"
+
+#~ msgid "invalid search string"
+#~ msgstr "Ongeldige zoekstring"
+
+#~ msgid "invalid search type"
+#~ msgstr "Ongeldig zoektype"
+
+#~ msgid "invalid search restriction type"
+#~ msgstr "Ongeldig type zoekbeperking"
+
+#~ msgid "invalid 'order by'"
+#~ msgstr "Ongeldige 'order by'"
+
+#~ msgid "invalid document"
+#~ msgstr "Ongeldig document"
+
+#~ msgid "invalid document specified"
+#~ msgstr "Ongeldig document gespecificeerd"
+
+#~ msgid "permission denied, you suck!"
+#~ msgstr "Toegang geweigerd...kut voor je!"
+
+#~ msgid "WTF? invalid document type!"
+#~ msgstr "Krijg nou de tering? Ongeldig documenttype!"
+
+#~ msgid "you know what? I cannot handle this document"
+#~ msgstr ""
+#~ "Weet je wat? Ik kan niets met dit document...zoek het lekker zelf uit!"
+
+#~ msgid "Document removed successfully, sigh :'-("
+#~ msgstr "Document verwijderd...zucht :'-("
+
+#~ msgid "wrong username"
+#~ msgstr "Verkeerde gebruikersnaam"
+
+#~ msgid "no document specified"
+#~ msgstr "Geen document gespecificeerd"
+
+#~ msgid "invalid document type"
+#~ msgstr "Ongeldig documenttype"
+
+#~ msgid "invalid package key"
+#~ msgstr "Ongeldige package key"
+
+#~ msgid "invalid package string"
+#~ msgstr "Ongeldige package string"
+
+#~ msgid "title too short"
+#~ msgstr "Titel te kort"
+
+#~ msgid "description too short"
+#~ msgstr "Beschrijving te kort"
+
+#~ msgid "comment text too short"
+#~ msgstr "Commentaar te kort"
+
+#~ msgid "no file? no party!"
+#~ msgstr "Geen bestand? Geen feest!"
+
+#~ msgid "file too big"
+#~ msgstr "Bestand te groot"
+
+#~ msgid "document added but couldn't determine 'iddoc' correctly"
+#~ msgstr "Document toegevoegd, maar kon geen correcte 'iddoc' toewijzen"
+
+#~ msgid "user not authenticated"
+#~ msgstr "Gebruiker niet geïdentificeerd"
+
+#~ msgid "invalid vote"
+#~ msgstr "Ongeldige stem (ben jij al 18?)"
+
+#~ msgid "invalid package"
+#~ msgstr "Ongeldige package"
+
+#~ msgid "vote not in range"
+#~ msgstr "Stem buiten bereik"
+
+#~ msgid "you already voted this"
+#~ msgstr "U heeft hier al op gestemd"
+
+#~ msgid "wrong page type"
+#~ msgstr "Verkeerde paginatype"
+
+#~ msgid "wrong page state"
+#~ msgstr "Verkeerde paginastatus"
+
+#~ msgid "wrong page number"
+#~ msgstr "Verkeerde paginanummer"
+
+#~ msgid "missing introduction"
+#~ msgstr "Ontbrekende introductie"
+
+#~ msgid "missing page body"
+#~ msgstr "Ontbrekende body in pagina"
+
+#~ msgid "missing title"
+#~ msgstr "Ontbrekende titel"
+
+#~ msgid "invalid page type"
+#~ msgstr "Ongeldig paginatype"
+
+#~ msgid "invalid page state"
+#~ msgstr "Ongeldige paginastatus"
+
+#~ msgid "invalid 'pages_id' or 'page_num'"
+#~ msgstr "Ongeldige 'pages_id' of 'page_num'"
+
+#, fuzzy
+#~ msgid "Success:"
+#~ msgstr "Succes"
+
+#, fuzzy
+#~ msgid "page updated"
+#~ msgstr "Pagina-update met succes voltooid"
+
+#~ msgid "invalid 'pages_id'"
+#~ msgstr "Ongeldige 'pages_id'"
+
+#~ msgid "invalid 'page_num'"
+#~ msgstr "Ongeldige 'page_num'"
+
+#~ msgid "'pages_id' and previous 'page_num' not available"
+#~ msgstr "'pages_id' and vorige 'page_num' niet beschikbaar"
+
+#~ msgid "invalid page"
+#~ msgstr "Ongeldige pagina"
+
+#~ msgid "wrong data"
+#~ msgstr "Foutieve gegevens"
+
+#~ msgid "invalid option name"
+#~ msgstr "Ongeldige optienaam"
+
+#~ msgid "page not available"
+#~ msgstr "Pagina niet beschikbaar"
+
+#~ msgid "empty option name"
+#~ msgstr "Optienaam leeg"
+
+#, fuzzy
+#~ msgid "invalid option identifier"
+#~ msgstr "Ongeldige optie-identifier"
+
+#~ msgid "invalid option name, not allowed"
+#~ msgstr "Ongeldige optienaam, niet toegestaan"
+
+#~ msgid "unknown error"
+#~ msgstr "Onbekende fout"
+
+#, fuzzy
+#~ msgid "invalid pinboard identifier"
+#~ msgstr "Ongeldige prikbord identifier"
+
+#~ msgid "missing description"
+#~ msgstr "Ontbrekende beschrijving"
+
+#~ msgid "invalid element"
+#~ msgstr "Ongeldig element"
+
+#~ msgid "empty note"
+#~ msgstr "Lege notitie"
+
+#, fuzzy
+#~ msgid "invalid pinboard data identifier"
+#~ msgstr "Ongeldige prikbordgegevens identifier"
+
+#~ msgid "invalid status"
+#~ msgstr "Ongeldige status"
+
+#~ msgid "invalid element data"
+#~ msgstr "Ongeldige elementgegevens"
+
+#~ msgid "This was the last one, w00t!"
+#~ msgstr "Dit was de laatste, w00t!"
+
+#~ msgid "you are not allowed to delete this"
+#~ msgstr "U hebt geen rechten dit te verwijderen"
+
+#, fuzzy
+#~ msgid "invalid share status"
+#~ msgstr "Ongeldige share-status"
+
+#~ msgid "no users selected, WTF?"
+#~ msgstr "Geen gebruikers geselecteerd...WTF?"
+
+#~ msgid ""
+#~ "your friends have been mailed but won't be listed until they accept your "
+#~ "offer"
+#~ msgstr ""
+#~ "Uw vrienden zijn gemailed, maar worden niet in de lijst opgenomen tot ze "
+#~ "uw aanbod accepteren"
+
+#~ msgid "invalid user id"
+#~ msgstr "Ongeldige gebruikers-id"
+
+#, fuzzy
+#~ msgid "invalid share id"
+#~ msgstr "Ongeldige share-id"
+
+#~ msgid "confirmation not found"
+#~ msgstr "Geen bevestiging gevonden"
+
+#~ msgid "pinboard removed or already shared with you"
+#~ msgstr "Prikbord verwijderd of al met u gedeeld"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Screenshots"
+#~ msgstr "Sabayon Linux Support Chat"
+
+#~ msgid "unable to access the screenshots directory"
+#~ msgstr "Screenshots directory ontoegankelijk"
+
+#~ msgid "invalid new name"
+#~ msgstr "Ongeldige nieuwe naam"
+
+#~ msgid "name already taken"
+#~ msgstr "Naam al in gebruik"
+
+#~ msgid "title already taken"
+#~ msgstr "Titel al in gebruik"
+
+#~ msgid "invalid file extension"
+#~ msgstr "Ongeldige bestandsextensie"
+
+#~ msgid "invalid file, too short"
+#~ msgstr "Ongeldig bestand, te kort"
+
+#, fuzzy
+#~ msgid "general unpack error"
+#~ msgstr "Algemene fout bij uitpakken"
+
+#, fuzzy
+#~ msgid "convert failed on"
+#~ msgstr "Conversie mislukt op/vanwege"
+
+#, fuzzy
+#~ msgid "data uploaded and unpacked correctly"
+#~ msgstr "Succes: gegevens correct ge-upload en uitgepakt"
+
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgid "N/A"
+#~ msgstr "N/A"
+
+#, fuzzy
+#~ msgid "Public Profile"
+#~ msgstr "Profiel"
+
+#~ msgid "as easy as an abacus, as fast as a segway"
+#~ msgstr "Zo simpel als een telraam, zo snel als een Segway"
+
+#~ msgid "Be active"
+#~ msgstr "Wees actief!"
+
+#~ msgid "Join us"
+#~ msgstr "Kom erbij :)"
+
+#~ msgid "Download"
+#~ msgstr "Download"
+
+#~ msgid "Administrative messages"
+#~ msgstr "Huishoudelijke mededelingen"
+
+#~ msgid "We are looking for funds, give us 2 minutes"
+#~ msgstr "Twee minuutjes, even wat fondsen zoeken..."
+
+#~ msgid ""
+#~ "The Sabayon Linux Project is looking for funds to <b>buy two new servers</"
+#~ "b>. Economic crisis ran over Free Software too and we are aware of how "
+#~ "much every single penny counts. But, as you might have seen, we decided "
+#~ "to take an <b>opposite route</b> and reduce the amount of advertisments "
+#~ "around the website. Still, we're close to place <b>new servers</b> inside "
+#~ "other Universities and <b>we need your help</b> to achieve this result. "
+#~ "See <a href=\"/donate\">our donation page</a> or read below"
+#~ msgstr ""
+#~ "Het Sabayon Linux Project is op zoek naar fondsen om <b>twee nieuwe "
+#~ "servers te kopen</b>. De economische crisis heeft ook Free Software "
+#~ "geraakt en we weten hoezeer elke cent telt. Maar, zoals u wellicht gezien "
+#~ "heeft, hebben we besloten een <b>andere weg in te slaan</b> en het aantal "
+#~ "advertenties op de website te verminderen. Dan nog zijn we dichtbij het "
+#~ "plaatsen van <b>nieuwe servers</b> op andere universiteiten en <b>wij "
+#~ "hebben uw hulp nodig</b> om dit te bereiken. Zie <a href=\"/donate\">onze "
+#~ "donatiepagina</a> of lees hieronder verder."
+
+#~ msgid ""
+#~ "This is what we need (sponsors are welcome too -- 3000&euro; in terms of "
+#~ "money"
+#~ msgstr ""
+#~ "Dit hebben we nodig (sponsors zijn ook welkom -- vanaf &euro; 3000,-)"
+
+#~ msgid "recorded weekly"
+#~ msgstr "Wekelijks vastgelegd"
+
+#, fuzzy
+#~ msgid "Make a donation"
+#~ msgstr "Doneer"
+
+#~ msgid ""
+#~ "By donating, you empower us with the time and resources we need to bring "
+#~ "you the <i>best Linux experience ever</i>. Click on the link above and "
+#~ "give us the chance to continue to serve you <b>for free</b>"
+#~ msgstr ""
+#~ "Door te doneren geeft u ons de tijd en de hulpbronnen die wij nodig "
+#~ "hebben om u <i>de beste Linux-ervaring ooit</i> te bieden. Klik op "
+#~ "bovenstaande link en geef ons de mogelijkheid u <b><i>for free</i></b> te "
+#~ "bedienen."
+
+#~ msgid "Join Sabayon Linux on Facebook"
+#~ msgstr "Voeg Sabayon Linux toe op Facebook"
+
+#~ msgid ""
+#~ "There is no way in the entire World we wouldn't had our Facebook Group! "
+#~ "Like it or not, we are there. So, what are you waiting for?"
+#~ msgstr ""
+#~ "Het kan gewoon niet bestaan dat wij geen eigen Facebook-groep hebben! Of "
+#~ "je 't leuk vindt of niet, we hebben er een. Dus...waar wacht je nog op?"
+
+#, fuzzy
+#~ msgid "Sabayon 5.1 GNOME and KDE are HERE</a>"
+#~ msgstr "Sabayon 4.2 Gnome is HIER!</a>"
+
+#, fuzzy
+#~ msgid ""
+#~ "On the behalf of the Sabayon Linux team, we are pleased to announce that "
+#~ "<i>the next big thing</i> is <b>here</b>"
+#~ msgstr ""
+#~ "Namens het Sabayon Linux team, verheugen wij ons te berichten dat <i>the "
+#~ "next big thing</i> er is!"
+
+#, fuzzy
+#~ msgid "Go get it"
+#~ msgstr "Pak 'm dan!"
+
+#~ msgid "Edit your comment"
+#~ msgstr "Wijzig uw commentaar"
+
+#~ msgid "You need to be logged in to edit a comment"
+#~ msgstr "U moet ingelogd zijn om een commentaar te wijzigen"
+
+#~ msgid "Login?"
+#~ msgstr "Login?"
+
+#~ msgid "Register?"
+#~ msgstr "Registreer?"
+
+#~ msgid "Score"
+#~ msgstr "Score"
+
+#~ msgid "Delete"
+#~ msgstr "Verwijder"
+
+#~ msgid "Edit"
+#~ msgstr "Bewerken"
+
+#, fuzzy
+#~ msgid "Comment error"
+#~ msgstr "Fout in commentaar"
+
+#~ msgid "comments"
+#~ msgstr "commentaar"
+
+#~ msgid "Write your new comment below"
+#~ msgstr "Plaats uw commentaar hieronder"
+
+#~ msgid "You need to be logged in to post a comment"
+#~ msgstr "U moet ingelogd zijn om commentaar te plaatsen"
+
+#~ msgid "Your IP address has been banned for-EVA! Poor you... POOR you!"
+#~ msgstr "Je IP-adres is voor EEUWIG gebanned! Och arme jij...ARREME jij..."
+
+#~ msgid "Communicate"
+#~ msgstr "Communiceer"
+
+#~ msgid "Organisation"
+#~ msgstr "Organisatie"
+
+#~ msgid "Planet"
+#~ msgstr "Planet"
+
+#~ msgid "Forum"
+#~ msgstr "Forum"
+
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
+
+#~ msgid "Web Chat"
+#~ msgstr "Webchat"
+
+#~ msgid "Press Documentation"
+#~ msgstr "Persdocumentatie"
+
+#~ msgid "Sabayon Roadmap"
+#~ msgstr "Sabayon Roadmap"
+
+#~ msgid "Get involved"
+#~ msgstr "Raak betrokken"
+
+#~ msgid "PixPastebin"
+#~ msgstr "PixPastebin"
+
+#~ msgid "Community"
+#~ msgstr "Community"
+
+#~ msgid "Packages and UGC"
+#~ msgstr "Packages en UGC"
+
+#~ msgid "Report a bug"
+#~ msgstr "Rapporteer een bug"
+
+#~ msgid "Browse Git"
+#~ msgstr "Browse Git"
+
+#~ msgid "Mailing Lists"
+#~ msgstr "Emaillijsten"
+
+#~ msgid "Funding"
+#~ msgstr "Fondsen"
+
+#, fuzzy
+#~ msgid "Enjoy Sabayon"
+#~ msgstr "Enjoy Sabayon"
+
+#~ msgid "Screenshots"
+#~ msgstr "Screenshots"
+
+#~ msgid "CD/DVD Distributors"
+#~ msgstr "CD/DVD-distributeurs"
+
+#~ msgid "successfully"
+#~ msgstr "succesvol"
+
+#~ msgid "Preview"
+#~ msgstr "Preview"
+
+#~ msgid "here"
+#~ msgstr "hier"
+
+#~ msgid "Reload this page"
+#~ msgstr "Deze pagina opnieuw laden"
+
+#~ msgid "Introduction"
+#~ msgstr "Introductie"
+
+#~ msgid "Thank you for voting !"
+#~ msgstr "Bedankt voor uw stem!"
+
+#~ msgid "Sorreey, it seems you already voted"
+#~ msgstr "Sorry, het lijkt erop dat u al gestemd heeft"
+
+#~ msgid "Try again tomorrow, or the day after"
+#~ msgstr "Probeert u het morgen nog eens, of overmorgen..."
+
+#~ msgid "Pages navigation"
+#~ msgstr "Pagina-navigatie"
+
+#~ msgid ""
+#~ "Sabayon Linux is a <a href=\"http://www.gentoo.org\" target=\"_blank"
+#~ "\">Gentoo Linux</a> based distribution which relies its packages "
+#~ "versioning and patches from the Gentoo Portage tree and our add-on "
+#~ "repository called \"overlay\". Thus, Gentoo Linux Security Advisories "
+#~ "(GLSA) can be applied to the packages listed in our tree. Here below, you "
+#~ "can see a list of the latest GLSAs published by the Gentoo Project"
+#~ msgstr ""
+#~ "Sabayon Linux is een op <a href=\"http://www.gentoo.org\" target=\"_blank"
+#~ "\">Gentoo Linux</a> gebaseerde distributie, die voor packageversionering "
+#~ "en patches afhankelijk is van de <i>Gentoo Portage tree</i> en van onze "
+#~ "eigen <i>repository</i>. Aldus kunnen <i>Gentoo Linux Security "
+#~ "Advisories</i> (GLSA) op de packages in onze <i>tree</i> toegepast "
+#~ "worden. Hieronder vindt u een lijst van de meest recente GLSAs, "
+#~ "uitgegeven door het Gentoo Project"
+
+#~ msgid "full feed here"
+#~ msgstr "Volledige feed"
+
+#~ msgid "Security Advisories"
+#~ msgstr "Security Advisories"
+
+#~ msgid "You can get the complete list on the"
+#~ msgstr "U kunt de complete lijst verkrijgen via de"
+
+#~ msgid "Gentoo Linux Security Advisories feed"
+#~ msgstr "Gentoo Linux Security Advisories feed"
+
+#~ msgid "Categories"
+#~ msgstr "Categorieën"
+
+#~ msgid "Release"
+#~ msgstr "Release"
+
+#~ msgid "No packages in this category"
+#~ msgstr "Geen packages in deze categorie"
+
+#~ msgid "Destroy"
+#~ msgstr "Vernietig"
+
+#, fuzzy
+#~ msgid "Add documents <b>gain scores</b> !"
+#~ msgstr "Voeg documenten toe, <b>verhoog uw score</b>!"
+
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgid "Length must be between 10 and 160"
+#~ msgstr "Lengte moet tussen 10 en 160 zijn"
+
+#~ msgid "Description"
+#~ msgstr "Beschrijving"
+
+#~ msgid "Keywords"
+#~ msgstr "Keywords"
+
+#~ msgid "Space separated, minimum length: 4 chars each"
+#~ msgstr "Gescheiden door spaties, elk minimaal 4 karakters lang"
+
+#~ msgid "Choose what kind of document you want to add"
+#~ msgstr "Kies welk documenttype u wilt toevoegen"
+
+#~ msgid "Comment text"
+#~ msgstr "Commentaar"
+
+#~ msgid "Insert your comment on this field"
+#~ msgstr "Voeg uw commentaar toe in dit veld"
+
+#, fuzzy
+#~ msgid "File chooser"
+#~ msgstr "Bestandskiezer"
+
+#~ msgid "Select the file you want to upload"
+#~ msgstr "Selecteer het bestand dat u wilt uploaden"
+
+#~ msgid "You need to be logged in to add documents"
+#~ msgstr "U moet ingelogd zijn om documenten toe te voegen"
+
+#, fuzzy
+#~ msgid "Repository"
+#~ msgstr "Entropy Repository"
+
+#~ msgid "Category"
+#~ msgstr "Categorie"
+
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgid "Version"
+#~ msgstr "Versie"
+
+#~ msgid "Entropy revision"
+#~ msgstr "Entropy revisie"
+
+#~ msgid "Package tag"
+#~ msgstr "Package tag"
+
+#, fuzzy
+#~ msgid "Slot"
+#~ msgstr "Slot"
+
+#~ msgid "Dependencies"
+#~ msgstr "Dependencies"
+
+#~ msgid "Conflicts"
+#~ msgstr "Conflicten"
+
+#~ msgid "Required by"
+#~ msgstr "Vereist door"
+
+#~ msgid "view packages list"
+#~ msgstr "Bekijk lijst van packages"
+
+#~ msgid "homepage"
+#~ msgstr "Homepage"
+
+#~ msgid "License"
+#~ msgstr "License"
+
+#~ msgid "CHOST"
+#~ msgstr "CHOST"
+
+#~ msgid "CFLAGS"
+#~ msgstr "CFLAGS"
+
+#~ msgid "USE flags"
+#~ msgstr "USE flags"
+
+#~ msgid "Content"
+#~ msgstr "Inhoud"
+
+#~ msgid "View content"
+#~ msgstr "Bekijk inhoud"
+
+#~ msgid "Space required"
+#~ msgstr "Spatie vereist"
+
+#~ msgid "Checksum"
+#~ msgstr "Checksum"
+
+#~ msgid "Creation date"
+#~ msgstr "Datum aanmaken"
+
+#~ msgid "Security"
+#~ msgstr "Security"
+
+#~ msgid "show security advisories"
+#~ msgstr "toon security advisories"
+
+#~ msgid "Packages Search"
+#~ msgstr "Doorzoek Packages"
+
+#, fuzzy
+#~ msgid "User Generated Content Search"
+#~ msgstr "Doorzoek User Generated Content"
+
+#~ msgid "Statistics"
+#~ msgstr "Statistieken"
+
+#~ msgid "Releases"
+#~ msgstr "Uitgaves"
+
+#~ msgid "Quick navigation"
+#~ msgstr "Snelle navigatie"
+
+#~ msgid "Entropy Repository"
+#~ msgstr "Entropy Repository"
+
+#, fuzzy
+#~ msgid "Search type"
+#~ msgstr "Zoekopdrachttype"
+
+#~ msgid "Order by"
+#~ msgstr "Sorteer op"
+
+#~ msgid "Nothing found"
+#~ msgstr "Niets gevonden"
+
+#~ msgid "Perhaps, you meant?"
+#~ msgstr "Bedoelde u misschien"
+
+#~ msgid "Cannot find the software you are looking for?"
+#~ msgstr "Kan de software die u zoekt niet vinden"
+
+#~ msgid "Submit a package request"
+#~ msgstr "Vraag een package aan"
+
+#~ msgid "Back to Search"
+#~ msgstr "Terug naar Zoeken"
+
+#~ msgid "Revision"
+#~ msgstr "Revisie"
+
+#~ msgid "Package Categories Navigation"
+#~ msgstr "Package-categorienavigatie"
+
+#~ msgid "You are watching"
+#~ msgstr "U kijkt naar"
+
+#~ msgid "User Generated Content"
+#~ msgstr "User Generated Content"
+
+#~ msgid "Current status"
+#~ msgstr "Huidige status"
+
+#~ msgid "Architecture"
+#~ msgstr "Architectuur"
+
+#~ msgid "Branches"
+#~ msgstr "Branches"
+
+#~ msgid "Number of packages"
+#~ msgstr "Aantal packages"
+
+#~ msgid "Number of categories"
+#~ msgstr "Aantal categorieën"
+
+#~ msgid "Number of files"
+#~ msgstr "Aantal bestanden"
+
+#~ msgid "Overall size"
+#~ msgstr "Totale grootte"
+
+#~ msgid "no keywords"
+#~ msgstr "Geen keywords"
+
+#~ msgid "User score"
+#~ msgstr "Gebruikersscore"
+
+#~ msgid "Size"
+#~ msgstr "Grootte"
+
+#~ msgid "score"
+#~ msgstr "score"
+
+#~ msgid "Documents"
+#~ msgstr "Documenten"
+
+#~ msgid "Vote error"
+#~ msgstr "Stemfout"
+
+#~ msgid ""
+#~ "We know, everybody has to pay their bills, especially in this though "
+#~ "period. Our Project has been kept alive thanks to people like you, who "
+#~ "even donated just 1$ (or 1&euro;). If you want to support us, then go "
+#~ "ahead reading, otherwise we'll love you anyway"
+#~ msgstr ""
+#~ "We weten het, iedereen moet z'n rekeningen betalen, vooral in deze "
+#~ "moeilijke periode. Ons Project is springlevend dankzij mensen zoals u, "
+#~ "die, al is het maar één euro (of dollar), hebben gedoneerd. Als u ons "
+#~ "wilt ondersteunen, leest u dan vooral verder, en anders houden we toch "
+#~ "wel van u ;)"
+
+#~ msgid "PayPal"
+#~ msgstr "PayPal"
+
+#~ msgid "Probably the fastest way to make it happen"
+#~ msgstr "Waarschijnlijk de snelste manier"
+
+#~ msgid "USD donation"
+#~ msgstr "Donatie in USD"
+
+#~ msgid "Euro donation"
+#~ msgstr "Donatie in Euro"
+
+#~ msgid "Easy, cheap and powerful. Now with an easy form, see below"
+#~ msgstr ""
+#~ "Makkelijk, goedkoop en krachtig. Nu met 'n simpel formulier, zie onder"
+
+#~ msgid "Donate with Moneybookers"
+#~ msgstr "Doneer met Moneybookers"
+
+#~ msgid "Please enter the amount you would like to give"
+#~ msgstr "Voer het bedrag in dat u wilt doneren"
+
+#~ msgid "Select a currency"
+#~ msgstr "Selecteer een munteenheid"
+
+#~ msgid "US dollar"
+#~ msgstr "US dollar"
+
+#~ msgid "GB pound"
+#~ msgstr "Britse pond"
+
+#~ msgid "Euro"
+#~ msgstr "Euro"
+
+#~ msgid "Yen"
+#~ msgstr "Yen"
+
+#~ msgid "Canadian $"
+#~ msgstr "Canadese dollar"
+
+#~ msgid "Australian $"
+#~ msgstr "Australische dollar"
+
+#~ msgid "amount"
+#~ msgstr "bedrag"
+
+#~ msgid "**Hugs** **Hugs** **Hugs**"
+#~ msgstr "*knuffeldeknuffeldeknuffoooool*"
+
+#~ msgid ""
+#~ "Thanks a lot, we appreciate your effort. Your donation will help us "
+#~ "keeping up the good work. We are sure you want to get back to the <a href="
+#~ "\"/\">Front Page</a> now"
+#~ msgstr ""
+#~ "OK dan, bedankt voor de moeite! Uw donatie helpt ons ons goede werk voor "
+#~ "te zetten. U wilt nu zeker terug naar de <a href=\"/\">Voorpagina</a>?"
+
+#~ msgid ":-* kisses kisses kisses"
+#~ msgstr ":-* kusjes kusjes kusjes"
+
+#~ msgid "Total votes"
+#~ msgstr "Totaal aantal stemmen"
+
+#~ msgid "not voted yet?"
+#~ msgstr "Nog niet gestemd?"
+
+#~ msgid "You, liar!"
+#~ msgstr "Jij.......leugenaar!"
+
+#~ msgid "See results"
+#~ msgstr "Zie resultaten"
+
+#~ msgid ""
+#~ "Being part of <b>our Community</b> is what make us proud of ourselves"
+#~ msgstr "Deel uitmaken van <b>onze Community</b> vervult ons met trots"
+
+#~ msgid ""
+#~ "This is the place where you can get in touch with people in our "
+#~ "Community, see how good they are and get helped"
+#~ msgstr ""
+#~ "Hier kunt u in contact komen met de mensen in onze Community, zien hoe "
+#~ "goed ze zijn, en hulp krijgen"
+
+#~ msgid ""
+#~ "If you want to join our Community or just need help and make questions, "
+#~ "here are some useful links you might need to look at"
+#~ msgstr ""
+#~ "Als u lid van onze Community wilt worden of gewoon hulp nodig heeft en "
+#~ "vragen wil stellen, zijn hier een paar handige links voor u"
+
+#~ msgid "Sabayon Linux Support Chat"
+#~ msgstr "Sabayon Linux Support Chat"
+
+#~ msgid "Wolfden, Sabayon Linux Chief Community Officer"
+#~ msgstr "Wolfden, Sabayon Linux Chief Community Officer"
+
+#~ msgid "Lxnay, Sabayon Linux Chief Architect"
+#~ msgstr "Lxnay, Sabayon Linux Chief Architect"
+
+#~ msgid "Sabayon Linux Forum"
+#~ msgstr "Sabayon Linux Forum"
+
+#~ msgid "Community Home"
+#~ msgstr "Community Home"
+
+#~ msgid "Users"
+#~ msgstr "Gebruikers"
+
+#~ msgid "Hall of fame"
+#~ msgstr "Hall of Fame"
+
+#~ msgid "Blogs"
+#~ msgstr "Blogs"
+
+#~ msgid "Useful links"
+#~ msgstr "Handige links"
+
+#~ msgid "also known as"
+#~ msgstr "ook bekend als"
+
+#~ msgid "Points"
+#~ msgstr "Punten"
+
+#~ msgid "Currently counting"
+#~ msgstr "Op dit moment tellen we"
+
+#~ msgid "users... and <b>growing</b>"
+#~ msgstr "gebruikers...en <b>groeiende</b>"
+
+#~ msgid "Profile"
+#~ msgstr "Profiel"
+
+#~ msgid "Pinboard"
+#~ msgstr "Prikbord"
+
+#~ msgid "Messages"
+#~ msgstr "Berichten"
+
+#~ msgid "News / Pages"
+#~ msgstr "Nieuws / Pagina's"
+
+#~ msgid "Mirrors"
+#~ msgstr "Mirrors"
+
+#~ msgid "Polls"
+#~ msgstr "Peilingen"
+
+#~ msgid "Not implemented yet. Sorrey!"
+#~ msgstr "Nog niet geïmplementeerd, sorry!"
+
+#~ msgid "Mirror name"
+#~ msgstr "Mirrornaam"
+
+#~ msgid "Do I have to explain the concept?"
+#~ msgstr "Moet ik dit nog uitleggen?"
+
+#~ msgid "Mirror speed"
+#~ msgstr "Mirror-snelheid"
+
+#~ msgid "Again, don't be dumb, why are you reading here?"
+#~ msgstr "Nogmaals, denk eens na, waarom lees je dit eigenlijk?"
+
+#~ msgid "Mirror country"
+#~ msgstr "Mirror-land"
+
+#~ msgid "Where is it located?"
+#~ msgstr "Waar bevindt het zich?"
+
+#~ msgid "Notes"
+#~ msgstr "Notities"
+
+#~ msgid "Important (internal) notes"
+#~ msgstr "Belangrijke (interne) notities"
+
+#~ msgid "Mirror Link #1"
+#~ msgstr "Mirror Link #1"
+
+#~ msgid "Give me an URL"
+#~ msgstr "Geef me een URL"
+
+#~ msgid "Mirror Link #2"
+#~ msgstr "Mirror Link #2"
+
+#~ msgid "Mirror Link #3"
+#~ msgstr "Mirror Link #3"
+
+#~ msgid "Add link"
+#~ msgstr "Voeg link toe"
+
+#~ msgid "Delete link"
+#~ msgstr "Verwijder link"
+
+#~ msgid ""
+#~ "Ok, once again, you are an admin. This is the Download Mirrors manager"
+#~ msgstr ""
+#~ "OK, nog één keer: jij bent een admin. Dit is de Download Mirrors Manager"
+
+#~ msgid "New Mirror"
+#~ msgstr "Nieuwe mirror"
+
+#~ msgid "One more page"
+#~ msgstr "Nog één pagina"
+
+#~ msgid "Body"
+#~ msgstr "Body"
+
+#~ msgid "Tags"
+#~ msgstr "Tags"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Published on"
+#~ msgstr "Gepubliceerd op"
+
+#~ msgid "Actions"
+#~ msgstr "Acties"
+
+#~ msgid "Page state"
+#~ msgstr "Paginastatus"
+
+#, fuzzy
+#~ msgid "Reload pages navigation"
+#~ msgstr "Pagina-navigatie"
+
+#~ msgid "Rename"
+#~ msgstr "Hernoemen"
+
+#~ msgid "Remove"
+#~ msgstr "Verwijderen"
+
+#~ msgid ""
+#~ "Ok, you are an admin. So, you know what to do here. All the bells and "
+#~ "whistles, like someone said"
+#~ msgstr ""
+#~ "OK, je bent een admin. Dus, je weet wel wat je hier moet doen. Alle "
+#~ "toeters en bellen, zoals iemand ooit zei..."
+
+#~ msgid "New Document"
+#~ msgstr "Nieuw document"
+
+#~ msgid "This is the Pin title"
+#~ msgstr "Dit is de prikkertitel"
+
+#~ msgid "Write a brief description"
+#~ msgstr "Geef een korte omschrijving"
+
+#~ msgid "Note"
+#~ msgstr "Notitie"
+
+#~ msgid "Write your note here"
+#~ msgstr "Schrijf hier uw notitie"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Come on, you are lazy"
+#~ msgstr "Kom op, luie flikker!"
+
+#~ msgid "Show"
+#~ msgstr "Toon"
+
+#~ msgid "Share this Pin"
+#~ msgstr "Deel deze prikker"
+
+#~ msgid "Active shares"
+#~ msgstr "Actieve shares"
+
+#~ msgid ""
+#~ "Welcome to your personal Pinboard. Write your thoughts here. Organize "
+#~ "your tasks. Share with friends."
+#~ msgstr ""
+#~ "Welkom op uw persoonlijke prikbord. Zeg hier wat u denkt. Organiseer uw "
+#~ "taken. Deel met vrienden."
+
+#~ msgid "My Pins"
+#~ msgstr "Mijn Prikkers"
+
+#, fuzzy
+#~ msgid "New Pin"
+#~ msgstr "Nieuwe peiling"
+
+#~ msgid ""
+#~ "No elements here. You can't blame <u>aliens</u>. You might want to add "
+#~ "something someday, huh?"
+#~ msgstr ""
+#~ "Geen elementen. En het is niet de schuld van <u>buitenaardse wezens</u>. "
+#~ "Misschien wil je wat toevoegen, hmm?"
+
+#~ msgid "Connected Pins"
+#~ msgstr "Verbonden Prikkers"
+
+#~ msgid ""
+#~ "No elements here. Nobody loves you. Errr.. I am joking! We love you! No, "
+#~ "you can't blame <u>aliens</u>, again"
+#~ msgstr ""
+#~ "Geen elementen. Niemand houdt van je! Geintje, we houden écht wel van je "
+#~ "hoor! Maar nee, het is, nog steeds, niet de schuld van <u>buitenaardse "
+#~ "wezens</b>."
+
+# Translated first full sentence, ignored 'Do et' at end of line.
+# Can't find this particular instance on site, context? [ReemZ]
+#, fuzzy
+#~ msgid "Polls management, you can enable how many you want. Do et"
+#~ msgstr "Peilingonderhoud, hier kunt u aangeven hoeveel u er wilt."
+
+#~ msgid "New Poll"
+#~ msgstr "Nieuwe peiling"
+
+#~ msgid ""
+#~ "the poll will start with no options and disabled. You must create it first"
+#~ msgstr ""
+#~ "de peiling start zonder opties en disabled. U dient het eerst aan te maken"
+
+#~ msgid ""
+#~ "Of course, this is your profile and the place you can change how you are "
+#~ "shown to the World. Style matters, remember this"
+#~ msgstr ""
+#~ "Uiteraard is dit uw profiel, waar u kunt bepalen hoe de wereld u ziet. "
+#~ "Bedenk, stijl is belangrijk ;)"
+
+#~ msgid "E-mail configuration"
+#~ msgstr "Emailconfiguratie"
+
+#~ msgid "Your e-mail"
+#~ msgstr "Uw emailadres"
+
+#~ msgid "E-mail confirm"
+#~ msgstr "Bevestig emailadres"
+
+#~ msgid "Confirm your e-mail"
+#~ msgstr "Bevestig uw emailadres"
+
+#~ msgid "Password configuration"
+#~ msgstr "Wachtwoordconfiguratie"
+
+#~ msgid "Current Password"
+#~ msgstr "Huidig wachtwoord"
+
+#~ msgid "Your current password"
+#~ msgstr "Uw huidige wachtwoord"
+
+#~ msgid "New password"
+#~ msgstr "Nieuw wachtwoord"
+
+#~ msgid "Type your new password"
+#~ msgstr "Type uw nieuwe wachtwoord in"
+
+#~ msgid "Repeat new password"
+#~ msgstr "Herhaal nieuw wachtwoord"
+
+#~ msgid "Type again your new password"
+#~ msgstr "Type nogmaals uw nieuwe wachtwoord in"
+
+#~ msgid "Will be used as directory name"
+#~ msgstr "Wordt gebruikt als directorynaam"
+
+#~ msgid "Compressed archive"
+#~ msgstr "Gecomprimeerd archief"
+
+#~ msgid "Valid are .zip, .tar.bz2, .tar.gz. Inside: root dir and just files"
+#~ msgstr ""
+#~ "Geldig zijn .zip, .tar.bz2, .tar.gz, binnen: rootdirectory en enkel "
+#~ "bestanden"
+
+#~ msgid "Ok, good you are an admin. This is the Screenshots manager"
+#~ msgstr "OK, mooi, je bent admin. Dit is de Screenshots Manager"
+
+#~ msgid "New Screenshots"
+#~ msgstr "Nieuwe screenshots"
+
+#~ msgid "Ok <b>ladies</b> and <b>gentlemen</b>. We have a <u>winner</u> here!"
+#~ msgstr "Ennnnnnnnnnnn we hebben een winnaarrrrrrrrrrrrrrrrrrrrrr!"
+
+#, fuzzy
+#~ msgid "You are now connected with %s's Pinboard titled \"<i>%s</i>\"."
+#~ msgstr "U bent nu verbonden met"
+
+#, fuzzy
+#~ msgid ""
+#~ "Click %shere%s to get to your personal Dashboard and <b>have fun</b>."
+#~ msgstr "om in uw persoonlijke Dashboard te komen, <b>veel plezier</b>"
+
+#~ msgid "We are <b>sorry</b>, the System encountered an error"
+#~ msgstr "<b>Sorry</b>, er is een fout opgetreden"
+
+#, fuzzy
+#~ msgid ""
+#~ "Thus, <b>we cannot satisfy</b> your request. You can get to our <b><a "
+#~ "href='/'>front page</a></b> and be happy anyway."
+#~ msgstr ""
+#~ "Aldus <b>kunnen wij uw verzoek niet inwilligen</b>. Evengoed veel plezier "
+#~ "op onze <b><a href=\"/\">voorpagina</a></b>"
+
+# Untranslatable, just not funny in Dutch :p
+# [ReemZ]
+#, fuzzy
+#~ msgid "...Beeee happy! Don't worry, beeeee happy!"
+#~ msgstr "...Beeee happy! Don't worry, beeeee happy!"
+
+#~ msgid ""
+#~ "In this page you will find all your statistics regarding your Entropy/Web "
+#~ "account"
+#~ msgstr ""
+#~ "Op deze pagina vindt u alle statistieken met betrekking tot uw Entropy/"
+#~ "Web account"
+
+#~ msgid "this is the name other people will reference you"
+#~ msgstr "Dit is de naam waaronder u bekend bent bij anderen"
+
+#~ msgid "User id"
+#~ msgstr "User-id"
+
+#~ msgid "this is your user account number"
+#~ msgstr "Dit is uw gebruikersaccountnummer"
+
+#~ msgid "Entropy role"
+#~ msgstr "Rol in Entropy"
+
+#~ msgid "your role inside the Community"
+#~ msgstr "Welke functie vervult u binnen de Community"
+
+#~ msgid "number of times you voted"
+#~ msgstr "Aantal keren dat u gestemd heeft"
+
+#, fuzzy
+#~ msgid "weight: %s points each"
+#~ msgstr "punten per stem"
+
+#~ msgid "Vote average"
+#~ msgstr "Stemgemiddelde"
+
+#~ msgid "this is kinda self explanatory"
+#~ msgstr "Dit behoeft weinig uitleg..."
+
+#~ msgid "how many documents you uploaded (comments,images,etc)"
+#~ msgstr ""
+#~ "Aantal door u ge-uploade documenten (commentaren, beeldbestanden, etc.)"
+
+#~ msgid "how many comments you wrote"
+#~ msgstr "Aantal door u geschreven commentaren"
+
+#~ msgid "Images"
+#~ msgstr "Beeldbestanden"
+
+#~ msgid "how many images you uploaded"
+#~ msgstr "Aantal door u ge-uploade beeldbestanden"
+
+#~ msgid "how many files you uploaded"
+#~ msgstr "Aantal door u ge-uploade bestanden"
+
+#~ msgid "YouTube(tm) Videos"
+#~ msgstr "YouTube(tm) Video's"
+
+#~ msgid "how many videos you uploaded"
+#~ msgstr "Aantal door u ge-uploade video's"
+
+#~ msgid "Ranking"
+#~ msgstr "Rang"
+
+#~ msgid "how good you are in our Community"
+#~ msgstr "Uw positie binnen onze Community"
+
+#~ msgid "position"
+#~ msgstr "plaats"
+
+#~ msgid "your resulting Entropy score"
+#~ msgstr "Uw totale Entropy-score"
+
+#~ msgid "Not logged in"
+#~ msgstr "Niet ingelogd"
+
+#~ msgid ""
+#~ "In this page you will be able to browse through your submitted documents "
+#~ "on all the repositories we host"
+#~ msgstr ""
+#~ "Op deze pagina kunt u zoeken in de door u ingezonden documenten, in alle "
+#~ "door ons gehoste repositories"
+
+#~ msgid "View"
+#~ msgstr "Bekijken"
+
+#~ msgid "This is just"
+#~ msgstr "Dit is slechts"
+
+#~ msgid "hello !"
+#~ msgstr "hallo!"
+
+#~ msgid "Just a nickname, what did you expect?"
+#~ msgstr "Slechts 'n nickname, verwacht je dan weer niet..."
+
+#~ msgid "User identifier"
+#~ msgstr "User identifier"
+
+#~ msgid "This is the account number"
+#~ msgstr "Dit is het accountnummer"
+
+#~ msgid "Website role"
+#~ msgstr "Rol op website"
+
+#~ msgid "User's role inside our Website"
+#~ msgstr "De functie van deze gebruiker op onze website"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "User's virtual Alter-Ego"
+#~ msgstr "Gebruiker's virtuele alter ego"
+
+#~ msgid "User comes from..."
+#~ msgstr "Waar de gebruiker vandaan komt"
+
+#~ msgid "Age"
+#~ msgstr "Leeftijd"
+
+#~ msgid "How many years are past, huh!"
+#~ msgstr "Of je er al aan mag komen, duh :p"
+
+#~ msgid "User's current job"
+#~ msgstr "Gebruiker's huidige baan"
+
+#~ msgid "User's interests, kinda self explanatory"
+#~ msgstr "Spreekt voor zich..."
+
+#~ msgid "Contacts"
+#~ msgstr "Contacten"
+
+#~ msgid "User's E-mail and IM"
+#~ msgstr "Gebruiker's emailadres en IM"
+
+#~ msgid "User's Website"
+#~ msgstr "Website van deze gebruiker"
+
+#~ msgid "Click here to get there"
+#~ msgstr "Klik hier om er te komen"
+
+#~ msgid "Groups"
+#~ msgstr "Groepen"
+
+#~ msgid "Website groups user is in"
+#~ msgstr "Websitegroepen waar deze gebruiker lid van is"
+
+#~ msgid "User's role inside Entropy"
+#~ msgstr "Functie van deze gebruiker in Entropy"
+
+#~ msgid "Number of times the User voted"
+#~ msgstr "Aantal door deze gebruiker uitgebrachte stemmen"
+
+#~ msgid "Total number of documents"
+#~ msgstr "Totaal aantal documenten"
+
+#~ msgid "Number of comments"
+#~ msgstr "Aantal commentaren"
+
+#~ msgid "Number of images"
+#~ msgstr "Aantal beeldbestanden"
+
+#~ msgid "Number of videos belonging"
+#~ msgstr "Aantal video's, toebehorend aan"
+
+#~ msgid "User rank inside our Community"
+#~ msgstr "Rang van deze gebruiker binnen onze Community"
+
+#~ msgid "User's Community Score"
+#~ msgstr "Community Score van deze gebruiker"
+
+#~ msgid "User search"
+#~ msgstr "Zoek gebruiker"
+
+#~ msgid ""
+#~ "Write a search term on the right. E-mail, username, name, surname, you "
+#~ "name it"
+#~ msgstr ""
+#~ "Voer aan de rechterkant uw zoekterm in. Emailadres, gebruikersnaam, "
+#~ "voornaam, achternaam, noem maar op..."
+
+#~ msgid "Search results"
+#~ msgstr "Zoekresultaten"
+
+#~ msgid "Points and Ranking"
+#~ msgstr "Punten en Rang"
+
+#~ msgid "No users found. Go out and blame cows"
+#~ msgstr "Geen gebruikers gevonden. Geef de koei'n maer de schuld!"
+
+#~ msgid "Mirror"
+#~ msgstr "Mirror"
+
+#~ msgid ""
+#~ "Sabayon, free of charge, batteries included and on your own Computer. "
+#~ "What are you waiting for? <b>Select the location closer to you</b> and "
+#~ "start downloading a new experience"
+#~ msgstr ""
+#~ "Sabayon, kostenloos, batterijen meegeleverd en op je eigen computer. Waar "
+#~ "wacht je nog op? <b>Selecteer de geografisch dichtsbijzijnde locatie</b> "
+#~ "en download de nieuwe ervaring!"
+
+#~ msgid "No Internet? Slow Internet?"
+#~ msgstr "Geen internet? Traag internet? Inbellen?"
+
+#~ msgid "Have a look at our <a href='#'>official online vendors list</a>"
+#~ msgstr "Werp een blik op onze <a href='#'>Official Online Vendors List</a>"
+
+#~ msgid "Metalinks"
+#~ msgstr "Metalinks"
+
+# Could not translate the term 'max out', no idea what this means. [ReemZ]
+#, fuzzy
+#~ msgid ""
+#~ "For people with faster Internet connections (DSL, Cable, Fiber), Metalink "
+#~ "makes downloading easier, faster, and more reliable. If you're on an "
+#~ "error prone connection, Metalinks with repair information can fix any "
+#~ "errors you get in transfer. Most downloads probably don't max out your "
+#~ "downstream bandwidth. Metalink will help"
+#~ msgstr ""
+#~ "Op een breedbandverbinding (DSL, kabel, glasvezel) maakt Metalink het "
+#~ "downloaden nóg makkelijker, sneller én betrouwbaarder. Op een instabiele "
+#~ "verbinding, waar tijdens de overdracht fouten kunnen optreden, kan "
+#~ "Metalink met Repair Information deze fouten verhelpen. De meeste "
+#~ "downloads zullen uw downstream bandbreedte niet MAX OUT (vertaling?). "
+#~ "Metalink helpt."
+
+#~ msgid "source"
+#~ msgstr "Bron"
+
+#~ msgid "Visit the official"
+#~ msgstr "Bezoek de officiële"
+
+#~ msgid "Sabayon Linux Metalinker Page"
+#~ msgstr "Sabayon Linux Metalinker Pagina"
+
+#~ msgid "Bittorrent"
+#~ msgstr "BitTorrent"
+
+#, fuzzy
+#~ msgid ""
+#~ "Most people love it just because it makes your download fly. Now we have "
+#~ "our Sabayon Linux Tracker"
+#~ msgstr ""
+#~ "Geliefd onder de meeste mensen, gewoon omdat het je download vleugels "
+#~ "geeft. Linuxtracker.org host al onze torrents."
+
+#~ msgid "Visit the"
+#~ msgstr "Bezoek de"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Tracker Page"
+#~ msgstr "Sabayon Linux Metalinker Pagina"
+
+#~ msgid "HTTP, FTP, RSYNC mirrors"
+#~ msgstr "HTTP, FTP, RSYNC mirrors"
+
+#~ msgid ""
+#~ "If you belong to the old generation or just want to use `wget` because "
+#~ "it's the only download manager you trust. Here it is a list of official "
+#~ "mirrors, alphabetically divided by countries"
+#~ msgstr ""
+#~ "Omdat u old skool bent en 'wget' wilt gebruiken, of omdat u nou eenmaal "
+#~ "enkel dat vertrouwt. Hier is de lijst met officiële mirrors, alfabetisch "
+#~ "gerankschikt op land"
+
+#~ msgid "Subscribe your Mirror today"
+#~ msgstr "Schrijf uw mirror vandaag nog in!"
+
+#~ msgid "Do you have spare bandwidth? Are you a mirror maintainer?"
+#~ msgstr "Heeft u bandbreedte over? Onderhoudt u (tóch al) een mirror?"
+
+#~ msgid "Submit your request here"
+#~ msgstr "Dien uw verzoek hier in"
+
+#~ msgid "Online Stores"
+#~ msgstr "Webwinkels"
+
+#~ msgid "Product"
+#~ msgstr "Product"
+
+#~ msgid "Branch"
+#~ msgstr "Branch"
+
+#, fuzzy
+#~ msgid "We have found %s %s"
+#~ msgstr "We vonden"
+
+#~ msgid "Sabayon Linux Linuxtracker.org Page"
+#~ msgstr "Sabayon Linux Linuxtracker.org Pagina"
+
+#~ msgid "AND"
+#~ msgstr "EN"
+
+#~ msgid "Sabayon 4.2 KDE is HERE"
+#~ msgstr "Sabayon 4.2 KDE is HIER!"
+
+#~ msgid "weight"
+#~ msgstr "Gewicht"
+
+#~ msgid "points each"
+#~ msgstr "punten per stem"
+
+#~ msgid "Error: invalid HTTP method"
+#~ msgstr "Fout: ongeldige HTTP-methode"
+
+#~ msgid "Error: not logged in"
+#~ msgstr "Fout: niet ingelogd"
+
+#~ msgid "You have mail"
+#~ msgstr "U heeft email"
+
+#~ msgid "Error: invalid method"
+#~ msgstr "Fout: ongeldige methode"
+
+#~ msgid "back to computing basics"
+#~ msgstr "Terug naar de basis!"
+
+#~ msgid "Go Shopping"
+#~ msgstr "Ga 's winkelen"
+
+#~ msgid ""
+#~ "Do you need a new cap? Do you want to buy the Official Sabayon Linux T-"
+#~ "Shirt, some stickers, buttons, magnets mousepads, or a mug?"
+#~ msgstr ""
+#~ "Nieuwe pet nodig? Wil je het Officiële Sabayon Linux T-Shirt, stickers, "
+#~ "buttons, magneten, mousepads of 'n mok hebben?"
+
+#~ msgid "Enter here"
+#~ msgstr "Ga hier naar binnen"
+
+#~ msgid "written by"
+#~ msgstr "geschreven door"
+
+#~ msgid "Hello"
+#~ msgstr "Hallo"
+
+#~ msgid "Sabayon Shop"
+#~ msgstr "Sabayon Shop"
+
+#~ msgid "Publisher"
+#~ msgstr "Uitgever"
+
+#~ msgid "Postcards address"
+#~ msgstr "Briefkaartadres"
+
+#~ msgid "What about sending us a Postcard? Here is our mailing address"
+#~ msgstr "Waarom stuur je ons niet 'n briefkaart? Hier is ons postadres"
+
+#~ msgid "'s Pinboard titled"
+#~ msgstr "'s Prikbord, getiteld"
+
+#~ msgid "Click"
+#~ msgstr "Klik"

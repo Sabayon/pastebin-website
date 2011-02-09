@@ -1,0 +1,32 @@
+## -*- coding: utf-8 -*-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml version="1.0" encoding="iso-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<%include file="head.html"/>
+<body>
+    <%include file="wrapper.html"/>
+    <div id="small_band">
+        <%include file="menu.html"/>
+        <%include file="small_band.html"/>
+    </div>
+
+    <div id="body">
+        <div class="col-left">
+            <form method="post" name="loginform" id="loginform" action="/login/submit">
+                <input name="username" class="search" type="text"/>
+                <input type="hidden" name="redirect" value="${c.login_redirect}"/>
+                <a href="${c.main_site_uri}/register">${_("New user?")}</a>
+                <br/>
+                <input name="password" value="" class="search" type="password" onfocus="if(this.value = '${_("Password")}') { this.value = ''; }"/>
+                <input value="${_("Login")}" type="submit"/>
+                %if c.login_error:
+                    <br/><b>${_("Login error")}</b>: ${c.login_error}<br/>
+                %endif
+            </form>
+        </div>
+        <%include file="body_right.html"/>
+    </div>
+
+    <%include file="footer.html"/>
+</body>
+</html>

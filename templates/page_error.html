@@ -1,0 +1,40 @@
+## -*- coding: utf-8 -*-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml version="1.0" encoding="iso-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<%
+    c.page_title = 'HTTP Error %s' % (c.code,)
+%>
+
+<%include file="/head.html"/>
+<body>
+    <%include file="/wrapper.html"/>
+    <div id="small_band">
+        <%include file="/menu.html"/>
+        <%include file="/small_band.html"/>
+    </div>
+
+    <div id="body">
+        <div class="col-left">
+
+            <div align="center" style="margin-bottom: 20px">
+                <%include file="/adsense/468x60.html"/>
+                <br/>
+                <%include file="/adsense/468x60.html"/>
+            </div>
+
+
+            <div style="font-size: 1.1em; font-weight: bold;">
+                ${_("Houston, we've got a problem!")}
+            </div>
+            <div style="margin-top: 20px">
+                ${_("Probably the page you are looking for <b>does not exist</b> anymore. You can blame <u>aliens</u>. Well, we are really sorry. Why don't you get to our <a href=\"%s\">home page</a>?" % (c.site_uri,))}
+            </div>
+        </div>
+        <%include file="/body_right.html"/>
+    </div>
+
+    <%include file="/footer.html"/>
+</body>
+</html>

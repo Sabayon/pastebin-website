@@ -1,0 +1,75 @@
+## -*- coding: utf-8 -*-
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    %if c.html_title:
+        <title>${c.html_title}</title>
+    %else:
+        <title>${_("Sabayon Linux Five Oh!")}</title>
+    %endif
+    %if c.rss_news_feed:
+        <link rel="alternate" title="${_("Sabayon Linux Distribution News")}" href="${c.rss_news_feed}" type="application/rss+xml" />
+    %endif
+
+    <meta name="keywords" content="sabayon, linux, operating systems, operating system, usb, liveusb, linux web, kernel, linux live"/>
+    <meta name="description" content="${_("Official Sabayon Linux Website")}"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/uvumi-dropdown.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/shots.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/lytebox.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/sexyalertbox.css"/>
+
+    <!-- mobile support -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link media="only screen and (max-device-width: 480px) and (min-device-width: 320px)" href="/css/mobile.css" type="text/css" rel="stylesheet" />
+    <link media="handheld, only screen and (max-device-width: 319px)" href="/css/mobile_simple.css" type="text/css" rel="stylesheet" />
+
+    % if c.browser_user_agent.lower().find(" msie ") != -1:
+        <!-- IE 7 fixes -->
+        <style type="text/css">
+            #band {
+                margin-bottom: 5px;
+            }
+            .col {
+                margin-bottom: -10px;
+            }
+            #body-headlines {
+                margin-top: -20px;
+            }
+        </style>
+    % elif c.browser_user_agent.find("Opera") != -1:
+        <!-- Opera fixes -->
+        <style type="text/css">
+            .loginform-right-links {
+                position: relative;
+                left: 16px;
+            }
+        </style>
+    % endif
+
+    <script type="text/javascript" src="/js/aim.js"></script>
+    <script type="text/javascript" src="/js/mootools-b62.js"></script>
+    <script type="text/javascript" src="/js/mootools-for-dropdown.js"> </script>
+    <script type="text/javascript" src="/js/mootools-more-b62.js"></script>
+    <script type="text/javascript" src="/js/UvumiDropdown.js"> </script>
+    <script type="text/javascript" src="/js/ahah.js"></script>
+    <script type="text/javascript" src="/js/sexyalertbox.v1.1-b62.js"></script>
+    <script type="text/javascript" src="/js/lytebox-b62.js"></script>
+    <script type="text/javascript"><%include file="/../public/js/sabayon.js"/></script>
+
+
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <script type="text/javascript">
+        var myMenu = new UvumiDropdown("dropdown-menu");
+        var myMenuProfile = new UvumiDropdown("dropdown-menu-profile");
+    </script>
+
+<!-- analytics -->
+<script src="http://www.google-analytics.com/urchin.js" mce_src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-258726-1";
+urchinTracker();
+</script>
+
+</head>

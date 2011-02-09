@@ -1,0 +1,53 @@
+<script type="text/javascript">
+
+    pastebin_loading_html = '<div style="width: 100%; margin-left: auto; margin-right: auto; text-align: center; margin-top: 40px; margin-bottom: 40px"><img border="0" src="/images/packages/wait.gif" alt="${_("Please wait")}" /></div>';
+
+    function switch_document_type(document_type_id) {
+
+        obj = document.getElementById(document_type_id);
+        form_id = 'pastebin-submit-form';
+        form_obj = document.getElementById(form_id);
+        doc_id = obj.value;
+        text_content_id = 'pastebin-submit-text-content';
+        text_content_obj = document.getElementById(text_content_id);
+        file_content_id = 'pastebin-submit-file-content';
+        file_content_obj = document.getElementById(file_content_id);
+        syntax_content_id = 'pastebin-submit-syntaxtype';
+        syntax_content_obj = document.getElementById(syntax_content_id);
+        submit_type_name = 'pastebin-submit-type-name';
+        submit_type_name_obj = document.getElementById(submit_type_name);
+
+        if (doc_id == "${c.pastebin_doctypes['text']}") {
+            // text
+            file_content_obj.style.display = 'none';
+            text_content_obj.style.display = '';
+            form_obj.encoding = '';
+            syntax_content_obj.style.display = '';
+        } else if (doc_id == "${c.pastebin_doctypes['image']}") {
+            // image
+            file_content_obj.style.display = '';
+            text_content_obj.style.display = 'none';
+            form_obj.encoding = 'multipart/form-data';
+            syntax_content_obj.style.display = 'none';
+            submit_type_name_obj.innerHTML = '${_("an image")}';
+        } else if (doc_id == "${c.pastebin_doctypes['file']}") {
+            // file
+            file_content_obj.style.display = '';
+            text_content_obj.style.display = 'none';
+            form_obj.encoding = 'multipart/form-data';
+            syntax_content_obj.style.display = 'none';
+            submit_type_name_obj.innerHTML = '${_("a file")}';
+        }
+
+    }
+
+    function send_pastie(form_name, dest_div, content_area, working_area, submit_id) {
+
+        submit_obj = document.getElementById(submit_id);
+        form_obj = document.getElementById(form_name);
+        dest_div_obj = document.getElementById(dest_div);
+        working_area_obj = document.getElementById(working_area);
+
+    }
+
+</script>

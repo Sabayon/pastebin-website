@@ -1,0 +1,117 @@
+body {
+    background-image: none;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.0em;
+}
+
+#wrapper {
+    width: 320px;
+}
+
+#body {
+    width: 320px;
+    font-size: 1.1em;
+}
+
+#loginbox {
+    float: none;
+    position: relative;
+    margin-top: 0px;
+}
+
+#menu {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.dropdown li.submenu {
+    width: 80px;
+}
+
+#searchbox {
+    display: none;
+}
+
+#whats-all-this {
+    display: none;
+}
+
+#logo {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-image: url(../images/distro/sabayon_logo_small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#band {
+    margin-bottom: 0px;
+    padding-top: 15px;
+    width: 100%;
+    height: 120px;
+    background-image:url(../images/small_band.png);
+    background-repeat: repeat-x;
+    background-position:bottom;
+    clear:both;
+}
+
+#band #inband {
+    width: 96%;
+    top: 23px;
+}
+
+#welcome {
+    float: none;
+    width: 100%;
+    clear: both;
+}
+
+#welcome h1 {
+    font-size: 1.7em;
+}
+
+#welcome h2 {
+    font-size: 1.2em;
+}
+
+#shots {
+    display: none;
+}
+
+#yt_video {
+    display: none;
+}
+
+
+.col-icon {
+    display: none;
+}
+
+.col-text {
+    float: none;
+    width: 95%;
+    clear: both;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.col-left {
+    width:95%;
+    vertical-align: top;
+    float: none;
+    clear: both;
+}
+

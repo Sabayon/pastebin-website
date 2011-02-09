@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    function my_image_resize(which, max) {
+    var elem = document.getElementById(which);
+    if (max == undefined) max = 100;
+    if (elem.width > elem.height) {
+        if (elem.width > max) elem.width = max;
+    } else {
+        if (elem.height > max) elem.height = max;
+    }
+    }
+</script>
+    <div align="center">
+        <% pic_uri = "%s/%s/%s" % (c.pastebin_uri,c.pastebin['pastebin_id'],c.pastebin['content'].strip(),) %>
+        <a href="${pic_uri}" target="_blank"><img src="${pic_uri}" id="pastie-image" title="${_("Here is the image")}" onload="my_image_resize('pastie-image',600);"/></a>
+        <br/>
+        ${_("An image should pop up above this text")}.
+    </div>

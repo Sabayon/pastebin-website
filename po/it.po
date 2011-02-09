@@ -1,0 +1,2401 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Spritz 0.14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-09 11:50+0100\n"
+"PO-Revision-Date: 2009-08-04 14:31+0100\n"
+"Last-Translator: Fabio Erculiani <lxnay@sabayonlinux.org>\n"
+"Language-Team: Fabio Erculiani <lxnay@sabayonlinux.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+
+#: ../controllers/login.py:26
+msgid "Hello mate, what about logging in? Have a look below"
+msgstr ""
+
+#: ../controllers/login.py:50
+#, fuzzy
+msgid "Sabayon Linux Community activation"
+msgstr "Chat di supporto Sabayon Linux"
+
+#: ../controllers/login.py:68
+#, fuzzy
+msgid "Sabayon Linux Community registration"
+msgstr "Wolfden, il \"Sabayon Linux Chief Community Officer\""
+
+#: ../controllers/login.py:97
+msgid "Invalid Username"
+msgstr "Username non valido"
+
+#: ../controllers/login.py:102
+msgid "Invalid Email, empty fields or mismatch"
+msgstr "Email non valida, campi vuoti od incoerenze"
+
+#: ../controllers/login.py:107
+msgid "Invalid Password, empty fields or mismatch or wrong length"
+msgstr ""
+"Password non valida, cambi non validi od incoerenza o lunghezza sbagliata"
+
+#: ../controllers/login.py:114
+msgid "Invalid Captcha Answer"
+msgstr "Risposta Captcha non valida"
+
+#: ../controllers/login.py:123
+msgid "Invalid"
+msgstr "Invalido"
+
+#: ../controllers/login.py:207 ../controllers/login.py:210
+#: ../controllers/login.py:215 ../controllers/login.py:219
+#: ../controllers/login.py:224 ../controllers/login.py:227
+#: ../controllers/login.py:229 ../controllers/login.py:231
+#: ../controllers/login.py:235 ../controllers/login.py:238
+#: ../controllers/login.py:283 ../controllers/login.py:287
+#: ../controllers/login.py:289 ../controllers/login.py:294
+#: ../controllers/login.py:299 ../controllers/login.py:301
+#: ../controllers/login.py:303 ../controllers/login.py:305
+#: ../controllers/login.py:308 ../controllers/login.py:310
+#: ../controllers/login.py:318 ../controllers/login.py:324
+#: ../controllers/pastebin.py:157 ../controllers/pastebin.py:164
+#: ../controllers/pastebin.py:349
+msgid "Error"
+msgstr "Errore"
+
+#: ../controllers/login.py:207 ../controllers/login.py:283
+msgid "invalid HTTP method"
+msgstr "metodo HTTP non valido"
+
+#: ../controllers/login.py:210 ../controllers/login.py:287
+msgid "not logged in"
+msgstr "non loggato"
+
+#: ../controllers/login.py:215
+#, fuzzy
+msgid "wrong POST"
+msgstr "Errore: POST errato"
+
+#: ../controllers/login.py:219
+#, fuzzy
+msgid "invalid old e-mail"
+msgstr "Errore: vecchia e-mail non valida"
+
+#: ../controllers/login.py:224
+#, fuzzy
+msgid "you changed nothing"
+msgstr "Errore: non hai cambiato nulla"
+
+#: ../controllers/login.py:227
+#, fuzzy
+msgid "empty fields"
+msgstr "Errore: campi vuoti"
+
+#: ../controllers/login.py:229
+#, fuzzy
+msgid "e-mails do not match"
+msgstr "Errore: e-mail non combacianti"
+
+#: ../controllers/login.py:231
+#, fuzzy
+msgid "invalid parameters"
+msgstr "Errore: parametri non validi"
+
+#: ../controllers/login.py:235
+#, fuzzy
+msgid "invalid e-mail (1)"
+msgstr "Errore: e-mail non valida (1)"
+
+#: ../controllers/login.py:238
+#, fuzzy
+msgid "invalid e-mail (2)"
+msgstr "Errore: e-mail non valida (2)"
+
+#: ../controllers/login.py:255 ../controllers/login.py:341
+msgid "Success"
+msgstr "Successo"
+
+#: ../controllers/login.py:255 ../controllers/login.py:341
+#, fuzzy
+msgid "you must activate your change. You have mail"
+msgstr "devi attivare i tuoi cambiamenti"
+
+#: ../controllers/login.py:277
+msgid "Sabayon Linux Community E-mail Update Activation"
+msgstr ""
+
+#: ../controllers/login.py:289
+#, fuzzy
+msgid "not logged in (username)"
+msgstr "Errore: non loggato (username)"
+
+#: ../controllers/login.py:294
+#, fuzzy
+msgid "where is the current password?"
+msgstr "Errore: dov'è la password corrente?"
+
+#: ../controllers/login.py:299
+#, fuzzy
+msgid "missing fields"
+msgstr "Errore: campi mancanti"
+
+#: ../controllers/login.py:301
+#, fuzzy
+msgid "new password fields do not match"
+msgstr "Errore: campo nuova password non combaciante"
+
+#: ../controllers/login.py:303
+#, fuzzy
+msgid "wtf are you trying to do?"
+msgstr "Errore: che diamine stai tentando di fare?"
+
+#: ../controllers/login.py:305
+#, fuzzy
+msgid "old and new password match"
+msgstr "Errore: vecchia e nuova password non combacianti"
+
+#: ../controllers/login.py:308
+#, fuzzy
+msgid "password too short"
+msgstr "Errore: password troppo corta"
+
+#: ../controllers/login.py:310
+#, fuzzy
+msgid "password too long"
+msgstr "Errore: password troppo lunga"
+
+#: ../controllers/login.py:318
+#, fuzzy
+msgid "invalid current password"
+msgstr "Errore: password corrente non valida"
+
+#: ../controllers/login.py:324
+#, fuzzy
+msgid "you do not have a valid e-mail"
+msgstr "Errore: non hai inserito una e-mail non valida"
+
+#: ../controllers/login.py:363
+msgid "Sabayon Linux Community Password Update Activation"
+msgstr ""
+
+#: ../controllers/pastebin.py:74
+#, fuzzy
+msgid "Sabayon Linux Pastebin"
+msgstr "Sabayon Linux QUATTRO OOOOOOOH!"
+
+#: ../controllers/pastebin.py:85
+msgid "Bastard info"
+msgstr "Informazioni bastardo"
+
+#: ../controllers/pastebin.py:92
+msgid "Removed from db"
+msgstr "Rimosso dal db"
+
+#: ../controllers/pastebin.py:99
+#, fuzzy
+msgid "remove file"
+msgstr "rimuovi path file"
+
+#: ../controllers/pastebin.py:114
+msgid "Nothing removed"
+msgstr "Rimosso nulla..."
+
+#: ../controllers/pastebin.py:128
+msgid "Invalid pastebin_id"
+msgstr "pastebin_id non valido"
+
+#: ../controllers/pastebin.py:135
+msgid "Db returned status"
+msgstr "Stato richiesta Db"
+
+#: ../controllers/pastebin.py:138
+msgid "Permission denied"
+msgstr "Permesso negato"
+
+#: ../controllers/pastebin.py:150 ../controllers/pastebin.py:357
+#: ../controllers/pastebin.py:399
+#, fuzzy
+msgid "Sabayon Linux PixPastebin"
+msgstr "Sabayon Linux QUATTRO OOOOOOOH!"
+
+#: ../controllers/pastebin.py:157
+msgid "invalid method"
+msgstr "metodo non valido"
+
+#: ../controllers/pastebin.py:164
+#, fuzzy
+msgid "cannot get IP"
+msgstr "Errore: impossibile ottenere l'IP"
+
+#: ../controllers/pastebin.py:186
+msgid "Invalid pastebin_doctypes_id"
+msgstr "pastebin_doctypes_id non valido"
+
+#: ../controllers/pastebin.py:197
+msgid "Invalid pastebin_syntax_id"
+msgstr "pastebin_syntax_id non valido"
+
+#: ../controllers/pastebin.py:208 ../controllers/pastebin.py:217
+msgid "Invalid expiration_days"
+msgstr "expiration_days non validi"
+
+#: ../controllers/pastebin.py:233
+msgid "Permission denied, you need to be logged in to paste this"
+msgstr "Permesso negato, devi essere loggato per incollare questo documento"
+
+#: ../controllers/pastebin.py:239
+msgid "Empty buffer/content"
+msgstr "Buffer o Contenuto vuoto"
+
+#: ../controllers/pastebin.py:242
+msgid "Too much text dude, are you crazy?"
+msgstr "Troppo testo amico, sei pazzo?"
+
+#: ../controllers/pastebin.py:249
+msgid "No stream detected"
+msgstr "Nessuno stream riconosciuto"
+
+#: ../controllers/pastebin.py:257
+msgid "Filename cannot contain non-ASCII characters"
+msgstr "Il nome file non può contenere caratteri non-ASCII"
+
+#: ../controllers/pastebin.py:289
+msgid "You tried to upload a virus, error will be reported, you are fucked"
+msgstr ""
+"Hai provato a fare l'upload di un virus, l'errore sarà riportato, sei fottuto"
+
+#: ../controllers/pastebin.py:296
+msgid "File size too big."
+msgstr "Dimensione file troppo grande."
+
+#: ../controllers/pastebin.py:302
+msgid "Not supported image type"
+msgstr "Tipo immagine non supportato"
+
+#: ../templates/activation_successful.html:18
+#: ../templates/email_activation_successful.html:18
+#: ../templates/password_activation_successful.html:18
+msgid "Activation successful"
+msgstr "Attivazione eseguita con successo"
+
+#: ../templates/activation_successful.html:18
+msgid "Wow, thanks a lot! Now you can really start enjoying our Community"
+msgstr ""
+"Wow, grazie un sacco! Ora puoi davvero iniziare a divertirti nella nostra "
+"Community"
+
+#: ../templates/activation_successful.html:20
+#: ../templates/email_activation_successful.html:20
+#: ../templates/password_activation_successful.html:20
+msgid "Sorry"
+msgstr "Mi dispiace"
+
+#: ../templates/activation_successful.html:20
+#: ../templates/email_activation_successful.html:20
+#: ../templates/password_activation_successful.html:20
+msgid "There is no activation information available"
+msgstr "Non c'è alcuna informazione di attivazione disponibile"
+
+#: ../templates/body_left.html:11
+msgid "Distribution news"
+msgstr "Notizie sulla distribuzione"
+
+#: ../templates/body_left.html:42
+msgid "Forum activity"
+msgstr "Attività Forum"
+
+#: ../templates/body_left.html:81
+msgid "Planet activity"
+msgstr "Attività Planet"
+
+#: ../templates/body_left.html:116
+msgid "Code activity"
+msgstr "Attività Codice"
+
+#: ../templates/body_left.html:135
+msgid "Overlay activity"
+msgstr "Attività Overlay"
+
+#: ../templates/body_right.html:8
+msgid "Sponsors"
+msgstr "Sponsor"
+
+#: ../templates/body_right.html:11
+#, fuzzy
+msgid ""
+"Officially Sponsored by the <b>NLnet Foundation</b>, that financially "
+"supported the Entropy Project"
+msgstr ""
+"Ufficialmente sponsorizzato dalla <b>NLnet Foundation</b>, supportando "
+"finanziariamente il nostro Progetto Entropy"
+
+#: ../templates/body_right.html:11
+msgid "See NLnet development plan status"
+msgstr "Visualizza il piano di sviluppo NLnet"
+
+#: ../templates/body_right.html:15 ../templates/body_right.html:19
+#: ../templates/body_right.html:23
+msgid "Officially Sponsored by"
+msgstr "Ufficialmente Sponsorizzato da"
+
+#: ../templates/body_right.html:15
+msgid "University of Brescia"
+msgstr "Università di Brescia"
+
+#: ../templates/body_right.html:15
+msgid ""
+"Housing our Entropy build server inside the Faculty Network Center at the "
+"Department of Electronics"
+msgstr ""
+"Ospitando il nostro build server Entropy all'interno del Centro Reti al "
+"Dipartimento di Elettronica"
+
+#: ../templates/body_right.html:19
+#, fuzzy
+msgid "University of Milano-Bicocca"
+msgstr "Università di Brescia"
+
+#: ../templates/body_right.html:19
+msgid "Housing our Entropy build servers and WWW inside DISCo"
+msgstr ""
+
+#: ../templates/body_right.html:23
+msgid "Proving the software technology we daily need"
+msgstr "Fornendo la tecnologia software di cui abbiamo bisogno"
+
+#: ../templates/body_right.html:28
+msgid "Survey"
+msgstr "Sondaggio"
+
+#: ../templates/body_right.html:40
+msgid "Cross Linux From Scratch"
+msgstr ""
+
+#: ../templates/body_right.html:41
+msgid "Ibiblio.org Hosting"
+msgstr ""
+
+#: ../templates/email_activation_successful.html:18
+msgid "Your E-mail is now active"
+msgstr "La tua E-mail è ora attiva"
+
+#: ../templates/footer.html:7
+msgid "Trademarks are property of their respective owners."
+msgstr "Marchi registrati sono proprietà dei rispettivi proprietari."
+
+#: ../templates/head.html:7
+#, fuzzy
+msgid "Sabayon Linux Five Oh!"
+msgstr "Sabayon Linux QUATTRO OOOOOOOH!"
+
+#: ../templates/loginbox_inner.html:4
+msgid "Entropy Web Dashboard Login"
+msgstr "Login Entropy Web Dashboard"
+
+#: ../templates/loginbox_inner.html:11 ../templates/login.html:18
+msgid "New user?"
+msgstr "Sei nuovo?"
+
+#: ../templates/loginbox_inner.html:11
+msgid "What is all this ?"
+msgstr "Che diavolo è?"
+
+#: ../templates/loginbox_inner.html:24 ../templates/login.html:23
+msgid "Login error"
+msgstr "Errore login"
+
+#: ../templates/loginbox_inner.html:27 ../templates/loginbox_inner.html:89
+msgid "Comments"
+msgstr "Commenti"
+
+#: ../templates/loginbox_inner.html:27 ../templates/loginbox_inner.html:89
+msgid "Docs"
+msgstr "Documenti"
+
+#: ../templates/loginbox_inner.html:29 ../templates/loginbox_inner.html:91
+msgid "Votes"
+msgstr "Voti"
+
+#: ../templates/loginbox_inner.html:29 ../templates/loginbox_inner.html:91
+msgid "Downloads"
+msgstr "Download"
+
+#: ../templates/loginbox_inner.html:43
+#, c-format
+msgid "Hello <b>%s</b>, %s"
+msgstr ""
+
+#: ../templates/loginbox_inner.html:43
+msgid "Logout ?"
+msgstr "Esci ?"
+
+#: ../templates/loginbox_inner.html:49
+msgid "My Entropy"
+msgstr "Il mio Entropy"
+
+#: ../templates/loginbox_inner.html:52
+msgid "My User Generated Content"
+msgstr "I miei Contenuti"
+
+#: ../templates/loginbox_inner.html:55
+msgid "My Statistics"
+msgstr "Le mie Statistiche"
+
+#: ../templates/loginbox_inner.html:60
+msgid "My Sabayon"
+msgstr "La mia Sabayon"
+
+#: ../templates/loginbox_inner.html:63
+msgid "My Dashboard"
+msgstr "La mia Dashboard"
+
+#: ../templates/loginbox_inner.html:66
+msgid "My Pastebin"
+msgstr "Il mio Pastebin"
+
+#: ../templates/loginbox_inner.html:79
+msgid "points"
+msgstr "punti"
+
+#: ../templates/loginbox_inner.html:83
+msgid "My Comments"
+msgstr "Miei Commenti"
+
+#: ../templates/loginbox_inner.html:83
+msgid "My Docs"
+msgstr "Miei Documenti"
+
+#: ../templates/loginbox_inner.html:84
+msgid "My Votes"
+msgstr "Miei Voti"
+
+#: ../templates/loginbox_inner.html:84
+msgid "My Avg"
+msgstr "Media"
+
+#: ../templates/page_error.html:29
+msgid "Houston, we've got a problem!"
+msgstr "Houston, abbiamo un problemooooone qui!"
+
+#: ../templates/page_error.html:32
+#, c-format
+msgid ""
+"Probably the page you are looking for <b>does not exist</b> anymore. You can "
+"blame <u>aliens</u>. Well, we are really sorry. Why don't you get to our <a "
+"href=\"%s\">home page</a>?"
+msgstr ""
+
+#: ../templates/password_activation_successful.html:18
+msgid "Your Password is now updated"
+msgstr "Password aggiornata"
+
+#: ../templates/password_activation_successful.html:22
+msgid "confirmation code"
+msgstr "codice conferma"
+
+#: ../templates/password_activation_successful.html:23
+msgid "validation id"
+msgstr "id validazione"
+
+#: ../templates/password_activation_successful.html:24
+msgid "user id"
+msgstr "id utente"
+
+#: ../templates/register.html:22
+msgid "(Sabayon leader)"
+msgstr "(leader Sabayon)"
+
+#: ../templates/register.html:27
+msgid ""
+"<b>You may ask</b>. What do we offer in change? <b>We answer</b>, your own "
+"<b>Blog</b> on this Portal, your personal <b>\"Pastebin\"</b> and file "
+"upload service called <b>\"Pixdiff\"</b>, a <b>warm Community</b> that will "
+"always help you out, the ability to <b>vote</b> and <b>interact</b> with "
+"what we offer and with other people inside this space. We are just used to "
+"call all this with one name: <b>Sabayon</b>, <i>the \"2.0\" (two-point-oh) "
+"distribution</i>"
+msgstr ""
+"<b>Postresti chiederti</b>. Cosa offriamo in cambio? <b>La nostra risposta "
+"è</b>, il tuo <b>Blog</b> su questo Portale, il tuo <b>\"Pastebin\"</b> "
+"personale ed un servizio di upload file chiamato <b>\"Pixdiff\"</b>, una "
+"<b>Community accogliente</b> che ti aiuterà sempre, la possibilità di "
+"<b>votare</b> ed <b>interagire</b> con quello che offriamo e con altre "
+"persone all'interno di questo spazio. Siamo soliti chiamare tutto questo con "
+"un nome: <b>Sabayon</b>, <i>la distribuzione \"2.0\" (due-punto-zero)</i>"
+
+#: ../templates/register.html:30
+msgid ""
+"Please note that you will need to enter a valid e-mail address before your "
+"account is activated. You will receive an e-mail at the address you provide "
+"that contains an account activation link"
+msgstr ""
+"Nota: avrai bisogno di inserire un'e-mail valida in modo da poter attivare "
+"il tuo account. Riceverai infatti un'e-mail all'indirizzo che hai fornito "
+"contenente il link di attivazione"
+
+#: ../templates/registration_form.html:7
+msgid "Username"
+msgstr "Nome utente"
+
+#: ../templates/registration_form.html:9
+msgid "Length must be between 3 and 20 characters"
+msgstr "La lunghezza deve essere compresa fra 3 e 20 caratteri"
+
+#: ../templates/registration_form.html:17
+msgid "E-mail address"
+msgstr "Indirizzo E-mail"
+
+#: ../templates/registration_form.html:25
+msgid "Confirm e-mail address"
+msgstr "Conferma indirizzo e-mail"
+
+#: ../templates/registration_form.html:33
+msgid "Password"
+msgstr "Password"
+
+#: ../templates/registration_form.html:34
+msgid "Must be between 6 and 30 characters"
+msgstr "Deve essere fra 6 e 30 caratteri"
+
+#: ../templates/registration_form.html:42
+msgid "Confirm password"
+msgstr "Conferma password"
+
+#: ../templates/registration_form.html:68
+msgid "Registration Agreement"
+msgstr "Accordo di Registrazione"
+
+#: ../templates/registration_form.html:73
+msgid "I agree with the terms above"
+msgstr "Accesso i termini di cui sopra"
+
+#: ../templates/registration_successful.html:2
+msgid "Registration successful"
+msgstr "Registrato con successo"
+
+#: ../templates/registration_successful.html:2
+msgid "Wow, thanks a lot!"
+msgstr "Wow, grazie mille!"
+
+#: ../templates/registration_successful.html:4
+msgid ""
+"You should have waited the activation e-mail but the one you provided has "
+"not been accepted for delivery"
+msgstr ""
+"Avresti dovuto attendere l'e-mail di attivazione ma essa non è stata "
+"accettata per l'invio"
+
+#: ../templates/registration_successful.html:5
+#, fuzzy
+msgid ""
+"Please contact <a href=\"mailto:mail.issues@sabayon.org\">our service</a> "
+"and ask for help"
+msgstr ""
+"Per favore, contatta <a href=\"mailto:mail.issues@sabayonlinux.org\">il "
+"nostro servizio</a> per ulteriori informazioni"
+
+#: ../templates/registration_successful.html:7
+msgid ""
+"Now you need to wait and read the activation e-mail before being able to "
+"login"
+msgstr ""
+"Ora devi solo attendere l'e-mail di attivazione per poter effettuare il login"
+
+#: ../templates/registration_successful.html:10
+#, fuzzy, c-format
+msgid "<a href='%s'>Click here</a> to come back to the source page"
+msgstr "Clicca qui</a> per tornare alla pagina precedente"
+
+#: ../templates/pastebin/pastebin_disclaimer.html:2
+msgid "Read carefully"
+msgstr "Leggi attentamente"
+
+#: ../templates/pastebin/pastebin_disclaimer.html:2
+msgid ""
+"do not paste sensitive data, it is not protected, this means that other "
+"people can read it. Use this tool only for exchanging stuff in public "
+"virtual places such as IRC, Forums and so forth. Your data will be removed "
+"once expired, we cannot guarantee the storage of the content here. Your IP "
+"is logged and you are invited to respect any existing law. No spamming, No "
+"porn, nothing! Allright?"
+msgstr ""
+"non incollare dati sensibili, non c'è alcuna protezione, questo significa "
+"che altre persone possono leggerle. Usa questo tool solamente per scambiare "
+"informazioni in spazi pubblici virtuali come IRC, Forum e così via. I tuoi "
+"dati verranno rimossi una volta scaduti, non possiamo garantire "
+"l'archiviazione di contenuti. Il tuo indirizzo IP è loggato e sei invitato a "
+"rispettare qualsiasi legge esistente. Niente spamming, niente porno, NIENTE! "
+"Tutto chiaro?"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:7
+msgid "Latest Pasties"
+msgstr "Ultimi Pasties"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:10
+#: ../templates/pastebin/remove_pastie.html:28
+msgid "PixPastebin Home"
+msgstr "PixPastebin Home"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:25
+#: ../templates/pastebin/pastebin_latest_pasties.html:47
+msgid "No Pasties"
+msgstr "Nessun Pastie"
+
+#: ../templates/pastebin/pastebin_latest_pasties.html:32
+msgid "My Latest"
+msgstr "Miei Ultimi"
+
+#: ../templates/pastebin/pastebin_submit_body.html:19
+msgid ""
+"Choose <span id=\"pastebin-submit-type-name\">a file</span> and get ready to "
+"paste!"
+msgstr ""
+"Scegli <span id=\"pastebin-submit-type-name\">un file</span> e preparati ad "
+"incollare!"
+
+#: ../templates/pastebin/pastebin_submit_body.html:20
+msgid "Important"
+msgstr "Importante"
+
+#: ../templates/pastebin/pastebin_submit_body.html:20
+msgid "you cannot send viruses, they are destroyed automatically"
+msgstr "Non puoi inviare virus, sono distrutti automaticamente"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:3
+msgid "Expiration"
+msgstr "Scadenza"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:4
+msgid "One day"
+msgstr "Un giorno"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:5
+msgid "One month"
+msgstr "Un mese"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:6
+msgid "One year"
+msgstr "Un anno"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:9
+#, fuzzy, c-format
+msgid "as <b>%s</b> and permissions:"
+msgstr "e permessi"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:42
+msgid "Wrong CAPTCHA !!! Take this, stupid spammer!"
+msgstr "CAPTCHA sbagliato !!! Prendi questo, stupido spammer!"
+
+#: ../templates/pastebin/pastebin_submit_header.html:4
+msgid "Document type"
+msgstr "Tipo documento"
+
+#: ../templates/pastebin/remove_pastie.html:21
+msgid "Ok fine, pastie removed"
+msgstr "Ok bene, pastie rimosso"
+
+#: ../templates/pastebin/remove_pastie.html:23
+msgid "Message"
+msgstr "Messaggio"
+
+#: ../templates/pastebin/show_pastie_file.html:5
+#, fuzzy, c-format
+msgid "All the uploaded files are checked by %s"
+msgstr "Tutti i file inviati sono controllati da"
+
+#: ../templates/pastebin/show_pastie_header.html:6
+#, fuzzy
+msgid "expires in"
+msgstr "Scadenza"
+
+#: ../templates/pastebin/show_pastie_header.html:6
+msgid "days"
+msgstr ""
+
+#: ../templates/pastebin/show_pastie_header.html:6
+msgid "by"
+msgstr "da"
+
+#: ../templates/pastebin/show_pastie_image.html:16
+msgid "An image should pop up above this text"
+msgstr "Un immagine dovrebbe comparire sopra questo testo"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:2
+msgid "Not found"
+msgstr "Non trovato"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:4
+msgid "The pastie you are looking for is not available"
+msgstr "Il pastie che stai cercando non è disponibile"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:4
+msgid "Paste something?"
+msgstr "Incolla qualcosa?"
+
+#: ../templates/pastebin/show_pastie_not_found_error.html:6
+#: ../templates/pastebin/show_pastie_submit_error.html:6
+msgid "Error message"
+msgstr "Messaggio d'errore"
+
+#: ../templates/pastebin/show_pastie_submit_error.html:2
+msgid "Oops, Error"
+msgstr "Oops, Errore"
+
+#: ../templates/pastebin/show_pastie_submit_error.html:4
+msgid "An error occured while pasting your data"
+msgstr "E' avvenuto un errore durante l'invio dei tuoi dati"
+
+#: ../templates/pastebin/show_pastie_submit_error.html:4
+msgid "Get back?"
+msgstr "Torna indietro?"
+
+#: ../templates/pastebin/show_pastie_tools.html:2
+msgid "Make a fresh post"
+msgstr "Crea un nuovo post"
+
+#: ../templates/pastebin/show_pastie_tools.html:4
+msgid "edit this"
+msgstr "modifica"
+
+#: ../templates/pastebin/show_pastie_tools.html:8
+msgid "delete this"
+msgstr "cancella"
+
+#~ msgid "Official Sabayon Linux Web Chat"
+#~ msgstr "Chat ufficiale Sabayon Linux"
+
+#~ msgid ""
+#~ "Invalid parameters... or perhaps you are cheating? Well, we are not so "
+#~ "stupid."
+#~ msgstr ""
+#~ "Parametri non validi... o per caso stai barando? Beh, non siamo scemi."
+
+#~ msgid "no user_id"
+#~ msgstr "nessun user_id"
+
+#~ msgid "do not cheat please"
+#~ msgstr "non barare per favore"
+
+#, fuzzy
+#~ msgid "MSN Messenger"
+#~ msgstr "Messaggio"
+
+#~ msgid "Website"
+#~ msgstr "Sito Web"
+
+#~ msgid "Location"
+#~ msgstr "Luogo"
+
+#~ msgid "Interests"
+#~ msgstr "Interessi"
+
+#~ msgid "Occupation"
+#~ msgstr "Occupazione"
+
+#, fuzzy
+#~ msgid "Your Community signature"
+#~ msgstr "Punteggio Utente Community"
+
+#~ msgid "E-mail"
+#~ msgstr "E-mail"
+
+#, fuzzy
+#~ msgid "Your current e-mail"
+#~ msgstr "La tua e-mail"
+
+#, fuzzy
+#~ msgid "User Groups"
+#~ msgstr "Gruppi"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Community Area"
+#~ msgstr "Forum Sabayon Linux"
+
+#, fuzzy
+#~ msgid "you name it"
+#~ msgstr "Scarica"
+
+#, fuzzy
+#~ msgid "My Sabayon Dashboard"
+#~ msgstr "La mia Dashboard"
+
+#~ msgid "invalid pages_id"
+#~ msgstr "pages_id non valido"
+
+#~ msgid "permission denied"
+#~ msgstr "permesso negato"
+
+#~ msgid "profile updated successfully !"
+#~ msgstr "profilo aggiornato con successo !"
+
+#~ msgid "wrong search request"
+#~ msgstr "richiesta ricerca errata"
+
+#, fuzzy
+#~ msgid "Donate to Sabayon Linux"
+#~ msgstr "Forum Sabayon Linux"
+
+#, fuzzy
+#~ msgid "Thank you for your donation"
+#~ msgstr "Grazie per aver votato !"
+
+#, fuzzy
+#~ msgid "Sabayon Linux donation success!"
+#~ msgstr "Sabayon Linux QUATTRO OOOOOOOH!"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Download Mirrors"
+#~ msgstr "Forum Sabayon Linux"
+
+#~ msgid "invalid mirror identifier"
+#~ msgstr "identificatore mirror non valido"
+
+#, fuzzy
+#~ msgid "mirror removed"
+#~ msgstr "Successo: mirror rimosso"
+
+#~ msgid "invalid mirror link"
+#~ msgstr "link mirror non valido"
+
+#~ msgid "mirror name too short"
+#~ msgstr "nome mirror troppo corto"
+
+#~ msgid "invalid mirror speed"
+#~ msgstr "velocità mirror non valida"
+
+#~ msgid "invalid mirror country"
+#~ msgstr "Paese mirror non valido"
+
+#, fuzzy
+#~ msgid "updated"
+#~ msgstr "Successo: pagina aggiornata"
+
+#~ msgid "insert at least one link"
+#~ msgstr "inserisci almeno un link"
+
+#~ msgid "insert at least one valid link"
+#~ msgstr "inserisci almeno un link valido"
+
+#~ msgid "Packages"
+#~ msgstr "Pacchetti"
+
+#~ msgid "Packages match"
+#~ msgstr "Matching pacchetti"
+
+#~ msgid "Package descriptions"
+#~ msgstr "Descrizioni pacchetto"
+
+#~ msgid "Files"
+#~ msgstr "File"
+
+#~ msgid "Libraries"
+#~ msgstr "Librerie"
+
+#~ msgid "Alphabet"
+#~ msgstr "Alfabeto"
+
+#~ msgid "Vote"
+#~ msgstr "Voto"
+
+#~ msgid "vote"
+#~ msgstr "voto"
+
+#~ msgid "downloads"
+#~ msgstr "download"
+
+#~ msgid "Package name"
+#~ msgstr "Nome pacchetto"
+
+#~ msgid "Content (text)"
+#~ msgstr "Contenuto (testo)"
+
+#~ msgid "Keyword (tag)"
+#~ msgstr "Keyword (tag)"
+
+#~ msgid "Document id."
+#~ msgstr "Id. Documento"
+
+#~ msgid "No restrictions"
+#~ msgstr "Nessuna restrizione"
+
+#~ msgid "Number of downloads"
+#~ msgstr "Numero di download"
+
+#~ msgid "key"
+#~ msgstr "chiave"
+
+#~ msgid "username"
+#~ msgstr "nome utente"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Packages Repository"
+#~ msgstr "Forum Sabayon Linux"
+
+#~ msgid "invalid search string"
+#~ msgstr "stringa di ricerca non valida"
+
+#~ msgid "invalid search type"
+#~ msgstr "tipo di ricerca non valido"
+
+#~ msgid "invalid search restriction type"
+#~ msgstr "tipo di restrizione ricerca non valido"
+
+#~ msgid "invalid 'order by'"
+#~ msgstr "'ordina per' non valido"
+
+#~ msgid "invalid document"
+#~ msgstr "documento non valido"
+
+#~ msgid "invalid document specified"
+#~ msgstr "documento non valido specificato"
+
+#~ msgid "permission denied, you suck!"
+#~ msgstr "permesso negato, sfigato!"
+
+#~ msgid "WTF? invalid document type!"
+#~ msgstr "Che cazz? tipo documento non valido!"
+
+#~ msgid "you know what? I cannot handle this document"
+#~ msgstr "Sai che ti dico? Non sono in grado di gesitre questo documento"
+
+#~ msgid "Document removed successfully, sigh :'-("
+#~ msgstr "Documento rimosso con successo, sigh :'-("
+
+#~ msgid "wrong username"
+#~ msgstr "username errato"
+
+#~ msgid "no document specified"
+#~ msgstr "nessun documento specificato"
+
+#~ msgid "invalid document type"
+#~ msgstr "tipo documento non valido"
+
+#~ msgid "invalid package key"
+#~ msgstr "chiave pacchetto non valida"
+
+#~ msgid "invalid package string"
+#~ msgstr "stringa pacchetto non valida"
+
+#~ msgid "title too short"
+#~ msgstr "titolo troppo corto"
+
+#~ msgid "description too short"
+#~ msgstr "descrizione troppo corta"
+
+#~ msgid "comment text too short"
+#~ msgstr "testo commento troppo corta"
+
+#~ msgid "no file? no party!"
+#~ msgstr "niente file? niente party!"
+
+#~ msgid "file too big"
+#~ msgstr "file troppo grosso"
+
+#~ msgid "document added but couldn't determine 'iddoc' correctly"
+#~ msgstr ""
+#~ "documento aggiunto ma impossibilità di determinare 'iddoc' correttamente"
+
+#~ msgid "user not authenticated"
+#~ msgstr "utente non autenticato"
+
+#~ msgid "invalid vote"
+#~ msgstr "voto non valido"
+
+#~ msgid "invalid package"
+#~ msgstr "pacchetto non valido"
+
+#~ msgid "vote not in range"
+#~ msgstr "voto non in range"
+
+#~ msgid "you already voted this"
+#~ msgstr "hai già votato questo pacchetto"
+
+#~ msgid "wrong page type"
+#~ msgstr "tipo pagina non valida"
+
+#~ msgid "wrong page state"
+#~ msgstr "stato pagina errato"
+
+#~ msgid "wrong page number"
+#~ msgstr "numero pagina errato"
+
+#~ msgid "missing introduction"
+#~ msgstr "introduzione mancante"
+
+#~ msgid "missing page body"
+#~ msgstr "corpo pagina mancante"
+
+#~ msgid "missing title"
+#~ msgstr "titolo mancante"
+
+#~ msgid "invalid page type"
+#~ msgstr "tipo pagina mancante"
+
+#~ msgid "invalid page state"
+#~ msgstr "stato pagina mancante"
+
+#~ msgid "invalid 'pages_id' or 'page_num'"
+#~ msgstr "'pages_id' o 'page_num' non validi"
+
+#, fuzzy
+#~ msgid "Success:"
+#~ msgstr "Successo"
+
+#, fuzzy
+#~ msgid "page updated"
+#~ msgstr "Successo: pagina aggiornata"
+
+#~ msgid "invalid 'pages_id'"
+#~ msgstr "'pages_id' non valido"
+
+#~ msgid "invalid 'page_num'"
+#~ msgstr "'page_num' non valido"
+
+#~ msgid "'pages_id' and previous 'page_num' not available"
+#~ msgstr "'pages_id' e 'page_num' precedente non disponibili"
+
+#~ msgid "invalid page"
+#~ msgstr "pagina non valida"
+
+#~ msgid "wrong data"
+#~ msgstr "dati non validi"
+
+#~ msgid "invalid option name"
+#~ msgstr "nome opzione non valido"
+
+#~ msgid "page not available"
+#~ msgstr "pagina non disponibile"
+
+#~ msgid "empty option name"
+#~ msgstr "nome opzione non valido"
+
+#~ msgid "invalid option identifier"
+#~ msgstr "identificatore opzione non valido"
+
+#~ msgid "invalid option name, not allowed"
+#~ msgstr "nome opzione non valido, non permesso"
+
+#~ msgid "unknown error"
+#~ msgstr "errore sconosciuto"
+
+#~ msgid "invalid pinboard identifier"
+#~ msgstr "identificatore pinboard non valido"
+
+#~ msgid "missing description"
+#~ msgstr "descrizione mancante"
+
+#~ msgid "invalid element"
+#~ msgstr "elemento mancante"
+
+#~ msgid "empty note"
+#~ msgstr "nota vuota"
+
+#~ msgid "invalid pinboard data identifier"
+#~ msgstr "identificatore pinboard non valido"
+
+#~ msgid "invalid status"
+#~ msgstr "stato non valido"
+
+#~ msgid "invalid element data"
+#~ msgstr "dati elemento non validi"
+
+#~ msgid "This was the last one, w00t!"
+#~ msgstr "Questo era l'ultimo, miticooou!"
+
+#~ msgid "you are not allowed to delete this"
+#~ msgstr "non hai i permessi per cancellare questo"
+
+#~ msgid "invalid share status"
+#~ msgstr "stato condivisione non valida"
+
+#~ msgid "no users selected, WTF?"
+#~ msgstr "nessun utente selezionato, che cazz?"
+
+#~ msgid ""
+#~ "your friends have been mailed but won't be listed until they accept your "
+#~ "offer"
+#~ msgstr ""
+#~ "i tuoi amici sono stati mailato ma non saranno listati qui finché non "
+#~ "accetteranno la tua offerta"
+
+#~ msgid "invalid user id"
+#~ msgstr "id utente non valido"
+
+#~ msgid "invalid share id"
+#~ msgstr "id condivisione non valido"
+
+#~ msgid "confirmation not found"
+#~ msgstr "conferma non trovato"
+
+#~ msgid "pinboard removed or already shared with you"
+#~ msgstr "pinboard rimosso o già condivisa con te"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Screenshots"
+#~ msgstr "Chat di supporto Sabayon Linux"
+
+#~ msgid "unable to access the screenshots directory"
+#~ msgstr "impossibile accedere alla directory degli screenshots"
+
+#~ msgid "screenshots name set found"
+#~ msgstr "nome set screenshots non trovato"
+
+#~ msgid "invalid new name"
+#~ msgstr "nuovo nome non valido"
+
+#~ msgid "name already taken"
+#~ msgstr "nome già preso"
+
+#~ msgid "title already taken"
+#~ msgstr "titolo già preso"
+
+#~ msgid "invalid file extension"
+#~ msgstr "estensione file non valida"
+
+#~ msgid "invalid file, too short"
+#~ msgstr "file non valido, troppo corto"
+
+#~ msgid "general unpack error"
+#~ msgstr "errore generale durante lo scompattamento"
+
+#~ msgid "convert failed on"
+#~ msgstr "conversione fallita su"
+
+#, fuzzy
+#~ msgid "data uploaded and unpacked correctly"
+#~ msgstr "Successo: dati caricato e spacchettati correttamente"
+
+#~ msgid "Yes"
+#~ msgstr "Si"
+
+#~ msgid "N/A"
+#~ msgstr "N/D"
+
+#, fuzzy
+#~ msgid "Public Profile"
+#~ msgstr "Profilo"
+
+#~ msgid "as easy as an abacus, as fast as a segway"
+#~ msgstr "facile come un abaco, veloce come un segway"
+
+#~ msgid "Be active"
+#~ msgstr "Attivati"
+
+#~ msgid "Join us"
+#~ msgstr "Unisciti"
+
+#~ msgid "Download"
+#~ msgstr "Scarica"
+
+#~ msgid "Administrative messages"
+#~ msgstr "Messaggi amministrativi"
+
+#~ msgid "We are looking for funds, give us 2 minutes"
+#~ msgstr "Siamo alla ricerca di fondi, dedicaci 2 minuti del tuo tempo"
+
+#~ msgid ""
+#~ "The Sabayon Linux Project is looking for funds to <b>buy two new servers</"
+#~ "b>. Economic crisis ran over Free Software too and we are aware of how "
+#~ "much every single penny counts. But, as you might have seen, we decided "
+#~ "to take an <b>opposite route</b> and reduce the amount of advertisments "
+#~ "around the website. Still, we're close to place <b>new servers</b> inside "
+#~ "other Universities and <b>we need your help</b> to achieve this result. "
+#~ "See <a href=\"/donate\">our donation page</a> or read below"
+#~ msgstr ""
+#~ "Il Progetto Sabayon Linux è alla ricerca di fondi per l'acquisto di "
+#~ "<b>due nuovi server</b>. La crisi economica ha investito anche il "
+#~ "Software Libero e siamo coscienti di quanto un singolo centesimo valga. "
+#~ "Ma, come avrai potuto notare, abbiamo deciso di prendere la <b>direzione "
+#~ "opposta</b> e ridurre la quantità di pubblicità nel sito. Seppur ciò, "
+#~ "siamo vicini all'installazione di <b>nuovi server</b> all'interno di "
+#~ "altre Università e <b>abbiamo bisogno del tuo aiuto</b> per raggiungere "
+#~ "questo risultato. Vai alla <a href=\"/donate\">nostra pagina donazioni</"
+#~ "a> o leggi sotto"
+
+#~ msgid ""
+#~ "This is what we need (sponsors are welcome too -- 3000&euro; in terms of "
+#~ "money"
+#~ msgstr ""
+#~ "Questo è ciò di cui abbiamo bisogno (altri sponsor sono benvenuti -- "
+#~ "3000&euro; in termini economici"
+
+#~ msgid "recorded weekly"
+#~ msgstr "aggiornato settimanalmente"
+
+#~ msgid "Make a donation"
+#~ msgstr "Fai una donazione"
+
+#~ msgid ""
+#~ "By donating, you empower us with the time and resources we need to bring "
+#~ "you the <i>best Linux experience ever</i>. Click on the link above and "
+#~ "give us the chance to continue to serve you <b>for free</b>"
+#~ msgstr ""
+#~ "Facendo una donazione, rafforzi la nostra possibilità di dedicare tempo e "
+#~ "risorse al progetto e fornirti la <i>migliore esperienza Linux di sempre</"
+#~ "i>. Clicca sui link sopra e dacci la possibilità di continuare a servirti "
+#~ "<b>gratuitamente</b>"
+
+#~ msgid "Join Sabayon Linux on Facebook"
+#~ msgstr "Unisciti a Sabayon Linux su Facebook"
+
+#~ msgid ""
+#~ "There is no way in the entire World we wouldn't had our Facebook Group! "
+#~ "Like it or not, we are there. So, what are you waiting for?"
+#~ msgstr ""
+#~ "Anche Sabayon non poteva fare a meno di avere il proprio gruppo su "
+#~ "Facebook! Che ti piaccia o no, noi ci siamo. Quindi, che aspetti?"
+
+#, fuzzy
+#~ msgid "Sabayon 5.1 GNOME and KDE are HERE</a>"
+#~ msgstr "Sabayon 4.2 Gnome è QUI</a>"
+
+#~ msgid ""
+#~ "On the behalf of the Sabayon Linux team, we are pleased to announce that "
+#~ "<i>the next big thing</i> is <b>here</b>"
+#~ msgstr ""
+#~ "A nome del team di Sabayon Linux, abbiamo il piacere di annunciare che "
+#~ "<i>l'evento tanto atteso</i> è <b>arrivato</b>"
+
+#~ msgid "Go get it"
+#~ msgstr "Scarica"
+
+#~ msgid "Edit your comment"
+#~ msgstr "Modifica il tuo commento"
+
+#~ msgid "You need to be logged in to edit a comment"
+#~ msgstr "Devi essere loggato per poter modificare un commento"
+
+#~ msgid "Login?"
+#~ msgstr "Login?"
+
+#~ msgid "Register?"
+#~ msgstr "Registrati?"
+
+#~ msgid "Score"
+#~ msgstr "Punteggio"
+
+#~ msgid "Delete"
+#~ msgstr "Cancella"
+
+#~ msgid "Edit"
+#~ msgstr "Modifica"
+
+#~ msgid "Comment error"
+#~ msgstr "Errore commento"
+
+#~ msgid "comments"
+#~ msgstr "commenti"
+
+#~ msgid "Write your new comment below"
+#~ msgstr "Scrivi il tuo commento qui sotto"
+
+#~ msgid "You need to be logged in to post a comment"
+#~ msgstr "Per scrivere un commento devi essere loggato"
+
+#~ msgid "Your IP address has been banned for-EVA! Poor you... POOR you!"
+#~ msgstr ""
+#~ "Il tuo indirizzo IP è stato bannato PER SEMPRE! Povero te, povero teee!"
+
+#~ msgid "Communicate"
+#~ msgstr "Comunica"
+
+#~ msgid "Organisation"
+#~ msgstr "Organizzazione"
+
+#~ msgid "Planet"
+#~ msgstr "Planet"
+
+#~ msgid "Forum"
+#~ msgstr "Forum"
+
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
+
+#~ msgid "Web Chat"
+#~ msgstr "Chat Web"
+
+#~ msgid "Press Documentation"
+#~ msgstr "Documentazione Stampa"
+
+#~ msgid "Sabayon Roadmap"
+#~ msgstr "Roadmap Sabayon"
+
+#~ msgid "Get involved"
+#~ msgstr "Attivati"
+
+#~ msgid "PixPastebin"
+#~ msgstr "PixPastebin"
+
+#~ msgid "Community"
+#~ msgstr "Comunità"
+
+#~ msgid "Packages and UGC"
+#~ msgstr "Pacchetti ed UGC"
+
+#~ msgid "Report a bug"
+#~ msgstr "Segnala un bug"
+
+#~ msgid "Browse Git"
+#~ msgstr "Vai a Git"
+
+#~ msgid "Mailing Lists"
+#~ msgstr "Mailing Lists"
+
+#~ msgid "Funding"
+#~ msgstr "Finanziamento"
+
+#~ msgid "Enjoy Sabayon"
+#~ msgstr "Divertiti"
+
+#~ msgid "Screenshots"
+#~ msgstr "Screenshot"
+
+#~ msgid "CD/DVD Distributors"
+#~ msgstr "Distributori CD/DVD"
+
+#~ msgid "successfully"
+#~ msgstr "con successo"
+
+#~ msgid "Preview"
+#~ msgstr "Anteprima"
+
+#~ msgid "here"
+#~ msgstr "qui"
+
+#~ msgid "Reload this page"
+#~ msgstr "Ricarica questa pagina"
+
+#~ msgid "Introduction"
+#~ msgstr "introduzione"
+
+#~ msgid "Thank you for voting !"
+#~ msgstr "Grazie per aver votato !"
+
+#~ msgid "Sorreey, it seems you already voted"
+#~ msgstr "Heeeey, hai già votato"
+
+#~ msgid "Try again tomorrow, or the day after"
+#~ msgstr "Prova nuovamente domani, o dopo domani..."
+
+#~ msgid "Pages navigation"
+#~ msgstr "Navigazione pagine"
+
+#~ msgid ""
+#~ "Sabayon Linux is a <a href=\"http://www.gentoo.org\" target=\"_blank"
+#~ "\">Gentoo Linux</a> based distribution which relies its packages "
+#~ "versioning and patches from the Gentoo Portage tree and our add-on "
+#~ "repository called \"overlay\". Thus, Gentoo Linux Security Advisories "
+#~ "(GLSA) can be applied to the packages listed in our tree. Here below, you "
+#~ "can see a list of the latest GLSAs published by the Gentoo Project"
+#~ msgstr ""
+#~ "Sabayon Linux è una distribuzione basata su <a href=\"http://www.gentoo."
+#~ "org\" target=\"_blank\">Gentoo Linux</a> che quale si appoggia sul suo "
+#~ "sistema di versione e patching delle applicazioni, compilate da Portage e "
+#~ "dalla nostra repository di appoggio chiamata \"overlay\". Quindi, Gentoo "
+#~ "Linux Security Advisories (GLSA -- avvisi di sicurezza Gentoo) può essere "
+#~ "applicata ai pacchetti da noi forniti. Qui sotto, puoi vedere la lista "
+#~ "degli ultimi GLSA pubblicati dal progetto Gentoo"
+
+#~ msgid "full feed here"
+#~ msgstr "feed completo qui"
+
+#~ msgid "Security Advisories"
+#~ msgstr "Avvisi di Sicurezza"
+
+#~ msgid "You can get the complete list on the"
+#~ msgstr "Puoi visualizzare la lista completa su"
+
+#~ msgid "Gentoo Linux Security Advisories feed"
+#~ msgstr "feed Avvisi di Sicurezza Gentoo Linux"
+
+#~ msgid "Categories"
+#~ msgstr "Categorie"
+
+#~ msgid "Release"
+#~ msgstr "Release"
+
+#~ msgid "No packages in this category"
+#~ msgstr "Nessun pacchetto in questa categoria"
+
+#~ msgid "Destroy"
+#~ msgstr "Distruggi"
+
+#~ msgid "Add documents <b>gain scores</b> !"
+#~ msgstr "Aggiungi documenti, <b>aumenta il tuo punteggio</b> !"
+
+#~ msgid "Title"
+#~ msgstr "Titolo"
+
+#~ msgid "Length must be between 10 and 160"
+#~ msgstr "La lunghezza deve essere fra 10 e 160"
+
+#~ msgid "Description"
+#~ msgstr "Descrizione"
+
+#~ msgid "Being descriptive, what a pain in the *ss"
+#~ msgstr "Essere descrittivi, che rottura"
+
+#~ msgid "Keywords"
+#~ msgstr "Keyword"
+
+#~ msgid "Space separated, minimum length: 4 chars each"
+#~ msgstr "Separati da spazio, lunghezza minima: 4 caratteri ognuno"
+
+#~ msgid "Choose what kind of document you want to add"
+#~ msgstr "Scegli che tipo di documento vorresti aggiungere"
+
+#~ msgid "Comment text"
+#~ msgstr "Testo commento"
+
+#~ msgid "Insert your comment on this field"
+#~ msgstr "Inserisci il tuo commento in questo campo"
+
+#~ msgid "File chooser"
+#~ msgstr "Selettore file"
+
+#~ msgid "Select the file you want to upload"
+#~ msgstr "Seleziona il file che vuoi inviare"
+
+#~ msgid "You need to be logged in to add documents"
+#~ msgstr "Devi essere loggato per aggiungere documenti"
+
+#, fuzzy
+#~ msgid "Repository"
+#~ msgstr "Repository Entropy"
+
+#~ msgid "Category"
+#~ msgstr "Categoria"
+
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgid "Version"
+#~ msgstr "Versione"
+
+#~ msgid "Entropy revision"
+#~ msgstr "Revisione Entropy"
+
+#~ msgid "Package tag"
+#~ msgstr "Tag pacchetto"
+
+#~ msgid "Slot"
+#~ msgstr "Slot"
+
+#~ msgid "Dependencies"
+#~ msgstr "Dipendenze"
+
+#~ msgid "Conflicts"
+#~ msgstr "Conflitti"
+
+#~ msgid "Required by"
+#~ msgstr "Richiesto da"
+
+#~ msgid "view packages list"
+#~ msgstr "visualizza lista pacchetti"
+
+#~ msgid "homepage"
+#~ msgstr "homepage"
+
+#~ msgid "License"
+#~ msgstr "Licenza"
+
+#~ msgid "CHOST"
+#~ msgstr "CHOST"
+
+#~ msgid "CFLAGS"
+#~ msgstr "CFLAGS"
+
+#~ msgid "USE flags"
+#~ msgstr "USE flag"
+
+#~ msgid "Content"
+#~ msgstr "Contenuto"
+
+#~ msgid "View content"
+#~ msgstr "Visualizza contenuto"
+
+#~ msgid "Space required"
+#~ msgstr "Spazio richiesto"
+
+#~ msgid "Checksum"
+#~ msgstr "Checksum"
+
+#~ msgid "Creation date"
+#~ msgstr "Data di creazione"
+
+#~ msgid "Security"
+#~ msgstr "Sicurezza"
+
+#~ msgid "show security advisories"
+#~ msgstr "visualizza rapporti sicurezza"
+
+#~ msgid "No entries exist"
+#~ msgstr "Non esiste nessun elemento"
+
+#~ msgid "Packages Search"
+#~ msgstr "Ricerca Pacchetti"
+
+#~ msgid "User Generated Content Search"
+#~ msgstr "Ricerca Contenuti Generati dagli Utenti"
+
+#~ msgid "Statistics"
+#~ msgstr "Statistiche"
+
+#~ msgid "Releases"
+#~ msgstr "Release"
+
+#~ msgid "Quick navigation"
+#~ msgstr "Navigazione veloce"
+
+#~ msgid "Entropy Repository"
+#~ msgstr "Repository Entropy"
+
+#~ msgid "Search type"
+#~ msgstr "Tipo ricerca"
+
+#~ msgid "Order by"
+#~ msgstr "Ordina per"
+
+#~ msgid "Nothing found"
+#~ msgstr "Trovato nulla"
+
+#~ msgid "Perhaps, you meant?"
+#~ msgstr "Per caso, intendevi?"
+
+#~ msgid "Cannot find the software you are looking for?"
+#~ msgstr "Non riesci a trovare il software che stai cercando?"
+
+#~ msgid "Submit a package request"
+#~ msgstr "Invia una richiesta pacchetto"
+
+#~ msgid "Back to Search"
+#~ msgstr "Torna alla Ricerca"
+
+#~ msgid "Revision"
+#~ msgstr "Revisione"
+
+#~ msgid "Package Categories Navigation"
+#~ msgstr "Navigazione categorie pacchetto"
+
+#~ msgid "You are watching"
+#~ msgstr "Stai guardando"
+
+#~ msgid "User Generated Content"
+#~ msgstr "Contenuto Generato dagli Utenti"
+
+#~ msgid "Current status"
+#~ msgstr "Stato corrente"
+
+#~ msgid "Architecture"
+#~ msgstr "Architettura"
+
+#~ msgid "Branches"
+#~ msgstr "Branch"
+
+#~ msgid "Number of packages"
+#~ msgstr "Numero pacchetti"
+
+#~ msgid "Number of categories"
+#~ msgstr "Numero categorie"
+
+#~ msgid "Number of files"
+#~ msgstr "Numero di file"
+
+#~ msgid "Overall size"
+#~ msgstr "Dimensione globale"
+
+#~ msgid "no keywords"
+#~ msgstr "nessuna keyword"
+
+#~ msgid "User score"
+#~ msgstr "Punteggio utente"
+
+#~ msgid "Size"
+#~ msgstr "Dimensione"
+
+#~ msgid "on"
+#~ msgstr "il"
+
+#~ msgid "score"
+#~ msgstr "punteggio"
+
+#~ msgid "Restrict on"
+#~ msgstr "Restringi su"
+
+#~ msgid "Documents"
+#~ msgstr "Documenti"
+
+#~ msgid "Vote error"
+#~ msgstr "Errore voto"
+
+#~ msgid ""
+#~ "We know, everybody has to pay their bills, especially in this though "
+#~ "period. Our Project has been kept alive thanks to people like you, who "
+#~ "even donated just 1$ (or 1&euro;). If you want to support us, then go "
+#~ "ahead reading, otherwise we'll love you anyway"
+#~ msgstr ""
+#~ "Ne siamo coscienti, ognuno deve pagare le proprie bollette, specialmente "
+#~ "in questo periodo difficile. Il nostro Progetto viene mantenuto vivo da "
+#~ "persone come te, che donano anche solo 1$ (o 1&euro;). Se vuoi "
+#~ "supportarci, continua a leggere, altrimenti ti ameremo comunque"
+
+#~ msgid "PayPal"
+#~ msgstr "PayPal"
+
+#~ msgid "Probably the fastest way to make it happen"
+#~ msgstr "Probabilmente il modo più veloce per effettuare donazioni"
+
+#~ msgid "USD donation"
+#~ msgstr "Donazione USD"
+
+#~ msgid "Euro donation"
+#~ msgstr "Donazione Euro"
+
+#~ msgid "Easy, cheap and powerful. Now with an easy form, see below"
+#~ msgstr ""
+#~ "Facile, economico e potente. Ora con un form semplificato, vedi sotto"
+
+#~ msgid "Donate with Moneybookers"
+#~ msgstr "Donazione con Moneybookers"
+
+#~ msgid "Please enter the amount you would like to give"
+#~ msgstr "Per favore inserisci l'importo che vorresti inviarci"
+
+#~ msgid "Select a currency"
+#~ msgstr "Seleziona una valuta"
+
+#~ msgid "US dollar"
+#~ msgstr "Dollaro americano"
+
+#~ msgid "GB pound"
+#~ msgstr "Sterlina Britannica"
+
+#~ msgid "Euro"
+#~ msgstr "Euro"
+
+#~ msgid "Yen"
+#~ msgstr "Yen"
+
+#~ msgid "Canadian $"
+#~ msgstr "Dollaro canadese"
+
+#~ msgid "Australian $"
+#~ msgstr "Dollaro australiano"
+
+#~ msgid "amount"
+#~ msgstr "importo"
+
+#~ msgid "**Hugs** **Hugs** **Hugs**"
+#~ msgstr "**Abbracci** **Abbracci** **Abbracci**"
+
+#~ msgid ""
+#~ "Thanks a lot, we appreciate your effort. Your donation will help us "
+#~ "keeping up the good work. We are sure you want to get back to the <a href="
+#~ "\"/\">Front Page</a> now"
+#~ msgstr ""
+#~ "Grazie mille, apprezziamo il tuo contributo. La tua donazione aiuterà il "
+#~ "progetto a continuare lo sviluppo. Siamo certi che ora vorresti tornare "
+#~ "alla <a href=\"/\">pagina iniziale</a>"
+
+#~ msgid ":-* kisses kisses kisses"
+#~ msgstr ":-* baci baci baci"
+
+#~ msgid "Total votes"
+#~ msgstr "Voti totali"
+
+#~ msgid "not voted yet?"
+#~ msgstr "non hai ancora votato?"
+
+#~ msgid "You, liar!"
+#~ msgstr "Tu, bugiardo!"
+
+#~ msgid "See results"
+#~ msgstr "Vedi i risultati"
+
+#~ msgid ""
+#~ "Being part of <b>our Community</b> is what make us proud of ourselves"
+#~ msgstr ""
+#~ "Far parte della <b>nostra Community</b> è ciò che ci rende orgogliosi"
+
+#~ msgid ""
+#~ "This is the place where you can get in touch with people in our "
+#~ "Community, see how good they are and get helped"
+#~ msgstr ""
+#~ "Questo è lo spazio che ti permette di rimanere in contatto con le persone "
+#~ "della nostra Community, guarda quanto sono bravi e ottieni l'aiuto di cui "
+#~ "hai bisogno"
+
+#~ msgid ""
+#~ "If you want to join our Community or just need help and make questions, "
+#~ "here are some useful links you might need to look at"
+#~ msgstr ""
+#~ "Se vuoi unirti alla nostra Community o semplicemente hai bisogno di aiuto "
+#~ "o assistenza, ecco qualche link che potrebbe esserti utile"
+
+#~ msgid "Sabayon Linux Support Chat"
+#~ msgstr "Chat di supporto Sabayon Linux"
+
+#~ msgid "Wolfden, Sabayon Linux Chief Community Officer"
+#~ msgstr "Wolfden, il \"Sabayon Linux Chief Community Officer\""
+
+#~ msgid "Lxnay, Sabayon Linux Chief Architect"
+#~ msgstr "Lxnay, il Capo Progetto di Sabayon Linux"
+
+#~ msgid "Sabayon Linux Forum"
+#~ msgstr "Forum Sabayon Linux"
+
+#~ msgid "Community Home"
+#~ msgstr "Home Community"
+
+#~ msgid "Users"
+#~ msgstr "Utenti"
+
+#~ msgid "Hall of fame"
+#~ msgstr "Albo dei record"
+
+#~ msgid "Blogs"
+#~ msgstr "Blog"
+
+#~ msgid "Useful links"
+#~ msgstr "Link utili"
+
+#~ msgid "also known as"
+#~ msgstr "anche conosciuto come"
+
+#~ msgid "Points"
+#~ msgstr "Punto"
+
+#~ msgid "Currently counting"
+#~ msgstr "Attualmente contati"
+
+#~ msgid "users... and <b>growing</b>"
+#~ msgstr "utenti... in continua <b>crescita</b>"
+
+#~ msgid "Profile"
+#~ msgstr "Profilo"
+
+#~ msgid "Pinboard"
+#~ msgstr "Pinboard"
+
+#~ msgid "Messages"
+#~ msgstr "Messaggi"
+
+#~ msgid "News / Pages"
+#~ msgstr "Notizie / Pagine"
+
+#~ msgid "Mirrors"
+#~ msgstr "Mirrors"
+
+#~ msgid "Polls"
+#~ msgstr "Sondaggi"
+
+#~ msgid "Not implemented yet. Sorrey!"
+#~ msgstr "Non ancora implementato. Mi dispiace!"
+
+#~ msgid "Mirror name"
+#~ msgstr "Nome mirror"
+
+#~ msgid "Do I have to explain the concept?"
+#~ msgstr "Devo spiegarti il concetto?"
+
+#~ msgid "Mirror speed"
+#~ msgstr "Velocità mirror"
+
+#~ msgid "Again, don't be dumb, why are you reading here?"
+#~ msgstr "Di nuovo, non essere sciocco, perché leggi qui?"
+
+#~ msgid "Mirror country"
+#~ msgstr "Paese mirror"
+
+#~ msgid "Where is it located?"
+#~ msgstr "Dov'è localizzato?"
+
+#~ msgid "Notes"
+#~ msgstr "Note"
+
+#~ msgid "Important (internal) notes"
+#~ msgstr "Note (interne) importanti"
+
+#~ msgid "Mirror Link #1"
+#~ msgstr "Mirror Link #1"
+
+#~ msgid "Give me an URL"
+#~ msgstr "Dammi un URL"
+
+#~ msgid "Mirror Link #2"
+#~ msgstr "Mirror Link #2"
+
+#~ msgid "Mirror Link #3"
+#~ msgstr "Mirror Link #3"
+
+#~ msgid "Add link"
+#~ msgstr "Aggiungi link"
+
+#~ msgid "Delete link"
+#~ msgstr "Cancella link"
+
+#~ msgid ""
+#~ "Ok, once again, you are an admin. This is the Download Mirrors manager"
+#~ msgstr ""
+#~ "Di nuovo, sei un amministratore. Questa è la pagina di gestione dei "
+#~ "Mirror di download"
+
+#~ msgid "New Mirror"
+#~ msgstr "Nuovo mirror"
+
+#~ msgid "One more page"
+#~ msgstr "Un'altra pagina"
+
+#~ msgid "Body"
+#~ msgstr "Corpo"
+
+#~ msgid "Tags"
+#~ msgstr "Tag"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
+#~ msgid "Published on"
+#~ msgstr "Pubblicato il"
+
+#~ msgid "Actions"
+#~ msgstr "Azioni"
+
+#~ msgid "Page state"
+#~ msgstr "Stato pagina"
+
+#, fuzzy
+#~ msgid "Reload pages navigation"
+#~ msgstr "Navigazione pagine"
+
+#~ msgid "Rename"
+#~ msgstr "Rinomina"
+
+#~ msgid "Remove"
+#~ msgstr "Rimuovi"
+
+#~ msgid ""
+#~ "Ok, you are an admin. So, you know what to do here. All the bells and "
+#~ "whistles, like someone said"
+#~ msgstr "OK, sei un amministratore. Quindi sai cosa fare qui."
+
+#~ msgid "New Document"
+#~ msgstr "Nuovo documento"
+
+#~ msgid "This is the Pin title"
+#~ msgstr "Questo è il titolo della Pin"
+
+#~ msgid "Write a brief description"
+#~ msgstr "Scrivi una breve descrizione"
+
+#~ msgid "Note"
+#~ msgstr "Nota"
+
+#~ msgid "Write your note here"
+#~ msgstr "Scrivi la tua nota qui"
+
+#~ msgid "Status"
+#~ msgstr "Stato"
+
+#~ msgid "Come on, you are lazy"
+#~ msgstr "Daaaai, sei pigro"
+
+#~ msgid "Show"
+#~ msgstr "Visualizza"
+
+#~ msgid "Share this Pin"
+#~ msgstr "Condividi questa Pin"
+
+#~ msgid "Active shares"
+#~ msgstr "Condivisioni attive"
+
+#~ msgid ""
+#~ "Welcome to your personal Pinboard. Write your thoughts here. Organize "
+#~ "your tasks. Share with friends."
+#~ msgstr ""
+#~ "Benvenuto nella tua Pinboard personale. Scrivi il tuoi pensieri. "
+#~ "Organizza i tuoi task. Condividili con gli amici."
+
+#~ msgid "My Pins"
+#~ msgstr "Miei Pin"
+
+#, fuzzy
+#~ msgid "New Pin"
+#~ msgstr "Nuovo sondaggio"
+
+#~ msgid ""
+#~ "No elements here. You can't blame <u>aliens</u>. You might want to add "
+#~ "something someday, huh?"
+#~ msgstr ""
+#~ "Nessun elemento qui. Non dare la colpa agli <u>alieni</u>. Potresti voler "
+#~ "aggiungere qualcosa un giorno, eh?"
+
+#~ msgid "Connected Pins"
+#~ msgstr "Pin connessi"
+
+#~ msgid ""
+#~ "No elements here. Nobody loves you. Errr.. I am joking! We love you! No, "
+#~ "you can't blame <u>aliens</u>, again"
+#~ msgstr ""
+#~ "Nessun elemento qui. Nessuno ti ama. Ehm... sto scherzando! Noi ti "
+#~ "amiamo! No, non puoi dare la colpa agli <u>alieni</u>, di nuovo"
+
+#~ msgid "Polls management, you can enable how many you want. Do et"
+#~ msgstr "Gestione sondaggi, puoi abilitarne quanti ne vuoi. Fallo"
+
+#~ msgid "New Poll"
+#~ msgstr "Nuovo sondaggio"
+
+#~ msgid ""
+#~ "the poll will start with no options and disabled. You must create it first"
+#~ msgstr ""
+#~ "il sondaggio inizierà con nessuna opzione e disattivato. Devi crearlo "
+#~ "prima"
+
+#~ msgid ""
+#~ "Of course, this is your profile and the place you can change how you are "
+#~ "shown to the World. Style matters, remember this"
+#~ msgstr ""
+#~ "Ovviamente, questo è il tuo profilo ed il luogo dove puoi cambiare il "
+#~ "modo in cui sei visto dal Mondo. Lo stile importa, ricordalo"
+
+#~ msgid "E-mail configuration"
+#~ msgstr "Configurazione e-mail"
+
+#~ msgid "Your e-mail"
+#~ msgstr "La tua e-mail"
+
+#~ msgid "E-mail confirm"
+#~ msgstr "Conferma e-mail"
+
+#~ msgid "Confirm your e-mail"
+#~ msgstr "Conferma la tua e-mail"
+
+#~ msgid "Password configuration"
+#~ msgstr "Configurazione password"
+
+#~ msgid "Current Password"
+#~ msgstr "Password corrente"
+
+#~ msgid "Your current password"
+#~ msgstr "La tua password corrente"
+
+#~ msgid "New password"
+#~ msgstr "Nuova password"
+
+#~ msgid "Type your new password"
+#~ msgstr "Scrivi la tua nuova password"
+
+#~ msgid "Repeat new password"
+#~ msgstr "Ripeti la nuova password"
+
+#~ msgid "Type again your new password"
+#~ msgstr "Scrivi di nuovo la tua nuova password"
+
+#~ msgid "Will be used as directory name"
+#~ msgstr "Sarà usato come nome directory"
+
+#~ msgid "Compressed archive"
+#~ msgstr "Archivio compresso"
+
+#~ msgid "Valid are .zip, .tar.bz2, .tar.gz. Inside: root dir and just files"
+#~ msgstr ""
+#~ "Validi sono .zip, .tar.bz2, .tar.gz. All'interno: directory radice con "
+#~ "solo file"
+
+#~ msgid "Ok, good you are an admin. This is the Screenshots manager"
+#~ msgstr "Ok, bene sei amministratore. Questo è il gestore degli Screenshots"
+
+#~ msgid "New Screenshots"
+#~ msgstr "Nuovi Screenshot"
+
+#~ msgid "Ok <b>ladies</b> and <b>gentlemen</b>. We have a <u>winner</u> here!"
+#~ msgstr ""
+#~ "Ok <b>signore</b> e </b>signori</b>. Abbiamo un <u>vincitore</u> qui!"
+
+#, fuzzy
+#~ msgid "You are now connected with %s's Pinboard titled \"<i>%s</i>\"."
+#~ msgstr "Sei ora connesso con"
+
+#, fuzzy
+#~ msgid ""
+#~ "Click %shere%s to get to your personal Dashboard and <b>have fun</b>."
+#~ msgstr "per andare alla tua Dashboard personale e <b>divertirti</b>"
+
+#~ msgid "We are <b>sorry</b>, the System encountered an error"
+#~ msgstr "Siamo <b>spiacenti</b>, il sistema è andato in errore"
+
+#, fuzzy
+#~ msgid ""
+#~ "Thus, <b>we cannot satisfy</b> your request. You can get to our <b><a "
+#~ "href='/'>front page</a></b> and be happy anyway."
+#~ msgstr ""
+#~ "Quindi, <b>non possiamo soddisfare</b> la tua richiesta. Puoi tornare "
+#~ "alla <b><a href=\"/\">pagina principale</a></b> ed essere felice lo stesso"
+
+#~ msgid "...Beeee happy! Don't worry, beeeee happy!"
+#~ msgstr "...Beeee happy! Don't worry, beeeee happy!"
+
+#~ msgid ""
+#~ "In this page you will find all your statistics regarding your Entropy/Web "
+#~ "account"
+#~ msgstr ""
+#~ "In questa pagina troverai tutte le tue statistiche riguardanti il tuo "
+#~ "account Entropy/Web"
+
+#~ msgid "this is the name other people will reference you"
+#~ msgstr "questo è il nome con cui altre persone faranno riferimento a te"
+
+#~ msgid "User id"
+#~ msgstr "Id utente"
+
+#~ msgid "this is your user account number"
+#~ msgstr "Questo è il tuo numero di profilo"
+
+#~ msgid "Entropy role"
+#~ msgstr "Ruolo Entropy"
+
+#~ msgid "your role inside the Community"
+#~ msgstr "il tuo ruolo all'interno della Community"
+
+#~ msgid "number of times you voted"
+#~ msgstr "numero di volte che hai votato"
+
+#, fuzzy
+#~ msgid "weight: %s points each"
+#~ msgstr "punti ognuno"
+
+#~ msgid "Vote average"
+#~ msgstr "Media voto"
+
+#~ msgid "this is kinda self explanatory"
+#~ msgstr "questo è abbastanza auto-esplicativo"
+
+#~ msgid "how many documents you uploaded (comments,images,etc)"
+#~ msgstr "quanti documenti hai inviato (commenti, immagini, ecc)"
+
+#~ msgid "how many comments you wrote"
+#~ msgstr "quanti commenti hai scritto"
+
+#~ msgid "Images"
+#~ msgstr "Immagini"
+
+#~ msgid "how many images you uploaded"
+#~ msgstr "quante immagini hai inviato"
+
+#~ msgid "how many files you uploaded"
+#~ msgstr "quanti file hai inviato"
+
+#~ msgid "YouTube(tm) Videos"
+#~ msgstr "Video YouTube(tm)"
+
+#~ msgid "how many videos you uploaded"
+#~ msgstr "quanti video hai inviato"
+
+#~ msgid "Ranking"
+#~ msgstr "Classifica"
+
+#~ msgid "how good you are in our Community"
+#~ msgstr "quanto sei bravo nella nostra Community"
+
+#~ msgid "position"
+#~ msgstr "posizione"
+
+#~ msgid "your resulting Entropy score"
+#~ msgstr "il tuo punteggio Entropy risultante"
+
+#~ msgid "Not logged in"
+#~ msgstr "Non loggato"
+
+#~ msgid ""
+#~ "In this page you will be able to browse through your submitted documents "
+#~ "on all the repositories we host"
+#~ msgstr ""
+#~ "In questa pagina sarai in grado di sfogliare i documenti che hai inviato "
+#~ "in tutte le repository che ospitiamo"
+
+#~ msgid "View"
+#~ msgstr "Visualizza"
+
+#~ msgid "This is just"
+#~ msgstr "Questo è"
+
+#~ msgid "hello !"
+#~ msgstr "ciao !"
+
+#~ msgid "Just a nickname, what did you expect?"
+#~ msgstr "semplicemente un nickname, cosa ti aspettavi?"
+
+#~ msgid "User identifier"
+#~ msgstr "Identificatore utente"
+
+#~ msgid "This is the account number"
+#~ msgstr "Questo è il numero di profilo"
+
+#~ msgid "Website role"
+#~ msgstr "Ruolo sito Web"
+
+#~ msgid "User's role inside our Website"
+#~ msgstr "Ruolo utente all'interno del nostro sito Web"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "User's virtual Alter-Ego"
+#~ msgstr "Alter-Ego virtuale dell'utente"
+
+#~ msgid "User comes from..."
+#~ msgstr "L'utente viene da..."
+
+#~ msgid "Age"
+#~ msgstr "Età"
+
+#~ msgid "How many years are past, huh!"
+#~ msgstr "Quanti anni sono passati, eh!"
+
+#~ msgid "User's current job"
+#~ msgstr "Occupazione corrente"
+
+#~ msgid "User's interests, kinda self explanatory"
+#~ msgstr "Interessi utente, abbastanza chiaro"
+
+#~ msgid "Contacts"
+#~ msgstr "Contatti"
+
+#~ msgid "User's E-mail and IM"
+#~ msgstr "E-mail utente e IM"
+
+#~ msgid "User's Website"
+#~ msgstr "Website utente"
+
+#~ msgid "Click here to get there"
+#~ msgstr "Clicca qui per andarci"
+
+#~ msgid "Groups"
+#~ msgstr "Gruppi"
+
+#~ msgid "Website groups user is in"
+#~ msgstr "Gruppi Web il quale utente fa parte"
+
+#~ msgid "User's role inside Entropy"
+#~ msgstr "Ruolo utente all'interno di Entropy"
+
+#~ msgid "Number of times the User voted"
+#~ msgstr "Numero di volte che l'utente ha votato"
+
+#~ msgid "Total number of documents"
+#~ msgstr "Numero totale di documenti"
+
+#~ msgid "Number of comments"
+#~ msgstr "Numero di commenti"
+
+#~ msgid "Number of images"
+#~ msgstr "Numero di immagini"
+
+#~ msgid "Number of videos belonging"
+#~ msgstr "Numero di video posseduti"
+
+#~ msgid "User rank inside our Community"
+#~ msgstr "Posizione in classifica nella nostra Community"
+
+#~ msgid "User's Community Score"
+#~ msgstr "Punteggio Utente Community"
+
+#~ msgid "User search"
+#~ msgstr "Ricerca utente"
+
+#~ msgid ""
+#~ "Write a search term on the right. E-mail, username, name, surname, you "
+#~ "name it"
+#~ msgstr ""
+#~ "Scrivi un termine di ricerca sulla destra. E-mail, nome utente, nome, "
+#~ "soprannome, quel che ti pare"
+
+#~ msgid "Search results"
+#~ msgstr "Risultati ricerca"
+
+#~ msgid "featuring"
+#~ msgstr "sfoggiando"
+
+#~ msgid "Points and Ranking"
+#~ msgstr "Punti e Classifica"
+
+#~ msgid "No users found. Go out and blame cows"
+#~ msgstr "Nessun utente trovato. Esci e prenditela con le mucche"
+
+#~ msgid "Mirror"
+#~ msgstr "Mirror"
+
+#~ msgid ""
+#~ "Sabayon, free of charge, batteries included and on your own Computer. "
+#~ "What are you waiting for? <b>Select the location closer to you</b> and "
+#~ "start downloading a new experience"
+#~ msgstr ""
+#~ "Sabayon, senza spese, batterie incluse e sul tuo Computer. Che stai "
+#~ "aspettando? <b>Scegli un posto vicino a te</b> ed inizia a scaricare una "
+#~ "nuova esperienza"
+
+#~ msgid "No Internet? Slow Internet?"
+#~ msgstr "Niente Internet? Internet lento?"
+
+#~ msgid "Have a look at our <a href='#'>official online vendors list</a>"
+#~ msgstr "Dai un occhio ai nostri <a href='#'>rivenditori ufficiali</a>"
+
+#~ msgid "Metalinks"
+#~ msgstr "Metalinks"
+
+#~ msgid ""
+#~ "For people with faster Internet connections (DSL, Cable, Fiber), Metalink "
+#~ "makes downloading easier, faster, and more reliable. If you're on an "
+#~ "error prone connection, Metalinks with repair information can fix any "
+#~ "errors you get in transfer. Most downloads probably don't max out your "
+#~ "downstream bandwidth. Metalink will help"
+#~ msgstr ""
+#~ "Per persone con connessioni Internet veloci (DSL, Cavo, Fibra), Metalink "
+#~ "rende i download più facili, veloci e più affidabili. Se stai usando una "
+#~ "connessione potenzialmente instabile, Metalink riparerà gli errori di "
+#~ "trasmissione. La maggior parte dei download non saturano la tua banda in "
+#~ "download. Metalink aiuterà proprio in questo"
+
+#~ msgid "source"
+#~ msgstr "sorgente"
+
+#~ msgid "Visit the official"
+#~ msgstr "Visita"
+
+#~ msgid "Sabayon Linux Metalinker Page"
+#~ msgstr "Pagina Sabayon Linux Metalinker"
+
+#~ msgid "Bittorrent"
+#~ msgstr "Bittorrent"
+
+#, fuzzy
+#~ msgid ""
+#~ "Most people love it just because it makes your download fly. Now we have "
+#~ "our Sabayon Linux Tracker"
+#~ msgstr ""
+#~ "La maggior parte delle persone lo amano semplicemente perché fa volare i "
+#~ "tuoi scaricamenti. Linuxtracker.org sta ospitando tutti i nostri torrent "
+#~ "da tempo"
+
+#~ msgid "Visit the"
+#~ msgstr "Visita"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Tracker Page"
+#~ msgstr "Pagina Sabayon Linux Metalinker"
+
+#~ msgid "HTTP, FTP, RSYNC mirrors"
+#~ msgstr "HTTP, FTP, RSYNC mirror"
+
+#~ msgid ""
+#~ "If you belong to the old generation or just want to use `wget` because "
+#~ "it's the only download manager you trust. Here it is a list of official "
+#~ "mirrors, alphabetically divided by countries"
+#~ msgstr ""
+#~ "Se appartieni alla vecchia guardia e vuoi semplicemente usare `wget` "
+#~ "perché è l'unico download manager di cui ti fidi. Ecco una lista di "
+#~ "mirror ufficiali, suddivisi alfabeticamente per Paese"
+
+#~ msgid "Subscribe your Mirror today"
+#~ msgstr "Sottoscrivi il tuo Mirror oggi"
+
+#~ msgid "Do you have spare bandwidth? Are you a mirror maintainer?"
+#~ msgstr "Hai banda libera? Sei un gestore di mirror?"
+
+#~ msgid "Submit your request here"
+#~ msgstr "Invia la tua richiesta qui"
+
+#~ msgid "Online Stores"
+#~ msgstr "Store Online"
+
+#~ msgid "Product"
+#~ msgstr "Prodotto"
+
+#~ msgid "Branch"
+#~ msgstr "Branch"
+
+#, fuzzy
+#~ msgid "We have found %s %s"
+#~ msgstr "Abbiamo trovato"
+
+#~ msgid "Sabayon Linux Linuxtracker.org Page"
+#~ msgstr "Pagina Sabayon Linux su Linuxtracker.org"
+
+#~ msgid "AND"
+#~ msgstr "E"
+
+#~ msgid "Sabayon 4.2 KDE is HERE"
+#~ msgstr "Sabayon 4.2 KDE è QUI"
+
+#~ msgid "weight"
+#~ msgstr "peso"
+
+#~ msgid "points each"
+#~ msgstr "punti ognuno"
+
+#~ msgid "Error: invalid HTTP method"
+#~ msgstr "Errore: metodo HTTP non valido"
+
+#~ msgid "Error: not logged in"
+#~ msgstr "Errore: non loggato"
+
+#~ msgid "You have mail"
+#~ msgstr "Hai posta"
+
+#~ msgid "Error: invalid method"
+#~ msgstr "Errore: metodo non valido"
+
+#~ msgid "back to computing basics"
+#~ msgstr "torniamo assieme alle origini"
+
+#~ msgid "Go Shopping"
+#~ msgstr "Fai Shopping"
+
+#~ msgid ""
+#~ "Do you need a new cap? Do you want to buy the Official Sabayon Linux T-"
+#~ "Shirt, some stickers, buttons, magnets mousepads, or a mug?"
+#~ msgstr ""
+#~ "Hai bisogno di un nuovo cappello? Vuoi comprare la T-Shirt ufficiale di "
+#~ "Sabayon Linux, qualche sticker, bottoni, calamite, mousepad o una tazza?"
+
+#~ msgid "Enter here"
+#~ msgstr "Entra qui"
+
+#~ msgid "written by"
+#~ msgstr "scritto da"
+
+#~ msgid "around"
+#~ msgstr "attorno"
+
+#~ msgid "Hello"
+#~ msgstr "Ciao"
+
+#~ msgid "Sabayon Shop"
+#~ msgstr "Shop di Sabaon"
+
+#~ msgid "Publisher"
+#~ msgstr "Editore"
+
+#~ msgid "Postcards address"
+#~ msgstr "Indirizzo cartolina"
+
+#~ msgid "What about sending us a Postcard? Here is our mailing address"
+#~ msgstr ""
+#~ "Che ne dici di inviarci una cartolina? Ecco il nostro indirizzo di posta"
+
+#~ msgid "'s Pinboard titled"
+#~ msgstr " Pinboard intitolata"
+
+#~ msgid "Click"
+#~ msgstr "Clicca"
+
+#~ msgid "Choose "
+#~ msgstr "Scegli"

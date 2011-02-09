@@ -1,0 +1,95 @@
+## -*- coding: utf-8 -*-
+%if not (session.has_key('logged_in') and session.has_key('entropy')):
+    <form method="post" id="loginform" action="/login/submit">
+        <div>${_("Entropy Web Dashboard Login")}</div>
+        <div style="float: left; clear: left; width: 53%">
+            <input name="username" class="search" type="text"/>
+            <input name="password" value="" class="search" type="password"/>
+        </div>
+        <div class="loginform-right-links" style="float: left; width: 47%">
+            <div style="padding-top: 7px;">
+                <a id="new-user-question" href="${c.register_uri}">${_("New user?")}</a> | <a id="whats-all-this" href="javascript:registration_advantages();">${_("What is all this ?")}</a>
+            </div>
+            <div style="padding-top: 18px;">
+            %if c.login_redirect:
+                <input type="hidden" name="redirect" value="${c.login_redirect}"/>
+            %elif c.www_current_url:
+                <input type="hidden" name="redirect" value="${c.www_current_url}"/>
+            %endif
+                <input value="${_("Login")}" type="submit"/>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        %if c.login_error:
+                        <br/><b>${_("Login error")}:</b> ${c.login_error}<br/>
+        %elif c.front_page_distro_stats:
+            <div style="margin-left: auto;margin-right: auto; width: 100%">
+                <b>${_("Comments")}:</b> ${c.front_page_distro_stats['comments']} | <b>${_("Docs")}:</b> ${c.front_page_distro_stats['documents']}
+                | 
+                <b>${_("Votes")}:</b> ${c.front_page_distro_stats['votes']} | <b>${_("Downloads")}:</b> ${c.front_page_distro_stats['downloads']}
+            </div>
+        %endif
+    </form>
+%else:
+
+    <%
+        this_uri = request.environ.get('PATH_INFO')
+        if request.environ.get('QUERY_STRING'):
+            this_uri += '?' + request.environ['QUERY_STRING']
+    %>
+
+    <div id="loginform">
+        <div>
+            ${_("Hello <b>%s</b>, %s") % (session['entropy'].get('entropy_user'), session['entropy'].get('random_welcome_message'),)} | <b><a href="/login/logout" style="font-size: 1.30em">${_("Logout ?")}</a></b>
+        </div>
+        <div style="float: left; clear: left; width: 78%">
+            <div class="konafilter">
+                <ul class="dropdown" id="dropdown-menu-profile">
+                    <li>
+                        <span>${_("My Entropy")}</span>
+                        <ul>
+                            <li class="item">
+                                <a href="/community/my/ugc">${_("My User Generated Content")}</a>
+                            </li>
+                            <li class="item">
+                                <a href="/community/my/ugc_stats">${_("My Statistics")}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>${_("My Sabayon")}</span>
+                        <ul>
+                            <li class="item">
+                                <a href="/community/my/dashboard">${_("My Dashboard")}</a>
+                            </li>
+                            <li class="item">
+                                <a href="/pastebin">${_("My Pastebin")}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="float: left; clear: right; width: 22%; text-align: right;">
+            %if c.front_page_user_stats:
+                <span style="font-size: 1.8em; font-weight: bold;">${c.front_page_user_stats['score']}</span>
+            %else:
+                <span style="font-size: 1.8em; font-weight: bold;">0</span>
+            %endif
+            <span style="font-size: 1.4em;">${_("points")}</span>
+        </div>
+        <div style="clear: both; padding-top: 5px">
+            %if c.front_page_user_stats:
+                <b>${_("My Comments")}</b>: ${c.front_page_user_stats['comments']} ~ <b>${_("My Docs")}</b>: ${c.front_page_user_stats['docs']}
+                <br/><b>${_("My Votes")}</b>: ${int(c.front_page_user_stats['votes'])} ~ <b>${_("My Avg")}</b>: ${round(c.front_page_user_stats['votes_avg'],2)}
+            %endif
+        </div>
+        <div style="padding-top: 6px; padding-bottom: 5px">
+            %if c.front_page_distro_stats:
+                    <b>${_("Comments")}</b>: ${c.front_page_distro_stats['comments']} ~ <b>${_("Docs")}</b>: ${c.front_page_distro_stats['documents']}
+                    <br/>
+                    <b>${_("Votes")}</b>: ${c.front_page_distro_stats['votes']} ~ <b>${_("Downloads")}</b>: ${c.front_page_distro_stats['downloads']}
+            %endif
+        </div>
+    </div>
+%endif

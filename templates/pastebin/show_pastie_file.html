@@ -1,0 +1,6 @@
+<div align="center">
+    <% file_uri = "%s/%s/%s" % (c.pastebin_uri,c.pastebin['pastebin_id'],c.pastebin['content'].strip(),) %>
+    <a href="${file_uri}" target="_blank"><img src="/images/package-x-generic.png" title="${_("Download this file")}"/></a>
+    <br/>
+    ${_("All the uploaded files are checked by %s") % ("<a href=\"http://www.clamav.net\" target=\"_blank\">ClamAV</a>",)}.
+</div>

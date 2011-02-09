@@ -1,0 +1,71 @@
+<%
+    count = 0
+    colors = ["#FFFFFF","#F4F4F4"]
+%>
+% if c.pastie_highlighted:
+    <style type="text/css">
+        .linenos pre {
+            color: #FFFFFF;
+        }
+        .highlighttable {
+            width: 99%;
+        }
+        .highlight {
+            padding: 5px;
+            width: 780px;
+            overflow: scroll;
+            min-height: 200px;
+            background-color: #FFFFFF;
+        }
+        .linenos {
+            vertical-align: top;
+            padding-top: 4px;
+        }
+    </style>
+    ${c.pastebin['content_clean']}
+% else:
+    <style type="text/css">
+        #code_frame{font-size:12px;line-height:18px;}
+        #code_frame li:hover{background-color:#FFD;}
+        #code_frame a{text-decoration:underline;}
+        #code_frame div { 
+            line-height: 18px; 
+        }
+        /**
+         * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+         * (http://qbnz.com/highlighter/ and http://geshi.org/)
+         */
+        .text .de1, .text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding-left:4px; background:none; vertical-align:top; color: black;}
+        .text  {font-family:monospace;}
+        .text .imp {font-weight: bold; color: red;}
+        .text li, .text .li1 {background: #ffffff;}
+        .text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+        .text .li2 {background: #f8f8f8;}
+        .text span.xtra { display:block; }
+    </style>
+    <div id="code_frame" style="overflow-x: visible; width: 100%;">
+        <div class="text" style="min-height: 200px; font-family:monospace;">
+            <ol>
+            <%
+                mycontent = c.pastebin['content_clean']
+                mycontent = mycontent.replace('\r','')
+                mycontent = mycontent.replace('\t','&nbsp;'*8)
+                mycontent = mycontent.replace(' ','&nbsp;')
+            %>
+            % for line in mycontent.split('\n'):
+                <% 
+                    myclass = "li2"
+                    mydivclass = "de2"
+                    if count%2:
+                        myclass = "li1"
+                        mydivclass = "de1"
+                    count += 1
+                %>
+                <li class="${myclass}">
+                    <div class="${mydivclass}">${line}</div>
+                </li>
+            % endfor
+            </ol>
+        </div>
+    </div>
+% endif

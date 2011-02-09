@@ -1,0 +1,25 @@
+<div style="padding-top: 30px" id="pastebin-submit-docarea">
+    <div id="pastebin-submit-text-content"
+    % if (c.default_pastebin_doctypes_id != c.pastebin_doctypes['text']) and c.default_pastebin_doctypes_id:
+        style="display: none"
+    % endif
+    >
+        <textarea name="pastie_content" id="pastebin-text-content" class="pastie-textarea" onfocus="javascript:this.style.backgroundImage = 'none';">${c.pastebin_edit_content}</textarea>
+    </div>
+    <div id="pastebin-submit-file-content" style="
+    % if (c.default_pastebin_doctypes_id == c.pastebin_doctypes['text']) or not c.default_pastebin_doctypes_id:
+        display: none;
+    % endif
+    padding-top: 20px; padding-bottom: 20px; margin-left: auto; margin-right: auto; width: 80%;">
+        <div style="float: left; width: 72px; clear: left;">
+            <img src="/images/edit-paste.png" alt="${_("PixPastebin")}" title="${_("Paste something!")}"/>
+        </div>
+        <div style="float: left; width: 550px; clear: right;">
+            <input type="file" name="docfile"/><br/>
+            <i>${_("Choose <span id=\"pastebin-submit-type-name\">a file</span> and get ready to paste!")}</i><br/>
+            <b>${_("Important")}</b>: ${_("you cannot send viruses, they are destroyed automatically")}.
+        </div>
+        <div style="clear:both"></div>
+    </div>
+</div>
+<div id="pastebin-working-area" class="pastie-working-area" style="display: none;"></div>

@@ -1,0 +1,47 @@
+## -*- coding: utf-8 -*-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml version="1.0" encoding="iso-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<%include file="head.html"/>
+<body>
+    <%include file="wrapper.html"/>
+    <div id="small_band">
+        <%include file="menu.html"/>
+        <%include file="small_band.html"/>
+    </div>
+
+    <div id="body">
+        <div class="col-left">
+
+            %if c.ip_banned:
+                <%include file="ip_banned.html"/>
+            %else:
+
+                <div class="encouraging-sentence">
+                    ${c.encouraging_sentence}<br/>
+                    <b>Fabio Erculiani</b> ${_("(Sabayon leader)")}
+                </div>
+                <div style="margin-bottom: 20px;">
+
+                    <div id="we-offer-this" style="margin-bottom: 20px">
+                        ${_("<b>You may ask</b>. What do we offer in change? <b>We answer</b>, your own <b>Blog</b> on this Portal, your personal <b>\"Pastebin\"</b> and file upload service called <b>\"Pixdiff\"</b>, a <b>warm Community</b> that will always help you out, the ability to <b>vote</b> and <b>interact</b> with what we offer and with other people inside this space. We are just used to call all this with one name: <b>Sabayon</b>, <i>the \"2.0\" (two-point-oh) distribution</i>")}.
+                    </div>
+
+                    ${_("Please note that you will need to enter a valid e-mail address before your account is activated. You will receive an e-mail at the address you provide that contains an account activation link")}.
+                </div>
+
+                <hr style="margin-bottom: 20px"/>
+
+                <div id="registration-form">
+                    <%include file="registration_form.html"/>
+                </div>
+
+            %endif
+
+        </div>
+        <%include file="body_right.html"/>
+    </div>
+
+    <%include file="footer.html"/>
+</body>
+</html>

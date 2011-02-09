@@ -1,0 +1,10 @@
+<form action="/pastebin/send" autocomplete="off" method="POST" id="pastebin-submit-form"
+% if (c.default_pastebin_doctypes_id != c.pastebin_doctypes['text']) and c.default_pastebin_doctypes_id:
+    enctype="multipart/form-data"
+% endif
+>
+    <input type="hidden" name="redirect" value="${c.this_uri_full}"/>
+    <%include file="/pastebin/pastebin_submit_header.html"/>
+    <%include file="/pastebin/pastebin_submit_body.html"/>
+    <%include file="/pastebin/pastebin_submit_footer.html"/>
+</form>
