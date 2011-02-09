@@ -461,7 +461,7 @@ class Portal(RemoteDbSkelInterface):
     def get_latest_pastebins(self, count = 10):
         if not isinstance(count, int):
             count = 10 # take this l000sers
-        self.execute_query('SELECT SQL_CACHE `Anonymous` as username, '+config.PORTAL_DBNAME+'.pastebin.pastebin_id, '+config.PORTAL_DBNAME+'.pastebin.pastebin_doctypes_id FROM '+config.PORTAL_DBNAME+'.pastebin WHERE '+config.PORTAL_DBNAME+'.pastebin.user_id = 0 AND '+config.PORTAL_DBNAME+'.pastebin.pastebin_id = %s ORDER BY '+config.PORTAL_DBNAME+'.pastebin.orig_ts DESC LIMIT 0,%s',(count,))
+        self.execute_query('SELECT SQL_CACHE `Anonymous` as username, '+config.PORTAL_DBNAME+'.pastebin.pastebin_id, '+config.PORTAL_DBNAME+'.pastebin.pastebin_doctypes_id FROM '+config.PORTAL_DBNAME+'.pastebin WHERE '+config.PORTAL_DBNAME+'.pastebin.user_id = 0 ORDER BY '+config.PORTAL_DBNAME+'.pastebin.orig_ts DESC LIMIT 0,%s',(count,))
         data = self.fetchall()
         mydata = []
         for item in data:
