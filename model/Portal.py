@@ -420,7 +420,7 @@ class Portal(RemoteDbSkelInterface):
         )
         if do_commit: self.commit()
 
-    def insert_pastebin(self, user_ip, pastebin_permissions_id, expiration_days, pastebin_syntax_id, pastebin_doctypes_id, content, do_commit = False):
+    def insert_pastebin(self, user_ip, expiration_days, pastebin_syntax_id, pastebin_doctypes_id, content, do_commit = False):
 
         valid = self.validate_pastebin_user_ip(user_ip)
         if not valid:
@@ -428,7 +428,7 @@ class Portal(RemoteDbSkelInterface):
         self.execute_query('INSERT INTO pastebin VALUES (%s,%s,%s,%s,%s,%s,%s,%s)', (
                 None,
                 0, # user_id
-                pastebin_permissions_id,
+                0, # pastebin_permissions_id
                 None, # current ts
                 expiration_days,
                 pastebin_syntax_id,

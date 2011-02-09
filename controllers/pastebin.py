@@ -114,7 +114,6 @@ class PastebinController(BaseController,WebsiteController):
         pastebin_syntax_id = request.params.get('pastebin_syntax_id')
         pastebin_doctypes_id = request.params.get('pastebin_doctypes_id')
         expiration_days = request.params.get('expiration_days')
-        pastebin_permissions_id = request.params.get('pastebin_permissions_id')
         just_url = request.params.get('just_url')
         my_redirect = self._get_redirect()
 
@@ -153,8 +152,6 @@ class PastebinController(BaseController,WebsiteController):
             except (ValueError,TypeError,):
                 c.error_message = _('Invalid expiration_days')
                 valid = False
-
-        pastebin_permissions_id = portal.PASTEBIN_PERMISSIONS['public']
 
         # captcha check and redirect
         if valid and (not just_url):
@@ -246,7 +243,7 @@ class PastebinController(BaseController,WebsiteController):
         if valid:
             # insert
             status, pastebin_id = portal.insert_pastebin(
-                user_ip, pastebin_permissions_id, expiration_days,
+                user_ip, expiration_days,
                 pastebin_syntax_id, pastebin_doctypes_id,
                 content)
             if status:
