@@ -1,25 +1,17 @@
 <div style="float: left; width: 65%; clear: right; text-align: right" id="pastebin-content">
     <div style="text-align: right;">
-        % if session.get('logged_in') and (not c.default_pastebin_doctypes_id):
-            ${_("Document type")}:
-            <select name="pastebin_doctypes_id" id="pastebin-submit-doctype" onchange="javascript:switch_document_type('pastebin-submit-doctype')">
-                <% first = True %>
-                % for doctype_id in sorted(c.pastebin_doctypes_desc.keys()):
-                    <option value="${doctype_id}"
-                    % if first:
-                        selected
-                    % endif
-                    >${c.pastebin_doctypes_desc[doctype_id]}</option>
-                    <% first = False %>
-                % endfor
-            </select>
-        % else:
-            % if c.default_pastebin_doctypes_id:
-                <input type="hidden" name="pastebin_doctypes_id" value="${c.default_pastebin_doctypes_id}"/>
-            % else:
-                <input type="hidden" name="pastebin_doctypes_id" value="${c.pastebin_doctypes['text']}"/>
-            % endif
-        % endif
+        ${_("Document type")}:
+        <select name="pastebin_doctypes_id" id="pastebin-submit-doctype" onchange="javascript:switch_document_type('pastebin-submit-doctype')">
+            <% first = True %>
+            % for doctype_id in sorted(c.pastebin_doctypes_desc.keys()):
+                <option value="${doctype_id}"
+                % if first:
+                    selected
+                % endif
+                >${c.pastebin_doctypes_desc[doctype_id]}</option>
+                <% first = False %>
+            % endfor
+        </select>
         <span id="pastebin-submit-syntaxtype">
             % if (c.default_pastebin_doctypes_id == c.pastebin_doctypes['text']) or not c.default_pastebin_doctypes_id:
                 Syntax highlighting: 
