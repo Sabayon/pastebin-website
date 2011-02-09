@@ -4,24 +4,15 @@
     %if c.html_title:
         <title>${c.html_title}</title>
     %else:
-        <title>${_("Sabayon Linux Five Oh!")}</title>
-    %endif
-    %if c.rss_news_feed:
-        <link rel="alternate" title="${_("Sabayon Linux Distribution News")}" href="${c.rss_news_feed}" type="application/rss+xml" />
+        <title>${_("Sabayon Linux Pastebin")}</title>
     %endif
 
     <meta name="keywords" content="sabayon, linux, operating systems, operating system, usb, liveusb, linux web, kernel, linux live"/>
-    <meta name="description" content="${_("Official Sabayon Linux Website")}"/>
+    <meta name="description" content="${_("Sabayon Linux Pastebin")}"/>
     <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="/css/uvumi-dropdown.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/shots.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="/css/lytebox.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="/css/sexyalertbox.css"/>
-
-    <!-- mobile support -->
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-    <link media="only screen and (max-device-width: 480px) and (min-device-width: 320px)" href="/css/mobile.css" type="text/css" rel="stylesheet" />
-    <link media="handheld, only screen and (max-device-width: 319px)" href="/css/mobile_simple.css" type="text/css" rel="stylesheet" />
 
     % if c.browser_user_agent.lower().find(" msie ") != -1:
         <!-- IE 7 fixes -->

@@ -3,9 +3,4 @@
     % if c.pastebin['pastebin_doctypes_id'] == c.pastebin_doctypes['text']:
         or <a href="javascript:div_toggle_slide('edit-pastie')">${_("edit this")}</a>
     % endif
-    % if session.get('entropy'):
-        % if (c.pastebin['user_id'] == session['entropy'].get('entropy_user_id')) or (c.is_admin):
-            or <a href="/pastebin/delete?pastebin_id=${c.pastebin['pastebin_id']}">${_("delete this")}</a>
-        % endif
-    % endif
 </div>

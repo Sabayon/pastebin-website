@@ -5,22 +5,7 @@
             <option value="30" selected>${_("One month")}</option>
             <option value="365">${_("One year")}</option>
         </select>
-        % if session.get('logged_in'):
-            ${_("as <b>%s</b> and permissions:") % (session['entropy'].get('entropy_user'),)}
-            <select name="pastebin_permissions_id">
-                <% first = True %>
-                % for permission_id in sorted(c.pastebin_permissions_desc.keys()):
-                    <option value="${permission_id}"
-                    % if first:
-                        selected
-                    % endif
-                    >${c.pastebin_permissions_desc[permission_id]}</option>
-                    <% first = False %>
-                % endfor
-            </select>
-        % else:
-            <input type="hidden" value="${c.pastebin_permissions['public']}" name="pastebin_permissions_id"/>
-        % endif
+        <input type="hidden" value="${c.pastebin_permissions['public']}" name="pastebin_permissions_id"/>
     </div>
     <div>
         <style type="text/css">
