@@ -4,44 +4,18 @@
     %if c.html_title:
         <title>${c.html_title}</title>
     %else:
-        <title>${_("Sabayon Linux Pastebin")}</title>
+        <title>Sabayon Linux Pastebin"</title>
     %endif
 
-    <meta name="keywords" content="sabayon, linux, operating systems, operating system, usb, liveusb, linux web, kernel, linux live"/>
-    <meta name="description" content="${_("Sabayon Linux Pastebin")}"/>
+    <meta name="keywords" content="sabayon, linux, operating systems, operating system, usb, liveusb, linux web, kernel, linux live, pastebin"/>
+    <meta name="description" content="Sabayon Linux Pastebin"/>
     <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/uvumi-dropdown.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="/css/lytebox.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="/css/sexyalertbox.css"/>
 
-    % if c.browser_user_agent.lower().find(" msie ") != -1:
-        <!-- IE 7 fixes -->
-        <style type="text/css">
-            #band {
-                margin-bottom: 5px;
-            }
-            .col {
-                margin-bottom: -10px;
-            }
-            #body-headlines {
-                margin-top: -20px;
-            }
-        </style>
-    % elif c.browser_user_agent.find("Opera") != -1:
-        <!-- Opera fixes -->
-        <style type="text/css">
-            .loginform-right-links {
-                position: relative;
-                left: 16px;
-            }
-        </style>
-    % endif
-
     <script type="text/javascript" src="/js/aim.js"></script>
     <script type="text/javascript" src="/js/mootools-b62.js"></script>
-    <script type="text/javascript" src="/js/mootools-for-dropdown.js"> </script>
     <script type="text/javascript" src="/js/mootools-more-b62.js"></script>
-    <script type="text/javascript" src="/js/UvumiDropdown.js"> </script>
     <script type="text/javascript" src="/js/ahah.js"></script>
     <script type="text/javascript" src="/js/sexyalertbox.v1.1-b62.js"></script>
     <script type="text/javascript" src="/js/lytebox-b62.js"></script>
@@ -49,11 +23,6 @@
 
 
     <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
-
-    <script type="text/javascript">
-        var myMenu = new UvumiDropdown("dropdown-menu");
-        var myMenuProfile = new UvumiDropdown("dropdown-menu-profile");
-    </script>
 
 <!-- analytics -->
 <script src="http://www.google-analytics.com/urchin.js" mce_src="http://www.google-analytics.com/urchin.js" type="text/javascript">
