@@ -23,7 +23,7 @@ PHPBB_DBNAME = "phpbb3"
 PORTAL_DBNAME = "portal"
 PASTEBIN_MAX_UPLOAD_FILE_SIZE = 5 * 1024000 # 5mb
 PASTEBIN_TEXT_LENGTH = 512000
-PASTEBIN_URI_PART = 'pasties/store'
+PSATEBIN_STORE_SUB = '/pasties/store'
 
 uri_path = "/"
 
@@ -56,7 +56,7 @@ def setup_misc_vars(c, request):
         c.site_uri = SITE_URI
 
     c.main_site_uri = MAIN_SITE_URI
-    c.pastebin_uri = os.path.join(c.site_uri, PASTEBIN_URI_PART)
+    c.pastebin_store_sub = PSATEBIN_STORE_SUB
 
     c.www_current_url = construct_url(request.environ)
     try:

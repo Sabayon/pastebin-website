@@ -1,32 +1,69 @@
 <div style="padding-top: 10px">
-    <div style="text-align: right; margin-bottom: 10px">
-        ${_("Expiration")}: <select name="expiration_days">
-            <option value="1">${_("One day")}</option>
-            <option value="30" selected>${_("One month")}</option>
-            <option value="365">${_("One year")}</option>
-        </select>
+    <div class="pastebin-form-item">
+        <div class="pastebin-form-left">
+            ${_("Document type")}:
+        </div>
+        <div class="pastebin-form-right">
+            <select name="pastebin_doctypes_id" id="pastebin-submit-doctype" class="pastebin-select" onchange="javascript:switch_document_type('pastebin-submit-doctype')">
+                <% first = True %>
+                % for doctype_id in sorted(c.pastebin_doctypes_desc.keys()):
+                    <option value="${doctype_id}"
+                    % if first:
+                        selected
+                    % endif
+                    >${c.pastebin_doctypes_desc[doctype_id]}</option>
+                    <% first = False %>
+                % endfor
+            </select>
+        </div>
     </div>
-    <div>
-        <style type="text/css">
-            #recaptcha_widget_div {
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                width: 320px;
-                position: relative;
-                left: 250px;
-            }
-        </style>
-        ${c.recaptcha_html | n}
+
+    <div class="pastebin-form-item">
+        <div id="pastebin-submit-syntaxtype">
+            % if (c.default_pastebin_doctypes_id == c.pastebin_doctypes['text']) or not c.default_pastebin_doctypes_id:
+                <div class="pastebin-form-left">
+                    ${_("Syntax highlighting")}:
+                </div>
+                <div class="pastebin-form-right">
+                    <select name="pastebin_syntax_id" class="pastebin-select">
+                        % for syntax_id in sorted(c.pastebin_syntaxes.keys()):
+                            <option value="${syntax_id}"
+                            % if c.pastebin_syntaxes[syntax_id] == "Plain text":
+                                selected
+                            % endif
+                            >${c.pastebin_syntaxes[syntax_id]}</option>
+                        % endfor
+                    </select>
+                </div>
+            % endif
+        </div>
     </div>
-    <div style="text-align:right;">
+    <div class="pastebin-form-item">
+        <div class="pastebin-form-left">
+            ${_("Expiration")}:
+        </div>
+        <div class="pastebin-form-right">
+            <select name="expiration_days" class="pastebin-select">
+                <option value="1">${_("One day")}</option>
+                <option value="30" selected>${_("One month")}</option>
+                <option value="365">${_("One year")}</option>
+            </select>
+        </div>
+    </div>
+    % if c.recaptcha_html:
+        <div class="pastebin-form-item">
+                <div class="pastebin-form-span" style="height: 140px">
+                    ${c.recaptcha_html | n}
+                </div>
+        </div>
+    % endif
+    <div class="pastebin-form-item">
         % if c.pastebin_wrong_captcha:
-        <span style="border: 4px dotted red; margin-right: 10px; padding: 5px;">
-            ${_("Wrong CAPTCHA !!! Take this, stupid spammer!")}
-        </span>
+            <span style="border: 4px dotted red;">
+                ${_("Wrong CAPTCHA !!! Take this, stupid spammer!")}
+            </span>
         % endif
-        <input id="pastie-submit-button" type="submit" value="${_("Send pastie")}" style="font-weight: bold; font-size: 1.2em;" onclick="javascript:send_pastie('pastebin-submit-form','pastebin-submit-docarea','pastebin-text-content','pastebin-working-area','pastie-submit-button')"/>
+        <input id="pastie-submit-button" type="submit" value="${_("Submit")}" onclick="javascript:send_pastie('pastebin-submit-form','pastebin-submit-docarea','pastebin-text-content','pastebin-working-area','pastie-submit-button')"/>
     </div>
 </div>
 % if c.pastebin_wrong_captcha:

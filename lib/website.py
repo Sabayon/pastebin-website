@@ -10,6 +10,7 @@ from pylons.templating import render
 
 from paste.request import construct_url
 
+import stat
 import os
 import time
 import urllib2

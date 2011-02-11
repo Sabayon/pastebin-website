@@ -1,6 +1,5 @@
 <div>
-    <a href="/pastebin">${_("Make a fresh post")}</a>
     % if c.pastebin['pastebin_doctypes_id'] == c.pastebin_doctypes['text']:
-        or <a href="javascript:div_toggle_slide('edit-pastie')">${_("edit this")}</a>
+        <a href="javascript:div_toggle_slide('edit-pastie')">${_("edit this")}</a>
     % endif
 </div>

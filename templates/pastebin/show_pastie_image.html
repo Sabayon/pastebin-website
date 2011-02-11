@@ -9,9 +9,17 @@
     }
     }
 </script>
-    <div align="center">
-        <% pic_uri = "%s/%s/%s" % (c.pastebin_uri,c.pastebin['pastebin_id'],c.pastebin['content'].strip(),) %>
-        <a href="${pic_uri}" target="_blank"><img src="${pic_uri}" id="pastie-image" title="${_("Here is the image")}" onload="my_image_resize('pastie-image',600);"/></a>
-        <br/>
-        ${_("An image should pop up above this text")}.
+    <div>
+        <div style="float: left">
+            <%include file="/adsense/250x250.html"/>
+        </div>
+        <div style="float: left">
+            <% pic_uri = "%s/%s/%s" % (c.pastebin_store_sub, c.pastebin['pastebin_id'], c.pastebin['content'].strip(),) %>
+            <a href="${pic_uri}" target="_blank"><img src="${pic_uri}" id="pastie-image" title="${_("Here is the image")}" onload="my_image_resize('pastie-image',600);"/></a>
+            <br/>
+            ${_("An image should pop up above this text")}.
+        </div>
+        <div style="float: left; clear: right">
+            <%include file="/adsense/250x250.html"/>
+        </div>
     </div>

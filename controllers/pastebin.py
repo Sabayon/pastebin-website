@@ -51,7 +51,7 @@ class PastebinController(BaseController,WebsiteController):
         else:
             c.default_pastebin_doctypes_id = ''
 
-        c.latest_pasties = portal.get_latest_pastebins(count = 8)
+        c.latest_pasties = portal.get_latest_pastebins()
         if delete:
             portal.disconnect(); del portal
 
@@ -63,7 +63,8 @@ class PastebinController(BaseController,WebsiteController):
     def index(self):
         config.setup_internal(model, c, session, request)
         # create recaptcha html
-        self._new_captcha()
+        if not session.get('skip_captcha'):
+            self._new_captcha()
         self._load_metadata()
         c.page_title = _('Sabayon Linux Pastebin')
         c.html_title = c.page_title
@@ -155,14 +156,18 @@ class PastebinController(BaseController,WebsiteController):
 
         # captcha check and redirect
         if valid and (not just_url):
-            valid = self._validate_captcha_submit()
-            if not valid:
-                # invalid captcha answer
-                c.pastebin_edit_content = content
-                c.default_pastebin_doctypes_id = pastebin_doctypes_id
-                c.pastebin_wrong_captcha = True
-                portal.disconnect(); del portal
-                return self.index()
+            if not session.get('skip_captcha'):
+                valid = self._validate_captcha_submit()
+                if not valid:
+                    # invalid captcha answer
+                    c.pastebin_edit_content = content
+                    c.default_pastebin_doctypes_id = pastebin_doctypes_id
+                    c.pastebin_wrong_captcha = True
+                    portal.disconnect(); del portal
+                    return self.index()
+                # XXX: this could lead to spammers happiness
+                session['skip_captcha'] = True
+                session.save()
 
         docfile_avail = False
         if valid:
@@ -284,9 +289,7 @@ class PastebinController(BaseController,WebsiteController):
         else:
             self._load_metadata(portal)
             portal.disconnect(); del portal
-            c.page_title = _('Sabayon Linux PixPastebin')
-            c.html_title = c.page_title
-            return render_mako('/pastebin/show_pastie.html')
+            return render_mako('/pastebin/index.html')
 
     def pasties(self):
         return redirect(url("/pastebin"))
@@ -295,7 +298,7 @@ class PastebinController(BaseController,WebsiteController):
 
         try:
             pastebin_id = int(pastebin_id)
-        except (ValueError,TypeError,):
+        except (ValueError, TypeError,):
             return redirect(url("/pastebin"))
 
         portal = self.Portal()
@@ -316,13 +319,13 @@ class PastebinController(BaseController,WebsiteController):
                     c.pastie_highlighted = True
 
         c.pastebin = pastie
+        c.pastebin_edit_content = pastie['content']
         c.valid = True
         c.pastebin_id = pastebin_id
 
         config.setup_internal(model, c, session, request)
         # create captcha html
-        self._new_captcha()
+        if not session.get('skip_captcha'):
+            self._new_captcha()
         portal.disconnect(); del portal
-        c.page_title = _('Sabayon Linux PixPastebin')
-        c.html_title = c.page_title
-        return render_mako('/pastebin/show_pastie.html')
+        return render_mako('/pastebin/index.html')

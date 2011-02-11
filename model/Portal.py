@@ -442,7 +442,7 @@ class Portal(RemoteDbSkelInterface):
         return True, pastebin_id
 
     def _expand_pastebin(self, item):
-        if item.has_key('content'):
+        if 'content' in item:
             item['content_clean'] = config.htmlencode(item['content'])
 
     def _is_pastebin_id_available(self, pastebin_id):
@@ -461,7 +461,23 @@ class Portal(RemoteDbSkelInterface):
     def get_latest_pastebins(self, count = 10):
         if not isinstance(count, int):
             count = 10 # take this l000sers
-        self.execute_query('SELECT SQL_CACHE '+config.PORTAL_DBNAME+'.pastebin.pastebin_id, '+config.PORTAL_DBNAME+'.pastebin.pastebin_doctypes_id FROM '+config.PORTAL_DBNAME+'.pastebin WHERE '+config.PORTAL_DBNAME+'.pastebin.user_id = 0 ORDER BY '+config.PORTAL_DBNAME+'.pastebin.orig_ts DESC LIMIT 0,%s',(count,))
+        if count > 100:
+            count = 1
+        self.execute_query("""
+        SELECT SQL_CACHE
+            %s.pastebin.pastebin_id, %s.pastebin.pastebin_doctypes_id,
+            %s.pastebin.orig_ts, %s.pastebin.pastebin_syntax_id,
+            %s.pastebin_syntax.syntax_name
+        FROM %s.pastebin, %s.pastebin_syntax WHERE
+        %s.pastebin.pastebin_syntax_id = %s.pastebin_syntax.pastebin_syntax_id
+        AND %s.pastebin.user_id = 0
+        ORDER BY %s.pastebin.orig_ts DESC
+        LIMIT %s
+        """ % (config.PORTAL_DBNAME, config.PORTAL_DBNAME, config.PORTAL_DBNAME,
+        config.PORTAL_DBNAME, config.PORTAL_DBNAME, config.PORTAL_DBNAME,
+        config.PORTAL_DBNAME, config.PORTAL_DBNAME, config.PORTAL_DBNAME,
+        config.PORTAL_DBNAME, config.PORTAL_DBNAME, count))
+        # config.PORTAL_DBNAME, count
         data = self.fetchall()
         mydata = []
         for item in data:

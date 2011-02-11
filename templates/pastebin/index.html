@@ -6,18 +6,13 @@
 <%include file="/head.html"/>
 <%include file="/pastebin/pastebin_js.html"/>
 <body>
-    <%include file="/wrapper.html"/>
-    <div id="body">
-        <div id="pastebin-area">
-            <%include file="/pastebin/top_banner.html"/>
-            <div>
-                <%include file="/pastebin/pastebin_latest_pasties.html"/>
-                <div>
-                    <%include file="/pastebin/pastebin_submit_form.html"/>
-                </div>
-            </div>
-        </div>
-    </div>
+    <%include file="/top_wrapper.html"/>
+    % if c.extra_css:
+        <style type="text/css">
+            ${c.extra_css}
+        </style>
+    % endif
+    <%include file="/mid_wrapper.html"/>
     <%include file="/footer.html"/>
 </body>
 </html>

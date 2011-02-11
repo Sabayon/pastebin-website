@@ -1,31 +1,26 @@
-<div style="float: left; width: 35%; clear: left" id="pastebin-browse" class="konafilter">
-    <script type="text/javascript">
-        var PastiesMenu = new UvumiDropdown("dropdown-pasties");
-    </script>
-    <ul class="dropdown" id="dropdown-pasties">
-        <li>
-            <span>${_("Latest Pasties")}</span>
-            <ul>
-                <li class="item">
-                    <a href="/pastebin">${_("PixPastebin Home")}</a>
-                </li>
-                % for item in c.latest_pasties:
-                    <li class="item">
-                        <a href="/pastie/${item['pastebin_id']}">
-                            <%
-                                my_by = item.get('username')
-                                if not my_by: my_by = 'Anonymous'
-                            %>
-                            <span><b>${my_by}</b> <i>${c.pastebin_doctypes_desc.get(item['pastebin_doctypes_id'])}</i></span>
-                        </a>
-                    </li>
-                % endfor
-                % if not c.latest_pasties:
-                    <li class="item">
-                        ${_("No Pasties")}
-                    </li>
-                % endif
-            </ul>
+<ul>
+    % for item in c.latest_pasties:
+        <li class="latest-pastie-item">
+            <%
+                my_by = item.get('username')
+                if not my_by:
+                    my_by = 'Anonymous'
+                syntax_str = ""
+                if item['pastebin_doctypes_id'] == c.pastebin_doctypes['text']:
+                    syntax_str = item['syntax_name'] + " | "
+            %>
+            <span>
+                <a href="/pastie/${item['pastebin_id']}"><b>${my_by}</b></a>
+                <br/>
+                ${syntax_str}<i>${c.pastebin_doctypes_desc.get(item['pastebin_doctypes_id'])}</i>
+                <br/>
+                ${item['orig_ts']}
+            </span>
         </li>
-    </ul>
-</div>
+    % endfor
+    % if not c.latest_pasties:
+        <li class="item">
+            ${_("No Pasties")}
+        </li>
+    % endif
+</ul>

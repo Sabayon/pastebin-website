@@ -1,11 +1,14 @@
 ## -*- coding: utf-8 -*-
-<div style="clear: both; width: 100%; margin-left: auto; margin-right: auto; padding-top: 5px">
-    <center><%include file="/adsense/728x90.html"/></center>
-</div>
-<div id="footer">
-    <span>
-        &copy; 2004-2010 F. Erculiani, Sabayon Promotion (CF: 93018620224) | ${_("Trademarks are property of their respective owners.")}
-    </span>
+
+<div id="footer_wrapper">
+    <div id="footer_inner" class="inside">
+        <%
+            path = '/home/sabayonlinux/public_html/include/footer_menu.html.inc'
+            with open(path + c.sourcefile, 'r') as f:
+                footer_data = f.read()
+        %>
+        ${footer_data}
+    </div>
 </div>
 <script type='text/javascript'>
 var dc_AdLinkColor = 'CA9CFF' ;

@@ -1,0 +1,142 @@
+hr {
+    border: 0;
+    border-bottom: 1px solid #666666;
+}
+
+textarea {
+    width: 95%;
+    height: 180px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 1.6em;
+    background-color: #F9F9F9;
+    border: 1px solid #CCCCCC;
+    color: #181818;
+    overflow: auto;
+}
+
+a, a:link, a:visited, a:active {
+    color: #D5005A;
+}
+
+.pastie-textarea {
+    width: 99%;
+    height: 200px;
+}
+
+.pastie-working-area {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pastebin-form-item {
+    width: 550px;
+}
+
+.pastebin-form-span {
+    height: 40px;
+    width: 550px;
+    text-align: left;
+    float: left;
+}
+
+.pastebin-form-left {
+    float: left;
+    height: 40px;
+    width: 150px;
+}
+
+.pastebin-form-right {
+    float: right;
+    height: 40px;
+    text-align: left;
+    width: 400px;
+}
+
+.latest-pastie-item {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #CCCCCC;
+}
+
+.pastebin-select {
+    background-color: #F9F9F9;
+    border: 1px solid #CCCCCC;
+    color: #181818;
+    padding: 5px;
+    width: 240px;
+}
+
+.fblike {
+    background-color: none;
+}
+
+#pastebin-browse {
+    padding-left: 10px;
+    float: left;
+    width: 160px;
+    margin-right: 10px;
+}
+
+#pastebin-list {
+    background-color: #FFFFFF;
+}
+
+#pastebin-body {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    margin: 10px 10px 0 180px;
+    padding: 15px;
+}
+
+#pastebin-bottom-spacer {
+    height: 20px;
+}
+
+#pastebin-body-sub {
+    overflow: hidden;
+}
+
+#pastie-submit-button {
+    background-color: #D5005A;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 2.0em;
+    font-weight: bold;
+}
+
+#pastebin-sub-menu {
+    width: 100%;
+    height: 23px;
+    color: #FFFFFF;
+    background-color: #D5005A;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    vertical-align: middle;
+}
+#pastebin-sub-menu a, #pastebin-sub-menu a:active, #pastebin-sub-menu a:link, #pastebin-sub-menu a:visited {
+    color: #FFFFFF;
+}
+
+.pastebin-sub-menu-item {
+    font-size: 2.0em;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #FFFFFF;
+}
+
+.pastebin-body-message-highlight {
+    background-color: #FFFFEF;
+    border: 1px dotted #DDDDAA;
+    font-size: 0.75em;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 0 10px;
+    font-size: 1.4em;
+    margin-top: 10px;
+    font-weight: bold;
+}

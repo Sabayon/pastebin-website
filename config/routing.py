@@ -22,6 +22,7 @@ def make_map(config):
     # CUSTOM ROUTES HERE
 
     map.connect('/', controller='pastebin', action='index')
+    map.connect('/pastie/{pastebin_id}', controller='pastebin', action='show_pastie')
     map.connect('/{controller}/{action}/{id}')
     map.connect('/{controller}/{action}')
     map.connect('/{controller}', action='index')
