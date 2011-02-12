@@ -5,7 +5,7 @@
             Creating a new Pastie is as simple as sending a <b>HTTP POST</b> request to this URL:
         </div>
         <div class="code">
-            % if c.www_current_url.find("pastebit.com") != -1:
+            % if c.www_current_url.find("pastebit.com") == -1:
                 ${c.site_uri}/send
             % else:
                 http://pastebit.com/send
