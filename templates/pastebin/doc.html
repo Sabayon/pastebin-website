@@ -1,0 +1,46 @@
+<div>
+    <div class="content-title">How to submit a new Pastie</div>
+    <div>
+        <div>
+            Creating a new Pastie is as simple as sending a <b>HTTP POST</b> request to this URL:
+        </div>
+        <div class="code">
+            ${c.site_uri}/send
+        </div>
+        <div>
+            And the following <b>POST</b> parameters (and values):
+            <div class="code">
+                pastebin_doctypes_id="-1"<br/>
+                pastie_content="hello, world"<br/>
+                just_url="1"
+            </div>
+            If you want to submit your text as file, just set:
+            <div class="code">
+                pastebin_doctypes_id="-2"
+            </div>
+            If you want to change the default (30, max is: 365) expiration days, say, to <b>60</b>, just set:
+            <div class="code">
+                expiration_days="60"
+            </div>
+            On success, a valid http:// URL is returned. JSON output will be available in <b>future releases</b>.
+        </div>
+    </div>
+    <div class="content-title">How to use Pastebit from the command line</div>
+    <div>
+        If you are running <a href="http://www.sabayon.org">Sabayon Linux</a>, this is really easy, just install <a href="http://packages.sabayon.org/search?q=pastebunz&t=match">pastebunz</a>, this way:
+        <div class="code">
+            # equo install app-text/pastebunz
+        </div>
+        If you are running another distribution, you can however use pastebunz, by just <a href="http://packages.sabayon.org/search?q=pastebunz&t=match">downloading the Sabayon package</a> and unpacking its content. In the end, it's just a very simple python script.
+        <br/>
+        At this point, just send the output of your app (in this case, of <b>cat</b>) to pastebunz, this way:
+        <div class="code">
+            cat /etc/resolv.conf | pastebunz
+        </div>
+        To paste and send the data to a file instead, just use:
+        <div class="code">
+            cat /etc/resolv.conf | pastebunz <b>-f</b>
+        </div>
+        Done!
+    </div>
+</div>

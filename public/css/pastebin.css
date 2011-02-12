@@ -59,6 +59,11 @@ a, a:link, a:visited, a:active {
     border-bottom: 1px dotted #CCCCCC;
 }
 
+.latest-pastie-item-extended {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #CCCCCC;
+}
+
 .pastebin-select {
     background-color: #F9F9F9;
     border: 1px solid #CCCCCC;
@@ -139,4 +144,17 @@ a, a:link, a:visited, a:active {
     font-size: 1.4em;
     margin-top: 10px;
     font-weight: bold;
+}
+
+.content-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.code {
+    background-color: #FFFFEF;
+    border: 1px dotted #DDDDAA;
+    margin: 10px;
+    padding: 7px;
 }

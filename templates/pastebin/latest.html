@@ -1,0 +1,17 @@
+% for item in c.latest_pasties_extended:
+    <li class="latest-pastie-item-extended">
+        <%
+            my_by = item.get('username')
+            if not my_by:
+                my_by = 'Anonymous'
+            syntax_str = ""
+            if item['pastebin_doctypes_id'] == c.pastebin_doctypes['text']:
+                syntax_str = item['syntax_name'] + " | "
+        %>
+        <span>
+            ${_("User")}: <a href="/pastie/${item['pastebin_id']}"><b>${my_by}</b></a> | 
+            ${syntax_str} <i>${c.pastebin_doctypes_desc.get(item['pastebin_doctypes_id'])}</i>,
+            <b>${_("created on")}</b>: ${item['orig_ts']}, <b>${_("expires in")}</b>: ${item['expiration_days']} ${_("days")}
+        </span>
+    </li>
+% endfor

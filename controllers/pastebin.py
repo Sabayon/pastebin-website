@@ -11,13 +11,6 @@ class PastebinController(BaseController,WebsiteController):
     def __init__(self):
         BaseController.__init__(self)
         WebsiteController.__init__(self)
-        import www.model.Portal
-        self.Portal = www.model.Portal.Portal
-        try:
-            import pygments
-            self.pygments = pygments
-        except ImportError:
-            self.pygments = None
 
     def syntax_highlight(self, text, syntax_desc, portal):
         mylexer_id = portal.PASTEBIN_SYNTAXES_MAP.get(syntax_desc)
@@ -33,41 +26,28 @@ class PastebinController(BaseController,WebsiteController):
         except:
             return False, text,''
 
-    def _load_metadata(self, portal = None):
-        delete = False
-        if portal == None:
-            portal = self.Portal()
-            delete = True
-        self._load_strict_metadata(portal)
-        default_pastebin_doctypes_id = request.params.get('default_pastebin_doctypes_id')
-        try:
-            default_pastebin_doctypes_id = int(default_pastebin_doctypes_id)
-            if default_pastebin_doctypes_id not in portal.PASTEBIN_DOCTYPES_DESC:
-                raise ValueError
-        except (ValueError,TypeError,):
-            default_pastebin_doctypes_id = ''
-        if default_pastebin_doctypes_id:
-            c.default_pastebin_doctypes_id = default_pastebin_doctypes_id
-        else:
-            c.default_pastebin_doctypes_id = ''
-
-        c.latest_pasties = portal.get_latest_pastebins()
-        if delete:
-            portal.disconnect(); del portal
-
-    def _load_strict_metadata(self, portal):
-        c.pastebin_syntaxes = portal.get_pastebin_syntaxes()
-        c.pastebin_doctypes_desc = portal.PASTEBIN_DOCTYPES_DESC
-        c.pastebin_doctypes = portal.PASTEBIN_DOCTYPES
-
     def index(self):
         config.setup_internal(model, c, session, request)
         # create recaptcha html
         if not session.get('skip_captcha'):
             self._new_captcha()
         self._load_metadata()
-        c.page_title = _('Sabayon Linux Pastebin')
-        c.html_title = c.page_title
+        return render_mako('/pastebin/index.html')
+
+    def latest(self):
+        config.setup_internal(model, c, session, request)
+        portal = self.Portal()
+        self._load_metadata(portal = portal)
+        c.latest_pasties_extended = portal.get_latest_pastebins(count = 50)
+        portal.disconnect(); del portal
+        return render_mako('/pastebin/index.html')
+
+    def doc(self):
+        config.setup_internal(model, c, session, request)
+        portal = self.Portal()
+        self._load_metadata(portal = portal)
+        portal.disconnect(); del portal
+        c.show_doc_page = True
         return render_mako('/pastebin/index.html')
 
     def _delete_pastebin(self, item, portal):
@@ -138,12 +118,8 @@ class PastebinController(BaseController,WebsiteController):
                 if pastebin_syntax_id == -1:
                     # plain text
                     pastebin_syntax_id = 0
-            except (ValueError,TypeError,):
-                if pastebin_doctypes_id == portal.PASTEBIN_DOCTYPES['text']:
-                    c.error_message = _('Invalid pastebin_syntax_id')
-                    valid = False
-                else:
-                    pastebin_syntax_id = 0
+            except (ValueError, TypeError,):
+                pastebin_syntax_id = 0
 
         if valid:
             try:
@@ -151,8 +127,7 @@ class PastebinController(BaseController,WebsiteController):
                 if expiration_days not in range(1,366):
                     expiration_days = 30
             except (ValueError,TypeError,):
-                c.error_message = _('Invalid expiration_days')
-                valid = False
+                expiration_days = 30
 
         # captcha check and redirect
         if valid and (not just_url):
@@ -292,20 +267,20 @@ class PastebinController(BaseController,WebsiteController):
             return render_mako('/pastebin/index.html')
 
     def pasties(self):
-        return redirect(url("/pastebin"))
+        return redirect(url("/"))
 
     def show_pastie(self, pastebin_id = None):
 
         try:
             pastebin_id = int(pastebin_id)
         except (ValueError, TypeError,):
-            return redirect(url("/pastebin"))
+            return redirect(url("/"))
 
         portal = self.Portal()
         self._load_metadata(portal)
         err_code, pastie = portal.get_pastebin(pastebin_id)
         if not pastie:
-            return redirect(url("/pastebin"))
+            return redirect(url("/"))
 
         c.pastie_highlighted = False
         if self.pygments:

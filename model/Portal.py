@@ -467,14 +467,14 @@ class Portal(RemoteDbSkelInterface):
         SELECT SQL_CACHE
             %s.pastebin.pastebin_id, %s.pastebin.pastebin_doctypes_id,
             %s.pastebin.orig_ts, %s.pastebin.pastebin_syntax_id,
-            %s.pastebin_syntax.syntax_name
+            %s.pastebin.expiration_days, %s.pastebin_syntax.syntax_name
         FROM %s.pastebin, %s.pastebin_syntax WHERE
         %s.pastebin.pastebin_syntax_id = %s.pastebin_syntax.pastebin_syntax_id
         AND %s.pastebin.user_id = 0
         ORDER BY %s.pastebin.orig_ts DESC
         LIMIT %s
         """ % (config.PORTAL_DBNAME, config.PORTAL_DBNAME, config.PORTAL_DBNAME,
-        config.PORTAL_DBNAME, config.PORTAL_DBNAME, config.PORTAL_DBNAME,
+        config.PORTAL_DBNAME, config.PORTAL_DBNAME, config.PORTAL_DBNAME, config.PORTAL_DBNAME,
         config.PORTAL_DBNAME, config.PORTAL_DBNAME, config.PORTAL_DBNAME,
         config.PORTAL_DBNAME, config.PORTAL_DBNAME, count))
         # config.PORTAL_DBNAME, count

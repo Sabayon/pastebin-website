@@ -6,10 +6,10 @@ from pylons.middleware import error_document_template, media_path
 from webhelpers.html.builder import literal
 
 from www.lib.base import *
-
+from www.lib.website import *
 import www.model.config as config
 
-class ErrorController(BaseController):
+class ErrorController(BaseController, WebsiteController):
     """Generates error documents as and when they are required.
 
     The ErrorDocuments middleware forwards to ErrorController when error
@@ -22,15 +22,25 @@ class ErrorController(BaseController):
 
     def __init__(self):
         BaseController.__init__(self)
+        WebsiteController.__init__(self)
 
     def document(self):
         """Render the error document"""
         config.setup_internal(model, c, session, request)
+        # create recaptcha html
+        if not session.get('skip_captcha'):
+            self._new_captcha()
+        self._load_metadata()
+
         resp = request.environ.get('pylons.original_response')
+        c.error_message = "Page error dude, have fun"
         if resp is not None:
             c.code = cgi.escape(request.GET.get('code', str(resp.status_int)))
-            c.message = literal(resp.body) or cgi.escape(request.GET.get('message', ''))
-        return render_mako('/page_error.html')
+            c.error_message = literal(resp.body) or cgi.escape(request.GET.get('message', ''))
+        c.page_error = True
+        c.valid = False
+
+        return render_mako('/pastebin/index.html')
 
     def img(self, id):
         """Serve Pylons' stock images"""

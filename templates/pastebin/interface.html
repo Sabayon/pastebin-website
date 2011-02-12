@@ -1,0 +1,62 @@
+<%
+error_html = '<iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/iwY5o2fsG7Y" frameborder="0" allowfullscreen></iframe>'
+%>
+<div id="pastebin-body-sub">
+% if c.page_error:
+    <div class="pastebin-error">
+        <div style="float: left;">
+            ${error_html}
+        </div>
+        <div style="float: left; clear: right">
+            <div>
+                <%include file="/adsense/250x250.html"/>
+            </div>
+        </div>
+    <div>
+% elif not c.pastebin:
+    <%include file="/pastebin/pastebin_submit_form.html"/>
+% elif (not c.valid) and c.error_message:
+    <div class="pastebin-error">
+        ${_("Error")}: ${c.error_message}
+    <div>
+    <div class="pastebin-error">
+        <div style="float: left;">
+            ${error_html}
+        </div>
+        <div style="float: left; clear: right">
+            <div>
+                <%include file="/adsense/250x250.html"/>
+            </div>
+        </div>
+    <div>
+% elif c.pastebin:
+    <div>
+        % if c.pastebin['pastebin_doctypes_id'] == c.pastebin_doctypes['text']:
+            <%include file="/pastebin/show_pastie_text.html"/>
+        % elif c.pastebin['pastebin_doctypes_id'] == c.pastebin_doctypes['image']:
+            <%include file="/pastebin/show_pastie_image.html"/>
+        % elif c.pastebin['pastebin_doctypes_id'] == c.pastebin_doctypes['file']:
+            <%include file="/pastebin/show_pastie_file.html"/>
+        % endif
+    </div>
+    % if c.pastebin['pastebin_doctypes_id'] == c.pastebin_doctypes['text']:
+        <div class="pastebin-body-message-highlight">
+            ${_("Submit a correction or amendment below.")}
+        </div>
+        <div>
+            <%include file="/pastebin/pastebin_submit_form.html"/>
+        </div>
+    % endif
+% else:
+    <div class="pastebin-error">
+        <div style="float: left;">
+            ${error_html}
+        </div>
+        <div style="float: left; clear: right">
+            <div>
+                <%include file="/adsense/250x250.html"/>
+            </div>
+        </div>
+    <div>
+% endif
+</div>

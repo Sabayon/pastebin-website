@@ -12,40 +12,13 @@
             </div>
             <div id="pastebin-body">
                 <%include file="/adsense/728x90.html"/>
-                <div id="pastebin-body-sub">
-                    % if not c.pastebin:
-                        <%include file="/pastebin/pastebin_submit_form.html"/>
-                    % elif (not c.valid) and c.error_message:
-                        <div class="pastebin-error">
-                            ${_("Error")}: ${c.error_message}
-                        <div>
-                        <div>
-                            <iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/iwY5o2fsG7Y" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    % elif c.pastebin:
-                        <div>
-                            % if c.pastebin['pastebin_doctypes_id'] == c.pastebin_doctypes['text']:
-                                <%include file="/pastebin/show_pastie_text.html"/>
-                            % elif c.pastebin['pastebin_doctypes_id'] == c.pastebin_doctypes['image']:
-                                <%include file="/pastebin/show_pastie_image.html"/>
-                            % elif c.pastebin['pastebin_doctypes_id'] == c.pastebin_doctypes['file']:
-                                <%include file="/pastebin/show_pastie_file.html"/>
-                            % endif
-                        </div>
-                        % if c.pastebin['pastebin_doctypes_id'] == c.pastebin_doctypes['text']:
-                            <div class="pastebin-body-message-highlight">
-                                ${_("Submit a correction or amendment below.")}
-                            </div>
-                            <div>
-                                <%include file="/pastebin/pastebin_submit_form.html"/>
-                            </div>
-                        % endif
-                    % else:
-                        <div class="pastebin-error">
-                            <iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/iwY5o2fsG7Y" frameborder="0" allowfullscreen></iframe>
-                        <div>
-                    % endif
-                </div>
+                % if c.latest_pasties_extended:
+                    <%include file="/pastebin/latest.html"/>
+                % elif c.show_doc_page:
+                    <%include file="/pastebin/doc.html"/>
+                % else:
+                    <%include file="/pastebin/interface.html"/>
+                % endif
             </div>
             <div id="pastebin-bottom-spacer">
             </div>

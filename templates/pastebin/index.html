@@ -4,7 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <%include file="/head.html"/>
-<%include file="/pastebin/pastebin_js.html"/>
+% if not c.page_error:
+    <%include file="/pastebin/pastebin_js.html"/>
+% endif
 <body>
     <%include file="/top_wrapper.html"/>
     % if c.extra_css:

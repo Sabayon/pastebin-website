@@ -35,6 +35,11 @@ class WebsiteController:
         self.VIRUS_CHECK_ARGS = config.VIRUS_CHECK_ARGS
         import www.model.Portal
         self.Portal = www.model.Portal.Portal
+        try:
+            import pygments
+            self.pygments = pygments
+        except ImportError:
+            self.pygments = None
 
     def _store_vote_in_session(self, pages_id, session):
         session['poll_vote_%s' % (pages_id,)] = True
@@ -202,3 +207,30 @@ class WebsiteController:
         if valid_response:
             return True
         return False
+
+    def _load_metadata(self, portal = None):
+        delete = False
+        if portal == None:
+            portal = self.Portal()
+            delete = True
+        self._load_strict_metadata(portal)
+        default_pastebin_doctypes_id = request.params.get('default_pastebin_doctypes_id')
+        try:
+            default_pastebin_doctypes_id = int(default_pastebin_doctypes_id)
+            if default_pastebin_doctypes_id not in portal.PASTEBIN_DOCTYPES_DESC:
+                raise ValueError
+        except (ValueError,TypeError,):
+            default_pastebin_doctypes_id = ''
+        if default_pastebin_doctypes_id:
+            c.default_pastebin_doctypes_id = default_pastebin_doctypes_id
+        else:
+            c.default_pastebin_doctypes_id = ''
+
+        c.latest_pasties = portal.get_latest_pastebins()
+        if delete:
+            portal.disconnect(); del portal
+
+    def _load_strict_metadata(self, portal):
+        c.pastebin_syntaxes = portal.get_pastebin_syntaxes()
+        c.pastebin_doctypes_desc = portal.PASTEBIN_DOCTYPES_DESC
+        c.pastebin_doctypes = portal.PASTEBIN_DOCTYPES
