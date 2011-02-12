@@ -52,17 +52,17 @@
     </div>
     % if c.recaptcha_html:
         <div class="pastebin-form-item">
-                <div class="pastebin-form-span" style="height: 140px">
+                <%
+                    wrong_captcha = ""
+                    if c.pastebin_wrong_captcha:
+                        wrong_captcha = " border: 4px dotted red;"
+                %>
+                <div class="pastebin-form-span" style="height: 140px;${wrong_captcha}">
                     ${c.recaptcha_html | n}
                 </div>
         </div>
     % endif
     <div class="pastebin-form-item">
-        % if c.pastebin_wrong_captcha:
-            <span style="border: 4px dotted red;">
-                ${_("Wrong CAPTCHA !!! Take this, stupid spammer!")}
-            </span>
-        % endif
         <input id="pastie-submit-button" type="submit" value="${_("Submit")}" onclick="javascript:send_pastie('pastebin-submit-form','pastebin-submit-docarea','pastebin-text-content','pastebin-working-area','pastie-submit-button')"/>
     </div>
 </div>
