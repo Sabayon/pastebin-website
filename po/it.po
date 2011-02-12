@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Spritz 0.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-02-12 14:14+0100\n"
-"PO-Revision-Date: 2009-08-04 14:31+0100\n"
+"PO-Revision-Date: 2011-02-12 14:15+0100\n"
 "Last-Translator: Fabio Erculiani <lxnay@sabayonlinux.org>\n"
 "Language-Team: Fabio Erculiani <lxnay@sabayonlinux.org>\n"
 "Language: \n"
@@ -24,9 +24,8 @@ msgid "Removed from db"
 msgstr "Rimosso dal db"
 
 #: ../controllers/pastebin.py:65
-#, fuzzy
 msgid "remove file"
-msgstr "rimuovi path file"
+msgstr "rimuovi file"
 
 #: ../controllers/pastebin.py:80
 msgid "Nothing removed"
@@ -42,9 +41,8 @@ msgid "invalid method"
 msgstr "metodo non valido"
 
 #: ../controllers/pastebin.py:91
-#, fuzzy
 msgid "cannot get IP"
-msgstr "Errore: impossibile ottenere l'IP"
+msgstr "impossibile ottenere IP"
 
 #: ../controllers/pastebin.py:112
 msgid "Invalid pastebin_doctypes_id"
@@ -81,27 +79,25 @@ msgstr "Tipo immagine non supportato"
 
 #: ../templates/pastebin/interface.html:44
 msgid "Submit a correction or amendment below."
-msgstr ""
+msgstr "Inserisci una correzione o aggiunta qui sotto."
 
 #: ../templates/pastebin/latest.html:12
-#, fuzzy
 msgid "User"
-msgstr "Utenti"
+msgstr "Utente"
 
 #: ../templates/pastebin/latest.html:14
 msgid "created on"
-msgstr ""
+msgstr "creato il"
 
 #: ../templates/pastebin/latest.html:14
 #: ../templates/pastebin/show_pastie_header.html:6
-#, fuzzy
 msgid "expires in"
-msgstr "Scadenza"
+msgstr "scade in"
 
 #: ../templates/pastebin/latest.html:14
 #: ../templates/pastebin/show_pastie_header.html:6
 msgid "days"
-msgstr ""
+msgstr "giorni"
 
 #: ../templates/pastebin/pastebin_latest_pasties.html:23
 msgid "No Pasties"
@@ -129,7 +125,7 @@ msgstr "Tipo documento"
 
 #: ../templates/pastebin/pastebin_submit_footer.html:25
 msgid "Syntax highlighting"
-msgstr ""
+msgstr "Evidenziazione sintassi"
 
 #: ../templates/pastebin/pastebin_submit_footer.html:43
 msgid "Expiration"
@@ -148,9 +144,9 @@ msgid "One year"
 msgstr "Un anno"
 
 #: ../templates/pastebin/show_pastie_file.html:14
-#, fuzzy, c-format
+#, c-format
 msgid "All the uploaded files are checked by %s"
-msgstr "Tutti i file inviati sono controllati da"
+msgstr "Tutti i file in upload sono controllati da %s"
 
 #: ../templates/pastebin/show_pastie_header.html:6
 msgid "by"
