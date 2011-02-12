@@ -52,16 +52,9 @@
     </div>
     % if c.recaptcha_html:
         <div class="pastebin-form-item">
-                % if c.pastebin_wrong_captcha:
-                    <style type="text/css">
-                        #recaptcha_table {
-                            border: 4px dotted red;
-                        }
-                    </style>
-                % endif
-                <div class="pastebin-form-span" style="height: 140px">
-                    ${c.recaptcha_html | n}
-                </div>
+            <div class="pastebin-form-span" style="height: 140px">
+                ${c.recaptcha_html | n}
+            </div>
         </div>
     % endif
     <div class="pastebin-form-item">
@@ -70,6 +63,6 @@
 </div>
 % if c.pastebin_wrong_captcha:
     <script type="text/javascript">
-        show_error("${_("Wrong Captcha !")}","${_("Are you a spammer? If so, please go to hell. Otherwise, sorry, just answer the red-marked question correctly.")}");
+        show_error("${_("Wrong Captcha !")}","${_("Are you a spammer? Wrong Captcha!")}");
     </script>
 % endif
