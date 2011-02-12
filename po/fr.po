@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Entropy web site translation version 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-09 11:50+0100\n"
+"POT-Creation-Date: 2011-02-12 14:14+0100\n"
 "PO-Revision-Date: 2009-09-15 21:21-0500\n"
 "Last-Translator: Benjamin\n"
 "Language-Team: Benjamin Guay\n"
@@ -18,619 +18,92 @@ msgstr ""
 "X-Poedit-Language: French\n"
 "X-Poedit-Country: CANADA\n"
 
-#: ../controllers/login.py:26
-msgid "Hello mate, what about logging in? Have a look below"
-msgstr ""
-
-#: ../controllers/login.py:50
-#, fuzzy
-msgid "Sabayon Linux Community activation"
-msgstr "Chat de support Sabayon Linux"
-
-#: ../controllers/login.py:68
-#, fuzzy
-msgid "Sabayon Linux Community registration"
-msgstr "Wolfden, officier en chef de la communauté Sabayon Linux"
-
-#: ../controllers/login.py:97
-msgid "Invalid Username"
-msgstr "Nom d'utilisateur invalide"
-
-#: ../controllers/login.py:102
-msgid "Invalid Email, empty fields or mismatch"
-msgstr "Courriel invalide, champs vides ou différents"
-
-#: ../controllers/login.py:107
-msgid "Invalid Password, empty fields or mismatch or wrong length"
-msgstr "Mot de passe invalide, champs vide, différents ou de mauvaise longueur"
-
-#: ../controllers/login.py:114
-msgid "Invalid Captcha Answer"
-msgstr "Réponse invalide au captcha"
-
-#: ../controllers/login.py:123
-msgid "Invalid"
-msgstr "Invalide"
-
-#: ../controllers/login.py:207 ../controllers/login.py:210
-#: ../controllers/login.py:215 ../controllers/login.py:219
-#: ../controllers/login.py:224 ../controllers/login.py:227
-#: ../controllers/login.py:229 ../controllers/login.py:231
-#: ../controllers/login.py:235 ../controllers/login.py:238
-#: ../controllers/login.py:283 ../controllers/login.py:287
-#: ../controllers/login.py:289 ../controllers/login.py:294
-#: ../controllers/login.py:299 ../controllers/login.py:301
-#: ../controllers/login.py:303 ../controllers/login.py:305
-#: ../controllers/login.py:308 ../controllers/login.py:310
-#: ../controllers/login.py:318 ../controllers/login.py:324
-#: ../controllers/pastebin.py:157 ../controllers/pastebin.py:164
-#: ../controllers/pastebin.py:349
-msgid "Error"
-msgstr "Erreur"
-
-#: ../controllers/login.py:207 ../controllers/login.py:283
-msgid "invalid HTTP method"
-msgstr "méthode HTTP invalide"
-
-#: ../controllers/login.py:210 ../controllers/login.py:287
-msgid "not logged in"
-msgstr "pas connecté"
-
-#: ../controllers/login.py:215
-msgid "wrong POST"
-msgstr "mauvais POST"
-
-#: ../controllers/login.py:219
-msgid "invalid old e-mail"
-msgstr "ancien courriel invalide"
-
-#: ../controllers/login.py:224
-msgid "you changed nothing"
-msgstr "vous n'avez rien changé"
-
-#: ../controllers/login.py:227
-msgid "empty fields"
-msgstr "champs vides"
-
-#: ../controllers/login.py:229
-msgid "e-mails do not match"
-msgstr "les courriels ne correspondent pas"
-
-#: ../controllers/login.py:231
-msgid "invalid parameters"
-msgstr "paramètres invalides"
-
-#: ../controllers/login.py:235
-msgid "invalid e-mail (1)"
-msgstr "courriel invalide (1)"
-
-#: ../controllers/login.py:238
-msgid "invalid e-mail (2)"
-msgstr "courriel invalide (2)"
-
-#: ../controllers/login.py:255 ../controllers/login.py:341
-msgid "Success"
-msgstr "Succès"
-
-#: ../controllers/login.py:255 ../controllers/login.py:341
-msgid "you must activate your change. You have mail"
-msgstr "vous devez activer votre changement. Vous avez du courrier"
-
-#: ../controllers/login.py:277
-msgid "Sabayon Linux Community E-mail Update Activation"
-msgstr ""
-
-#: ../controllers/login.py:289
-msgid "not logged in (username)"
-msgstr "pas connecté (nom d'utilisateur)"
-
-#: ../controllers/login.py:294
-msgid "where is the current password?"
-msgstr "où est le mot de passe courant ?"
-
-#: ../controllers/login.py:299
-msgid "missing fields"
-msgstr "champs manquants"
-
-#: ../controllers/login.py:301
-msgid "new password fields do not match"
-msgstr "la longueur du nouveau mot de passe ne correspond pas"
-
-#: ../controllers/login.py:303
-msgid "wtf are you trying to do?"
-msgstr "qu'essayez-vous de faire ?"
-
-#: ../controllers/login.py:305
-msgid "old and new password match"
-msgstr "l'ancien et le nouveau mot de passe concordent"
-
-#: ../controllers/login.py:308
-msgid "password too short"
-msgstr "mot de passe trop court"
-
-#: ../controllers/login.py:310
-msgid "password too long"
-msgstr "mot de passe trop long"
-
-#: ../controllers/login.py:318
-msgid "invalid current password"
-msgstr "mot de passe courant invalide"
-
-#: ../controllers/login.py:324
-msgid "you do not have a valid e-mail"
-msgstr "vous n'avez pas de courriel valide"
-
-#: ../controllers/login.py:363
-msgid "Sabayon Linux Community Password Update Activation"
-msgstr ""
-
-#: ../controllers/pastebin.py:74
-#, fuzzy
-msgid "Sabayon Linux Pastebin"
-msgstr "Sabayon Linux Quatre Zéro !"
-
-#: ../controllers/pastebin.py:85
-msgid "Bastard info"
-msgstr "Info du bâtard"
-
-#: ../controllers/pastebin.py:92
+#: ../controllers/pastebin.py:58
 msgid "Removed from db"
 msgstr "Supprimé de la base de données"
 
-#: ../controllers/pastebin.py:99
+#: ../controllers/pastebin.py:65
 #, fuzzy
 msgid "remove file"
 msgstr "Supprimer l'emplacement du fichier"
 
-#: ../controllers/pastebin.py:114
+#: ../controllers/pastebin.py:80
 msgid "Nothing removed"
 msgstr "Rien n'a été supprimé"
 
-#: ../controllers/pastebin.py:128
-msgid "Invalid pastebin_id"
-msgstr "Pastebin_id invalide"
+#: ../controllers/pastebin.py:85 ../controllers/pastebin.py:91
+#: ../controllers/pastebin.py:259 ../templates/pastebin/interface.html:20
+msgid "Error"
+msgstr "Erreur"
 
-#: ../controllers/pastebin.py:135
-msgid "Db returned status"
-msgstr "statut retourné par la base de données"
-
-#: ../controllers/pastebin.py:138
-msgid "Permission denied"
-msgstr "Accès refusé"
-
-#: ../controllers/pastebin.py:150 ../controllers/pastebin.py:357
-#: ../controllers/pastebin.py:399
-#, fuzzy
-msgid "Sabayon Linux PixPastebin"
-msgstr "Sabayon Linux Quatre Zéro !"
-
-#: ../controllers/pastebin.py:157
+#: ../controllers/pastebin.py:85
 msgid "invalid method"
 msgstr "méthode invalide"
 
-#: ../controllers/pastebin.py:164
+#: ../controllers/pastebin.py:91
 msgid "cannot get IP"
 msgstr "Impossible d'obtenir l'IP"
 
-#: ../controllers/pastebin.py:186
+#: ../controllers/pastebin.py:112
 msgid "Invalid pastebin_doctypes_id"
 msgstr "Pastebin_doctypes_id invalide"
 
-#: ../controllers/pastebin.py:197
-msgid "Invalid pastebin_syntax_id"
-msgstr "Pastebin_syntax_id invalide"
-
-#: ../controllers/pastebin.py:208 ../controllers/pastebin.py:217
-msgid "Invalid expiration_days"
-msgstr "expiration_days invalide"
-
-#: ../controllers/pastebin.py:233
-msgid "Permission denied, you need to be logged in to paste this"
-msgstr "Accès refusé, vous devez être connecté pour coller ceci"
-
-#: ../controllers/pastebin.py:239
+#: ../controllers/pastebin.py:150
 msgid "Empty buffer/content"
 msgstr "Tampon/contenu vide"
 
-#: ../controllers/pastebin.py:242
+#: ../controllers/pastebin.py:153
 msgid "Too much text dude, are you crazy?"
 msgstr "Trop de texte, l'ami, vous êtes fou ?"
 
-#: ../controllers/pastebin.py:249
+#: ../controllers/pastebin.py:160
 msgid "No stream detected"
 msgstr "Aucun flux détecté"
 
-#: ../controllers/pastebin.py:257
+#: ../controllers/pastebin.py:168
 msgid "Filename cannot contain non-ASCII characters"
 msgstr "Le nom de fichier ne peut contenir de caractères non-ASCII"
 
-#: ../controllers/pastebin.py:289
+#: ../controllers/pastebin.py:199
 msgid "You tried to upload a virus, error will be reported, you are fucked"
 msgstr ""
 "Vous avez tenté d'envoyer un virus, l'erreur sera rapportée, vous êtes foutu"
 
-#: ../controllers/pastebin.py:296
+#: ../controllers/pastebin.py:206
 msgid "File size too big."
 msgstr "Taille de fichier trop grande."
 
-#: ../controllers/pastebin.py:302
+#: ../controllers/pastebin.py:212
 msgid "Not supported image type"
 msgstr "Type d'image non supporté"
 
-#: ../templates/activation_successful.html:18
-#: ../templates/email_activation_successful.html:18
-#: ../templates/password_activation_successful.html:18
-msgid "Activation successful"
-msgstr "Activation réussie"
-
-#: ../templates/activation_successful.html:18
-msgid "Wow, thanks a lot! Now you can really start enjoying our Community"
+#: ../templates/pastebin/interface.html:44
+msgid "Submit a correction or amendment below."
 msgstr ""
-"Wow, merci beaucoup ! Maintenant vous pouvez réellement commencer à vous "
-"amuser dans notre communauté"
 
-#: ../templates/activation_successful.html:20
-#: ../templates/email_activation_successful.html:20
-#: ../templates/password_activation_successful.html:20
-msgid "Sorry"
-msgstr "Désolé"
-
-#: ../templates/activation_successful.html:20
-#: ../templates/email_activation_successful.html:20
-#: ../templates/password_activation_successful.html:20
-msgid "There is no activation information available"
-msgstr "Il n'y a pas d'informations d'activation disponible"
-
-#: ../templates/body_left.html:11
-msgid "Distribution news"
-msgstr "Nouvelles de la distribution"
-
-#: ../templates/body_left.html:42
-msgid "Forum activity"
-msgstr "Activité du forum"
-
-#: ../templates/body_left.html:81
-msgid "Planet activity"
-msgstr "Activité de la planète"
-
-#: ../templates/body_left.html:116
-msgid "Code activity"
-msgstr "Activité du code"
-
-#: ../templates/body_left.html:135
-msgid "Overlay activity"
-msgstr "Activité de l'overlay"
-
-#: ../templates/body_right.html:8
-msgid "Sponsors"
-msgstr "Commanditaires"
-
-#: ../templates/body_right.html:11
+#: ../templates/pastebin/latest.html:12
 #, fuzzy
-msgid ""
-"Officially Sponsored by the <b>NLnet Foundation</b>, that financially "
-"supported the Entropy Project"
+msgid "User"
+msgstr "Utilisateurs"
+
+#: ../templates/pastebin/latest.html:14
+msgid "created on"
 msgstr ""
-"Officiellement commandité par la <b>fondation NLNet</b>, supportant "
-"financièrement notre projet Entropy"
 
-#: ../templates/body_right.html:11
-msgid "See NLnet development plan status"
-msgstr "Voir l'état du plan de développement de NLnet"
-
-#: ../templates/body_right.html:15 ../templates/body_right.html:19
-#: ../templates/body_right.html:23
-msgid "Officially Sponsored by"
-msgstr "Officiellement commandité par"
-
-#: ../templates/body_right.html:15
-msgid "University of Brescia"
-msgstr "Université de Brescia"
-
-#: ../templates/body_right.html:15
-msgid ""
-"Housing our Entropy build server inside the Faculty Network Center at the "
-"Department of Electronics"
-msgstr ""
-"Hébergement de notre serveur de compilation d'Entropy dans la Centre de "
-"Faculté Réseau au département d'électronique"
-
-#: ../templates/body_right.html:19
+#: ../templates/pastebin/latest.html:14
+#: ../templates/pastebin/show_pastie_header.html:6
 #, fuzzy
-msgid "University of Milano-Bicocca"
-msgstr "Université de Brescia"
+msgid "expires in"
+msgstr "Expiration"
 
-#: ../templates/body_right.html:19
-msgid "Housing our Entropy build servers and WWW inside DISCo"
+#: ../templates/pastebin/latest.html:14
+#: ../templates/pastebin/show_pastie_header.html:6
+msgid "days"
 msgstr ""
 
-#: ../templates/body_right.html:23
-msgid "Proving the software technology we daily need"
-msgstr ""
-"Prouvant la technologie logiciel dont nous avons besoin à tous les jours"
-
-#: ../templates/body_right.html:28
-msgid "Survey"
-msgstr "Sondage"
-
-#: ../templates/body_right.html:40
-msgid "Cross Linux From Scratch"
-msgstr "Croisement de Linux From Scratch"
-
-#: ../templates/body_right.html:41
-msgid "Ibiblio.org Hosting"
-msgstr "Hébergement Ibiblio.org"
-
-#: ../templates/email_activation_successful.html:18
-msgid "Your E-mail is now active"
-msgstr "Votre courriel est maintenant activé"
-
-#: ../templates/footer.html:7
-msgid "Trademarks are property of their respective owners."
-msgstr "Les marques déposées sont la propriété de leurs auteurs respectifs."
-
-#: ../templates/head.html:7
-#, fuzzy
-msgid "Sabayon Linux Five Oh!"
-msgstr "Sabayon Linux Quatre Zéro !"
-
-#: ../templates/loginbox_inner.html:4
-msgid "Entropy Web Dashboard Login"
-msgstr "Connexion au tableau de bord Web Entropy"
-
-#: ../templates/loginbox_inner.html:11 ../templates/login.html:18
-msgid "New user?"
-msgstr "Nouvel utilisateur ?"
-
-#: ../templates/loginbox_inner.html:11
-msgid "What is all this ?"
-msgstr "Qu'est-ce que c'est que tout ça ?"
-
-#: ../templates/loginbox_inner.html:24 ../templates/login.html:23
-msgid "Login error"
-msgstr "Erreur de connexion"
-
-#: ../templates/loginbox_inner.html:27 ../templates/loginbox_inner.html:89
-msgid "Comments"
-msgstr "Commentaires"
-
-#: ../templates/loginbox_inner.html:27 ../templates/loginbox_inner.html:89
-msgid "Docs"
-msgstr "Documents"
-
-#: ../templates/loginbox_inner.html:29 ../templates/loginbox_inner.html:91
-msgid "Votes"
-msgstr "Votes"
-
-#: ../templates/loginbox_inner.html:29 ../templates/loginbox_inner.html:91
-msgid "Downloads"
-msgstr "Téléchargements"
-
-#: ../templates/loginbox_inner.html:43
-#, c-format
-msgid "Hello <b>%s</b>, %s"
-msgstr ""
-
-#: ../templates/loginbox_inner.html:43
-msgid "Logout ?"
-msgstr ""
-
-#: ../templates/loginbox_inner.html:49
-msgid "My Entropy"
-msgstr "Mon Entropy"
-
-#: ../templates/loginbox_inner.html:52
-msgid "My User Generated Content"
-msgstr "Mon contenu généré par l'utilisateur"
-
-#: ../templates/loginbox_inner.html:55
-msgid "My Statistics"
-msgstr "Mes statistiques"
-
-#: ../templates/loginbox_inner.html:60
-msgid "My Sabayon"
-msgstr "Mon Sabayon"
-
-#: ../templates/loginbox_inner.html:63
-msgid "My Dashboard"
-msgstr "Mon tableau de bord"
-
-#: ../templates/loginbox_inner.html:66
-msgid "My Pastebin"
-msgstr "Mon pastebin"
-
-#: ../templates/loginbox_inner.html:79
-msgid "points"
-msgstr "points"
-
-#: ../templates/loginbox_inner.html:83
-msgid "My Comments"
-msgstr "Mes commentaires"
-
-#: ../templates/loginbox_inner.html:83
-msgid "My Docs"
-msgstr "Mes documents"
-
-#: ../templates/loginbox_inner.html:84
-msgid "My Votes"
-msgstr "Mes votes"
-
-#: ../templates/loginbox_inner.html:84
-msgid "My Avg"
-msgstr "Ma moyenne"
-
-#: ../templates/page_error.html:29
-msgid "Houston, we've got a problem!"
-msgstr "Houston, nous avons un problème !"
-
-#: ../templates/page_error.html:32
-#, fuzzy, c-format
-msgid ""
-"Probably the page you are looking for <b>does not exist</b> anymore. You can "
-"blame <u>aliens</u>. Well, we are really sorry. Why don't you get to our <a "
-"href=\"%s\">home page</a>?"
-msgstr ""
-"Il est probable que la page que vous recherchez <b>n'existe plus</b>. Vous "
-"pouvez blâmer les extra-terrestres. Bien, nous sommes vraiment désolés."
-
-#: ../templates/password_activation_successful.html:18
-msgid "Your Password is now updated"
-msgstr "Votre mot de passe est maintenant à jour"
-
-#: ../templates/password_activation_successful.html:22
-msgid "confirmation code"
-msgstr "code de confirmation"
-
-#: ../templates/password_activation_successful.html:23
-msgid "validation id"
-msgstr "identifiant de validation"
-
-#: ../templates/password_activation_successful.html:24
-msgid "user id"
-msgstr "identifiant de l'utilisateur"
-
-#: ../templates/register.html:22
-msgid "(Sabayon leader)"
-msgstr "(Chef de Sabayon)"
-
-#: ../templates/register.html:27
-msgid ""
-"<b>You may ask</b>. What do we offer in change? <b>We answer</b>, your own "
-"<b>Blog</b> on this Portal, your personal <b>\"Pastebin\"</b> and file "
-"upload service called <b>\"Pixdiff\"</b>, a <b>warm Community</b> that will "
-"always help you out, the ability to <b>vote</b> and <b>interact</b> with "
-"what we offer and with other people inside this space. We are just used to "
-"call all this with one name: <b>Sabayon</b>, <i>the \"2.0\" (two-point-oh) "
-"distribution</i>"
-msgstr ""
-"<b>Vous pourriez demander</b>. Qu'offrez-vous en retour ? <b>Nous répondons</"
-"b>, votre propre <b>blogue</b> sur ce portail, votre <b>\"pastebin\"</b> "
-"personnel et votre service d'envoi de fichier appelé <b>\"Pixdiff\"</b>, une "
-"communauté chaude qui vous aidera toujours, la possibilité de <b>voter</b> "
-"et d'<b>interagir</b> avec ce que nous offrons et avec les autres personnes "
-"à l'intérieur de cet espace : <b>Sabayon</b>, <i>la distribution "
-"\"2.0\" (deux-point-zéro)</i>"
-
-#: ../templates/register.html:30
-msgid ""
-"Please note that you will need to enter a valid e-mail address before your "
-"account is activated. You will receive an e-mail at the address you provide "
-"that contains an account activation link"
-msgstr ""
-"Veuillez prendre note que vous aurez besoin de saisir un courriel valide "
-"avant que votre compte soit activé. Vous recevrez un courriel à l'adresse "
-"spécifiée qui contient un hyperlien d'activation du compte"
-
-#: ../templates/registration_form.html:7
-msgid "Username"
-msgstr "Nom d'utilisateur"
-
-#: ../templates/registration_form.html:9
-msgid "Length must be between 3 and 20 characters"
-msgstr "La longueur doit se situer entre 3 et 20 caractères"
-
-#: ../templates/registration_form.html:17
-msgid "E-mail address"
-msgstr "Courriel"
-
-#: ../templates/registration_form.html:25
-msgid "Confirm e-mail address"
-msgstr "Confirmer votre courriel"
-
-#: ../templates/registration_form.html:33
-msgid "Password"
-msgstr "Mot de passe"
-
-#: ../templates/registration_form.html:34
-msgid "Must be between 6 and 30 characters"
-msgstr "Doit se situer entre 6 et 30 caractères"
-
-#: ../templates/registration_form.html:42
-msgid "Confirm password"
-msgstr "Confirmer le mot de passe"
-
-#: ../templates/registration_form.html:68
-msgid "Registration Agreement"
-msgstr "Accord d'enregistrement"
-
-#: ../templates/registration_form.html:73
-msgid "I agree with the terms above"
-msgstr "J'accepte les termes mentionnés ci-haut"
-
-#: ../templates/registration_successful.html:2
-msgid "Registration successful"
-msgstr "Enregistrement complété avec succès"
-
-#: ../templates/registration_successful.html:2
-msgid "Wow, thanks a lot!"
-msgstr "Wow, merci beaucoup !"
-
-#: ../templates/registration_successful.html:4
-msgid ""
-"You should have waited the activation e-mail but the one you provided has "
-"not been accepted for delivery"
-msgstr ""
-"Vous auriez dû attendre le courriel d'activation mais celui que vous avez "
-"fourni n'a pas été accepté pour la livraison"
-
-#: ../templates/registration_successful.html:5
-#, fuzzy
-msgid ""
-"Please contact <a href=\"mailto:mail.issues@sabayon.org\">our service</a> "
-"and ask for help"
-msgstr ""
-"Veuillez contacter <a href=\"mailto:mail.issues@sabayonlinux.org\">notre "
-"service</a> et demandez de l'aide"
-
-#: ../templates/registration_successful.html:7
-msgid ""
-"Now you need to wait and read the activation e-mail before being able to "
-"login"
-msgstr ""
-"Vous devez maintenant attendre et lire le courriel d'activation avant de "
-"pouvoir vous connecter"
-
-#: ../templates/registration_successful.html:10
-#, fuzzy, c-format
-msgid "<a href='%s'>Click here</a> to come back to the source page"
-msgstr ""
-"<a href=\"${c.login_redirect}\">Cliquer ici</a> pour retourne à la page "
-"source"
-
-#: ../templates/pastebin/pastebin_disclaimer.html:2
-msgid "Read carefully"
-msgstr "Lisez attentivement"
-
-#: ../templates/pastebin/pastebin_disclaimer.html:2
-msgid ""
-"do not paste sensitive data, it is not protected, this means that other "
-"people can read it. Use this tool only for exchanging stuff in public "
-"virtual places such as IRC, Forums and so forth. Your data will be removed "
-"once expired, we cannot guarantee the storage of the content here. Your IP "
-"is logged and you are invited to respect any existing law. No spamming, No "
-"porn, nothing! Allright?"
-msgstr ""
-"ne collez pas d'informations sensibles, elles ne sont pas protégées, ce qui "
-"signifie que d'autres personnes peuvent y accéder. Utiliser cet outil "
-"uniquement pour échanger des trucs dans les places "
-
-#: ../templates/pastebin/pastebin_latest_pasties.html:7
-msgid "Latest Pasties"
-msgstr "Derniers pasties"
-
-#: ../templates/pastebin/pastebin_latest_pasties.html:10
-#: ../templates/pastebin/remove_pastie.html:28
-msgid "PixPastebin Home"
-msgstr "Accueil PixPastebin"
-
-#: ../templates/pastebin/pastebin_latest_pasties.html:25
-#: ../templates/pastebin/pastebin_latest_pasties.html:47
+#: ../templates/pastebin/pastebin_latest_pasties.html:23
 msgid "No Pasties"
 msgstr "Pas de pasties"
-
-#: ../templates/pastebin/pastebin_latest_pasties.html:32
-msgid "My Latest"
-msgstr "Mes plus récents"
 
 #: ../templates/pastebin/pastebin_submit_body.html:19
 msgid ""
@@ -648,62 +121,40 @@ msgstr "Important"
 msgid "you cannot send viruses, they are destroyed automatically"
 msgstr "vous ne pouvez envoyer de virus, ils sont automatiquement détruits"
 
-#: ../templates/pastebin/pastebin_submit_footer.html:3
-msgid "Expiration"
-msgstr "Expiration"
-
 #: ../templates/pastebin/pastebin_submit_footer.html:4
-msgid "One day"
-msgstr "Un jour"
-
-#: ../templates/pastebin/pastebin_submit_footer.html:5
-msgid "One month"
-msgstr "Un mois"
-
-#: ../templates/pastebin/pastebin_submit_footer.html:6
-msgid "One year"
-msgstr "Un an"
-
-#: ../templates/pastebin/pastebin_submit_footer.html:9
-#, fuzzy, c-format
-msgid "as <b>%s</b> and permissions:"
-msgstr "en tant que %(user)s et permissions :"
-
-#: ../templates/pastebin/pastebin_submit_footer.html:42
-msgid "Wrong CAPTCHA !!! Take this, stupid spammer!"
-msgstr "Mauvais captcha ! Prend ça, stupide spammeur !"
-
-#: ../templates/pastebin/pastebin_submit_header.html:4
 msgid "Document type"
 msgstr "Type de document"
 
-#: ../templates/pastebin/remove_pastie.html:21
-msgid "Ok fine, pastie removed"
-msgstr "D'accord, le pastie a été supprimé"
+#: ../templates/pastebin/pastebin_submit_footer.html:25
+msgid "Syntax highlighting"
+msgstr ""
 
-#: ../templates/pastebin/remove_pastie.html:23
-msgid "Message"
-msgstr "Message"
+#: ../templates/pastebin/pastebin_submit_footer.html:43
+msgid "Expiration"
+msgstr "Expiration"
 
-#: ../templates/pastebin/show_pastie_file.html:5
+#: ../templates/pastebin/pastebin_submit_footer.html:47
+msgid "One day"
+msgstr "Un jour"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:48
+msgid "One month"
+msgstr "Un mois"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:49
+msgid "One year"
+msgstr "Un an"
+
+#: ../templates/pastebin/show_pastie_file.html:14
 #, fuzzy, c-format
 msgid "All the uploaded files are checked by %s"
 msgstr "Tous les fichiers envoyés sont vérifiés par %(antivirus_name)s"
 
 #: ../templates/pastebin/show_pastie_header.html:6
-#, fuzzy
-msgid "expires in"
-msgstr "Expiration"
-
-#: ../templates/pastebin/show_pastie_header.html:6
-msgid "days"
-msgstr ""
-
-#: ../templates/pastebin/show_pastie_header.html:6
 msgid "by"
 msgstr "par"
 
-#: ../templates/pastebin/show_pastie_image.html:16
+#: ../templates/pastebin/show_pastie_image.html:17
 msgid "An image should pop up above this text"
 msgstr "Une image devrait apparaître au-dessus de ce texte"
 
@@ -736,17 +187,426 @@ msgstr "Une erreur s'est produite au cours du collage de vos données"
 msgid "Get back?"
 msgstr "De retour ?"
 
-#: ../templates/pastebin/show_pastie_tools.html:2
-msgid "Make a fresh post"
-msgstr "Créer un nouveau post"
-
-#: ../templates/pastebin/show_pastie_tools.html:4
+#: ../templates/pastebin/show_pastie_tools.html:3
 msgid "edit this"
 msgstr "éditer ceci"
 
-#: ../templates/pastebin/show_pastie_tools.html:8
-msgid "delete this"
-msgstr "supprimer ceci"
+#, fuzzy
+#~ msgid "Sabayon Linux Community activation"
+#~ msgstr "Chat de support Sabayon Linux"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Community registration"
+#~ msgstr "Wolfden, officier en chef de la communauté Sabayon Linux"
+
+#~ msgid "Invalid Username"
+#~ msgstr "Nom d'utilisateur invalide"
+
+#~ msgid "Invalid Email, empty fields or mismatch"
+#~ msgstr "Courriel invalide, champs vides ou différents"
+
+#~ msgid "Invalid Password, empty fields or mismatch or wrong length"
+#~ msgstr ""
+#~ "Mot de passe invalide, champs vide, différents ou de mauvaise longueur"
+
+#~ msgid "Invalid Captcha Answer"
+#~ msgstr "Réponse invalide au captcha"
+
+#~ msgid "Invalid"
+#~ msgstr "Invalide"
+
+#~ msgid "invalid HTTP method"
+#~ msgstr "méthode HTTP invalide"
+
+#~ msgid "not logged in"
+#~ msgstr "pas connecté"
+
+#~ msgid "wrong POST"
+#~ msgstr "mauvais POST"
+
+#~ msgid "invalid old e-mail"
+#~ msgstr "ancien courriel invalide"
+
+#~ msgid "you changed nothing"
+#~ msgstr "vous n'avez rien changé"
+
+#~ msgid "empty fields"
+#~ msgstr "champs vides"
+
+#~ msgid "e-mails do not match"
+#~ msgstr "les courriels ne correspondent pas"
+
+#~ msgid "invalid parameters"
+#~ msgstr "paramètres invalides"
+
+#~ msgid "invalid e-mail (1)"
+#~ msgstr "courriel invalide (1)"
+
+#~ msgid "invalid e-mail (2)"
+#~ msgstr "courriel invalide (2)"
+
+#~ msgid "Success"
+#~ msgstr "Succès"
+
+#~ msgid "you must activate your change. You have mail"
+#~ msgstr "vous devez activer votre changement. Vous avez du courrier"
+
+#~ msgid "not logged in (username)"
+#~ msgstr "pas connecté (nom d'utilisateur)"
+
+#~ msgid "where is the current password?"
+#~ msgstr "où est le mot de passe courant ?"
+
+#~ msgid "missing fields"
+#~ msgstr "champs manquants"
+
+#~ msgid "new password fields do not match"
+#~ msgstr "la longueur du nouveau mot de passe ne correspond pas"
+
+#~ msgid "wtf are you trying to do?"
+#~ msgstr "qu'essayez-vous de faire ?"
+
+#~ msgid "old and new password match"
+#~ msgstr "l'ancien et le nouveau mot de passe concordent"
+
+#~ msgid "password too short"
+#~ msgstr "mot de passe trop court"
+
+#~ msgid "password too long"
+#~ msgstr "mot de passe trop long"
+
+#~ msgid "invalid current password"
+#~ msgstr "mot de passe courant invalide"
+
+#~ msgid "you do not have a valid e-mail"
+#~ msgstr "vous n'avez pas de courriel valide"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Pastebin"
+#~ msgstr "Sabayon Linux Quatre Zéro !"
+
+#~ msgid "Bastard info"
+#~ msgstr "Info du bâtard"
+
+#~ msgid "Invalid pastebin_id"
+#~ msgstr "Pastebin_id invalide"
+
+#~ msgid "Db returned status"
+#~ msgstr "statut retourné par la base de données"
+
+#~ msgid "Permission denied"
+#~ msgstr "Accès refusé"
+
+#, fuzzy
+#~ msgid "Sabayon Linux PixPastebin"
+#~ msgstr "Sabayon Linux Quatre Zéro !"
+
+#~ msgid "Invalid pastebin_syntax_id"
+#~ msgstr "Pastebin_syntax_id invalide"
+
+#~ msgid "Invalid expiration_days"
+#~ msgstr "expiration_days invalide"
+
+#~ msgid "Permission denied, you need to be logged in to paste this"
+#~ msgstr "Accès refusé, vous devez être connecté pour coller ceci"
+
+#~ msgid "Activation successful"
+#~ msgstr "Activation réussie"
+
+#~ msgid "Wow, thanks a lot! Now you can really start enjoying our Community"
+#~ msgstr ""
+#~ "Wow, merci beaucoup ! Maintenant vous pouvez réellement commencer à vous "
+#~ "amuser dans notre communauté"
+
+#~ msgid "Sorry"
+#~ msgstr "Désolé"
+
+#~ msgid "There is no activation information available"
+#~ msgstr "Il n'y a pas d'informations d'activation disponible"
+
+#~ msgid "Distribution news"
+#~ msgstr "Nouvelles de la distribution"
+
+#~ msgid "Forum activity"
+#~ msgstr "Activité du forum"
+
+#~ msgid "Planet activity"
+#~ msgstr "Activité de la planète"
+
+#~ msgid "Code activity"
+#~ msgstr "Activité du code"
+
+#~ msgid "Overlay activity"
+#~ msgstr "Activité de l'overlay"
+
+#~ msgid "Sponsors"
+#~ msgstr "Commanditaires"
+
+#, fuzzy
+#~ msgid ""
+#~ "Officially Sponsored by the <b>NLnet Foundation</b>, that financially "
+#~ "supported the Entropy Project"
+#~ msgstr ""
+#~ "Officiellement commandité par la <b>fondation NLNet</b>, supportant "
+#~ "financièrement notre projet Entropy"
+
+#~ msgid "See NLnet development plan status"
+#~ msgstr "Voir l'état du plan de développement de NLnet"
+
+#~ msgid "Officially Sponsored by"
+#~ msgstr "Officiellement commandité par"
+
+#~ msgid "University of Brescia"
+#~ msgstr "Université de Brescia"
+
+#~ msgid ""
+#~ "Housing our Entropy build server inside the Faculty Network Center at the "
+#~ "Department of Electronics"
+#~ msgstr ""
+#~ "Hébergement de notre serveur de compilation d'Entropy dans la Centre de "
+#~ "Faculté Réseau au département d'électronique"
+
+#, fuzzy
+#~ msgid "University of Milano-Bicocca"
+#~ msgstr "Université de Brescia"
+
+#~ msgid "Proving the software technology we daily need"
+#~ msgstr ""
+#~ "Prouvant la technologie logiciel dont nous avons besoin à tous les jours"
+
+#~ msgid "Survey"
+#~ msgstr "Sondage"
+
+#~ msgid "Cross Linux From Scratch"
+#~ msgstr "Croisement de Linux From Scratch"
+
+#~ msgid "Ibiblio.org Hosting"
+#~ msgstr "Hébergement Ibiblio.org"
+
+#~ msgid "Your E-mail is now active"
+#~ msgstr "Votre courriel est maintenant activé"
+
+#~ msgid "Trademarks are property of their respective owners."
+#~ msgstr "Les marques déposées sont la propriété de leurs auteurs respectifs."
+
+#, fuzzy
+#~ msgid "Sabayon Linux Five Oh!"
+#~ msgstr "Sabayon Linux Quatre Zéro !"
+
+#~ msgid "Entropy Web Dashboard Login"
+#~ msgstr "Connexion au tableau de bord Web Entropy"
+
+#~ msgid "New user?"
+#~ msgstr "Nouvel utilisateur ?"
+
+#~ msgid "What is all this ?"
+#~ msgstr "Qu'est-ce que c'est que tout ça ?"
+
+#~ msgid "Login error"
+#~ msgstr "Erreur de connexion"
+
+#~ msgid "Comments"
+#~ msgstr "Commentaires"
+
+#~ msgid "Docs"
+#~ msgstr "Documents"
+
+#~ msgid "Votes"
+#~ msgstr "Votes"
+
+#~ msgid "Downloads"
+#~ msgstr "Téléchargements"
+
+#~ msgid "My Entropy"
+#~ msgstr "Mon Entropy"
+
+#~ msgid "My User Generated Content"
+#~ msgstr "Mon contenu généré par l'utilisateur"
+
+#~ msgid "My Statistics"
+#~ msgstr "Mes statistiques"
+
+#~ msgid "My Sabayon"
+#~ msgstr "Mon Sabayon"
+
+#~ msgid "My Dashboard"
+#~ msgstr "Mon tableau de bord"
+
+#~ msgid "My Pastebin"
+#~ msgstr "Mon pastebin"
+
+#~ msgid "points"
+#~ msgstr "points"
+
+#~ msgid "My Comments"
+#~ msgstr "Mes commentaires"
+
+#~ msgid "My Docs"
+#~ msgstr "Mes documents"
+
+#~ msgid "My Votes"
+#~ msgstr "Mes votes"
+
+#~ msgid "My Avg"
+#~ msgstr "Ma moyenne"
+
+#~ msgid "Houston, we've got a problem!"
+#~ msgstr "Houston, nous avons un problème !"
+
+#, fuzzy
+#~ msgid ""
+#~ "Probably the page you are looking for <b>does not exist</b> anymore. You "
+#~ "can blame <u>aliens</u>. Well, we are really sorry. Why don't you get to "
+#~ "our <a href=\"%s\">home page</a>?"
+#~ msgstr ""
+#~ "Il est probable que la page que vous recherchez <b>n'existe plus</b>. "
+#~ "Vous pouvez blâmer les extra-terrestres. Bien, nous sommes vraiment "
+#~ "désolés."
+
+#~ msgid "Your Password is now updated"
+#~ msgstr "Votre mot de passe est maintenant à jour"
+
+#~ msgid "confirmation code"
+#~ msgstr "code de confirmation"
+
+#~ msgid "validation id"
+#~ msgstr "identifiant de validation"
+
+#~ msgid "user id"
+#~ msgstr "identifiant de l'utilisateur"
+
+#~ msgid "(Sabayon leader)"
+#~ msgstr "(Chef de Sabayon)"
+
+#~ msgid ""
+#~ "<b>You may ask</b>. What do we offer in change? <b>We answer</b>, your "
+#~ "own <b>Blog</b> on this Portal, your personal <b>\"Pastebin\"</b> and "
+#~ "file upload service called <b>\"Pixdiff\"</b>, a <b>warm Community</b> "
+#~ "that will always help you out, the ability to <b>vote</b> and "
+#~ "<b>interact</b> with what we offer and with other people inside this "
+#~ "space. We are just used to call all this with one name: <b>Sabayon</b>, "
+#~ "<i>the \"2.0\" (two-point-oh) distribution</i>"
+#~ msgstr ""
+#~ "<b>Vous pourriez demander</b>. Qu'offrez-vous en retour ? <b>Nous "
+#~ "répondons</b>, votre propre <b>blogue</b> sur ce portail, votre <b>"
+#~ "\"pastebin\"</b> personnel et votre service d'envoi de fichier appelé <b>"
+#~ "\"Pixdiff\"</b>, une communauté chaude qui vous aidera toujours, la "
+#~ "possibilité de <b>voter</b> et d'<b>interagir</b> avec ce que nous "
+#~ "offrons et avec les autres personnes à l'intérieur de cet espace : "
+#~ "<b>Sabayon</b>, <i>la distribution \"2.0\" (deux-point-zéro)</i>"
+
+#~ msgid ""
+#~ "Please note that you will need to enter a valid e-mail address before "
+#~ "your account is activated. You will receive an e-mail at the address you "
+#~ "provide that contains an account activation link"
+#~ msgstr ""
+#~ "Veuillez prendre note que vous aurez besoin de saisir un courriel valide "
+#~ "avant que votre compte soit activé. Vous recevrez un courriel à l'adresse "
+#~ "spécifiée qui contient un hyperlien d'activation du compte"
+
+#~ msgid "Username"
+#~ msgstr "Nom d'utilisateur"
+
+#~ msgid "Length must be between 3 and 20 characters"
+#~ msgstr "La longueur doit se situer entre 3 et 20 caractères"
+
+#~ msgid "E-mail address"
+#~ msgstr "Courriel"
+
+#~ msgid "Confirm e-mail address"
+#~ msgstr "Confirmer votre courriel"
+
+#~ msgid "Password"
+#~ msgstr "Mot de passe"
+
+#~ msgid "Must be between 6 and 30 characters"
+#~ msgstr "Doit se situer entre 6 et 30 caractères"
+
+#~ msgid "Confirm password"
+#~ msgstr "Confirmer le mot de passe"
+
+#~ msgid "Registration Agreement"
+#~ msgstr "Accord d'enregistrement"
+
+#~ msgid "I agree with the terms above"
+#~ msgstr "J'accepte les termes mentionnés ci-haut"
+
+#~ msgid "Registration successful"
+#~ msgstr "Enregistrement complété avec succès"
+
+#~ msgid "Wow, thanks a lot!"
+#~ msgstr "Wow, merci beaucoup !"
+
+#~ msgid ""
+#~ "You should have waited the activation e-mail but the one you provided has "
+#~ "not been accepted for delivery"
+#~ msgstr ""
+#~ "Vous auriez dû attendre le courriel d'activation mais celui que vous avez "
+#~ "fourni n'a pas été accepté pour la livraison"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please contact <a href=\"mailto:mail.issues@sabayon.org\">our service</a> "
+#~ "and ask for help"
+#~ msgstr ""
+#~ "Veuillez contacter <a href=\"mailto:mail.issues@sabayonlinux.org\">notre "
+#~ "service</a> et demandez de l'aide"
+
+#~ msgid ""
+#~ "Now you need to wait and read the activation e-mail before being able to "
+#~ "login"
+#~ msgstr ""
+#~ "Vous devez maintenant attendre et lire le courriel d'activation avant de "
+#~ "pouvoir vous connecter"
+
+#, fuzzy
+#~ msgid "<a href='%s'>Click here</a> to come back to the source page"
+#~ msgstr ""
+#~ "<a href=\"${c.login_redirect}\">Cliquer ici</a> pour retourne à la page "
+#~ "source"
+
+#~ msgid "Read carefully"
+#~ msgstr "Lisez attentivement"
+
+#~ msgid ""
+#~ "do not paste sensitive data, it is not protected, this means that other "
+#~ "people can read it. Use this tool only for exchanging stuff in public "
+#~ "virtual places such as IRC, Forums and so forth. Your data will be "
+#~ "removed once expired, we cannot guarantee the storage of the content "
+#~ "here. Your IP is logged and you are invited to respect any existing law. "
+#~ "No spamming, No porn, nothing! Allright?"
+#~ msgstr ""
+#~ "ne collez pas d'informations sensibles, elles ne sont pas protégées, ce "
+#~ "qui signifie que d'autres personnes peuvent y accéder. Utiliser cet outil "
+#~ "uniquement pour échanger des trucs dans les places "
+
+#~ msgid "Latest Pasties"
+#~ msgstr "Derniers pasties"
+
+#~ msgid "PixPastebin Home"
+#~ msgstr "Accueil PixPastebin"
+
+#~ msgid "My Latest"
+#~ msgstr "Mes plus récents"
+
+#, fuzzy
+#~ msgid "as <b>%s</b> and permissions:"
+#~ msgstr "en tant que %(user)s et permissions :"
+
+#~ msgid "Wrong CAPTCHA !!! Take this, stupid spammer!"
+#~ msgstr "Mauvais captcha ! Prend ça, stupide spammeur !"
+
+#~ msgid "Ok fine, pastie removed"
+#~ msgstr "D'accord, le pastie a été supprimé"
+
+#~ msgid "Message"
+#~ msgstr "Message"
+
+#~ msgid "Make a fresh post"
+#~ msgstr "Créer un nouveau post"
+
+#~ msgid "delete this"
+#~ msgstr "supprimer ceci"
 
 #~ msgid "Official Sabayon Linux Web Chat"
 #~ msgstr "Chat Web officiel de Sabayon Linux"
@@ -1752,9 +1612,6 @@ msgstr "supprimer ceci"
 
 #~ msgid "Community Home"
 #~ msgstr "Accueil de la communauté"
-
-#~ msgid "Users"
-#~ msgstr "Utilisateurs"
 
 #~ msgid "Hall of fame"
 #~ msgstr "Temple de la renommée"

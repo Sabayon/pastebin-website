@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-09 11:50+0100\n"
+"POT-Creation-Date: 2011-02-12 14:14+0100\n"
 "PO-Revision-Date: 2009-08-05 12:09+0100\n"
 "Last-Translator: Rémy Epke <testflacon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,653 +16,94 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../controllers/login.py:26
-msgid "Hello mate, what about logging in? Have a look below"
-msgstr ""
-
-#: ../controllers/login.py:50
-#, fuzzy
-msgid "Sabayon Linux Community activation"
-msgstr "Sabayon Linux Support Chat"
-
-#: ../controllers/login.py:68
-#, fuzzy
-msgid "Sabayon Linux Community registration"
-msgstr "Wolfden, Sabayon Linux Chief Community Officer"
-
-#: ../controllers/login.py:97
-msgid "Invalid Username"
-msgstr "Ongeldige gebruikersnaam"
-
-#: ../controllers/login.py:102
-msgid "Invalid Email, empty fields or mismatch"
-msgstr "Ongeldig emailadres, lege velden of geen overeenkomst"
-
-#: ../controllers/login.py:107
-msgid "Invalid Password, empty fields or mismatch or wrong length"
-msgstr "Ongeldig emailadres, lege velden, geen overeenkomst of onjuiste lengte"
-
-#: ../controllers/login.py:114
-msgid "Invalid Captcha Answer"
-msgstr "Ongeldig Captcha-antwoord"
-
-#: ../controllers/login.py:123
-msgid "Invalid"
-msgstr "Ongeldig"
-
-#: ../controllers/login.py:207 ../controllers/login.py:210
-#: ../controllers/login.py:215 ../controllers/login.py:219
-#: ../controllers/login.py:224 ../controllers/login.py:227
-#: ../controllers/login.py:229 ../controllers/login.py:231
-#: ../controllers/login.py:235 ../controllers/login.py:238
-#: ../controllers/login.py:283 ../controllers/login.py:287
-#: ../controllers/login.py:289 ../controllers/login.py:294
-#: ../controllers/login.py:299 ../controllers/login.py:301
-#: ../controllers/login.py:303 ../controllers/login.py:305
-#: ../controllers/login.py:308 ../controllers/login.py:310
-#: ../controllers/login.py:318 ../controllers/login.py:324
-#: ../controllers/pastebin.py:157 ../controllers/pastebin.py:164
-#: ../controllers/pastebin.py:349
-msgid "Error"
-msgstr "Fout"
-
-#: ../controllers/login.py:207 ../controllers/login.py:283
-msgid "invalid HTTP method"
-msgstr "Ongeldige HTTP-methode"
-
-#: ../controllers/login.py:210 ../controllers/login.py:287
-msgid "not logged in"
-msgstr "Niet ingelogd"
-
-#: ../controllers/login.py:215
-#, fuzzy
-msgid "wrong POST"
-msgstr "Fout: foutieve POST"
-
-#: ../controllers/login.py:219
-#, fuzzy
-msgid "invalid old e-mail"
-msgstr "Fout: ongeldig (oud) emailadres"
-
-#: ../controllers/login.py:224
-#, fuzzy
-msgid "you changed nothing"
-msgstr "Fout: u heeft niets gewijzigd"
-
-#: ../controllers/login.py:227
-#, fuzzy
-msgid "empty fields"
-msgstr "Fout: lege velden"
-
-#: ../controllers/login.py:229
-#, fuzzy
-msgid "e-mails do not match"
-msgstr "Fout: emailadressen komen niet overeen"
-
-#: ../controllers/login.py:231
-#, fuzzy
-msgid "invalid parameters"
-msgstr "Fout: ongeldige parameters"
-
-#: ../controllers/login.py:235
-#, fuzzy
-msgid "invalid e-mail (1)"
-msgstr "Fout: ongeldig emailadres (1)"
-
-#: ../controllers/login.py:238
-#, fuzzy
-msgid "invalid e-mail (2)"
-msgstr "Fout: ongeldig emailadres (2)"
-
-#: ../controllers/login.py:255 ../controllers/login.py:341
-msgid "Success"
-msgstr "Succes"
-
-#: ../controllers/login.py:255 ../controllers/login.py:341
-#, fuzzy
-msgid "you must activate your change. You have mail"
-msgstr "U dient uw wijziging te activeren"
-
-#: ../controllers/login.py:277
-msgid "Sabayon Linux Community E-mail Update Activation"
-msgstr ""
-
-#: ../controllers/login.py:289
-#, fuzzy
-msgid "not logged in (username)"
-msgstr "Fout: niet ingelogd (gebruikersnaam)"
-
-#: ../controllers/login.py:294
-#, fuzzy
-msgid "where is the current password?"
-msgstr "Fout: waar is het huidige wachtwoord?"
-
-#: ../controllers/login.py:299
-#, fuzzy
-msgid "missing fields"
-msgstr "Fout: ontbrekende velden"
-
-#: ../controllers/login.py:301
-#, fuzzy
-msgid "new password fields do not match"
-msgstr "Fout: nieuwe wachtwoordvelden komen niet overeen"
-
-#: ../controllers/login.py:303
-#, fuzzy
-msgid "wtf are you trying to do?"
-msgstr "Fout: wat probeer jij in vredesnaam te doen?"
-
-#: ../controllers/login.py:305
-#, fuzzy
-msgid "old and new password match"
-msgstr "Fout: oud en nieuw wachtwoord zijn hetzelfde"
-
-#: ../controllers/login.py:308
-#, fuzzy
-msgid "password too short"
-msgstr ""
-"Fout: wachtwoord te kort. Wrijf enkele malen over wachtwoord en probeer "
-"opnieuw :p"
-
-#: ../controllers/login.py:310
-#, fuzzy
-msgid "password too long"
-msgstr "Fout: wachtwoord te lang"
-
-#: ../controllers/login.py:318
-#, fuzzy
-msgid "invalid current password"
-msgstr "Fout: ongeldig huidig wachtwoord"
-
-#: ../controllers/login.py:324
-#, fuzzy
-msgid "you do not have a valid e-mail"
-msgstr "Fout: u heeft geen geldig emailadres"
-
-#: ../controllers/login.py:363
-msgid "Sabayon Linux Community Password Update Activation"
-msgstr ""
-
-#: ../controllers/pastebin.py:74
-#, fuzzy
-msgid "Sabayon Linux Pastebin"
-msgstr "Sabayon Linux Four Oh!"
-
-#: ../controllers/pastebin.py:85
-msgid "Bastard info"
-msgstr "Klootzakinformatie >:)"
-
-#: ../controllers/pastebin.py:92
+#: ../controllers/pastebin.py:58
 msgid "Removed from db"
 msgstr "Verwijderd uit database"
 
-#: ../controllers/pastebin.py:99
+#: ../controllers/pastebin.py:65
 #, fuzzy
 msgid "remove file"
 msgstr "Bestandspad verwijderd"
 
-#: ../controllers/pastebin.py:114
+#: ../controllers/pastebin.py:80
 msgid "Nothing removed"
 msgstr "Niets verwijderd (ja, schrok je van hè!)"
 
-#: ../controllers/pastebin.py:128
-msgid "Invalid pastebin_id"
-msgstr "Ongeldige pastebin_id"
+#: ../controllers/pastebin.py:85 ../controllers/pastebin.py:91
+#: ../controllers/pastebin.py:259 ../templates/pastebin/interface.html:20
+msgid "Error"
+msgstr "Fout"
 
-# Context? [ReemZ]
-#: ../controllers/pastebin.py:135
-msgid "Db returned status"
-msgstr ""
-
-#: ../controllers/pastebin.py:138
-msgid "Permission denied"
-msgstr "Toegang geweigerd"
-
-#: ../controllers/pastebin.py:150 ../controllers/pastebin.py:357
-#: ../controllers/pastebin.py:399
-#, fuzzy
-msgid "Sabayon Linux PixPastebin"
-msgstr "Sabayon Linux Four Oh!"
-
-#: ../controllers/pastebin.py:157
+#: ../controllers/pastebin.py:85
 msgid "invalid method"
 msgstr "Ongeldige methode"
 
-#: ../controllers/pastebin.py:164
+#: ../controllers/pastebin.py:91
 #, fuzzy
 msgid "cannot get IP"
 msgstr "Fout: kan geen IP verkrijgen"
 
-#: ../controllers/pastebin.py:186
+#: ../controllers/pastebin.py:112
 msgid "Invalid pastebin_doctypes_id"
 msgstr "Ongeldige pastebin_doctypes_id"
 
-#: ../controllers/pastebin.py:197
-msgid "Invalid pastebin_syntax_id"
-msgstr "Ongeldige pastebin_syntax_id"
-
-#: ../controllers/pastebin.py:208 ../controllers/pastebin.py:217
-msgid "Invalid expiration_days"
-msgstr "Ongeldige expiration_days"
-
-#: ../controllers/pastebin.py:233
-msgid "Permission denied, you need to be logged in to paste this"
-msgstr ""
-"Toegang geweigerd, u moet ingelogd zijn om gebruik te maken van de paste-"
-"functie"
-
-#: ../controllers/pastebin.py:239
+#: ../controllers/pastebin.py:150
 msgid "Empty buffer/content"
 msgstr "Lege buffer/inhoud"
 
-#: ../controllers/pastebin.py:242
+#: ../controllers/pastebin.py:153
 msgid "Too much text dude, are you crazy?"
 msgstr "Veel te veel tekst man, spoor jij wel?"
 
-#: ../controllers/pastebin.py:249
+#: ../controllers/pastebin.py:160
 msgid "No stream detected"
 msgstr "Geen stream gedetecteerd"
 
-#: ../controllers/pastebin.py:257
+#: ../controllers/pastebin.py:168
 msgid "Filename cannot contain non-ASCII characters"
 msgstr "Bestandsnaam mag geen non-ASCII karakters bevatten"
 
-#: ../controllers/pastebin.py:289
+#: ../controllers/pastebin.py:199
 msgid "You tried to upload a virus, error will be reported, you are fucked"
 msgstr ""
 "Je hebt geprobeerd een virus te uploaden, dit is al gemeld, je bent zwaar de "
 "lul."
 
-#: ../controllers/pastebin.py:296
+#: ../controllers/pastebin.py:206
 msgid "File size too big."
 msgstr "Bestand te groot"
 
-#: ../controllers/pastebin.py:302
+#: ../controllers/pastebin.py:212
 msgid "Not supported image type"
 msgstr "Niet-ondersteund beeldtype"
 
-#: ../templates/activation_successful.html:18
-#: ../templates/email_activation_successful.html:18
-#: ../templates/password_activation_successful.html:18
-msgid "Activation successful"
-msgstr "Activatie succesvol"
+#: ../templates/pastebin/interface.html:44
+msgid "Submit a correction or amendment below."
+msgstr ""
 
-#: ../templates/activation_successful.html:18
-msgid "Wow, thanks a lot! Now you can really start enjoying our Community"
-msgstr "OK dan, bedankt! Nu kun je volop gebruik maken van onze Community"
-
-#: ../templates/activation_successful.html:20
-#: ../templates/email_activation_successful.html:20
-#: ../templates/password_activation_successful.html:20
-msgid "Sorry"
-msgstr "Sorry"
-
-#: ../templates/activation_successful.html:20
-#: ../templates/email_activation_successful.html:20
-#: ../templates/password_activation_successful.html:20
-msgid "There is no activation information available"
-msgstr "Geen activatie-informatie beschikbaar"
-
-#: ../templates/body_left.html:11
-msgid "Distribution news"
-msgstr "Distributienieuws"
-
-#: ../templates/body_left.html:42
-msgid "Forum activity"
-msgstr "Forumactiviteit"
-
-#: ../templates/body_left.html:81
-msgid "Planet activity"
-msgstr "Planetactiviteit"
-
-#: ../templates/body_left.html:116
+#: ../templates/pastebin/latest.html:12
 #, fuzzy
-msgid "Code activity"
-msgstr "Programmeeractiviteit"
+msgid "User"
+msgstr "Gebruikers"
 
-#: ../templates/body_left.html:135
-msgid "Overlay activity"
-msgstr "Overlay-activiteit"
+#: ../templates/pastebin/latest.html:14
+msgid "created on"
+msgstr ""
 
-#: ../templates/body_right.html:8
-msgid "Sponsors"
-msgstr "Sponsors"
-
-#: ../templates/body_right.html:11
+#: ../templates/pastebin/latest.html:14
+#: ../templates/pastebin/show_pastie_header.html:6
 #, fuzzy
-msgid ""
-"Officially Sponsored by the <b>NLnet Foundation</b>, that financially "
-"supported the Entropy Project"
-msgstr ""
-"Officieel gesponsord door de <b>NLnet Foundation</b>, financieel supporter "
-"van ons Entropy Project"
+msgid "expires in"
+msgstr "Verloopt na"
 
-#: ../templates/body_right.html:11
-#, fuzzy
-msgid "See NLnet development plan status"
-msgstr "Zie NLnet ontwikkelplan-status"
-
-#: ../templates/body_right.html:15 ../templates/body_right.html:19
-#: ../templates/body_right.html:23
-msgid "Officially Sponsored by"
-msgstr "Officieel gesponsord door"
-
-#: ../templates/body_right.html:15
-msgid "University of Brescia"
-msgstr "de Universiteit van Brescia"
-
-#: ../templates/body_right.html:15
-msgid ""
-"Housing our Entropy build server inside the Faculty Network Center at the "
-"Department of Electronics"
-msgstr ""
-"Huisvesting van onze Entropy build server, binnen het "
-"faculteitsnetwerkcentrum van de Afdeling Electronica"
-
-#: ../templates/body_right.html:19
-#, fuzzy
-msgid "University of Milano-Bicocca"
-msgstr "de Universiteit van Brescia"
-
-#: ../templates/body_right.html:19
-msgid "Housing our Entropy build servers and WWW inside DISCo"
+#: ../templates/pastebin/latest.html:14
+#: ../templates/pastebin/show_pastie_header.html:6
+msgid "days"
 msgstr ""
 
-# 'Proving' should be 'Providing', I think?
-# Translation based on above assumption.
-#  [ReemZ]
-#: ../templates/body_right.html:23
-#, fuzzy
-msgid "Proving the software technology we daily need"
-msgstr ""
-"Voor het beschikbaar stellen van de softwaretechnologie die wij dagelijks "
-"nodig hebben"
-
-#: ../templates/body_right.html:28
-msgid "Survey"
-msgstr "Onderzoek"
-
-#: ../templates/body_right.html:40
-msgid "Cross Linux From Scratch"
-msgstr ""
-
-#: ../templates/body_right.html:41
-msgid "Ibiblio.org Hosting"
-msgstr ""
-
-#: ../templates/email_activation_successful.html:18
-msgid "Your E-mail is now active"
-msgstr "Uw emailadres is nu actief"
-
-#: ../templates/footer.html:7
-msgid "Trademarks are property of their respective owners."
-msgstr "Handelsmerken zijn eigendom van hun respectievelijke eigenaars"
-
-#: ../templates/head.html:7
-#, fuzzy
-msgid "Sabayon Linux Five Oh!"
-msgstr "Sabayon Linux Four Oh!"
-
-#: ../templates/loginbox_inner.html:4
-msgid "Entropy Web Dashboard Login"
-msgstr "Entropy Web Dashboard Login"
-
-#: ../templates/loginbox_inner.html:11 ../templates/login.html:18
-msgid "New user?"
-msgstr "Nieuwe gebruiker?"
-
-#: ../templates/loginbox_inner.html:11
-msgid "What is all this ?"
-msgstr "Wat is dit allemaal?"
-
-#: ../templates/loginbox_inner.html:24 ../templates/login.html:23
-msgid "Login error"
-msgstr "Loginfout"
-
-#: ../templates/loginbox_inner.html:27 ../templates/loginbox_inner.html:89
-msgid "Comments"
-msgstr "Commentaar"
-
-#: ../templates/loginbox_inner.html:27 ../templates/loginbox_inner.html:89
-msgid "Docs"
-msgstr "Docs"
-
-#: ../templates/loginbox_inner.html:29 ../templates/loginbox_inner.html:91
-msgid "Votes"
-msgstr "Stemmen"
-
-#: ../templates/loginbox_inner.html:29 ../templates/loginbox_inner.html:91
-msgid "Downloads"
-msgstr "Downloads"
-
-#: ../templates/loginbox_inner.html:43
-#, c-format
-msgid "Hello <b>%s</b>, %s"
-msgstr ""
-
-#: ../templates/loginbox_inner.html:43
-msgid "Logout ?"
-msgstr "Uitloggen?"
-
-#: ../templates/loginbox_inner.html:49
-msgid "My Entropy"
-msgstr "Mijn Entropy"
-
-#: ../templates/loginbox_inner.html:52
-msgid "My User Generated Content"
-msgstr "Mijn User Generated Content"
-
-#: ../templates/loginbox_inner.html:55
-msgid "My Statistics"
-msgstr "Mijn Statistieken"
-
-#: ../templates/loginbox_inner.html:60
-msgid "My Sabayon"
-msgstr "Mijn Sabayon"
-
-#: ../templates/loginbox_inner.html:63
-msgid "My Dashboard"
-msgstr "Mijn Dashboard"
-
-#: ../templates/loginbox_inner.html:66
-msgid "My Pastebin"
-msgstr "Mijn Pastebin"
-
-#: ../templates/loginbox_inner.html:79
-msgid "points"
-msgstr "punten"
-
-#: ../templates/loginbox_inner.html:83
-msgid "My Comments"
-msgstr "Mijn commentaar"
-
-#: ../templates/loginbox_inner.html:83
-msgid "My Docs"
-msgstr "Mijn documenten"
-
-#: ../templates/loginbox_inner.html:84
-msgid "My Votes"
-msgstr "Mijn stemmen"
-
-# Not sure...Avg == average ??
-# Translation based on this assumption
-# [ReemZ]
-#: ../templates/loginbox_inner.html:84
-#, fuzzy
-msgid "My Avg"
-msgstr "Mijn Gem."
-
-#: ../templates/page_error.html:29
-msgid "Houston, we've got a problem!"
-msgstr "Schiphol? Hallo Schiphol? We hebben 'n probleempje..."
-
-#: ../templates/page_error.html:32
-#, c-format
-msgid ""
-"Probably the page you are looking for <b>does not exist</b> anymore. You can "
-"blame <u>aliens</u>. Well, we are really sorry. Why don't you get to our <a "
-"href=\"%s\">home page</a>?"
-msgstr ""
-
-#: ../templates/password_activation_successful.html:18
-msgid "Your Password is now updated"
-msgstr "Uw wachtwoord is ge-update"
-
-#: ../templates/password_activation_successful.html:22
-msgid "confirmation code"
-msgstr "Bevestigingscode"
-
-#: ../templates/password_activation_successful.html:23
-msgid "validation id"
-msgstr "Validatie-id"
-
-#: ../templates/password_activation_successful.html:24
-msgid "user id"
-msgstr "gebruikers-id"
-
-# ?? [ReemZ]
-#: ../templates/register.html:22
-msgid "(Sabayon leader)"
-msgstr ""
-
-#: ../templates/register.html:27
-msgid ""
-"<b>You may ask</b>. What do we offer in change? <b>We answer</b>, your own "
-"<b>Blog</b> on this Portal, your personal <b>\"Pastebin\"</b> and file "
-"upload service called <b>\"Pixdiff\"</b>, a <b>warm Community</b> that will "
-"always help you out, the ability to <b>vote</b> and <b>interact</b> with "
-"what we offer and with other people inside this space. We are just used to "
-"call all this with one name: <b>Sabayon</b>, <i>the \"2.0\" (two-point-oh) "
-"distribution</i>"
-msgstr ""
-"<b>U vraagt zich wellicht af:</b> wat bieden wij in ruil? <b>Wij antwoorden:"
-"</b> uw eigen <b>Blog</b> op dit Portal, uw persoonlijke <b>\"Pastebin\"</b> "
-"and File Upload Service <b>\"Pixdiff\"</b>, een <b>warmhartige Community</b> "
-"die u altijd zal helpen, <b>stemrecht</b> en <b>interactie</b> met wat wij "
-"bieden en met andere mensen in de community. We zijn gewoon dit alles onder "
-"één naam te vatten: <b>Sabayon</b>, <i>de \"2.0\" (two-point-oh) "
-"distributie</i>"
-
-#: ../templates/register.html:30
-msgid ""
-"Please note that you will need to enter a valid e-mail address before your "
-"account is activated. You will receive an e-mail at the address you provide "
-"that contains an account activation link"
-msgstr ""
-"Denk eraan een geldig emailadres in te voeren alvorens uw account "
-"geactiveerd wordt. U zult op dit adres een email ontvangen met daarin een "
-"activatielink"
-
-#: ../templates/registration_form.html:7
-msgid "Username"
-msgstr "Gebruikersnaam"
-
-#: ../templates/registration_form.html:9
-msgid "Length must be between 3 and 20 characters"
-msgstr "Lengte moet 3 tot 20 karakters zijn"
-
-#: ../templates/registration_form.html:17
-msgid "E-mail address"
-msgstr "Emailadres"
-
-#: ../templates/registration_form.html:25
-msgid "Confirm e-mail address"
-msgstr "Bevestig emailadres"
-
-#: ../templates/registration_form.html:33
-msgid "Password"
-msgstr "Wachtwoord"
-
-#: ../templates/registration_form.html:34
-msgid "Must be between 6 and 30 characters"
-msgstr "Moet 6 tot 30 karakters zijn"
-
-#: ../templates/registration_form.html:42
-msgid "Confirm password"
-msgstr "Bevestig wachtwoord"
-
-#: ../templates/registration_form.html:68
-msgid "Registration Agreement"
-msgstr "Overeenkomst van Registratie"
-
-#: ../templates/registration_form.html:73
-msgid "I agree with the terms above"
-msgstr "I ga AKKOORD met hierbovengenoemde voorwaarden"
-
-#: ../templates/registration_successful.html:2
-msgid "Registration successful"
-msgstr "Registratie succesvol"
-
-#: ../templates/registration_successful.html:2
-msgid "Wow, thanks a lot!"
-msgstr "OK dan, bedankt!"
-
-# I'm not sure what you're trying to say here, so I'm not sure how to actually translate this =) [ReemZ]
-#: ../templates/registration_successful.html:4
-msgid ""
-"You should have waited the activation e-mail but the one you provided has "
-"not been accepted for delivery"
-msgstr ""
-
-#: ../templates/registration_successful.html:5
-#, fuzzy
-msgid ""
-"Please contact <a href=\"mailto:mail.issues@sabayon.org\">our service</a> "
-"and ask for help"
-msgstr ""
-"Neemt u contact op met <a href=\"mailto:mail.issues@sabayonlinux.org\">onze "
-"storingsdienst</a> en vraag om hulp"
-
-#: ../templates/registration_successful.html:7
-msgid ""
-"Now you need to wait and read the activation e-mail before being able to "
-"login"
-msgstr ""
-"Nu dient u te wachten en de activatie-email te lezen, voor u kunt inloggen"
-
-#: ../templates/registration_successful.html:10
-#, fuzzy, c-format
-msgid "<a href='%s'>Click here</a> to come back to the source page"
-msgstr "Klik hier</a> om terug te gaan naar de bronpagina"
-
-#: ../templates/pastebin/pastebin_disclaimer.html:2
-msgid "Read carefully"
-msgstr "Lees dit goed"
-
-#: ../templates/pastebin/pastebin_disclaimer.html:2
-msgid ""
-"do not paste sensitive data, it is not protected, this means that other "
-"people can read it. Use this tool only for exchanging stuff in public "
-"virtual places such as IRC, Forums and so forth. Your data will be removed "
-"once expired, we cannot guarantee the storage of the content here. Your IP "
-"is logged and you are invited to respect any existing law. No spamming, No "
-"porn, nothing! Allright?"
-msgstr ""
-"geef géén gevoelige gegevens in! Het is niet beveiligd, ofwel: anderen "
-"kunnen meelezen. Gebruik deze tool alleen om publiekelijk toegankelijk "
-"materiaal te plaatsen, zoals IRC-quotes, forumposts en dergelijke. Eenmaal "
-"verlopen worden uw gegevens verwijderd, wij kunnen de opslag niet "
-"garanderen. Uw IP-adres is gelogd en u wordt vriendelijk verzocht enige "
-"bestaande wet te respecteren. Geen gespam, geen porno, geen flauwekul. "
-"Gesnopen?"
-
-#: ../templates/pastebin/pastebin_latest_pasties.html:7
-msgid "Latest Pasties"
-msgstr "Meest recente pasties"
-
-#: ../templates/pastebin/pastebin_latest_pasties.html:10
-#: ../templates/pastebin/remove_pastie.html:28
-msgid "PixPastebin Home"
-msgstr "PixPastebin Home"
-
-#: ../templates/pastebin/pastebin_latest_pasties.html:25
-#: ../templates/pastebin/pastebin_latest_pasties.html:47
+#: ../templates/pastebin/pastebin_latest_pasties.html:23
 msgid "No Pasties"
 msgstr "Geen pasties"
-
-#: ../templates/pastebin/pastebin_latest_pasties.html:32
-msgid "My Latest"
-msgstr "Mijn meest recente"
 
 #: ../templates/pastebin/pastebin_submit_body.html:19
 msgid ""
@@ -679,63 +120,41 @@ msgstr "Belangrijk!"
 msgid "you cannot send viruses, they are destroyed automatically"
 msgstr "u kunt geen virussen versturen, deze worden automatisch vernietigd"
 
-#: ../templates/pastebin/pastebin_submit_footer.html:3
-msgid "Expiration"
-msgstr "Verloopt na"
-
 #: ../templates/pastebin/pastebin_submit_footer.html:4
-msgid "One day"
-msgstr "een dag"
-
-#: ../templates/pastebin/pastebin_submit_footer.html:5
-msgid "One month"
-msgstr "een maand"
-
-#: ../templates/pastebin/pastebin_submit_footer.html:6
-msgid "One year"
-msgstr "een jaar"
-
-#: ../templates/pastebin/pastebin_submit_footer.html:9
-#, fuzzy, c-format
-msgid "as <b>%s</b> and permissions:"
-msgstr "en is toegankelijk voor"
-
-#: ../templates/pastebin/pastebin_submit_footer.html:42
-msgid "Wrong CAPTCHA !!! Take this, stupid spammer!"
-msgstr "Foutieve CAPTCHA!!! In je smoel, spammer!!"
-
-#: ../templates/pastebin/pastebin_submit_header.html:4
 msgid "Document type"
 msgstr "Documenttype"
 
-#: ../templates/pastebin/remove_pastie.html:21
-msgid "Ok fine, pastie removed"
-msgstr "OK, pastie verwijderd"
+#: ../templates/pastebin/pastebin_submit_footer.html:25
+msgid "Syntax highlighting"
+msgstr ""
 
-#: ../templates/pastebin/remove_pastie.html:23
-msgid "Message"
-msgstr "Bericht"
+#: ../templates/pastebin/pastebin_submit_footer.html:43
+msgid "Expiration"
+msgstr "Verloopt na"
 
-#: ../templates/pastebin/show_pastie_file.html:5
+#: ../templates/pastebin/pastebin_submit_footer.html:47
+msgid "One day"
+msgstr "een dag"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:48
+msgid "One month"
+msgstr "een maand"
+
+#: ../templates/pastebin/pastebin_submit_footer.html:49
+msgid "One year"
+msgstr "een jaar"
+
+#: ../templates/pastebin/show_pastie_file.html:14
 #, fuzzy, c-format
 msgid "All the uploaded files are checked by %s"
 msgstr "Alle ge-uploade bestanden worden gecontroleerd door"
-
-#: ../templates/pastebin/show_pastie_header.html:6
-#, fuzzy
-msgid "expires in"
-msgstr "Verloopt na"
-
-#: ../templates/pastebin/show_pastie_header.html:6
-msgid "days"
-msgstr ""
 
 # Context? [ReemZ]
 #: ../templates/pastebin/show_pastie_header.html:6
 msgid "by"
 msgstr ""
 
-#: ../templates/pastebin/show_pastie_image.html:16
+#: ../templates/pastebin/show_pastie_image.html:17
 msgid "An image should pop up above this text"
 msgstr "Een beeldbestand zou boven deze tekst moeten verschijnen"
 
@@ -768,17 +187,433 @@ msgstr "Tijdens het pasten van uw gegevens is een fout opgetreden"
 msgid "Get back?"
 msgstr "Terug?"
 
-#: ../templates/pastebin/show_pastie_tools.html:2
-msgid "Make a fresh post"
-msgstr "Maak een nieuwe pastie aan"
-
-#: ../templates/pastebin/show_pastie_tools.html:4
+#: ../templates/pastebin/show_pastie_tools.html:3
 msgid "edit this"
 msgstr "pas deze aan"
 
-#: ../templates/pastebin/show_pastie_tools.html:8
-msgid "delete this"
-msgstr "verwijder deze"
+#, fuzzy
+#~ msgid "Sabayon Linux Community activation"
+#~ msgstr "Sabayon Linux Support Chat"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Community registration"
+#~ msgstr "Wolfden, Sabayon Linux Chief Community Officer"
+
+#~ msgid "Invalid Username"
+#~ msgstr "Ongeldige gebruikersnaam"
+
+#~ msgid "Invalid Email, empty fields or mismatch"
+#~ msgstr "Ongeldig emailadres, lege velden of geen overeenkomst"
+
+#~ msgid "Invalid Password, empty fields or mismatch or wrong length"
+#~ msgstr ""
+#~ "Ongeldig emailadres, lege velden, geen overeenkomst of onjuiste lengte"
+
+#~ msgid "Invalid Captcha Answer"
+#~ msgstr "Ongeldig Captcha-antwoord"
+
+#~ msgid "Invalid"
+#~ msgstr "Ongeldig"
+
+#~ msgid "invalid HTTP method"
+#~ msgstr "Ongeldige HTTP-methode"
+
+#~ msgid "not logged in"
+#~ msgstr "Niet ingelogd"
+
+#, fuzzy
+#~ msgid "wrong POST"
+#~ msgstr "Fout: foutieve POST"
+
+#, fuzzy
+#~ msgid "invalid old e-mail"
+#~ msgstr "Fout: ongeldig (oud) emailadres"
+
+#, fuzzy
+#~ msgid "you changed nothing"
+#~ msgstr "Fout: u heeft niets gewijzigd"
+
+#, fuzzy
+#~ msgid "empty fields"
+#~ msgstr "Fout: lege velden"
+
+#, fuzzy
+#~ msgid "e-mails do not match"
+#~ msgstr "Fout: emailadressen komen niet overeen"
+
+#, fuzzy
+#~ msgid "invalid parameters"
+#~ msgstr "Fout: ongeldige parameters"
+
+#, fuzzy
+#~ msgid "invalid e-mail (1)"
+#~ msgstr "Fout: ongeldig emailadres (1)"
+
+#, fuzzy
+#~ msgid "invalid e-mail (2)"
+#~ msgstr "Fout: ongeldig emailadres (2)"
+
+#~ msgid "Success"
+#~ msgstr "Succes"
+
+#, fuzzy
+#~ msgid "you must activate your change. You have mail"
+#~ msgstr "U dient uw wijziging te activeren"
+
+#, fuzzy
+#~ msgid "not logged in (username)"
+#~ msgstr "Fout: niet ingelogd (gebruikersnaam)"
+
+#, fuzzy
+#~ msgid "where is the current password?"
+#~ msgstr "Fout: waar is het huidige wachtwoord?"
+
+#, fuzzy
+#~ msgid "missing fields"
+#~ msgstr "Fout: ontbrekende velden"
+
+#, fuzzy
+#~ msgid "new password fields do not match"
+#~ msgstr "Fout: nieuwe wachtwoordvelden komen niet overeen"
+
+#, fuzzy
+#~ msgid "wtf are you trying to do?"
+#~ msgstr "Fout: wat probeer jij in vredesnaam te doen?"
+
+#, fuzzy
+#~ msgid "old and new password match"
+#~ msgstr "Fout: oud en nieuw wachtwoord zijn hetzelfde"
+
+#, fuzzy
+#~ msgid "password too short"
+#~ msgstr ""
+#~ "Fout: wachtwoord te kort. Wrijf enkele malen over wachtwoord en probeer "
+#~ "opnieuw :p"
+
+#, fuzzy
+#~ msgid "password too long"
+#~ msgstr "Fout: wachtwoord te lang"
+
+#, fuzzy
+#~ msgid "invalid current password"
+#~ msgstr "Fout: ongeldig huidig wachtwoord"
+
+#, fuzzy
+#~ msgid "you do not have a valid e-mail"
+#~ msgstr "Fout: u heeft geen geldig emailadres"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Pastebin"
+#~ msgstr "Sabayon Linux Four Oh!"
+
+#~ msgid "Bastard info"
+#~ msgstr "Klootzakinformatie >:)"
+
+#~ msgid "Invalid pastebin_id"
+#~ msgstr "Ongeldige pastebin_id"
+
+#~ msgid "Permission denied"
+#~ msgstr "Toegang geweigerd"
+
+#, fuzzy
+#~ msgid "Sabayon Linux PixPastebin"
+#~ msgstr "Sabayon Linux Four Oh!"
+
+#~ msgid "Invalid pastebin_syntax_id"
+#~ msgstr "Ongeldige pastebin_syntax_id"
+
+#~ msgid "Invalid expiration_days"
+#~ msgstr "Ongeldige expiration_days"
+
+#~ msgid "Permission denied, you need to be logged in to paste this"
+#~ msgstr ""
+#~ "Toegang geweigerd, u moet ingelogd zijn om gebruik te maken van de paste-"
+#~ "functie"
+
+#~ msgid "Activation successful"
+#~ msgstr "Activatie succesvol"
+
+#~ msgid "Wow, thanks a lot! Now you can really start enjoying our Community"
+#~ msgstr "OK dan, bedankt! Nu kun je volop gebruik maken van onze Community"
+
+#~ msgid "Sorry"
+#~ msgstr "Sorry"
+
+#~ msgid "There is no activation information available"
+#~ msgstr "Geen activatie-informatie beschikbaar"
+
+#~ msgid "Distribution news"
+#~ msgstr "Distributienieuws"
+
+#~ msgid "Forum activity"
+#~ msgstr "Forumactiviteit"
+
+#~ msgid "Planet activity"
+#~ msgstr "Planetactiviteit"
+
+#, fuzzy
+#~ msgid "Code activity"
+#~ msgstr "Programmeeractiviteit"
+
+#~ msgid "Overlay activity"
+#~ msgstr "Overlay-activiteit"
+
+#~ msgid "Sponsors"
+#~ msgstr "Sponsors"
+
+#, fuzzy
+#~ msgid ""
+#~ "Officially Sponsored by the <b>NLnet Foundation</b>, that financially "
+#~ "supported the Entropy Project"
+#~ msgstr ""
+#~ "Officieel gesponsord door de <b>NLnet Foundation</b>, financieel "
+#~ "supporter van ons Entropy Project"
+
+#, fuzzy
+#~ msgid "See NLnet development plan status"
+#~ msgstr "Zie NLnet ontwikkelplan-status"
+
+#~ msgid "Officially Sponsored by"
+#~ msgstr "Officieel gesponsord door"
+
+#~ msgid "University of Brescia"
+#~ msgstr "de Universiteit van Brescia"
+
+#~ msgid ""
+#~ "Housing our Entropy build server inside the Faculty Network Center at the "
+#~ "Department of Electronics"
+#~ msgstr ""
+#~ "Huisvesting van onze Entropy build server, binnen het "
+#~ "faculteitsnetwerkcentrum van de Afdeling Electronica"
+
+#, fuzzy
+#~ msgid "University of Milano-Bicocca"
+#~ msgstr "de Universiteit van Brescia"
+
+# 'Proving' should be 'Providing', I think?
+# Translation based on above assumption.
+#  [ReemZ]
+#, fuzzy
+#~ msgid "Proving the software technology we daily need"
+#~ msgstr ""
+#~ "Voor het beschikbaar stellen van de softwaretechnologie die wij dagelijks "
+#~ "nodig hebben"
+
+#~ msgid "Survey"
+#~ msgstr "Onderzoek"
+
+#~ msgid "Your E-mail is now active"
+#~ msgstr "Uw emailadres is nu actief"
+
+#~ msgid "Trademarks are property of their respective owners."
+#~ msgstr "Handelsmerken zijn eigendom van hun respectievelijke eigenaars"
+
+#, fuzzy
+#~ msgid "Sabayon Linux Five Oh!"
+#~ msgstr "Sabayon Linux Four Oh!"
+
+#~ msgid "Entropy Web Dashboard Login"
+#~ msgstr "Entropy Web Dashboard Login"
+
+#~ msgid "New user?"
+#~ msgstr "Nieuwe gebruiker?"
+
+#~ msgid "What is all this ?"
+#~ msgstr "Wat is dit allemaal?"
+
+#~ msgid "Login error"
+#~ msgstr "Loginfout"
+
+#~ msgid "Comments"
+#~ msgstr "Commentaar"
+
+#~ msgid "Docs"
+#~ msgstr "Docs"
+
+#~ msgid "Votes"
+#~ msgstr "Stemmen"
+
+#~ msgid "Downloads"
+#~ msgstr "Downloads"
+
+#~ msgid "Logout ?"
+#~ msgstr "Uitloggen?"
+
+#~ msgid "My Entropy"
+#~ msgstr "Mijn Entropy"
+
+#~ msgid "My User Generated Content"
+#~ msgstr "Mijn User Generated Content"
+
+#~ msgid "My Statistics"
+#~ msgstr "Mijn Statistieken"
+
+#~ msgid "My Sabayon"
+#~ msgstr "Mijn Sabayon"
+
+#~ msgid "My Dashboard"
+#~ msgstr "Mijn Dashboard"
+
+#~ msgid "My Pastebin"
+#~ msgstr "Mijn Pastebin"
+
+#~ msgid "points"
+#~ msgstr "punten"
+
+#~ msgid "My Comments"
+#~ msgstr "Mijn commentaar"
+
+#~ msgid "My Docs"
+#~ msgstr "Mijn documenten"
+
+#~ msgid "My Votes"
+#~ msgstr "Mijn stemmen"
+
+# Not sure...Avg == average ??
+# Translation based on this assumption
+# [ReemZ]
+#, fuzzy
+#~ msgid "My Avg"
+#~ msgstr "Mijn Gem."
+
+#~ msgid "Houston, we've got a problem!"
+#~ msgstr "Schiphol? Hallo Schiphol? We hebben 'n probleempje..."
+
+#~ msgid "Your Password is now updated"
+#~ msgstr "Uw wachtwoord is ge-update"
+
+#~ msgid "confirmation code"
+#~ msgstr "Bevestigingscode"
+
+#~ msgid "validation id"
+#~ msgstr "Validatie-id"
+
+#~ msgid "user id"
+#~ msgstr "gebruikers-id"
+
+#~ msgid ""
+#~ "<b>You may ask</b>. What do we offer in change? <b>We answer</b>, your "
+#~ "own <b>Blog</b> on this Portal, your personal <b>\"Pastebin\"</b> and "
+#~ "file upload service called <b>\"Pixdiff\"</b>, a <b>warm Community</b> "
+#~ "that will always help you out, the ability to <b>vote</b> and "
+#~ "<b>interact</b> with what we offer and with other people inside this "
+#~ "space. We are just used to call all this with one name: <b>Sabayon</b>, "
+#~ "<i>the \"2.0\" (two-point-oh) distribution</i>"
+#~ msgstr ""
+#~ "<b>U vraagt zich wellicht af:</b> wat bieden wij in ruil? <b>Wij "
+#~ "antwoorden:</b> uw eigen <b>Blog</b> op dit Portal, uw persoonlijke <b>"
+#~ "\"Pastebin\"</b> and File Upload Service <b>\"Pixdiff\"</b>, een "
+#~ "<b>warmhartige Community</b> die u altijd zal helpen, <b>stemrecht</b> en "
+#~ "<b>interactie</b> met wat wij bieden en met andere mensen in de "
+#~ "community. We zijn gewoon dit alles onder één naam te vatten: <b>Sabayon</"
+#~ "b>, <i>de \"2.0\" (two-point-oh) distributie</i>"
+
+#~ msgid ""
+#~ "Please note that you will need to enter a valid e-mail address before "
+#~ "your account is activated. You will receive an e-mail at the address you "
+#~ "provide that contains an account activation link"
+#~ msgstr ""
+#~ "Denk eraan een geldig emailadres in te voeren alvorens uw account "
+#~ "geactiveerd wordt. U zult op dit adres een email ontvangen met daarin een "
+#~ "activatielink"
+
+#~ msgid "Username"
+#~ msgstr "Gebruikersnaam"
+
+#~ msgid "Length must be between 3 and 20 characters"
+#~ msgstr "Lengte moet 3 tot 20 karakters zijn"
+
+#~ msgid "E-mail address"
+#~ msgstr "Emailadres"
+
+#~ msgid "Confirm e-mail address"
+#~ msgstr "Bevestig emailadres"
+
+#~ msgid "Password"
+#~ msgstr "Wachtwoord"
+
+#~ msgid "Must be between 6 and 30 characters"
+#~ msgstr "Moet 6 tot 30 karakters zijn"
+
+#~ msgid "Confirm password"
+#~ msgstr "Bevestig wachtwoord"
+
+#~ msgid "Registration Agreement"
+#~ msgstr "Overeenkomst van Registratie"
+
+#~ msgid "I agree with the terms above"
+#~ msgstr "I ga AKKOORD met hierbovengenoemde voorwaarden"
+
+#~ msgid "Registration successful"
+#~ msgstr "Registratie succesvol"
+
+#~ msgid "Wow, thanks a lot!"
+#~ msgstr "OK dan, bedankt!"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please contact <a href=\"mailto:mail.issues@sabayon.org\">our service</a> "
+#~ "and ask for help"
+#~ msgstr ""
+#~ "Neemt u contact op met <a href=\"mailto:mail.issues@sabayonlinux.org"
+#~ "\">onze storingsdienst</a> en vraag om hulp"
+
+#~ msgid ""
+#~ "Now you need to wait and read the activation e-mail before being able to "
+#~ "login"
+#~ msgstr ""
+#~ "Nu dient u te wachten en de activatie-email te lezen, voor u kunt inloggen"
+
+#, fuzzy
+#~ msgid "<a href='%s'>Click here</a> to come back to the source page"
+#~ msgstr "Klik hier</a> om terug te gaan naar de bronpagina"
+
+#~ msgid "Read carefully"
+#~ msgstr "Lees dit goed"
+
+#~ msgid ""
+#~ "do not paste sensitive data, it is not protected, this means that other "
+#~ "people can read it. Use this tool only for exchanging stuff in public "
+#~ "virtual places such as IRC, Forums and so forth. Your data will be "
+#~ "removed once expired, we cannot guarantee the storage of the content "
+#~ "here. Your IP is logged and you are invited to respect any existing law. "
+#~ "No spamming, No porn, nothing! Allright?"
+#~ msgstr ""
+#~ "geef géén gevoelige gegevens in! Het is niet beveiligd, ofwel: anderen "
+#~ "kunnen meelezen. Gebruik deze tool alleen om publiekelijk toegankelijk "
+#~ "materiaal te plaatsen, zoals IRC-quotes, forumposts en dergelijke. "
+#~ "Eenmaal verlopen worden uw gegevens verwijderd, wij kunnen de opslag niet "
+#~ "garanderen. Uw IP-adres is gelogd en u wordt vriendelijk verzocht enige "
+#~ "bestaande wet te respecteren. Geen gespam, geen porno, geen flauwekul. "
+#~ "Gesnopen?"
+
+#~ msgid "Latest Pasties"
+#~ msgstr "Meest recente pasties"
+
+#~ msgid "PixPastebin Home"
+#~ msgstr "PixPastebin Home"
+
+#~ msgid "My Latest"
+#~ msgstr "Mijn meest recente"
+
+#, fuzzy
+#~ msgid "as <b>%s</b> and permissions:"
+#~ msgstr "en is toegankelijk voor"
+
+#~ msgid "Wrong CAPTCHA !!! Take this, stupid spammer!"
+#~ msgstr "Foutieve CAPTCHA!!! In je smoel, spammer!!"
+
+#~ msgid "Ok fine, pastie removed"
+#~ msgstr "OK, pastie verwijderd"
+
+#~ msgid "Message"
+#~ msgstr "Bericht"
+
+#~ msgid "Make a fresh post"
+#~ msgstr "Maak een nieuwe pastie aan"
+
+#~ msgid "delete this"
+#~ msgstr "verwijder deze"
 
 #~ msgid "Official Sabayon Linux Web Chat"
 #~ msgstr "Officiële Sabayon Linux Web Chat"
@@ -1763,9 +1598,6 @@ msgstr "verwijder deze"
 
 #~ msgid "Community Home"
 #~ msgstr "Community Home"
-
-#~ msgid "Users"
-#~ msgstr "Gebruikers"
 
 #~ msgid "Hall of fame"
 #~ msgstr "Hall of Fame"
