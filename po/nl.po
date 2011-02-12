@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-12 14:14+0100\n"
+"POT-Creation-Date: 2011-02-12 14:18+0100\n"
 "PO-Revision-Date: 2009-08-05 12:09+0100\n"
 "Last-Translator: Rémy Epke <testflacon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,6 +76,26 @@ msgstr "Bestand te groot"
 #: ../controllers/pastebin.py:212
 msgid "Not supported image type"
 msgstr "Niet-ondersteund beeldtype"
+
+#: ../templates/top_wrapper.html:19
+msgid "new"
+msgstr ""
+
+#: ../templates/top_wrapper.html:20
+#, fuzzy
+msgid "latest"
+msgstr "Mijn meest recente"
+
+#: ../templates/top_wrapper.html:21
+msgid "api"
+msgstr ""
+
+#: ../templates/top_wrapper.html:24
+msgid ""
+"<b>Your distro's Pastebin</b>, <i>paste whatever you want</i>.We do support "
+"<b>text</b>, <b>images</b>, <b>files</b> and won't bug you with "
+"<b>registration</b>."
+msgstr ""
 
 #: ../templates/pastebin/interface.html:44
 msgid "Submit a correction or amendment below."
@@ -592,9 +612,6 @@ msgstr "pas deze aan"
 
 #~ msgid "PixPastebin Home"
 #~ msgstr "PixPastebin Home"
-
-#~ msgid "My Latest"
-#~ msgstr "Mijn meest recente"
 
 #, fuzzy
 #~ msgid "as <b>%s</b> and permissions:"

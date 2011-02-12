@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-12 14:14+0100\n"
+"POT-Creation-Date: 2011-02-12 14:18+0100\n"
 "PO-Revision-Date: 2009-12-07 09:01+0100\n"
 "Last-Translator: Roger Calvó <rcalvoi@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -74,6 +74,26 @@ msgstr "La mida del fitxer és massa gran."
 #: ../controllers/pastebin.py:212
 msgid "Not supported image type"
 msgstr "no s'accepta el tipus d'imatge"
+
+#: ../templates/top_wrapper.html:19
+msgid "new"
+msgstr ""
+
+#: ../templates/top_wrapper.html:20
+#, fuzzy
+msgid "latest"
+msgstr "Els meus últims"
+
+#: ../templates/top_wrapper.html:21
+msgid "api"
+msgstr ""
+
+#: ../templates/top_wrapper.html:24
+msgid ""
+"<b>Your distro's Pastebin</b>, <i>paste whatever you want</i>.We do support "
+"<b>text</b>, <b>images</b>, <b>files</b> and won't bug you with "
+"<b>registration</b>."
+msgstr ""
 
 #: ../templates/pastebin/interface.html:44
 msgid "Submit a correction or amendment below."
@@ -591,9 +611,6 @@ msgstr "edita aquest"
 
 #~ msgid "PixPastebin Home"
 #~ msgstr "Inici de PixPastebin"
-
-#~ msgid "My Latest"
-#~ msgstr "Els meus últims"
 
 #~ msgid "as <b>%s</b> and permissions:"
 #~ msgstr "com <b>%s</b> i permisos:"

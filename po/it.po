@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spritz 0.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-12 14:14+0100\n"
-"PO-Revision-Date: 2011-02-12 14:15+0100\n"
+"POT-Creation-Date: 2011-02-12 14:18+0100\n"
+"PO-Revision-Date: 2011-02-12 14:19+0100\n"
 "Last-Translator: Fabio Erculiani <lxnay@sabayonlinux.org>\n"
 "Language-Team: Fabio Erculiani <lxnay@sabayonlinux.org>\n"
 "Language: \n"
@@ -76,6 +76,25 @@ msgstr "Dimensione file troppo grande."
 #: ../controllers/pastebin.py:212
 msgid "Not supported image type"
 msgstr "Tipo immagine non supportato"
+
+#: ../templates/top_wrapper.html:19
+msgid "new"
+msgstr "nuovo"
+
+#: ../templates/top_wrapper.html:20
+msgid "latest"
+msgstr "ultimi"
+
+#: ../templates/top_wrapper.html:21
+msgid "api"
+msgstr "api"
+
+#: ../templates/top_wrapper.html:24
+msgid ""
+"<b>Your distro's Pastebin</b>, <i>paste whatever you want</i>.We do support "
+"<b>text</b>, <b>images</b>, <b>files</b> and won't bug you with "
+"<b>registration</b>."
+msgstr ""
 
 #: ../templates/pastebin/interface.html:44
 msgid "Submit a correction or amendment below."
@@ -591,9 +610,6 @@ msgstr "modifica"
 
 #~ msgid "PixPastebin Home"
 #~ msgstr "PixPastebin Home"
-
-#~ msgid "My Latest"
-#~ msgstr "Miei Ultimi"
 
 #, fuzzy
 #~ msgid "as <b>%s</b> and permissions:"
