@@ -1,19 +1,21 @@
 ## -*- coding: utf-8 -*-
-<div id="sab_global_menu">
-    <div id="sab_global_menu_inner">
-        <ul>
-            <li><a accesskey="h" href="http://sabayon.org">Home</a></li>
-            <li><a accesskey="f" href="http://forum.sabayon.org">Forums</a></li>
-            <li><a accesskey="w" href="http://wiki.sabayon.org">Wiki</a></li>
-            <li><a accesskey="b" href="http://bugs.sabayon.org">Bugs</a></li>
-            <li><a accesskey="p" href="http://planet.sabayon.org">Blog</a></li>
+% if c.site_uri.find("pastebit.com") == -1:
+    <div id="sab_global_menu">
+        <div id="sab_global_menu_inner">
+            <ul>
+                <li><a accesskey="h" href="http://sabayon.org">Home</a></li>
+                <li><a accesskey="f" href="http://forum.sabayon.org">Forums</a></li>
+                <li><a accesskey="w" href="http://wiki.sabayon.org">Wiki</a></li>
+                <li><a accesskey="b" href="http://bugs.sabayon.org">Bugs</a></li>
+                <li><a accesskey="p" href="http://planet.sabayon.org">Blog</a></li>
 
-            <li><a accesskey="a" href="http://packages.sabayon.org">Packages</a></li>
-            <li><a accesskey="g" href="http://gitweb.sabayon.org">Git</a></li>
-            <li><a accesskey="d" href="http://sabayon.org/mirrors">Download</a></li>
-        </ul>
+                <li><a accesskey="a" href="http://packages.sabayon.org">Packages</a></li>
+                <li><a accesskey="g" href="http://gitweb.sabayon.org">Git</a></li>
+                <li><a accesskey="d" href="http://sabayon.org/mirrors">Download</a></li>
+            </ul>
+        </div>
     </div>
-</div>
+% endif
 <div id="pastebin-sub-menu">
     <div style="float: left;">
         <span class="pastebin-sub-menu-item"><a href="/">${_("new")}</a></span>
