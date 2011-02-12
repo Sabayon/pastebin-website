@@ -1,15 +1,17 @@
 ## -*- coding: utf-8 -*-
 
-<div id="footer_wrapper">
-    <div id="footer_inner" class="inside">
-        <%
-            path = '/home/sabayonlinux/public_html/include/footer_menu.html.inc'
-            with open(path + c.sourcefile, 'r') as f:
-                footer_data = f.read()
-        %>
-        ${footer_data}
+% if c.www_current_url.find("pastebit.com") == -1:
+    <div id="footer_wrapper">
+        <div id="footer_inner" class="inside">
+            <%
+                path = '/home/sabayonlinux/public_html/include/footer_menu.html.inc'
+                with open(path + c.sourcefile, 'r') as f:
+                    footer_data = f.read()
+            %>
+            ${footer_data}
+        </div>
     </div>
-</div>
+% endif
 <script type='text/javascript'>
 var dc_AdLinkColor = 'CA9CFF' ;
 var dc_PublisherID = 14525 ;
