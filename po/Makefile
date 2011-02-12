@@ -10,7 +10,7 @@ NLSPACKAGE = www
 CATALOGS = $(shell ls *.po)
 FMTCATALOGS = $(patsubst %.po,%.mo,$(CATALOGS))
 
-HTMLFILES =  $(wildcard ../templates/*.html) $(wildcard ../templates/packages/*.html) $(wildcard ../templates/donate/*.html) $(wildcard ../templates/polls/*.html) $(wildcard ../templates/community/*.html) $(wildcard ../templates/community/my/*.html) $(wildcard ../templates/community/users/*.html) $(wildcard ../templates/mirrors/*.html) $(wildcard ../templates/pastebin/*.html)
+HTMLFILES =  $(wildcard ../templates/*.html) $(wildcard ../templates/pastebin/*.html)
 PYFILES  = $(wildcard ../controllers/*.py)
 POTFILES  = $(PYFILES) $(HTMLFILES)
 
