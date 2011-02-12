@@ -52,12 +52,14 @@
     </div>
     % if c.recaptcha_html:
         <div class="pastebin-form-item">
-                <%
-                    wrong_captcha = ""
-                    if c.pastebin_wrong_captcha:
-                        wrong_captcha = " border: 4px dotted red;"
-                %>
-                <div class="pastebin-form-span" style="height: 140px;${wrong_captcha}">
+                % if c.pastebin_wrong_captcha:
+                    <style type="text/css">
+                        #recaptcha_table {
+                            border: 4px dotted red;
+                        }
+                    </style>
+                % endif
+                <div class="pastebin-form-span" style="height: 140px">
                     ${c.recaptcha_html | n}
                 </div>
         </div>
