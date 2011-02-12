@@ -163,3 +163,7 @@ a, a:link, a:visited, a:active {
     height: 20px;
     background-color: #D5005A;
 }
+
+#mid_wrapper {
+    padding-bottom: 10px;
+}
