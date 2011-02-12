@@ -158,3 +158,8 @@ a, a:link, a:visited, a:active {
     margin: 10px;
     padding: 3px;
 }
+
+#pastebit-footer {
+    height: 20px;
+    background-color: #D5005A;
+}
