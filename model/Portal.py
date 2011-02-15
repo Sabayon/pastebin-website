@@ -468,9 +468,12 @@ class Portal(RemoteDbSkelInterface):
             %s.pastebin.pastebin_id, %s.pastebin.pastebin_doctypes_id,
             %s.pastebin.orig_ts, %s.pastebin.pastebin_syntax_id,
             %s.pastebin.expiration_days, %s.pastebin_syntax.syntax_name
-        FROM %s.pastebin, %s.pastebin_syntax WHERE
-        %s.pastebin.pastebin_syntax_id = %s.pastebin_syntax.pastebin_syntax_id
-        AND %s.pastebin.user_id = 0
+        FROM %s.pastebin
+        LEFT JOIN %s.pastebin_syntax ON ( 
+            %s.pastebin.pastebin_syntax_id = %s.pastebin_syntax.pastebin_syntax_id
+        )
+        WHERE
+        %s.pastebin.user_id = 0
         ORDER BY %s.pastebin.orig_ts DESC
         LIMIT %s
         """ % (config.PORTAL_DBNAME, config.PORTAL_DBNAME, config.PORTAL_DBNAME,

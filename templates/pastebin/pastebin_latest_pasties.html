@@ -7,7 +7,8 @@
                     my_by = 'Anonymous'
                 syntax_str = ""
                 if item['pastebin_doctypes_id'] == c.pastebin_doctypes['text']:
-                    syntax_str = item['syntax_name'] + " | "
+                    if item['syntax_name']:
+                        syntax_str = item['syntax_name'] + " | "
             %>
             <span>
                 <a href="/pastie/${item['pastebin_id']}"><b>${my_by}</b></a>
