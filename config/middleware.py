@@ -6,8 +6,7 @@ from paste.urlparser import StaticURLParser
 from paste.deploy.converters import asbool
 
 from pylons import config
-from pylons.middleware import ErrorDocuments, ErrorHandler, \
-    StaticJavascripts, StatusCodeRedirect
+from pylons.middleware import ErrorHandler, StatusCodeRedirect
 from pylons.wsgiapp import PylonsApp
 
 from www.config.environment import load_environment
@@ -81,9 +80,8 @@ def make_app(global_conf, full_stack=True, **app_conf):
     app = RegistryManager(app)
 
     # Static files
-    javascripts_app = StaticJavascripts()
     static_app = StaticURLParser(config['pylons.paths']['static_files'])
-    app = Cascade([static_app, javascripts_app, app])
+    app = Cascade([static_app, app])
     #app = LimitUploadSize(app, 30 * 1024000) # 20mb, max upload size
     app.config = config
     return app
