@@ -180,15 +180,13 @@ class PastebinController(BaseController,WebsiteController):
             temp_filepath = os.path.join(config.WEBSITE_TMP_DIR,self._get_random_md5())
             while os.path.lexists(temp_filepath):
                 temp_filepath = os.path.join(config.WEBSITE_TMP_DIR,self._get_random_md5())
-            f = open(temp_filepath,"wb")
-            if text_as_file:
-                f.write(content.encode('utf-8'))
+            with open(temp_filepath,"wb") as f:
+                if text_as_file:
+                    f.write(content.encode('utf-8'))
+                    content = "pastie.txt"
+                else:
+                    shutil.copyfileobj(docfile.file, f)
                 f.flush()
-                content = "pastie.txt"
-            else:
-                shutil.copyfileobj(docfile.file, f)
-            f.flush()
-            f.close()
             infected = self._scan_file_for_viruses(temp_filepath)
             fsize = self._get_file_size(temp_filepath)
             if infected:
@@ -238,7 +236,7 @@ class PastebinController(BaseController,WebsiteController):
                 try:
                     os.rename(temp_filepath, final_filepath) # atomicity ftw
                 except OSError:
-                    shutil.move(temp_filepath,final_filepath)
+                    shutil.move(temp_filepath, final_filepath)
 
                 self._set_default_dir_permissions(os.path.dirname(final_filepath))
 
