@@ -5,7 +5,7 @@ from pylons.i18n import _, N_
 from www.private import *
 from paste.request import construct_url
 
-SITE_URI = 'http://pastebin.sabayon.org'
+SITE_URI = 'https://pastebin.sabayon.org'
 SITE_URI_SSL = 'https://pastebin.sabayon.org'
 MAIN_SITE_URI = "http://www.sabayon.org"
 
