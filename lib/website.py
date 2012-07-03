@@ -181,7 +181,7 @@ class WebsiteController:
     def _new_captcha(self):
         captcha = self._get_recaptcha()
         if captcha == None: return
-        myhtml = captcha.displayhtml(config.recaptcha_public_key)
+        myhtml = captcha.displayhtml(config.recaptcha_public_key, use_ssl=config.is_https())
         c.recaptcha_html = myhtml
         return myhtml
 
