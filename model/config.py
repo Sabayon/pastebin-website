@@ -2,7 +2,10 @@
 import hashlib
 import datetime, random, os, urllib
 from pylons.i18n import _, N_
-from www.private import *
+try:
+    from private import *
+except ImportError:
+    from www.private import *
 from paste.request import construct_url
 
 SITE_URI = 'https://pastebin.sabayon.org'
