@@ -86,6 +86,8 @@ class RemoteDbSkelInterface:
 
     def disconnect(self):
         self.check_connection()
+        if hasattr(self.dbconn, 'commit'):
+            self.dbconn.commit()
         self.escape_string = self.escape_fake
         if hasattr(self.cursor, 'close'):
             self.cursor.close()
@@ -322,13 +324,6 @@ class Portal(RemoteDbSkelInterface):
             self.initialize_pastebin_syntaxes()
             self.initialize_pastebin_doctypes()
         self.dbconn.set_character_set('utf8')
-
-    def __del__(self):
-        if hasattr(self,'disconnect'):
-            try:
-                self.disconnect()
-            except ServiceConnectionError:
-                pass
 
     def check_connection(self):
         pass
