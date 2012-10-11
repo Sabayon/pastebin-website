@@ -1,12 +1,4 @@
 <div>
-    <div style="float: left;">
-        <div>
-            <%include file="/adsense/250x250.html"/>
-        </div>
-        <div>
-            <%include file="/adsense/250x250.html"/>
-        </div>
-    </div>
     <div style="float: left;  clear: right; padding-left: 20px">
         <% file_uri = "%s/%s/%s" % (c.pastebin_store_sub,c.pastebin['pastebin_id'],c.pastebin['content'].strip(),) %>
         <a href="${file_uri}" target="_blank"><img src="/images/package-x-generic.png" title="${_("Download this file")}"/></a>
