@@ -29,8 +29,7 @@ class PastebinController(BaseController,WebsiteController):
     def index(self):
         config.setup_internal(model, c, session, request)
         # create recaptcha html
-        if not session.get('skip_captcha'):
-            self._new_captcha()
+        self._new_captcha()
         self._load_metadata()
         return render_mako('/pastebin/index.html')
 
@@ -131,18 +130,14 @@ class PastebinController(BaseController,WebsiteController):
 
         # captcha check and redirect
         if valid and (not just_url):
-            if not session.get('skip_captcha'):
-                valid = self._validate_captcha_submit()
-                if not valid:
-                    # invalid captcha answer
-                    c.pastebin_edit_content = content
-                    c.default_pastebin_doctypes_id = pastebin_doctypes_id
-                    c.pastebin_wrong_captcha = True
-                    portal.disconnect(); del portal
-                    return self.index()
-                # XXX: this could lead to spammers happiness
-                session['skip_captcha'] = True
-                session.save()
+            valid = self._validate_captcha_submit()
+            if not valid:
+                # invalid captcha answer
+                c.pastebin_edit_content = content
+                c.default_pastebin_doctypes_id = pastebin_doctypes_id
+                c.pastebin_wrong_captcha = True
+                portal.disconnect(); del portal
+                return self.index()
 
         docfile_avail = False
         if valid:
@@ -298,7 +293,6 @@ class PastebinController(BaseController,WebsiteController):
 
         config.setup_internal(model, c, session, request)
         # create captcha html
-        if not session.get('skip_captcha'):
-            self._new_captcha()
+        self._new_captcha()
         portal.disconnect(); del portal
         return render_mako('/pastebin/index.html')

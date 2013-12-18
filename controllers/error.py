@@ -28,8 +28,7 @@ class ErrorController(BaseController, WebsiteController):
         """Render the error document"""
         config.setup_internal(model, c, session, request)
         # create recaptcha html
-        if not session.get('skip_captcha'):
-            self._new_captcha()
+        self._new_captcha()
         self._load_metadata()
 
         resp = request.environ.get('pylons.original_response')
