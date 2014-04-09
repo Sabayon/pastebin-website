@@ -25,7 +25,7 @@ PASTEBIN_DIR = '/sabayon/www/pastebin.sabayon.org/www/www/public/pasties/store'
 PHPBB_DBNAME = "phpbb3"
 PORTAL_DBNAME = "portal"
 PASTEBIN_MAX_UPLOAD_FILE_SIZE = 5 * 1024000 # 5mb
-PASTEBIN_TEXT_LENGTH = 512000
+PASTEBIN_TEXT_LENGTH = 1024000 * 2
 PSATEBIN_STORE_SUB = '/pasties/store'
 
 uri_path = "/"
